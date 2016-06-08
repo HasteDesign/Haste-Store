@@ -25,3 +25,22 @@
         }
     }
 }
+
+
+.page-header {
+	padding-bottom: 30px;
+	margin: 0 0 60px;
+	border-bottom: 1px solid #eee;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: baseline;
+
+	.term-description {
+		color: #aaa;
+		flex: 1 0 auto;
+		padding: 0 30px
+	}
+
+}

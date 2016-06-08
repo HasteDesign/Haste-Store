@@ -62,3 +62,12 @@ add_filter( 'loop_shop_columns', 						'odin_loop_columns' );
  */
 
 remove_action( 'woocommerce_sidebar',  'woocommerce_get_sidebar', 10 );
+
+
+/**
+ * Remove item count
+ */
+
+remove_action( 'woocommerce_before_shop_loop', 'woocommerce_result_count', 20);
+remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30);
+add_action( 'woocommerce_archive_description', 'woocommerce_catalog_ordering', 30 );
