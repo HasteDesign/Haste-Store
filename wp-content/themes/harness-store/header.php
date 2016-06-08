@@ -56,7 +56,7 @@
 							<?php bloginfo( 'name' ); ?>
 						<?php if ( is_home() ) echo '</h1>'; ?>
 					</a>
-					<p class="navbar-text site-description"><?php bloginfo( 'description' ); ?></p>
+					<p class="navbar-text site-description hidden-xs"><?php bloginfo( 'description' ); ?></p>
 				</div>
 				<nav class="collapse navbar-collapse navbar-main-navigation navbar-right" role="navigation">
 					<?php
