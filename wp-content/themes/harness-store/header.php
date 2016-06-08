@@ -58,7 +58,7 @@
 					</a>
 					<p class="navbar-text site-description"><?php bloginfo( 'description' ); ?></p>
 				</div>
-				<nav class="collapse navbar-collapse navbar-main-navigation" role="navigation">
+				<nav class="collapse navbar-collapse navbar-main-navigation navbar-right" role="navigation">
 					<?php
 						wp_nav_menu(
 							array(
@@ -71,15 +71,6 @@
 							)
 						);
 					?>
-					<form method="get" class="navbar-form navbar-right" action="<?php echo esc_url( home_url( '/' ) ); ?>" role="search">
-						<label for="navbar-search" class="sr-only">
-							<?php _e( 'Search:', 'harness-store' ); ?>
-						</label>
-						<div class="form-group">
-							<input type="search" value="<?php echo get_search_query(); ?>" class="form-control" name="s" id="navbar-search" />
-						</div>
-						<button type="submit" class="btn btn-default"><?php _e( 'Search', 'harness-store' ); ?></button>
-					</form>
 				</nav><!-- .navbar-collapse -->
 			</div><!-- .container-->
 		</div><!-- #main-navigation-->
