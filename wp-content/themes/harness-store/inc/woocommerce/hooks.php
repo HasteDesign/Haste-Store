@@ -55,3 +55,10 @@ add_action( 'odin_content_top', 'woocommerce_breadcrumb', 10 );
 add_filter( 'woocommerce_product_thumbnails_columns', 	'odin_thumbnail_columns' );
 add_filter( 'loop_shop_per_page', 						'odin_products_per_page' );
 add_filter( 'loop_shop_columns', 						'odin_loop_columns' );
+
+
+/**
+ * Remove home sidebar
+ */
+
+remove_action( 'woocommerce_sidebar',  'woocommerce_get_sidebar', 10 );
