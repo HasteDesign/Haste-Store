@@ -1,0 +1,396 @@
+/* ===============================================
+   GENERAL
+   =============================================== */
+   
+.clear {
+	clear:both;
+	float:none !important;
+}
+
+.left {
+	float:left;
+}
+
+.right {
+	float:right;
+}
+
+
+/* ===============================================
+   TABS
+   =============================================== */
+
+#tabs { 
+	width:98%; 
+	height:100%;
+}
+
+.tabs { 
+	position:relative; 
+	display: block
+}
+
+#tabs-container { 
+	border-top:solid 1px #fff; 
+	margin:0; 
+	padding:0 5px;
+}
+
+#tabs-container p { 
+	font-family: Geneva, sans-serif;
+	font-size:15px; 
+	text-align:center; 
+	margin:0; 
+	line-height:1.4em;
+}
+
+#tabs-container h3 {
+	text-align:center;
+}
+
+#tabs ul { 
+	list-style:none; 
+	margin:0; 
+	background:#4588b5;
+	padding:15px; 
+}
+
+#tabs.metaboxes ul { 
+	margin-top:15px; 
+}
+
+#tabs ul.orders {
+	padding:0;
+	background:none;
+}
+
+#tabs.metaboxes { 
+	width:100%;
+	border:none;
+}
+
+#tabs.metaboxes ul { 
+    border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+}
+
+#tabs.metaboxes ul.orders{ 
+	height:100%; 
+	border:none;
+}
+
+#tabs.metaboxes ul.orders .wip_container h5.element{ 
+	cursor:move;
+}
+
+#tabs.metaboxes li { 
+	float:inherit;
+	margin-bottom:0;
+	border:none;
+}
+
+#tabs li { 
+	float:left;
+	margin:0;
+}
+
+#tabs li a { 
+	color:#fff; 
+	text-decoration:none; 
+	padding:14px; 
+	display:block;
+	text-align:center; 
+	-webkit-transition: all .3s ease; 	
+	-moz-transition: all .3s ease; 
+	-o-transition: all .3s ease; 
+	font-family:'Roboto',Helvetica, Geneva, sans-serif; 
+	float:left; 
+	font-size:16px; 
+	text-shadow:none;
+	margin:0;
+}
+
+#tabs.metaboxes li a { 
+	padding:15px; 
+	font-size:14px;
+	margin:0;
+}
+
+#tabs.metaboxes li a.delete { 
+	margin:0 0 0 20%; 
+	float:none; 
+	display:inline; 
+	padding:5px; 
+	font-size:14px;
+	color:#555; 
+}
+
+#tabs.metaboxes li a.delete:hover { 
+	background:inherit;
+}
+
+
+#tabs li a:hover, 
+#tabs li.ui-tabs-active a, 
+#tabs li.ui-state-active a {
+	background:#5C97BF;
+	color:#fff;
+	text-shadow:none;
+}
+
+#tabs li a:focus { 
+	outline:none;
+}
+
+#tabs.metaboxes li.ui-state-active, 
+#tabs.metaboxes li.ui-widget-content 
+#tabs.metaboxes li.ui-state-active, 
+#tabs.metaboxes li.ui-widget-header 
+#tabs.metaboxes li.ui-state-active {
+    background: none;
+	padding:0;
+}
+
+#tabs.metaboxes .metaboxe_box {
+	padding: 0 !important;
+}
+
+#poststuff .inside {
+    margin: 0;
+}
+
+/* ===============================================
+   BOXS
+   =============================================== */
+
+.wip_mainbox { 
+	font-family:'Roboto',Helvetica, Geneva, sans-serif; 
+	font-size:14px; 
+	line-height:1.4em; 
+	background:#fff; 
+	position:relative;
+}
+
+.wip_openbox { 
+	display:block !important;
+}
+
+.wip_mainbox-open { 
+	font-family:'Roboto',Helvetica, Geneva, sans-serif; 
+	font-size:14px; 
+	line-height:1.4em; 
+	background:#f3f3f3; 
+	border-bottom: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	border-left: 1px solid #ddd; 
+	position:relative; 
+}
+
+.wip_container  { 
+	background:url(../images/subparent.png) no-repeat 8% center ;
+}
+
+.wip_container h5.element { 
+	cursor:pointer; 
+	background:url(../images/subparent.png) no-repeat #5C97BF 98% center ; 
+	padding:15px; 
+	font-size:16px;
+	margin:15px 0 0 0; 
+	font-family:'Roboto',Helvetica, Geneva, sans-serif; 
+	font-weight:normal;
+	text-shadow:none; 
+	color:#fff; 
+	-webkit-transition: all .3s ease; 	
+	-moz-transition: all .3s ease; 
+	-o-transition: all .3s ease;
+}
+
+.wip_container h5.element-open { 
+	background:#4588b5; 
+	padding:15px; 
+	font-size:15px; 
+	margin:10px 0 0 0; 
+	font-weight:normal;
+	color: #fff;
+	font-family:'Roboto',Helvetica, Geneva, sans-serif; 
+}
+
+.wip_container h5.element:hover { 
+	color:#fff; 
+	background:url(../images/subparent.png) no-repeat #4588b5 98% center ;
+}
+
+.wip_container h5.inactive { 
+	background:url(../images/subparent-hover.png) no-repeat #4588b5 98% center; 
+	color:#fff;
+}
+
+.wip_container h5.inactive:hover { 
+	background:url(../images/subparent-hover.png) no-repeat #4588b5 98% center; 
+	color:#fff;
+}
+
+/* ===============================================
+   INPUTBOX
+   =============================================== */
+
+.metaboxes .orders div.wip_inputbox ,
+div.wip_inputbox {
+	border-bottom:1px solid #ddd;
+	border-top:1px solid #fff;
+	padding:15px 0 15px 15px;
+}
+
+.metaboxes div.wip_inputbox {
+	border-top:1px solid #ddd;
+	border-bottom:1px solid #fff;
+	padding:14px 0 0 0
+}
+
+.wip_inputbox textarea{
+	height:155px;
+	width:78%;
+	font-size:12px;
+	padding:4px 1.5% 4px 0.5%;
+	color:#333;
+	line-height:1.5em;
+	background:#efefef;
+    -moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px; 
+	border:solid 1px #ddd;
+	border:solid 1px #ddd;
+}
+
+.wip_inputbox input[type="text"], 
+.wip_inputbox input[type="color"], 
+.wip_inputbox select{
+	width:78%;
+	height:28px;
+	font-size:12px;
+	padding:4px 1.5% 4px 0.5%;
+	color:#333;
+	line-height:1.5em;
+	background:#efefef;
+    -moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	border:solid 1px #ddd;
+}
+
+.metaboxes .orders .wip_inputbox label,
+.wip_inputbox label {
+	color:#333; 
+	font-family:'Roboto',Helvetica, Geneva, sans-serif; 
+	float:left; 
+	width:20%;
+	font-size:14px;
+	padding:4px 0;
+}
+
+.metaboxes .wip_inputbox label ,
+.metaboxes .wip_inputbox em {
+	width:100%;
+	float:none;
+	display:block;
+}
+
+.wip_inputbox p {
+	color:#333; 
+	font-family:'Roboto',Helvetica, Geneva, sans-serif; 
+	font-style:italic; 
+	font-size:12px; 
+    margin:5px 0 0 20%;
+}
+
+.wip_inputbox span.separator{
+	font-weight: bold;
+	font-size: 11px;
+}
+
+.wip_inputbox textarea:focus, .wip_inputbox input:focus, .wip_inputbox select:focus{
+	background:#fff;
+	border:solid 1px #ddd;
+}
+
+.metaboxes .orders .wip_inputbox .button ,
+.wip_inputbox .button {
+    margin:5px 0 5px 20%;
+}
+
+.metaboxes .wip_inputbox .button {
+	width:20%;
+    margin:0 0 0 0;
+}
+
+.wip_inputbox .iphone-check input[type="checkbox"]  {
+    width:280px;
+}
+
+.wip_inputbox .preview {
+	width:98%;
+	height:300px;
+	border:solid 4px #fff;
+	outline:solid 1px #ddd;
+	float:left;
+	margin:10px 0 0 0;
+}
+
+.wip_icons .preview {
+	width:80px;
+	height:80px;
+	border:solid 4px #fff;
+	outline:solid 1px #ddd;
+	background-color:#CCC;
+}
+
+.wip_inputbox .upload-preview {
+	margin:15px 0 15px 20%;
+	max-width: 78%;
+}
+
+.wip_input label,.wip_input em,
+.wip_icons label,.wip_icons em {
+	display:block;
+	margin:5px 0;
+}
+
+.input-left {
+	float:left;
+	width:39%;
+	vertical-align:top;
+	padding:0 0 14px 0;
+}
+
+.input-right {
+	float:right;
+	width:59%;
+	padding:10px 0 0 0
+}
+
+.wip_inputbox.wip_input {
+	padding:0;
+	border-top:none;
+	border-bottom:none;
+}
+
+.wip_inputbox.wip_input label {
+	width:inherit;
+	padding:0;
+	float:none;
+}
+
+.wip_inputbox.wip_input .button {
+	margin:0;
+}
+
+h2.title, 
+#poststuff .metaboxes h2 { 
+	font-size: 14px;
+	font-family: Geneva, sans-serif;
+	color: #606060;
+	height: 32px;
+	line-height: 32px;
+	padding:10px 0 0 0;
+}

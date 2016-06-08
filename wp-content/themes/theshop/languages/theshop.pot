@@ -1,0 +1,626 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: TheShop\n"
+"POT-Creation-Date: 2015-12-10 09:53+0200\n"
+"PO-Revision-Date: 2015-12-10 09:53+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.3\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e;_n;esc_html__;esc_html_e;esc_attr_e;esc_attr__\n"
+"X-Poedit-SearchPath-0: D:\\Programe\\InstantWP\\InstantWP_4.3.1\\iwpserver"
+"\\htdocs\\wordpress\\wp-content\\themes\\theshop\n"
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/404.php:19
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/comments.php:38
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/comments.php:60
+msgid "Comment navigation"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/comments.php:41
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/comments.php:63
+msgid "Older Comments"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/comments.php:42
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/comments.php:64
+msgid "Newer Comments"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/comments.php:76
+msgid "Comments are closed."
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/functions.php:54
+msgid "Primary Menu"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/functions.php:55
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:584
+msgid "Side menu"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/functions.php:90
+msgid "Sidebar"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/functions.php:103
+msgid "Footer "
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/functions.php:192
+msgid "Kids clothing"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/functions.php:193
+msgid "Sports"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/functions.php:194
+msgid "Books"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/functions.php:195
+msgid "Jewelry"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/functions.php:196
+msgid "Accessories"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/functions.php:213
+msgid "http://wordpress.org/"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/functions.php:214
+#, php-format
+msgid "Proudly powered by %s"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/functions.php:217
+#, php-format
+msgid "Theme: %2$s by %1$s."
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/header.php:28
+msgid "Skip to content"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/search.php:16
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:18
+msgid "Site branding"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:38
+msgid "General"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:47
+msgid "Loading&hellip;"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:53
+msgid "Preloader text"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:65
+msgid "Header area"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:81
+msgid "Upload your logo"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:102
+msgid "Logo size"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:103
+msgid "Max-height for the logo. Default 80px"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:116
+msgid "Promo boxes"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:119
+msgid "You can find a full set of available icons "
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:119
+msgid "here"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:133
+msgid "Box 1 icon"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:142
+msgid "Free shipping"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:149
+msgid "Box 1 text"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:166
+msgid "Box 2 icon"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:175
+msgid "Friendly prices"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:182
+msgid "Box 2 text"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:199
+msgid "Box 3 icon"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:208
+msgid "Always on time"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:215
+msgid "Box 3 text"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:225
+msgid "Header type"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:242
+msgid "Homepage header type"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:245
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:267
+msgid "Only top bar"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:246
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:268
+msgid "Full header area (top bar, side menu, slider)"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:263
+msgid "Site header type"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:264
+msgid "Applies to all pages except the homepage."
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:279
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:297
+msgid "Menu style"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:300
+msgid "Inline"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:301
+msgid "Centered"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:317
+msgid "Top bar padding"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:318
+msgid "Top&amp;bottom padding for the top bar. Default: 30px"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:331
+msgid "Slider"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:334
+msgid ""
+"The slider supports up to five images. Recommended sizes: 830 X 550px (if "
+"the side menu is enabled) and 1140 X 600px (if the side menu is disabled)"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:345
+msgid "First slide"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:363
+msgid "Slider image 1"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:380
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:429
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:477
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:525
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:573
+msgid "Link for this slide"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:394
+msgid "Second slide"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:412
+msgid "Slider image 2"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:443
+msgid "Third slide"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:460
+msgid "Slider image 3"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:491
+msgid "Fourth slide"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:508
+msgid "Slider image 4"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:539
+msgid "Fifth slide"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:556
+msgid "Slide image 5"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:587
+msgid ""
+"To configure your side menu, go to Appearance > Menus, create a menu and "
+"assign it to the Side Menu position."
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:587
+msgid ""
+"Notes: <br> 1. the side menu only shows up if your slider is active; <br> 2. "
+"hiding the menu makes the slider full width."
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:600
+msgid "Hide the side menu?"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:611
+msgid "Homepage sections"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:618
+msgid "Sections content"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:624
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:651
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:879
+msgid "Latest products"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:642
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:705
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:782
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:844
+msgid "Activate this section?"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:658
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:798
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:860
+msgid "Section title"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:676
+msgid "Number of products"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:687
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:880
+msgid "Call to action"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:714
+msgid "Are you ready to see more?"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:721
+msgid "Text"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:731
+msgid "VISIT OUR SHOP"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:738
+msgid "Button title"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:754
+msgid "Button URL"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:764
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:791
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:881
+msgid "Product categories"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:816
+msgid "Number of categories"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:826
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:853
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:882
+msgid "Latest posts"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:872
+msgid "Sections order"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:899
+msgid "Section "
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:912
+msgid "Sections styling"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:944
+msgid "Background color"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:963
+msgid "Text color"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:977
+msgid "Blog options"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:989
+msgid "Layout"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:1006
+msgid "Full width single posts?"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:1019
+msgid "Excerpt"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:1037
+msgid "Excerpt lenght"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:1038
+msgid "Excerpt length [default: 55 words]"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:1054
+msgid "Meta"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:1072
+msgid "Hide post meta on index, archives?"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:1089
+msgid "Hide post meta on single posts?"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:1102
+msgid "Featured images"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:1119
+msgid "Hide featured images on index, archives?"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:1135
+msgid "Hide featured images on single posts?"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:1145
+msgid "Fonts"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:1147
+msgid ""
+"You can use any Google Fonts you want for the heading and/or body. See the "
+"fonts here: google.com/fonts. See the documentation if you need help with "
+"this: athemes.com/documentation/theshop"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:1161
+msgid "Body font name/style/sets"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:1178
+msgid "Body font family"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:1195
+msgid "Headings font name/style/sets"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:1212
+msgid "Headings font family"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:1231
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:1485
+msgid "Site title"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:1252
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:1506
+msgid "Site description"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:1273
+msgid "H1 font size"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:1294
+msgid "H2 font size"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:1315
+msgid "H3 font size"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:1336
+msgid "H4 font size"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:1357
+msgid "H5 font size"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:1378
+msgid "H6 font size"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:1399
+msgid "Body font size"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:1422
+msgid "Primary color"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:1443
+msgid "Menu background"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:1464
+msgid "Menu items"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:1526
+msgid "Body text"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:1538
+msgid "Footer widgets"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:1553
+msgid "Footer widget area"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:1555
+msgid ""
+"Choose the number of widget areas in the footer, then go to Appearance > "
+"Widgets and add your widgets."
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:1557
+msgid "One"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:1558
+msgid "Two"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/customizer.php:1559
+msgid "Three"
+msgstr ""
+
+#. translators: used between list items, there is a space after the comma
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/template-tags.php:51
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/template-tags.php:57
+msgid ", "
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/template-tags.php:53
+#, php-format
+msgid "Posted in %1$s"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/template-tags.php:59
+#, php-format
+msgid "Tagged %1$s"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/template-tags.php:65
+msgid "Leave a comment"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/template-tags.php:65
+msgid "1 Comment"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/template-tags.php:65
+msgid "% Comments"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/inc/template-tags.php:69
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/template-parts/content-page.php:25
+msgid "Edit"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/template-parts/content-none.php:13
+msgid "Nothing Found"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/template-parts/content-none.php:19
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/template-parts/content-none.php:23
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/template-parts/content-none.php:28
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/template-parts/content-page.php:18
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/template-parts/content-single.php:29
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/template-parts/content.php:40
+msgid "Pages:"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/woocommerce/woocommerce.php:47
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/woocommerce/woocommerce.php:61
+msgid "View your shopping cart"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/woocommerce/woocommerce.php:47
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\theshop/woocommerce/woocommerce.php:61
+#, php-format
+msgid "%d item"
+msgstr ""

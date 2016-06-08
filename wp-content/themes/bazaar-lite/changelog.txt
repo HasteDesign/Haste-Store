@@ -1,0 +1,10 @@
+Bazaar Lite Changelog
+
+- Version 1.1.9 - Released: 28.05.2016
+
+-- Fixed : Missing url option on first slide.
+
+- Version 1.1.7 - Released: 27.05.2016
+
+-- Added : Optional slideshow on homepage.
+-- Fixed : Breadcrumb on homepage.
