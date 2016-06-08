@@ -1,0 +1,28 @@
+# Operational System Files
+ehthumbs.db
+Thumbs.db
+
+# Log
+error_log
+*.debug_log
+*.log
+*.dat
+
+# Packaged Files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Node/Grunt Directories
+node_modules/
+.sass-cache/
+
+# Files starting with . or ~ except .gitignore
+.*
+~*
+!.gitignore
