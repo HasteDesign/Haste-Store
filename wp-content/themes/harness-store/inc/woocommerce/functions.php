@@ -59,3 +59,64 @@ function odin_thumbnail_columns() {
 function odin_products_per_page() {
 	return intval( apply_filters( 'odin_products_per_page', 12 ) );
 }
+
+/**
+ * Harness shop addons
+ * =============================================
+ */
+
+ /**
+  * Call a shortcode function by tag name.
+  *
+  * @since  1.4.6
+  *
+  * @param string $tag     The shortcode whose function to call.
+  * @param array  $atts    The attributes to pass to the shortcode function. Optional.
+  * @param array  $content The shortcode's content. Default is null (none).
+  *
+  * @return string|bool False on failure, the result of the shortcode on success.
+  */
+ function harness_do_shortcode( $tag, array $atts = array(), $content = null ) {
+ 	global $shortcode_tags;
+
+ 	if ( ! isset( $shortcode_tags[ $tag ] ) ) {
+ 		return false;
+ 	}
+
+ 	return call_user_func( $shortcode_tags[ $tag ], $atts, $content, $tag );
+ }
+
+
+
+
+
+/**
+ * Harnes shop categories
+ */
+
+ function harness_product_categories( $args ) {
+
+	 if ( is_woocommerce_activated() ) {
+
+		 $args = apply_filters( 'harness_product_categories_args', array(
+			 'limit' 			=> 2,
+			 'columns' 			=> 2,
+			 'child_categories' 	=> 0,
+			 'orderby' 			=> 'name',
+			 'title'				=> __( 'Shop by Category', 'harness' ),
+		 ) );
+
+		 echo '<section class="product-section product-categories">';
+
+		 echo '<div class="page-header"><h2 class="page-title">' . wp_kses_post( $args['title'] ) . '</h2></div>';
+
+		 echo harness_do_shortcode( 'product_categories', array(
+			 'number'  => intval( $args['limit'] ),
+			 'columns' => intval( $args['columns'] ),
+			 'orderby' => esc_attr( $args['orderby'] ),
+			 'parent'  => esc_attr( $args['child_categories'] ),
+		 ) );
+
+		 echo '</section>';
+	 }
+ }

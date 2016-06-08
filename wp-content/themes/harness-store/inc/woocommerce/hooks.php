@@ -44,6 +44,7 @@ add_action( 'woocommerce_after_main_content', 'odin_after_content', 10 );
  */
 remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0 );
 add_action( 'odin_content_top', 'woocommerce_breadcrumb', 10 );
+add_action( 'woocommerce_before_main_content', 'harness_product_categories', 30 );
 
 /**
  * Filters
