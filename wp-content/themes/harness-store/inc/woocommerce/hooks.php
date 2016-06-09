@@ -31,7 +31,7 @@ add_action( 'woocommerce_after_main_content', 'odin_after_content', 10 );
  * @see woocommerce_sidebars
  * @since  2.2.6
  */
-// remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10 );
+ remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10 );
 
 /**
  * Breadcrumb
@@ -44,7 +44,7 @@ add_action( 'woocommerce_after_main_content', 'odin_after_content', 10 );
  */
 remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0 );
 add_action( 'odin_content_top', 'woocommerce_breadcrumb', 10 );
-add_action( 'woocommerce_before_main_content', 'harness_product_categories', 30 );
+
 
 /**
  * Filters
@@ -59,10 +59,16 @@ add_filter( 'loop_shop_columns', 						'odin_loop_columns' );
 
 
 /**
- * Remove home sidebar
+ * Shop sections
  */
 
-remove_action( 'woocommerce_sidebar',  'woocommerce_get_sidebar', 10 );
+add_action( 'woocommerce_before_main_content', 'harness_featured_products', 30 );
+
+
+/**
+ * Add sidebar to shop header
+ */
+ add_action( 'woocommerce_archive_description', 'harness_get_sidebar_top', 40 );
 
 
 /**

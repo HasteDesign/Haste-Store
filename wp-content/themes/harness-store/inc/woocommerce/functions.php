@@ -120,3 +120,44 @@ function odin_products_per_page() {
 		 echo '</section>';
 	 }
  }
+
+
+ /**
+  * Harnes featured products
+  */
+
+  function harness_featured_products( $args ) {
+
+ 	 if ( is_woocommerce_activated() & is_front_page() ) :
+
+ 		 $args = apply_filters( 'harness_featured_products_args', array(
+ 			 'limit' 			=> 3,
+ 			 'columns' 			=> 3,
+ 			 'orderby' 			=> 'name',
+			 'order'			=> 'desc',
+ 			 'title'				=> __( 'Featured products', 'harness' )
+ 		 ) );
+
+ 		 echo '<section class="product-section featured-products">';
+
+ 		 echo '<div class="page-header"><h2 class="page-title">' . wp_kses_post( $args['title'] ) . '</h2></div>';
+
+ 		 echo harness_do_shortcode( 'featured_products', array(
+ 			 'per_page'=> intval( $args['limit'] ),
+ 			 'columns' => intval( $args['columns'] ),
+ 			 'orderby' => esc_attr( $args['orderby'] ),
+			 'order'   => esc_attr( $args['order'] ),
+ 		 ) );
+
+ 		 echo '</section>';
+ endif;
+ 	 }
+
+
+	/**
+	 * Harness top sidebar
+	 */
+
+	 function harness_get_sidebar_top() {
+		 get_sidebar('top');
+	 }
