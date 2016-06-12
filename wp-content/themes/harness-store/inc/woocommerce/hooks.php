@@ -76,5 +76,16 @@ add_action( 'woocommerce_before_main_content', 'harness_featured_products', 30 )
  */
 
 remove_action( 'woocommerce_before_shop_loop', 'woocommerce_result_count', 20);
+
+/**
+ * Move ordering form to page header
+ */
 remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30);
 add_action( 'woocommerce_archive_description', 'woocommerce_catalog_ordering', 30 );
+
+
+/**
+ * Move single star rating
+ */
+ remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_rating', 10);
+ add_action( 'woocommerce_product_meta_start', 'woocommerce_template_single_rating', 10 );
