@@ -10,14 +10,18 @@
 ?>
 <?php if ( is_active_sidebar( 'top-sidebar' ) ) : ?>
 
-<a class="collapse-toggle sidebar-collapse-toggle btn btn-default" data-toggle="collapse" href="#sidebar-collapse-top" aria-expanded="false" aria-controls="sidebar-top">
-	Filtrar produtos
-</a>
-<div id="sidebar-collapse-top" class="collapse sidebar-collapse-wrapper">
-	<aside id="sidebar-top" class="sidebar-horizontal" role="complementary">
+<div class="dropdown">
+	<button type="button" class="btn btn-default dropdown-toggle sidebar-collapse-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		Filtrar produtos
+        <span class="caret"></span>
+    </button>
 
-        <?php dynamic_sidebar( 'top-sidebar' ); ?>
+	<div class="dropdown-menu sidebar-dropdown-wrapper">
+		<aside id="sidebar-dropdown" class="sidebar sidebar-dropdown" role="complementary">
 
-	</aside><!-- #sidebar -->
+	        <?php dynamic_sidebar( 'top-sidebar' ); ?>
+
+		</aside><!-- #sidebar -->
+	</div>
 </div>
 <?php endif; ?>

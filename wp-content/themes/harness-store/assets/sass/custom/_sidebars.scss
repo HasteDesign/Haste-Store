@@ -1,3 +1,10 @@
+.sidebar {
+	ul, ol {
+		list-style: none;
+		padding: 0;
+	}
+}
+
 
 .sidebar-collapse-toggle {
 	margin-left: 30px;
@@ -7,19 +14,18 @@
 	width: 100%;
 }
 
-.sidebar-horizontal {
-	display: flex;
-	border: 1px solid $gray-light;
+.sidebar-dropdown-wrapper {
+	min-width: 300px;
+	right: 0;
+	left: auto;
+}
 
+.sidebar-dropdown {
 	.widget {
-		flex: 1;
 		padding: 15px;
 
-		:first-child {
-			margin-top: 0;
-		}
-		:last-child {
-			margin-bottom: 0;
+		& + .widget {
+			margin-top: 15px;
 		}
 	}
 }
