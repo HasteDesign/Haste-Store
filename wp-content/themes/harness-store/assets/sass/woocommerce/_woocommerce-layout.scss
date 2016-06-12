@@ -39,55 +39,25 @@
 		@include make-row();
 
 		div.images {
-			@include make-md-column(6);
+			@include make-md-column(7);
+			display: flex;
 		}
 
 		div.thumbnails {
-			@include make-row();
+			//@include make-row();
+
+			display: flex;
+			flex-direction: column;
+			margin-left: 1px;
 
 			a {
 				float: left;
-				width: 30.75%;
-				margin-right: 3.8%;
-				margin-bottom: 1em;
-			}
-
-			a.last {
-				margin-right: 0;
-			}
-
-			a.first {
-				clear: both;
-			}
-
-			&.columns-1 {
-				a {
-					@include make-md-column(12);
-				}
-			}
-
-			&.columns-2 {
-				a {
-					@include make-md-column(6);
-				}
-			}
-
-			&.columns-4 {
-				a {
-					@include make-md-column(3);
-				}
-			}
-
-			&.columns-5 {
-				a {
-					@include make-md-column(2);
-				}
+				margin-bottom: 1px;
 			}
 		}
 
 		div.summary {
 			@include make-md-column(5);
-			@include make-md-column-offset(1);
 		}
 
 		.woocommerce-tabs {
