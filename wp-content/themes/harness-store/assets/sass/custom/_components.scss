@@ -11,3 +11,9 @@ input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type=
 .form-row {
 	@extend .form-group;
 }
+
+
+.list-group-item.collapse {
+	padding: 0;
+	overflow: hidden;
+}

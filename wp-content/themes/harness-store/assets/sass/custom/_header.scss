@@ -39,6 +39,10 @@
 	justify-content: space-between;
 	align-items: baseline;
 
+	.page-title {
+		flex-grow: 1;
+	}
+
 	.term-description {
 		color: #aaa;
 		flex: 1 0 auto;

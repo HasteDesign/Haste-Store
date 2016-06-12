@@ -103,7 +103,7 @@ function odin_products_per_page() {
 			 'columns' 			=> 2,
 			 'child_categories' 	=> 0,
 			 'orderby' 			=> 'name',
-			 'title'				=> __( 'Shop by Category', 'harness' ),
+			 'title'				=> __( 'Shop by Category', 'harness-store' ),
 		 ) );
 
 		 echo '<section class="product-section product-categories">';
@@ -135,7 +135,7 @@ function odin_products_per_page() {
  			 'columns' 			=> 3,
  			 'orderby' 			=> 'name',
 			 'order'			=> 'desc',
- 			 'title'				=> __( 'Featured products', 'harness' )
+ 			 'title'				=> __( 'Featured products', 'harness-store' )
  		 ) );
 
  		 echo '<section class="product-section featured-products">';

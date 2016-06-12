@@ -1,0 +1,25 @@
+
+.sidebar-collapse-toggle {
+	margin-left: 30px;
+}
+
+.sidebar-collapse-wrapper {
+	width: 100%;
+}
+
+.sidebar-horizontal {
+	display: flex;
+	border: 1px solid $gray-light;
+
+	.widget {
+		flex: 1;
+		padding: 15px;
+
+		:first-child {
+			margin-top: 0;
+		}
+		:last-child {
+			margin-bottom: 0;
+		}
+	}
+}

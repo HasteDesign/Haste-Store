@@ -8,13 +8,16 @@
  * @since 2.2.0
  */
 ?>
+<?php if ( is_active_sidebar( 'top-sidebar' ) ) : ?>
 
-<aside id="sidebar-top" class="sidebar-horizontal" role="complementary">
-	<?php
-		if ( ! dynamic_sidebar( 'main-sidebar' ) ) {
-			the_widget( 'WP_Widget_Recent_Posts', array( 'number' => 10 ) );
-			the_widget( 'WP_Widget_Archives', array( 'count' => 0, 'dropdown' => 1 ) );
-			the_widget( 'WP_Widget_Tag_Cloud' );
-		}
-	?>
-</aside><!-- #sidebar -->
+<a class="collapse-toggle sidebar-collapse-toggle btn btn-default" data-toggle="collapse" href="#sidebar-collapse-top" aria-expanded="false" aria-controls="sidebar-top">
+	Filtrar produtos
+</a>
+<div id="sidebar-collapse-top" class="collapse sidebar-collapse-wrapper">
+	<aside id="sidebar-top" class="sidebar-horizontal" role="complementary">
+
+        <?php dynamic_sidebar( 'top-sidebar' ); ?>
+
+	</aside><!-- #sidebar -->
+</div>
+<?php endif; ?>
