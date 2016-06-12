@@ -16,16 +16,13 @@
 	 * General layout styles
 	 */
 	.col2-set {
-		@include clearfix();
-		width: 100%;
+		@include make-row();
 
 		.col-1 {
-			float: left;
-			width: 48%;
+			@include make-md-column(6);
 		}
 		.col-2 {
-			float: right;
-			width: 48%;
+			@include make-md-column(6);
 		}
 	}
 
@@ -39,13 +36,14 @@
 	 */
 	div.product,
 	#content div.product {
+		@include make-row();
+
 		div.images {
-			float: left;
-			width: 48%;
+			@include make-md-column(6);
 		}
 
 		div.thumbnails {
-			@include clearfix();
+			@include make-row();
 
 			a {
 				float: left;
@@ -64,34 +62,32 @@
 
 			&.columns-1 {
 				a {
-					width: 100%;
-					margin-right: 0;
-					float: none;
+					@include make-md-column(12);
 				}
 			}
 
 			&.columns-2 {
 				a {
-					width: 48%;
+					@include make-md-column(6);
 				}
 			}
 
 			&.columns-4 {
 				a {
-					width: 22.05%;
+					@include make-md-column(3);
 				}
 			}
 
 			&.columns-5 {
 				a {
-					width: 16.9%;
+					@include make-md-column(2);
 				}
 			}
 		}
 
 		div.summary {
-			float: right;
-			width: 48%;
+			@include make-md-column(5);
+			@include make-md-column-offset(1);
 		}
 
 		.woocommerce-tabs {
