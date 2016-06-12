@@ -128,7 +128,7 @@ function odin_products_per_page() {
 
   function harness_featured_products( $args ) {
 
- 	 if ( is_woocommerce_activated() & is_front_page() ) :
+ 	 if ( is_woocommerce_activated() & is_front_page() & !is_paged() ) :
 
  		 $args = apply_filters( 'harness_featured_products_args', array(
  			 'limit' 			=> 3,
