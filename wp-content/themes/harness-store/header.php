@@ -50,12 +50,11 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-						<?php odin_the_custom_logo(); ?>
+					<div class="navbar-brand">
 						<?php if ( is_home() ) echo '<h1 class="site-title">'; ?>
-							<?php bloginfo( 'name' ); ?>
+							<?php odin_the_custom_logo(); ?>
 						<?php if ( is_home() ) echo '</h1>'; ?>
-					</a>
+					</div>
 					<p class="navbar-text site-description hidden-xs"><?php bloginfo( 'description' ); ?></p>
 				</div>
 				<nav class="collapse navbar-collapse navbar-main-navigation navbar-right" role="navigation">

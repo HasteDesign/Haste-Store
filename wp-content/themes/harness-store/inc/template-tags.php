@@ -101,5 +101,10 @@ if ( ! function_exists( 'odin_the_custom_logo' ) ) {
 		if ( function_exists( 'the_custom_logo' ) ) {
 			the_custom_logo();
 		}
+		else {
+			echo '<a class="navbar-brand" href="' . esc_url( home_url( '/' ) ) . '" title="' . esc_attr( get_bloginfo( 'name', 'display' ) ) . '" rel="home">';
+			bloginfo( 'name' );
+			echo '</a>';
+		}
 	}
 }
