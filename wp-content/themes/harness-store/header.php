@@ -77,3 +77,6 @@
 
 	<div id="wrapper" class="container">
 		<div class="row">
+			<?php
+			do_action( 'odin_content_top' );
+			?>
