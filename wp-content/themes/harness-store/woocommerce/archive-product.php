@@ -22,17 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 get_header( 'shop' ); ?>
 
-	<?php
-		/**
-		 * woocommerce_before_main_content hook.
-		 *
-		 * @hooked woocommerce_output_content_wrapper - 10 (outputs opening divs for the content)
-		 * @hooked woocommerce_breadcrumb - 20
-		 */
-		do_action( 'woocommerce_before_main_content' );
-	?>
-
-		<div class="page-header">
+		<div class="page-header col-md-12">
 
 			<?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
 
@@ -51,6 +41,16 @@ get_header( 'shop' ); ?>
 			?>
 
 		</div>
+
+	<?php
+		/**
+		 * woocommerce_before_main_content hook.
+		 *
+		 * @hooked woocommerce_output_content_wrapper - 10 (outputs opening divs for the content)
+		 * @hooked woocommerce_breadcrumb - 20
+		 */
+		do_action( 'woocommerce_before_main_content' );
+	?>
 
 		<?php if ( have_posts() ) : ?>
 
