@@ -75,8 +75,11 @@
 		</div><!-- #main-navigation-->
 	</header><!-- #header -->
 
-	<div id="wrapper" class="container">
-		<div class="row">
+	<div id="wrapper">
+		<div class="wrapper-row">
+			<div class="col-md-12">
+
 			<?php
 			do_action( 'odin_content_top' );
 			?>
+		</div>
