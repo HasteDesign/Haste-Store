@@ -83,6 +83,7 @@ add_action( 'woocommerce_before_main_content', 'harness_featured_products', 30 )
  */
 
 remove_action( 'woocommerce_before_shop_loop', 'woocommerce_result_count', 20);
+add_action( 'woocommerce_archive_description', 'woocommerce_result_count', 20);
 
 /**
  * Move ordering form to page header
