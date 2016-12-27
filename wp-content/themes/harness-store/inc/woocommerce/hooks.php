@@ -75,7 +75,7 @@ add_action( 'woocommerce_before_main_content', 'harness_featured_products', 30 )
 /**
  * Add sidebar to shop header
  */
- add_action( 'woocommerce_archive_description', 'harness_get_sidebar_top', 40 );
+ //add_action( 'woocommerce_archive_description', 'harness_get_sidebar_top', 40 );
 
 
 /**
