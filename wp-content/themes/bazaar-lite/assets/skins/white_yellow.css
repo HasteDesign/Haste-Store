@@ -1,0 +1,309 @@
+#footer-widgets,
+#footer-widgets .post-article,
+#footer-widgets .title-container .title {
+    background-color: #fafafa;
+}
+#footer-copyright,
+#back-to-top i {
+    background-color: #ffffff;
+}
+#footer h3.title,
+#footer a,
+#footer p,
+#footer li,
+#footer address,
+#footer dd,
+#footer blockquote,
+#footer td,
+#footer th,
+#footer label,
+#footer .textwidget,
+#back-to-top i,
+#footer h4.title,
+#footer #wp-calendar #today,
+#footer #wp-calendar #today a,
+#footer #wp-calendar caption,
+#footer #wp-calendar th,
+#footer #wp-calendar td,
+#footer #footer nav.custommenu ul li a,
+#footer #searchform input[type=submit],
+#footer .contact-form input[type=submit],
+#footer #commentform input[type=submit],
+.wp-pagenavi a,
+.wp-pagenavi a:link,
+.wip-pagination span,
+.wip-pagination span:hover {
+    color: #616161;
+}
+#footer {
+    border-color: #dddddd;
+}
+#footer .copyright,
+#footer li,
+#footer ul.contact-info li,
+#footer .socials a,
+#back-to-top i,
+#footer ul.children,
+#footer li:after,
+#footer #wp-calendar th,
+#footer #wp-calendar td,
+#footer ul.widget-category li,
+#footer ul.widget-category li:last-of-type,
+.wp-pagenavi a,
+.wp-pagenavi a:link,
+.wip-pagination span,
+.wip-pagination span:hover,
+#footer .widget-box .slick-wrapper .product-content,
+#footer .widget-box .slick-wrapper .post-article,
+#footer .widget-box .slick-wrapper .product-thumbnail,
+#footer .widget-box .slick-wrapper .pin-container,
+body.minimal-layout #footer .widget-box .slick-wrapper .product-thumbnail,
+body.minimal-layout #footer .widget-box .slick-wrapper .pin-container,
+body.minimal-layout #footer .widget-box .slick-wrapper .post-article,
+body.minimal-layout #footer .widget-box .slick-wrapper .product-content {
+    border-color: #dddddd;
+}
+#footer-widgets .title-container:after {
+    background-color: #dddddd;
+}
+#breadcrumb_wrapper {
+    background-color: #f1f1f1;
+}
+#breadcrumb_wrapper ul#breadcrumb,
+#breadcrumb_wrapper ul#breadcrumb li,
+#breadcrumb_wrapper ul#breadcrumb a {
+    color: #616161;
+}
+.slick-dots li button,
+.socials.share a,
+#searchform input[type=submit],
+.contact-form input[type=submit],
+#commentform input[type=submit],
+.woocommerce #respond input#submit.alt,
+.woocommerce a.button.alt,
+.woocommerce button.button.alt,
+.woocommerce input.button.alt,
+.woocommerce a.button,
+.woocommerce #respond input#submit,
+.woocommerce button.button,
+.woocommerce input.button,
+.woocommerce .wc-proceed-to-checkout input,
+a.button,
+.woocommerce nav.woocommerce-pagination ul li a,
+.woocommerce nav.woocommerce-pagination ul li span,
+.woocommerce a.button,
+#footer .woocommerce a.button,
+.woocommerce-product-search input[type=submit],
+.wp-pagenavi a,
+.wp-pagenavi a:link,
+.wp-pagenavi span.current,
+.wip-pagination span,
+.wip-pagination span:hover {
+    background-color: #ffffff;
+}
+.socials.share a,
+#searchform input[type=submit],
+.contact-form input[type=submit],
+#commentform input[type=submit],
+.woocommerce #respond input#submit.alt,
+.woocommerce a.button.alt,
+.woocommerce button.button.alt,
+.woocommerce input.button.alt,
+.woocommerce a.button,
+.woocommerce #respond input#submit,
+.woocommerce button.button,
+.woocommerce input.button,
+.woocommerce .wc-proceed-to-checkout input,
+a.button,
+.woocommerce nav.woocommerce-pagination ul li a,
+.woocommerce nav.woocommerce-pagination ul li span,
+.woocommerce a.button,
+#footer .woocommerce a.button,
+.woocommerce-product-search input[type=submit],
+.wp-pagenavi a,
+.wp-pagenavi a:link,
+.wp-pagenavi span.current,
+.wip-pagination span,
+.wip-pagination span:hover {
+    border-color: #dddddd;
+}
+.socials.share a,
+#searchform input[type=submit],
+.contact-form input[type=submit],
+#commentform input[type=submit],
+.woocommerce #respond input#submit.alt,
+.woocommerce a.button.alt,
+.woocommerce button.button.alt,
+.woocommerce input.button.alt,
+.woocommerce a.button,
+.woocommerce #respond input#submit,
+.woocommerce button.button,
+.woocommerce input.button,
+.woocommerce .wc-proceed-to-checkout input,
+a.button,
+.woocommerce nav.woocommerce-pagination ul li a,
+.woocommerce nav.woocommerce-pagination ul li span,
+.woocommerce a.button,
+#footer .woocommerce a.button,
+.woocommerce-product-search input[type=submit],
+.wp-pagenavi a,
+.wp-pagenavi a:link,
+.wp-pagenavi span.current,
+.wip-pagination span,
+.wip-pagination span:hover {
+    color: #616161;
+}
+::-moz-selection {
+    background-color: #f4d03f;
+}
+::selection {
+    background-color: #f4d03f;
+}
+.skills .views,
+.filter,
+.post-article .link a,
+.post-article .quote,
+.blog-grid .masonry-element article,
+.auth-cover,
+section.media-wrapper span.genericon {
+    background-color: #f4d03f;
+}
+.queryloader__overlay,
+#prepage {
+    background-color: #f4d03f !important;
+}
+.skills .views,
+.filter {
+    border-color: #f4d03f;
+}
+#back-to-top i.open,
+#back-to-top i:hover,
+.post-article .link a:hover,
+.post-article .quote:hover,
+.filter li:hover,
+.filter li.active,
+.tagcloud a:hover,
+.socials a:hover,
+.wp-pagenavi a:hover,
+.wp-pagenavi span.current,
+.wip-pagination span,
+.wip-pagination span:hover,
+#searchform input[type=submit]:hover,
+.contact-form input[type=submit]:hover,
+#commentform input[type=submit]:hover,
+.skills .views.active,
+.skills .views:hover,
+.theme-default .nivo-directionNav a:hover,
+.flexslider:hover .flex-next:hover,
+.flexslider:hover .flex-prev:hover,
+#jprePercentage,
+.hd-thumbs li div.overlay-details,
+a.button:hover,
+.bx-wrapper .bx-next:hover,
+.bx-wrapper .bx-prev:hover,
+ul.widget-category li:hover,
+.woocommerce #respond input#submit.alt:hover,
+.woocommerce a.button.alt:hover,
+.woocommerce button.button.alt:hover,
+.woocommerce input.button.alt:hover,
+.woocommerce a.button:hover,
+#footer .woocommerce a.button:hover,
+.woocommerce a.add_to_cart_button:hover,
+.woocommerce .woocommerce-message a.button:hover,
+.woocommerce #respond input#submit:hover,
+.woocommerce button.button:hover,
+.woocommerce input.button:hover,
+.woocommerce .wc-proceed-to-checkout input:hover,
+.slick-wrapper .slick-prev:hover,
+.slick-wrapper .slick-next:hover,
+.blog-grid .overlay,
+.woocommerce nav.woocommerce-pagination ul li span.current,
+.woocommerce nav.woocommerce-pagination ul li a:focus,
+.woocommerce nav.woocommerce-pagination ul li a:hover,
+.woocommerce .widget_price_filter .ui-slider .ui-slider-range, 
+.woocommerce .widget_price_filter .ui-slider .ui-slider-handle,
+.slick-dots li.slick-active button,
+.slick-dots li button:hover,
+.slick-dots li button:focus {
+    background-color: #f1c40f;
+}
+
+body.archive.woocommerce .product-category h3:hover,
+body.archive.woocommerce .product-category h3:active,
+body.archive.woocommerce .product-category h3:focus,
+.star-rating span,
+.woocommerce p.stars,
+.woocommerce p.stars a,
+.woocommerce p.stars:hover a,
+.woocommerce-account .woocommerce-MyAccount-navigation ul li a:hover,
+.woocommerce-account .woocommerce-MyAccount-navigation ul li.is-active a,
+.line a:hover,
+a.more:hover,
+a:hover,
+.post-article .title a:hover,
+.filterable-grid h4.title a:hover,
+.filterable-grid h4.title a:focus,
+#footer a:hover,
+.line span a:hover,
+#wp-calendar a:hover,
+nav#mainmenu ul li a:hover,
+nav#mainmenu li:hover > a,
+nav#mainmenu ul li.current-menu-item > a,
+nav#mainmenu ul li.current_page_item > a,
+nav#mainmenu ul li.current-menu-parent > a,
+nav#mainmenu ul li.current_page_ancestor > a,
+nav#mainmenu ul li.current-menu-ancestor > a,
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active,
+.woocommerce div.product .woocommerce-tabs ul.tabs li a:hover,
+#footer .slick-wrapper h3.title a:hover,
+#footer .slick-wrapper h3.product-title a:hover,
+.wip-tabs li a:hover,
+.wip-tabs li a.active,
+.toggle_container h5.element:hover,
+.toggle_container h5.inactive,
+.toggle_container h5.inactive:hover,
+#wp-calendar td a {
+    color: #f1c40f
+}
+nav.custommenu ul li a:hover,
+nav.custommenu li:hover > a,
+nav.custommenu ul li.current-menu-item > a,
+nav.custommenu ul li.current_page_item > a,
+nav.custommenu ul li.current-menu-parent > a,
+nav.custommenu ul li.current_page_ancestor > a,
+nav.custommenu ul li.current-menu-ancestor > a {
+    color: #f1c40f !important
+}
+#back-to-top i.open,
+#back-to-top i:hover,
+.tagcloud a:hover,
+#searchform input[type=submit]:hover,
+.contact-form input[type=submit]:hover,
+#commentform input[type=submit]:hover,
+.tagcloud a:hover,
+ul.widget-category li:hover,
+a.button:hover,
+.wp-pagenavi span.current,
+.wp-pagenavi a:hover,
+.wp-pagenavi span.current,
+.wip-pagination span:hover,
+.wip-pagination span,
+.woocommerce nav.woocommerce-pagination ul li span.current,
+.woocommerce nav.woocommerce-pagination ul li a:focus,
+.woocommerce nav.woocommerce-pagination ul li a:hover,
+.woocommerce #respond input#submit.alt:hover,
+.woocommerce a.button.alt:hover,
+.woocommerce button.button.alt:hover,
+.woocommerce input.button.alt:hover,
+.woocommerce a.button:hover,
+#footer .woocommerce a.button:hover,
+.woocommerce a.add_to_cart_button:hover,
+.woocommerce .woocommerce-message a.button:hover,
+.woocommerce #respond input#submit:hover,
+.woocommerce button.button:hover,
+.woocommerce input.button:hover,
+.woocommerce .wc-proceed-to-checkout input:hover,
+body.minimal-layout .slick-carousel .slick-controls .slick-nav .slick-prev:hover,
+body.minimal-layout .slick-carousel .slick-controls .slick-nav .slick-next:hover {
+    border-color: #f1c40f;
+}

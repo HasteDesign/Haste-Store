@@ -1,0 +1,1175 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: WIP\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-30 18:23+0200\n"
+"PO-Revision-Date: 2015-07-07 12:29+0100\n"
+"Last-Translator: Alessandro Vellutini <vellutini@hotmail.it>\n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;gettext;gettext_noop;_e;esc_attr_e;esc_attr__\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:17
+msgid "Oops, it is a little bit embarassing&hellip;"
+msgstr ""
+
+#: 404.php:19
+msgid "The page that you requested, was not found."
+msgstr ""
+
+#: 404.php:21 core/templates/masonry.php:50 layouts/archive-blog.php:49
+#: layouts/home-blog.php:49 layouts/search-blog.php:49
+msgid "What can i do?"
+msgstr ""
+
+#: 404.php:23 core/templates/masonry.php:52 layouts/archive-blog.php:51
+#: layouts/home-blog.php:51 layouts/search-blog.php:51
+msgid "Back to the homepage"
+msgstr ""
+
+#: 404.php:25
+msgid "Check the typed URL"
+msgstr ""
+
+#: 404.php:27 core/templates/masonry.php:54 layouts/archive-blog.php:53
+#: layouts/home-blog.php:53 layouts/search-blog.php:53
+msgid "Make a search, from the below form:"
+msgstr ""
+
+#: comments.php:11
+msgid "Comments"
+msgstr ""
+
+#: comments.php:41
+#, php-format
+msgid "<cite>%s</cite>"
+msgstr ""
+
+#: comments.php:43
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: comments.php:45
+msgid "(Edit)"
+msgstr ""
+
+#: comments.php:51
+msgid "Your comment is awaiting approval."
+msgstr ""
+
+#: comments.php:76
+msgid "&laquo;"
+msgstr ""
+
+#: comments.php:77
+msgid "&raquo;"
+msgstr ""
+
+#: comments.php:96
+msgid "Leave a reply"
+msgstr ""
+
+#: comments.php:97
+msgid "Write a Reply or Comment"
+msgstr ""
+
+#: comments.php:98 woocommerce/single-product-reviews.php:62
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#: core/admin/customize/customize.php:13
+msgid "Full Image Background"
+msgstr ""
+
+#: core/admin/customize/customize.php:14
+msgid ""
+"Do you want to set a full background image? (After the upload, check "
+"'Fixed', from the Background Attachment section)"
+msgstr ""
+
+#: core/admin/customize/customize.php:19 core/admin/customize/customize.php:71
+#: core/admin/customize/customize.php:87 core/admin/customize/customize.php:103
+#: core/admin/customize/customize.php:428
+#: core/admin/customize/customize.php:444
+#: core/admin/customize/customize.php:460
+#: core/admin/customize/customize.php:476
+#: core/admin/customize/customize.php:820
+msgid "No"
+msgstr ""
+
+#: core/admin/customize/customize.php:20 core/admin/customize/customize.php:72
+#: core/admin/customize/customize.php:88 core/admin/customize/customize.php:104
+#: core/admin/customize/customize.php:429
+#: core/admin/customize/customize.php:445
+#: core/admin/customize/customize.php:461
+#: core/admin/customize/customize.php:477
+#: core/admin/customize/customize.php:821
+msgid "Yes"
+msgstr ""
+
+#: core/admin/customize/customize.php:31 core/includes/class-customize.php:322
+msgid "Get support"
+msgstr ""
+
+#: core/admin/customize/customize.php:43 core/admin/customize/customize.php:44
+#: core/admin/customize/customize.php:65
+msgid "Slideshow"
+msgstr ""
+
+#: core/admin/customize/customize.php:55
+msgid "Slideshow Settings"
+msgstr ""
+
+#: core/admin/customize/customize.php:66
+msgid "Do you want to enable the slideshow?"
+msgstr ""
+
+#: core/admin/customize/customize.php:81
+msgid "Slideshow Autoplay"
+msgstr ""
+
+#: core/admin/customize/customize.php:82
+msgid "Do you want to enable the slideshow autoplay?"
+msgstr ""
+
+#: core/admin/customize/customize.php:97
+msgid "Slideshow Dots"
+msgstr ""
+
+#: core/admin/customize/customize.php:98
+msgid "Do you want to view a pagination for the slideshow?"
+msgstr ""
+
+#: core/admin/customize/customize.php:113
+msgid "Slideshow height"
+msgstr ""
+
+#: core/admin/customize/customize.php:114
+msgid "Set the height of slideshow."
+msgstr ""
+
+#: core/admin/customize/customize.php:124
+msgid "Slideshow mobile height"
+msgstr ""
+
+#: core/admin/customize/customize.php:125
+msgid "Set the height of slideshow, for mobile devices."
+msgstr ""
+
+#: core/admin/customize/customize.php:137
+msgid "Slide #1"
+msgstr ""
+
+#: core/admin/customize/customize.php:147
+#: core/admin/customize/customize.php:203
+#: core/admin/customize/customize.php:259
+msgid "Image"
+msgstr ""
+
+#: core/admin/customize/customize.php:148
+#: core/admin/customize/customize.php:204
+#: core/admin/customize/customize.php:260
+msgid "Upload the image"
+msgstr ""
+
+#: core/admin/customize/customize.php:158
+#: core/admin/customize/customize.php:214
+#: core/admin/customize/customize.php:270
+msgid "Title"
+msgstr ""
+
+#: core/admin/customize/customize.php:159
+#: core/admin/customize/customize.php:215
+#: core/admin/customize/customize.php:271
+msgid "Insert the title of this slide"
+msgstr ""
+
+#: core/admin/customize/customize.php:169
+#: core/admin/customize/customize.php:225
+#: core/admin/customize/customize.php:281
+msgid "Call to action"
+msgstr ""
+
+#: core/admin/customize/customize.php:170
+#: core/admin/customize/customize.php:226
+#: core/admin/customize/customize.php:282
+msgid "Insert the call to action of this slide"
+msgstr ""
+
+#: core/admin/customize/customize.php:180
+#: core/admin/customize/customize.php:236
+#: core/admin/customize/customize.php:292
+msgid "Url"
+msgstr ""
+
+#: core/admin/customize/customize.php:181
+#: core/admin/customize/customize.php:237
+#: core/admin/customize/customize.php:293
+msgid "Insert the url of this slide"
+msgstr ""
+
+#: core/admin/customize/customize.php:193
+msgid "Slide #2"
+msgstr ""
+
+#: core/admin/customize/customize.php:249
+msgid "Slide #3"
+msgstr ""
+
+#: core/admin/customize/customize.php:305
+#: core/admin/customize/customize.php:306
+msgid "General"
+msgstr ""
+
+#: core/admin/customize/customize.php:317
+msgid "Color Scheme"
+msgstr ""
+
+#: core/admin/customize/customize.php:327
+msgid "Predefined Color Schemes"
+msgstr ""
+
+#: core/admin/customize/customize.php:328
+msgid "Choose your Color Scheme"
+msgstr ""
+
+#: core/admin/customize/customize.php:333
+msgid "Black & Turquoise"
+msgstr ""
+
+#: core/admin/customize/customize.php:334
+msgid "Black & Orange"
+msgstr ""
+
+#: core/admin/customize/customize.php:335
+msgid "Black & Blue"
+msgstr ""
+
+#: core/admin/customize/customize.php:336
+msgid "Black & Red"
+msgstr ""
+
+#: core/admin/customize/customize.php:337
+msgid "Black & Pink"
+msgstr ""
+
+#: core/admin/customize/customize.php:338
+msgid "Black & Purple"
+msgstr ""
+
+#: core/admin/customize/customize.php:339
+msgid "Black & Yellow"
+msgstr ""
+
+#: core/admin/customize/customize.php:340
+msgid "Black & Green"
+msgstr ""
+
+#: core/admin/customize/customize.php:341
+msgid "Turquoise"
+msgstr ""
+
+#: core/admin/customize/customize.php:342
+msgid "Orange"
+msgstr ""
+
+#: core/admin/customize/customize.php:343
+msgid "Blue"
+msgstr ""
+
+#: core/admin/customize/customize.php:344
+msgid "Red"
+msgstr ""
+
+#: core/admin/customize/customize.php:345
+msgid "Pink"
+msgstr ""
+
+#: core/admin/customize/customize.php:346
+msgid "Purple"
+msgstr ""
+
+#: core/admin/customize/customize.php:347
+msgid "Yellow"
+msgstr ""
+
+#: core/admin/customize/customize.php:348
+msgid "Green"
+msgstr ""
+
+#: core/admin/customize/customize.php:349
+msgid "White & Turquoise"
+msgstr ""
+
+#: core/admin/customize/customize.php:350
+msgid "White & Orange"
+msgstr ""
+
+#: core/admin/customize/customize.php:351
+msgid "White & Blue"
+msgstr ""
+
+#: core/admin/customize/customize.php:352
+msgid "White & Red"
+msgstr ""
+
+#: core/admin/customize/customize.php:353
+msgid "White & Pink"
+msgstr ""
+
+#: core/admin/customize/customize.php:354
+msgid "White & Purple"
+msgstr ""
+
+#: core/admin/customize/customize.php:355
+msgid "White & Yellow"
+msgstr ""
+
+#: core/admin/customize/customize.php:356
+msgid "White & Green"
+msgstr ""
+
+#: core/admin/customize/customize.php:367
+msgid "Page width"
+msgstr ""
+
+#: core/admin/customize/customize.php:377
+msgid "Screen greater than 768px"
+msgstr ""
+
+#: core/admin/customize/customize.php:378
+msgid ""
+"Set a width, for a screen greater than 768 pixel (for example 750 and not "
+"750px ) "
+msgstr ""
+
+#: core/admin/customize/customize.php:388
+msgid "Screen greater than 992px"
+msgstr ""
+
+#: core/admin/customize/customize.php:389
+msgid ""
+"Set a width, for a screen greater than 992 pixel (for example 940 and not "
+"940px ) "
+msgstr ""
+
+#: core/admin/customize/customize.php:399
+msgid "Screen greater than 1200px"
+msgstr ""
+
+#: core/admin/customize/customize.php:400
+msgid ""
+"Set a width, in px, for a screen greater than 1200 pixel (for example 1170 "
+"and not 1170px ) "
+msgstr ""
+
+#: core/admin/customize/customize.php:412
+msgid "Settings"
+msgstr ""
+
+#: core/admin/customize/customize.php:422
+msgid "Header cart"
+msgstr ""
+
+#: core/admin/customize/customize.php:423
+msgid "Do you want to show the header cart?"
+msgstr ""
+
+#: core/admin/customize/customize.php:438
+msgid "Minimal layout"
+msgstr ""
+
+#: core/admin/customize/customize.php:439
+msgid "Do you want to use a minimal layout, with a white background color?"
+msgstr ""
+
+#: core/admin/customize/customize.php:454
+msgid "Infinite scroll"
+msgstr ""
+
+#: core/admin/customize/customize.php:455
+msgid "Do you want to use the infinite scroll, for the articles?"
+msgstr ""
+
+#: core/admin/customize/customize.php:470
+msgid "Read more button"
+msgstr ""
+
+#: core/admin/customize/customize.php:471
+msgid ""
+"Do you want to use a button, for open the posts? (Instead of [&hellip;])"
+msgstr ""
+
+#: core/admin/customize/customize.php:486
+msgid "Styles"
+msgstr ""
+
+#: core/admin/customize/customize.php:496
+msgid "Custom css"
+msgstr ""
+
+#: core/admin/customize/customize.php:497
+msgid "Insert your custom css code."
+msgstr ""
+
+#: core/admin/customize/customize.php:509
+msgid "Layouts"
+msgstr ""
+
+#: core/admin/customize/customize.php:519
+msgid "Home Blog Layout"
+msgstr ""
+
+#: core/admin/customize/customize.php:520
+msgid "If you've set the latest articles, for the homepage, choose a layout."
+msgstr ""
+
+#: core/admin/customize/customize.php:525
+#: core/admin/customize/customize.php:544
+#: core/admin/customize/customize.php:562
+#: core/admin/customize/customize.php:579 core/metaboxes/pages.php:39
+#: core/metaboxes/posts.php:39 core/metaboxes/product.php:39
+msgid "Full Width"
+msgstr ""
+
+#: core/admin/customize/customize.php:526
+#: core/admin/customize/customize.php:545
+#: core/admin/customize/customize.php:563
+#: core/admin/customize/customize.php:580 core/metaboxes/pages.php:40
+#: core/metaboxes/posts.php:40 core/metaboxes/product.php:40
+msgid "Left Sidebar"
+msgstr ""
+
+#: core/admin/customize/customize.php:527
+#: core/admin/customize/customize.php:546
+#: core/admin/customize/customize.php:564
+#: core/admin/customize/customize.php:581 core/metaboxes/pages.php:41
+#: core/metaboxes/posts.php:41 core/metaboxes/product.php:41
+msgid "Right Sidebar"
+msgstr ""
+
+#: core/admin/customize/customize.php:528
+#: core/admin/customize/customize.php:547
+#: core/admin/customize/customize.php:582
+msgid "Masonry"
+msgstr ""
+
+#: core/admin/customize/customize.php:538
+msgid "Category Layout"
+msgstr ""
+
+#: core/admin/customize/customize.php:539
+msgid "Select a layout for category pages."
+msgstr ""
+
+#: core/admin/customize/customize.php:556
+msgid "WooCommerce Category Layout"
+msgstr ""
+
+#: core/admin/customize/customize.php:557
+msgid "Select a layout for the WooCommerce categories."
+msgstr ""
+
+#: core/admin/customize/customize.php:573
+msgid "Search Layout"
+msgstr ""
+
+#: core/admin/customize/customize.php:574
+msgid "Select a layout for the search page."
+msgstr ""
+
+#: core/admin/customize/customize.php:593
+msgid "Thumbnails"
+msgstr ""
+
+#: core/admin/customize/customize.php:603
+msgid "Blog Thumbnail"
+msgstr ""
+
+#: core/admin/customize/customize.php:604
+msgid "Insert the height for blog thumbnail."
+msgstr ""
+
+#: core/admin/customize/customize.php:616
+msgid "Header"
+msgstr ""
+
+#: core/admin/customize/customize.php:626
+msgid "Custom Logo"
+msgstr ""
+
+#: core/admin/customize/customize.php:627
+msgid "Upload your custom logo"
+msgstr ""
+
+#: core/admin/customize/customize.php:639
+msgid "Footer"
+msgstr ""
+
+#: core/admin/customize/customize.php:649
+msgid "Copyright Text"
+msgstr ""
+
+#: core/admin/customize/customize.php:650
+msgid "Insert your copyright text."
+msgstr ""
+
+#: core/admin/customize/customize.php:660
+msgid "Facebook Url"
+msgstr ""
+
+#: core/admin/customize/customize.php:661
+msgid "Insert Facebook Url (empty if you want to hide the button)"
+msgstr ""
+
+#: core/admin/customize/customize.php:671
+msgid "Twitter Url"
+msgstr ""
+
+#: core/admin/customize/customize.php:672
+msgid "Insert Twitter Url (empty if you want to hide the button)"
+msgstr ""
+
+#: core/admin/customize/customize.php:682
+msgid "Flickr Url"
+msgstr ""
+
+#: core/admin/customize/customize.php:683
+msgid "Insert Flickr Url (empty if you want to hide the button)"
+msgstr ""
+
+#: core/admin/customize/customize.php:693
+msgid "Google Url"
+msgstr ""
+
+#: core/admin/customize/customize.php:694
+msgid "Insert Google Url (empty if you want to hide the button)"
+msgstr ""
+
+#: core/admin/customize/customize.php:704
+msgid "Linkedin Url"
+msgstr ""
+
+#: core/admin/customize/customize.php:705
+msgid "Insert Linkedin Url (empty if you want to hide the button)"
+msgstr ""
+
+#: core/admin/customize/customize.php:715
+msgid "Pinterest Url"
+msgstr ""
+
+#: core/admin/customize/customize.php:716
+msgid "Insert Pinterest Url (empty if you want to hide the button)"
+msgstr ""
+
+#: core/admin/customize/customize.php:726
+msgid "Tumblr Url"
+msgstr ""
+
+#: core/admin/customize/customize.php:727
+msgid "Insert Tumblr Url (empty if you want to hide the button)"
+msgstr ""
+
+#: core/admin/customize/customize.php:737
+msgid "Youtube Url"
+msgstr ""
+
+#: core/admin/customize/customize.php:738
+msgid "Insert Youtube Url (empty if you want to hide the button)"
+msgstr ""
+
+#: core/admin/customize/customize.php:748
+msgid "Skype Url"
+msgstr ""
+
+#: core/admin/customize/customize.php:749
+msgid "Insert Skype ID (empty if you want to hide the button)"
+msgstr ""
+
+#: core/admin/customize/customize.php:759
+msgid "Instagram Url"
+msgstr ""
+
+#: core/admin/customize/customize.php:760
+msgid "Insert Instagram Url (empty if you want to hide the button)"
+msgstr ""
+
+#: core/admin/customize/customize.php:770
+msgid "Github Url"
+msgstr ""
+
+#: core/admin/customize/customize.php:771
+msgid "Insert Github Url (empty if you want to hide the button)"
+msgstr ""
+
+#: core/admin/customize/customize.php:781
+msgid "Xing Url"
+msgstr ""
+
+#: core/admin/customize/customize.php:782
+msgid "Insert Xing Url (empty if you want to hide the button)"
+msgstr ""
+
+#: core/admin/customize/customize.php:792
+msgid "WhatsApp number"
+msgstr ""
+
+#: core/admin/customize/customize.php:793
+msgid "Insert WhatsApp number (empty if you want to hide the button)"
+msgstr ""
+
+#: core/admin/customize/customize.php:803
+msgid "Email Address"
+msgstr ""
+
+#: core/admin/customize/customize.php:804
+msgid "Insert Email Address (empty if you want to hide the button)"
+msgstr ""
+
+#: core/admin/customize/customize.php:814
+msgid "Feed Rss Button"
+msgstr ""
+
+#: core/admin/customize/customize.php:815
+msgid "Do you want to display the Feed Rss button?"
+msgstr ""
+
+#: core/admin/customize/customize.php:832
+#: core/admin/customize/customize.php:833
+msgid "Typography"
+msgstr ""
+
+#: core/admin/customize/customize.php:844
+msgid "Logo"
+msgstr ""
+
+#: core/admin/customize/customize.php:854
+#: core/admin/customize/customize.php:877
+#: core/admin/customize/customize.php:900
+msgid "Font size"
+msgstr ""
+
+#: core/admin/customize/customize.php:855
+msgid "Insert a size, for logo font (For example, 30px) "
+msgstr ""
+
+#: core/admin/customize/customize.php:867
+msgid "Menu"
+msgstr ""
+
+#: core/admin/customize/customize.php:878
+msgid "Insert a size, for menu font (For example, 14px) "
+msgstr ""
+
+#: core/admin/customize/customize.php:890
+msgid "Content"
+msgstr ""
+
+#: core/admin/customize/customize.php:901
+msgid "Insert a size, for content font (For example, 14px) "
+msgstr ""
+
+#: core/admin/customize/customize.php:914
+msgid "Headlines"
+msgstr ""
+
+#: core/admin/customize/customize.php:924
+msgid "H1 headline"
+msgstr ""
+
+#: core/admin/customize/customize.php:925
+msgid "Insert a size, for for H1 elements (For example, 24px) "
+msgstr ""
+
+#: core/admin/customize/customize.php:935
+msgid "H2 headline"
+msgstr ""
+
+#: core/admin/customize/customize.php:936
+msgid "Insert a size, for for H2 elements (For example, 22px) "
+msgstr ""
+
+#: core/admin/customize/customize.php:946
+msgid "H3 headline"
+msgstr ""
+
+#: core/admin/customize/customize.php:947
+msgid "Insert a size, for for H3 elements (For example, 20px) "
+msgstr ""
+
+#: core/admin/customize/customize.php:957
+msgid "H4 headline"
+msgstr ""
+
+#: core/admin/customize/customize.php:958
+msgid "Insert a size, for for H4 elements (For example, 18px) "
+msgstr ""
+
+#: core/admin/customize/customize.php:968
+msgid "H5 headline"
+msgstr ""
+
+#: core/admin/customize/customize.php:969
+msgid "Insert a size, for for H5 elements (For example, 16px) "
+msgstr ""
+
+#: core/admin/customize/customize.php:979
+msgid "H6 headline"
+msgstr ""
+
+#: core/admin/customize/customize.php:980
+msgid "Insert a size, for for H6 elements (For example, 14px) "
+msgstr ""
+
+#: core/functions/functions_generals.php:78
+msgid "Archives"
+msgstr ""
+
+#: core/functions/functions_templates.php:13
+msgid "Home"
+msgstr ""
+
+#: core/functions/functions_templates.php:33
+msgid "<span>Search </span> results for "
+msgstr ""
+
+#: core/functions/functions_templates.php:37
+msgid "Page 404"
+msgstr ""
+
+#: core/functions/functions_templates.php:41
+msgid "Attachment: "
+msgstr ""
+
+#: core/functions/functions_templates.php:122
+msgid "Read more"
+msgstr ""
+
+#: core/functions/functions_templates.php:131
+msgid "More"
+msgstr ""
+
+#: core/functions/functions_widgets.php:9 core/metaboxes/pages.php:68
+#: core/metaboxes/posts.php:68 core/metaboxes/product.php:68
+msgid "Sidebar"
+msgstr ""
+
+#: core/functions/functions_widgets.php:11
+msgid "This sidebar will be shown at the side of content"
+msgstr ""
+
+#: core/functions/functions_widgets.php:21 core/metaboxes/pages.php:60
+#: core/metaboxes/posts.php:60 core/metaboxes/product.php:60
+msgid "Header Sidebar"
+msgstr ""
+
+#: core/functions/functions_widgets.php:22
+msgid "This sidebar will be shown before the content"
+msgstr ""
+
+#: core/functions/functions_widgets.php:33 core/metaboxes/pages.php:76
+#: core/metaboxes/posts.php:76 core/metaboxes/product.php:76
+msgid "Bottom Sidebar"
+msgstr ""
+
+#: core/functions/functions_widgets.php:34
+msgid "This sidebar will be shown after the content"
+msgstr ""
+
+#: core/functions/functions_widgets.php:45 core/metaboxes/pages.php:84
+#: core/metaboxes/posts.php:84 core/metaboxes/product.php:84
+msgid "Footer Sidebar"
+msgstr ""
+
+#: core/functions/functions_widgets.php:46
+msgid "This sidebar will be shown at the bottom of page"
+msgstr ""
+
+#: core/functions/functions_woocommerce.php:37
+#: core/functions/functions_woocommerce.php:65
+msgid "View your shopping cart"
+msgstr ""
+
+#: core/includes/class-customize.php:34 core/includes/class-notice.php:62
+msgid "Upgrade to Bazaar Premium"
+msgstr ""
+
+#: core/includes/class-customize.php:326
+msgid ""
+"If you've opened a new support ticket from <strong>WordPress.org</strong>, "
+"please send a reminder to <strong>support@wpinprogress.com</strong>, to get "
+"a faster reply."
+msgstr ""
+
+#: core/includes/class-customize.php:330
+msgid "Open a new ticket"
+msgstr ""
+
+#: core/includes/class-customize.php:331
+msgid "Send a reminder"
+msgstr ""
+
+#: core/includes/class-customize.php:336
+msgid ""
+"If you like this theme and support, <strong>I'd appreciate</strong> any of "
+"the following:"
+msgstr ""
+
+#: core/includes/class-customize.php:340
+msgid "Rate this Theme"
+msgstr ""
+
+#: core/includes/class-customize.php:341
+msgid "Like on Facebook"
+msgstr ""
+
+#: core/includes/class-customize.php:342
+msgid "Subscribe our newsletter"
+msgstr ""
+
+#: core/includes/class-customize.php:343
+msgid "Download our free WordPress themes"
+msgstr ""
+
+#: core/includes/class-notice.php:58
+msgid ""
+"Upgrade to the premium version of Bazaar, to enable an extensive option "
+"panel, 600+ Google Fonts, unlimited sidebars, portfolio and much more."
+msgstr ""
+
+#: core/includes/class-notice.php:59
+#, php-format
+msgid "<a href=\"%1$s\" class=\"dismiss-notice\">Dismiss this notice</a>"
+msgstr ""
+
+#: core/metaboxes/pages.php:19 core/metaboxes/pages.php:30
+#: core/metaboxes/pages.php:56 core/metaboxes/posts.php:19
+#: core/metaboxes/posts.php:30 core/metaboxes/product.php:19
+#: core/metaboxes/product.php:30 core/metaboxes/product.php:56
+msgid "Setting"
+msgstr ""
+
+#: core/metaboxes/pages.php:20 core/metaboxes/posts.php:20
+#: core/metaboxes/posts.php:56 core/metaboxes/product.php:20
+msgid "Sidebars"
+msgstr ""
+
+#: core/metaboxes/pages.php:34 core/metaboxes/posts.php:34
+#: core/metaboxes/product.php:34
+msgid "Template"
+msgstr ""
+
+#: core/metaboxes/pages.php:35 core/metaboxes/posts.php:35
+#: core/metaboxes/product.php:35
+msgid "Choose a template for this post"
+msgstr ""
+
+#: core/metaboxes/pages.php:61 core/metaboxes/posts.php:61
+#: core/metaboxes/product.php:61
+msgid "Choose a header sidebar"
+msgstr ""
+
+#: core/metaboxes/pages.php:69 core/metaboxes/posts.php:69
+#: core/metaboxes/product.php:69
+msgid "Choose a side sidebar"
+msgstr ""
+
+#: core/metaboxes/pages.php:77 core/metaboxes/posts.php:77
+#: core/metaboxes/product.php:77
+msgid "Choose a bottom sidebar"
+msgstr ""
+
+#: core/metaboxes/pages.php:85 core/metaboxes/posts.php:85
+#: core/metaboxes/product.php:85
+msgid "Choose a footer sidebar"
+msgstr ""
+
+#: core/post-formats/product-format.php:25 core/templates/media.php:53
+msgid "post image"
+msgstr ""
+
+#: core/templates/masonry.php:46 layouts/archive-blog.php:45
+#: layouts/home-blog.php:45 layouts/search-blog.php:45
+msgid "Content not found"
+msgstr ""
+
+#: core/templates/masonry.php:48 layouts/home-blog.php:47
+msgid "No article found in this blog."
+msgstr ""
+
+#: core/templates/side_sidebar.php:42
+msgid "Calendar"
+msgstr ""
+
+#: core/templates/social_buttons.php:56
+msgid "Rss"
+msgstr ""
+
+#: footer.php:20
+msgid "Copyright"
+msgstr ""
+
+#: footer.php:22
+msgid "Theme by"
+msgstr ""
+
+#: footer.php:23
+msgid "http://wordpress.org/"
+msgstr ""
+
+#: footer.php:23
+msgid "A Semantic Personal Publishing Platform"
+msgstr ""
+
+#: footer.php:23
+#, php-format
+msgid "Proudly powered by %s"
+msgstr ""
+
+#: layouts/archive-blog.php:47 layouts/search-blog.php:47
+msgid "No article found in this category."
+msgstr ""
+
+#: woocommerce/cart/cart-totals.php:19
+msgid "Cart Totals"
+msgstr ""
+
+#: woocommerce/cart/cart-totals.php:24 woocommerce/checkout/review-order.php:50
+msgid "Subtotal"
+msgstr ""
+
+#: woocommerce/cart/cart-totals.php:46
+msgid "Shipping"
+msgstr ""
+
+#: woocommerce/cart/cart-totals.php:78 woocommerce/cart/cart.php:41
+#: woocommerce/checkout/review-order.php:18
+#: woocommerce/checkout/review-order.php:97
+msgid "Total"
+msgstr ""
+
+#: woocommerce/cart/cart-totals.php:90
+#, php-format
+msgid " (taxes estimated for %s)"
+msgstr ""
+
+#: woocommerce/cart/cart-totals.php:93
+#, php-format
+msgid ""
+"Note: Shipping and taxes are estimated%s and will be updated during checkout "
+"based on your billing and shipping information."
+msgstr ""
+
+#: woocommerce/cart/cart-totals.php:101
+msgid "Update Shopping Cart"
+msgstr ""
+
+#: woocommerce/cart/cart-totals.php:102
+msgid "Proceed to Checkout"
+msgstr ""
+
+#: woocommerce/cart/cart.php:28
+msgid "Cart"
+msgstr ""
+
+#: woocommerce/cart/cart.php:38 woocommerce/checkout/review-order.php:17
+msgid "Product"
+msgstr ""
+
+#: woocommerce/cart/cart.php:39
+msgid "Price"
+msgstr ""
+
+#: woocommerce/cart/cart.php:40
+msgid "Quantity"
+msgstr ""
+
+#: woocommerce/cart/cart.php:58
+msgid "Remove this item"
+msgstr ""
+
+#: woocommerce/cart/cart.php:134
+msgid "Coupon"
+msgstr ""
+
+#: woocommerce/cart/cart.php:134 woocommerce/checkout/form-coupon.php:31
+msgid "Coupon code"
+msgstr ""
+
+#: woocommerce/cart/cart.php:134 woocommerce/checkout/form-coupon.php:35
+msgid "Apply Coupon"
+msgstr ""
+
+#: woocommerce/checkout/form-checkout.php:20
+msgid "You must be logged in to checkout."
+msgstr ""
+
+#: woocommerce/checkout/form-checkout.php:52
+msgid "Your order"
+msgstr ""
+
+#: woocommerce/checkout/form-coupon.php:24
+msgid "Have a coupon? "
+msgstr ""
+
+#: woocommerce/checkout/form-coupon.php:24
+msgid "Click here to enter your code"
+msgstr ""
+
+#: woocommerce/global/form-login.php:26
+msgid "Username or email"
+msgstr ""
+
+#: woocommerce/global/form-login.php:30
+msgid "Password"
+msgstr ""
+
+#: woocommerce/global/form-login.php:39
+msgid "Login"
+msgstr ""
+
+#: woocommerce/global/form-login.php:42
+msgid "Remember me"
+msgstr ""
+
+#: woocommerce/global/form-login.php:46
+msgid "Lost your password?"
+msgstr ""
+
+#: woocommerce/order/form-tracking.php:20
+msgid ""
+"To track your order please enter your Order ID in the box below and press "
+"the \"Track\" button. This was given to you on your receipt and in the "
+"confirmation email you should have received."
+msgstr ""
+
+#: woocommerce/order/form-tracking.php:22
+msgid "Order ID"
+msgstr ""
+
+#: woocommerce/order/form-tracking.php:22
+msgid "Found in your order confirmation email."
+msgstr ""
+
+#: woocommerce/order/form-tracking.php:23
+msgid "Billing Email"
+msgstr ""
+
+#: woocommerce/order/form-tracking.php:23
+msgid "Email you used during checkout."
+msgstr ""
+
+#: woocommerce/order/form-tracking.php:26
+msgid "Track"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:26
+msgid "Reviews"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:47
+msgid "There are no reviews yet."
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:61
+msgid "Add a review"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:66
+msgid "Name"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:68
+msgid "Email"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:71
+msgid "Submit"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:77
+msgid "Your Rating"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:78
+msgid "Rate&hellip;"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:79
+msgid "Perfect"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:80
+msgid "Good"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:81
+msgid "Average"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:82
+msgid "Not that bad"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:83
+msgid "Very Poor"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:87
+msgid "Your Review"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:96
+msgid ""
+"Only logged in customers who have purchased this product may leave a review."
+msgstr ""
+
+#: woocommerce/single-product/meta.php:26
+msgid "SKU:"
+msgstr ""
+
+#: woocommerce/single-product/meta.php:26
+msgid "N/A"
+msgstr ""
+
+#: woocommerce/single-product/related.php:46
+msgid "Related Products"
+msgstr ""
+
+#: woocommerce/single-product/review.php:43
+#, php-format
+msgid "Rated %d out of 5"
+msgstr ""
+
+#: woocommerce/single-product/review.php:44
+msgid "out of 5"
+msgstr ""
+
+#: woocommerce/single-product/review.php:51
+msgid "Your comment is awaiting approval"
+msgstr ""
+
+#: woocommerce/single-product/review.php:60
+msgid "verified owner"
+msgstr ""
+
+#: woocommerce/single-product/up-sells.php:47
+msgid "You may also like&hellip;"
+msgstr ""
+
+#~ msgid "Category"
+#~ msgstr "Categorisa"
+
+#, fuzzy
+#~ msgid "Categories: "
+#~ msgstr "Categorisa"

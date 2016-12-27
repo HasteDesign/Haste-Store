@@ -1,0 +1,49 @@
+/* ===============================================
+   NOTICE SECTION
+   =============================================== */
+   
+#setting-error-tgmpa {
+	width:100;
+	display:block;
+	padding-left:20px;
+	padding-right:30px
+}
+
+.bazaarlite-notice {
+	width:100;
+	display:block;
+	border-color:#ec7063;
+	padding:25px
+}
+
+.bazaarlite-notice .dismiss-notice {
+	margin-top:5px;
+	font-size:12px;
+}
+
+.bazaarlite-notice .bazaarlite-noticedescription {
+	float:left;
+	font-size:14px;
+}
+
+.bazaarlite-notice .button {
+	background: #ec7063;
+	border:solid 2px #ec7063;
+	color:#fff !important;
+	padding: 8px 16px;
+	height:auto;
+	line-height:normal;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	float:right;
+	text-transform:uppercase;
+	font-weight:bold
+}
+
+.bazaarlite-notice .button:hover ,
+.bazaarlite-notice .button:active ,
+.bazaarlite-notice .button:focus {
+	border-color: #e74c3c;
+	background-color:#e74c3c;
+}
