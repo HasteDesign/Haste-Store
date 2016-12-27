@@ -1,0 +1,64 @@
+
+// ==========================================================================
+// Header
+// ==========================================================================
+#header {
+    .navbar-brand {
+		padding: 0 15px;
+
+		a {
+			display: block;
+		}
+
+		img {
+			height: auto;
+			max-width: 100%;
+			max-height: $navbar-height;
+			width: auto;
+		}
+	}
+
+    #main-navigation {
+
+    }
+
+	.navbar-main-navigation {
+		@media (min-width: $screen-sm-min) {
+			padding: 0;
+		}
+	}
+    //
+    // Title, description and image
+    //
+    .page-header {
+        margin: 20px 0 20px;
+        .site-title {}
+        .site-description {
+            font-size: 16px;
+            font-style: italic;
+        }
+    }
+}
+
+
+.page-header {
+	padding-bottom: 30px;
+	margin: 0 0 60px;
+	border-bottom: 1px solid #eee;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: baseline;
+
+	.page-title {
+		flex-grow: 1;
+	}
+
+	.term-description {
+		color: #aaa;
+		flex: 1 0 auto;
+		padding: 0 30px
+	}
+
+}

@@ -1,0 +1,39 @@
+.sidebar {
+	ul, ol {
+		list-style: none;
+		padding: 0;
+	}
+}
+
+
+.sidebar-collapse-toggle {
+	margin-left: 30px;
+}
+
+.sidebar-collapse-wrapper {
+	width: 100%;
+}
+
+.sidebar-dropdown-wrapper {
+	min-width: 300px;
+	right: 0;
+	left: auto;
+}
+
+.sidebar-dropdown {
+	.widget {
+		padding: 15px;
+
+		& + .widget {
+			margin-top: 15px;
+		}
+
+		:first-child {
+			margin-top: 0;
+		}
+
+		:last-child {
+			margin-bottom: 0;
+		}
+	}
+}

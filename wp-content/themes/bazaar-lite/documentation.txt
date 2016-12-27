@@ -1,0 +1,79 @@
+Bazaar Lite WordPress Theme Documentation
+
+---------------------
+
+- Installation
+
+Decompress the “bazaar-lite.zip” file, into the package, under “wp-content /themes” and then activate the theme from Appearance => Themes.
+As an alternative, go to Appearance => Themes => Add New => Upload Theme and choose“bazaar-lite.zip” file.
+
+- Option panel
+
+When the theme is activated, you can manage Bazaar Lite, from “Customize” section.
+
+- General Tab
+
+-- Load system.
+If you've some problems with the theme (for example a blank page), you can change the load system.
+
+-- Color Scheme.
+It is possible to choose up to 21 different styles that will replace any previously saved settings.
+
+-- Page width.
+It’s possible set a value as page width, for each resolution of the browser. You have to set a value without “px” (for example 940 and not 940px)
+
+-- Settings.
+You can decide if use the preload system and the plugin “Infinite scroll”, for the content. You have to set the permalinks from “default” to “custom”, for the “infinite scroll” plugin. Also, you can set a layout for the read more button.
+
+-- Styles.
+You can add a custom css code. It is recommended that this feature be used only if absolutely necessary and if you know what will be modified.
+
+-- Layouts.
+You can decide the layout for each section of the site (home, archive, search page etc)
+
+-- Thumbnails setting.
+You can set the height of the thumbnails. After saving, is necessary reupload the images or use a free plugin called “Regenerate Thumbnails”. The default value is 600px.
+
+-- Admin area.
+You can upload an image as logo, for the admin area. It’s important to insert the height of your logo, under “Height” input, without “px” (for example 550 and not 550px)
+
+-- Header settings.
+You can replace the sideman with an image as logo.
+
+-- Footer settings.
+From here, it is possible choose the layout for the bottom sidebar, insert the text at the end of the site, links to social networks, the footer layout
+
+--- Copyright text.
+Text displayed at the end of the site.
+
+--- Social networks.
+Insert the link; the icon of the relative social network will be displayed
+
+-- Fonts
+The theme uses the fonts found in the Google directory. They may be selected from a list of more than 600 fonts. The default fonts are “Yesteryear and Montserrat”. It is possible to change the size of logo, menu, widget titles, pages and title of the paragraph.
+
+- Typography Tab
+
+-- Logo, Menu, Content and Headlines
+You can insert the font size for each section, logo (if it’s not an image), menu, content and headlines.
+
+- Background Image Tab
+It’s possible to set a full background image, from “Full image background” option.
+
+- Homepage
+WordPress displays the last articles in the homepage. To use a static page that was previously created, in which the slides and other elements are present, go to “Settings” -> “Reading” and check off the “a static page” item by choosing the one previously created by the list
+
+- Menu
+It is possible to create and manage a custom menu with a drag and drop system. Go to http://codex.wordpress.org/Appearance_Menus_SubPanel. Once the main menu is created, select it in “Main menu”.
+
+- Theme Translation
+
+We suggest Poedit, to translate Bazaar Lite. It’s available for free on poedit.net.
+
+Open Poedit, go to File > New from POT file and choose bazaar-lite.pot, under bazaar-lite/languages/ and choose your native language.
+
+When you’ve finished, upload bot files with your language code (for example it_IT.po and it_IT.mo ), under the language folder of Bazaar Lite using a FTP client.
+
+- Premium Version
+
+If you need more features, you can found the premium version from this page: https://www.themeinprogress.com/bazaar-free-ecommerce-wordpress-theme/
