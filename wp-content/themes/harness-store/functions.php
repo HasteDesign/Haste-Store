@@ -315,3 +315,24 @@ if ( is_woocommerce_activated() ) {
 	require get_template_directory() . '/inc/woocommerce/functions.php';
 	require get_template_directory() . '/inc/woocommerce/template-tags.php';
 }
+
+/**
+ * Redirecionamento após login
+ */
+
+ function my_login_redirect( $redirect_to, $request, $user ) {
+ 	//is there a user to check?
+ 	if ( isset( $user->roles ) && is_array( $user->roles ) ) {
+ 		//check for admins
+ 		if ( in_array( 'administrator', $user->roles ) ) {
+ 			// redirect them to the default place
+ 			return $redirect_to;
+ 		} else {
+ 			return $request;
+ 		}
+ 	} else {
+ 		return $request;
+ 	}
+ }
+
+ add_filter( 'login_redirect', 'my_login_redirect', 10, 3 );

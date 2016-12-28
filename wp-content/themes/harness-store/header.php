@@ -84,7 +84,7 @@
 								?>
 							</p>
 
-							<a class="btn btn-default navbar-btn btn-link" href="<?php echo wp_logout_url( $redirect ); ?>">Sair</a>
+							<a class="btn btn-default navbar-btn btn-link" href="<?php echo wp_logout_url( get_permalink() ); ?>">Sair</a>
 							<?php
 						} else {
 
@@ -96,9 +96,9 @@
 								?>
 							</p>
 							<div class="btn-group" role="group" aria-label="login">
-								<a class="btn btn-default navbar-btn" href="<?php echo wp_login_url(); ?>">
+								<a class="btn btn-default navbar-btn" href="<?php echo wp_login_url( get_permalink() ); ?>">
 									<?php _e('Login', 'harness-store')?></a>
-								<a class="btn btn-default navbar-btn" href="<?php echo wp_registration_url(); ?>">
+								<a class="btn btn-default navbar-btn" href="<?php echo wp_registration_url( get_permalink() ); ?>">
 									<?php _e('Register', 'harness-store')?></a>
 							</div>
 						<?php
