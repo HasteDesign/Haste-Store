@@ -477,7 +477,11 @@ p.demo_store {
 				top: 0;
 				right: 0;
 				left: auto;
-				margin: -.5em -.5em 0 0;
+				margin: 0 15px;
+				padding: 0px 10px;
+				line-height: 3;
+				min-height: 3em;
+				border-radius: 1.5em 0 1.5em 1.5em;
 			}
 
 			h3 {
