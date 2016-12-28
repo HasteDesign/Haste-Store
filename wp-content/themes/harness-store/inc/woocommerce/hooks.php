@@ -93,7 +93,14 @@ add_action( 'woocommerce_archive_description', 'woocommerce_catalog_ordering', 3
 
 
 /**
- * Move single star rating
+ * Move single star rating on produtct single
  */
  remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_rating', 10);
  add_action( 'woocommerce_product_meta_start', 'woocommerce_template_single_rating', 10 );
+
+
+ /**
+  * Move single star rating on loop
+  */
+  remove_action( 'woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_rating', 5);
+  add_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_rating', 5 );
