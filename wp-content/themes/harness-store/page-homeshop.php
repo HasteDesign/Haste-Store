@@ -12,22 +12,30 @@ get_header();
 ?>
 
 	<main id="content" class="<?php echo odin_classes_page_full(); ?>" tabindex="-1" role="main">
+
 		<?php
-		// Start the Loop.
-		while ( have_posts() ) : the_post();
+			// Start the Loop.
+			while ( have_posts() ) : the_post();
 		?>
 
-			<section class="page-section home-jumbotron" <?php if ( has_post_thumbnail() ) { ?> style="background-image: url('<?php the_post_thumbnail_url( 'full' ); ?>')" <?php } ?>>
+			<section class="page-section home-jumbotron"
+			<?php if ( has_post_thumbnail() ) { ?>
+				style="background-image: url('<?php the_post_thumbnail_url( 'full' ); ?>')"
+			<?php } ?>>
+
+			<div class="section-wrapper">
 
 				<?php
 					// Include the page content template.
 					get_template_part( 'content', 'section' );
 				?>
 
+			</div>
+
 			</section>
 
 		<?php
-		endwhile;
+			endwhile;
 		?>
 
 		<section class="page-section home-products woocommerce">

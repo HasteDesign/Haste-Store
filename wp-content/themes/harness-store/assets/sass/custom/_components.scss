@@ -27,7 +27,23 @@ input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type=
 	background-size: cover;
 	background-attachment: fixed;
 
+
 	.admin-bar & {
 		height: calc(100vh - 94px); // Altura total menos a altura da navbar e admin bar
+	}
+
+	.section-wrapper {
+		height: 100%;
+		width: 100%;
+		background: rgba(0,0,0,0.3);
+		display: flex;
+		text-align: center;
+		align-items: center;
+		color: #fff;
+		font-size: 150%;
+
+		a {
+			color: #fff;
+		}
 	}
 }
