@@ -12,21 +12,23 @@ get_header();
 ?>
 
 	<main id="content" class="<?php echo odin_classes_page_full(); ?>" tabindex="-1" role="main">
-		<section class="page-section home-jumbotron jumbotron">
-			<?php
-				// Start the Loop.
-				while ( have_posts() ) : the_post();
+		<?php
+		// Start the Loop.
+		while ( have_posts() ) : the_post();
+		?>
 
+			<section class="page-section home-jumbotron" <?php if ( has_post_thumbnail() ) { ?> style="background-image: url('<?php the_post_thumbnail_url( 'full' ); ?>')" <?php } ?>>
+
+				<?php
 					// Include the page content template.
 					get_template_part( 'content', 'section' );
+				?>
 
-					// If comments are open or we have at least one comment, load up the comment template.
-					if ( comments_open() || get_comments_number() ) :
-						comments_template();
-					endif;
-				endwhile;
-			?>
-		</section>
+			</section>
+
+		<?php
+		endwhile;
+		?>
 
 		<section class="page-section home-products woocommerce">
 

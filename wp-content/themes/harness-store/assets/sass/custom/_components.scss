@@ -17,3 +17,17 @@ input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type=
 	padding: 0;
 	overflow: hidden;
 }
+
+/**
+ * Home page sections
+ */
+
+.home-jumbotron {
+	height: calc(100vh - 62px); // Altura total menos a altura da navbar
+	background-size: cover;
+	background-attachment: fixed;
+
+	.admin-bar & {
+		height: calc(100vh - 94px); // Altura total menos a altura da navbar e admin bar
+	}
+}
