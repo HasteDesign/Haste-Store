@@ -460,11 +460,11 @@ p.demo_store {
 	 */
 	.products ul,
 	ul.products {
-		margin: 0 0 1em;
+		margin-bottom: 1em;
 		padding: 0;
 		list-style: none outside;
 		clear: both;
-		@include clearfix();
+		@include make-row();
 
 		li {
 			list-style: none outside;

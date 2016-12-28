@@ -89,21 +89,12 @@
 			@include make-md-column(3);
 			margin: 0 0 30px 0;
 		}
-
-		li.first {
-			clear: both;
-		}
-
-		li.last {
-			margin-right: 0;
-		}
 	}
 
 	&.columns-1 {
 		ul.products {
 			li.product {
-				width: 100%;
-				margin-right: 0;
+				@include make-md-column(12);
 			}
 		}
 	}
@@ -111,7 +102,7 @@
 	&.columns-2 {
 		ul.products {
 			li.product {
-				width: 48%;
+				@include make-md-column(6);
 			}
 		}
 	}
@@ -119,7 +110,7 @@
 	&.columns-3 {
 		ul.products {
 			li.product {
-				width: 30.75%;
+				@include make-md-column(4);
 			}
 		}
 	}
@@ -135,7 +126,7 @@
 	&.columns-6 {
 		ul.products {
 			li.product {
-				width: 13.5%;
+				@include make-md-column(2);
 			}
 		}
 	}
