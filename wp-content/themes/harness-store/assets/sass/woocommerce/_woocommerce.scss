@@ -550,12 +550,16 @@ p.demo_store {
 
 	.woocommerce-result-count {
 		margin: 0 0 1em;
+		font-size: $font-size-small;
+		color: $gray-light;
 	}
 
 	.woocommerce-ordering {
-		margin: 0 0 1em;
+		margin: 0 0 2em;
+		color: $gray-light;
 
 		select {
+			font-size: $font-size-small;
 			vertical-align: top;
 		}
 	}
