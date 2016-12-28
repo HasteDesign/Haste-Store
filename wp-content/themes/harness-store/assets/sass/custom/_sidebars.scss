@@ -5,7 +5,6 @@
 	}
 }
 
-
 .sidebar-collapse-toggle {
 	margin-left: 30px;
 }
@@ -36,4 +35,8 @@
 			margin-bottom: 0;
 		}
 	}
+}
+
+.widget + .widget {
+	margin-top: 60px;
 }
