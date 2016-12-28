@@ -104,7 +104,12 @@
 						<?php
 							}
 						?>
-						<button type="button" class="btn btn-default navbar-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><?php _e('Cart', 'harness-store')?></button>
+						<button type="button" class="btn btn-default navbar-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+							<span class="badge"><?php echo WC()->cart->get_cart_contents_count(); ?></span>
+							<span class="sr-only"><?php _e('Cart', 'harness-store')?></span>
+							<span class="caret"></span>
+						</button>
 							<?php odin_header_cart() ?>
 
 				</nav>
