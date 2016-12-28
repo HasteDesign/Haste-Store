@@ -2,6 +2,7 @@
 
 	body:not(.home) & {
 		@include make-container();
+		margin-top: 80px; 
 
 		.wrapper-row {
 			@include make-row();
