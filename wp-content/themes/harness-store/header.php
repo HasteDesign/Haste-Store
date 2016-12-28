@@ -55,7 +55,6 @@
 							<?php odin_the_custom_logo(); ?>
 						<?php if ( is_home() ) echo '</h1>'; ?>
 					</div>
-					<p class="navbar-text site-description hidden-xs"><?php bloginfo( 'description' ); ?></p>
 				</div>
 				<nav class="collapse navbar-collapse navbar-main-navigation navbar-left" role="navigation">
 					<?php
