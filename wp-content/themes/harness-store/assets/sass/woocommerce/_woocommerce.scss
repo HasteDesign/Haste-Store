@@ -515,7 +515,7 @@ p.demo_store {
 			}
 
 			.price {
-				color: $highlight;
+				color: $text-color;
 				display: block;
 				font-weight: normal;
 				margin-bottom: .5em;
@@ -524,12 +524,14 @@ p.demo_store {
 				del {
 					color: inherit;
 					opacity: 0.5;
-					display: block;
+					display: inline-block;
 				}
 
 				ins {
 					background: none;
-					font-weight: 700;
+					text-decoration: none;
+					font-weight: inherit;
+					display: inline-block;
 				}
 
 				.from {
