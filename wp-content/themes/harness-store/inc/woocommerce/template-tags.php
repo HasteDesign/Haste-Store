@@ -63,7 +63,7 @@ if ( ! function_exists( 'odin_header_cart' ) ) {
 	 */
 	function odin_header_cart() {
 		if ( is_woocommerce_activated() ) { ?>
-			<ul class="site-header-cart menu">
+			<ul class="site-header-cart menu dropdown-menu">
 				<?php odin_cart_link(); ?>
 				<?php the_widget( 'WC_Widget_Cart', 'title=' ); ?>
 			</ul>

@@ -57,7 +57,7 @@
 					</div>
 					<p class="navbar-text site-description hidden-xs"><?php bloginfo( 'description' ); ?></p>
 				</div>
-				<nav class="collapse navbar-collapse navbar-main-navigation navbar-right" role="navigation">
+				<nav class="collapse navbar-collapse navbar-main-navigation navbar-left" role="navigation">
 					<?php
 						wp_nav_menu(
 							array(
@@ -71,6 +71,44 @@
 						);
 					?>
 				</nav><!-- .navbar-collapse -->
+				<nav class="navbar-right">
+
+						<?php
+							if ( is_user_logged_in() ) {
+							?>
+
+							<p class="navbar-text">
+								<?php
+									$user = wp_get_current_user();
+									$username = $user->user_firstname;
+								    printf( esc_html__( 'Hello, %s.', 'my-text-domain' ), $username );
+								?>
+							</p>
+
+							<a class="btn btn-default navbar-btn btn-link" href="<?php echo wp_logout_url( $redirect ); ?>">Sair</a>
+							<?php
+						} else {
+
+							?>
+
+							<p class="navbar-text">
+								<?php
+							    	_e('Hello, guest user.', 'harness-store');
+								?>
+							</p>
+							<div class="btn-group" role="group" aria-label="login">
+								<a class="btn btn-default navbar-btn" href="<?php echo wp_login_url(); ?>">
+									<?php _e('Login', 'harness-store')?></a>
+								<a class="btn btn-default navbar-btn" href="<?php echo wp_registration_url(); ?>">
+									<?php _e('Register', 'harness-store')?></a>
+							</div>
+						<?php
+							}
+						?>
+						<button type="button" class="btn btn-default navbar-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><?php _e('Cart', 'harness-store')?></button>
+							<?php odin_header_cart() ?>
+
+				</nav>
 			</div><!-- .container-->
 		</div><!-- #main-navigation-->
 	</header><!-- #header -->
@@ -83,7 +121,7 @@
 			<?php endif; ?>
 
 					<?php do_action( 'odin_content_top' ); ?>
-					
+
 			<?php if( !is_front_page() || !is_home() ) : ?>
 				</div>
 			<?php endif; ?>
