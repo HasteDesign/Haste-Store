@@ -41,7 +41,7 @@
 				</a>
 			</div><!-- .site-header-->
 		<?php endif; ?>
-		<div id="main-navigation" class="navbar navbar-default">
+		<div id="main-navigation" class="navbar navbar-default navbar-fixed-top">
 			<div class="container">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-navigation">
@@ -77,9 +77,13 @@
 
 	<div id="wrapper">
 		<div class="wrapper-row">
-			<div class="col-md-12">
 
-			<?php
-			do_action( 'odin_content_top' );
-			?>
-		</div>
+			<?php if( !is_front_page() || !is_home() ) : ?>
+				<div class="col-md-12">
+			<?php endif; ?>
+
+					<?php do_action( 'odin_content_top' ); ?>
+					
+			<?php if( !is_front_page() || !is_home() ) : ?>
+				</div>
+			<?php endif; ?>

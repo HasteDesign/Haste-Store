@@ -28,10 +28,6 @@ input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type=
 	background-attachment: fixed;
 
 
-	.admin-bar & {
-		height: calc(100vh - 94px); // Altura total menos a altura da navbar e admin bar
-	}
-
 	.section-wrapper {
 		height: 100%;
 		width: 100%;
