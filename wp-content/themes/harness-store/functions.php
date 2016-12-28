@@ -250,7 +250,7 @@ function odin_enqueue_scripts() {
 }
 
 // Enqueue dos estilos com prioridade mais alta pra ser carregado depois do WooCommerce
-add_action( 'wp_enqueue_scripts', 'odin_enqueue_scripts', 15 );
+add_action( 'wp_enqueue_scripts', 'odin_enqueue_scripts', 205 );
 
 /**
  * Odin custom stylesheet URI.

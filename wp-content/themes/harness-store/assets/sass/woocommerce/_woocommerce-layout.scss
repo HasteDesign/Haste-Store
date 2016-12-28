@@ -43,16 +43,21 @@
 			display: flex;
 		}
 
-		div.thumbnails {
-			//@include make-row();
+		.woocommerce-main-image {
+			float: left;
+		}
 
+		div.thumbnails {
+			float: left;
 			display: flex;
 			flex-direction: column;
 			margin-left: 1px;
+			padding: 0;
 
 			a {
-				float: left;
-				margin-bottom: 1px;
+				float: none;
+				margin: 0 0 1px 0;
+				width: 100% !important;
 			}
 		}
 
