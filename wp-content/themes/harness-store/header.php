@@ -72,36 +72,39 @@
 				</nav><!-- .navbar-collapse -->
 				<nav class="navbar-right">
 
-						<?php
+					<?php
+						if ( get_option( 'users_can_register' ) ) {
+
 							if ( is_user_logged_in() ) {
 							?>
 
-							<p class="navbar-text">
-								<?php
-									$user = wp_get_current_user();
-									$username = $user->user_firstname;
-								    printf( esc_html__( 'Hello, %s.', 'my-text-domain' ), $username );
-								?>
-							</p>
+								<p class="navbar-text">
+									<?php
+										$user = wp_get_current_user();
+										$username = $user->user_firstname;
+									    printf( esc_html__( 'Hello, %s.', 'my-text-domain' ), $username );
+									?>
+								</p>
 
-							<a class="btn btn-default navbar-btn btn-link" href="<?php echo wp_logout_url( get_permalink() ); ?>">Sair</a>
-							<?php
-						} else {
+								<a class="btn btn-default navbar-btn btn-link" href="<?php echo wp_logout_url( get_permalink() ); ?>">Sair</a>
+								<?php
+							} else {
 
 							?>
 
-							<p class="navbar-text">
-								<?php
-							    	_e('Hello, guest user.', 'harness-store');
-								?>
-							</p>
-							<div class="btn-group" role="group" aria-label="login">
-								<a class="btn btn-default navbar-btn" href="<?php echo wp_login_url( get_permalink() ); ?>">
-									<?php _e('Login', 'harness-store')?></a>
-								<a class="btn btn-default navbar-btn" href="<?php echo wp_registration_url( get_permalink() ); ?>">
-									<?php _e('Register', 'harness-store')?></a>
-							</div>
+								<p class="navbar-text">
+									<?php
+								    	_e('Hello, guest user.', 'harness-store');
+									?>
+								</p>
+								<div class="btn-group" role="group" aria-label="login">
+									<a class="btn btn-default navbar-btn" href="<?php echo wp_login_url( get_permalink() ); ?>">
+										<?php _e('Login', 'harness-store')?></a>
+									<a class="btn btn-default navbar-btn" href="<?php echo wp_registration_url( get_permalink() ); ?>">
+										<?php _e('Register', 'harness-store')?></a>
+								</div>
 						<?php
+								}
 							}
 						?>
 						<button type="button" class="btn btn-default navbar-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
