@@ -1153,15 +1153,13 @@ p.demo_store {
 				dt,
 				dd {
 					display: inline-block;
-					float: left;
-					margin-bottom: 1em;
+					margin-bottom: 0;
 				}
 
 				dt {
-					font-weight: 700;
-					padding: 0 0 .25em 0;
-					margin: 0 4px 0 0;
-					clear: left;
+					font-weight: inherit;;
+					padding: 0;
+					margin: 0;
 				}
 
 				dd {
@@ -1182,20 +1180,24 @@ p.demo_store {
 	&.widget_shopping_cart,
 	.widget_shopping_cart {
 		.total {
-			border-top: 3px double $secondary;
-			padding: 4px 0 0;
+			border-top: 1px solid $gray-light;
+			padding: 10px;
+			margin: 0;
+			text-align: center;
+			display: flex;
+			justify-content: space-between;
+			background: rgba(0,0,0,0.1);
 
 			strong {
 				min-width: 40px;
-				display: inline-block;
+				display: inline-block; 
 			}
 		}
 
 		.cart_list {
 			li {
-				padding-left: 2em;
+				padding: 1em 1em 1em 4em;
 				position: relative;
-				padding-top: 0;
 
 				a.remove {
 					position: absolute;
@@ -1206,7 +1208,8 @@ p.demo_store {
 		}
 
 		.buttons {
-			@include clearfix();
+			margin: 0;
+			padding: 10px;
 		}
 	}
 

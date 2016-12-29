@@ -24,7 +24,7 @@ if ( ! function_exists( 'odin_cart_link' ) ) {
 			$class = '';
 		}
 		?>
-		<li class="<?php echo esc_attr( $class ); ?>">
+		<li class="<?php echo esc_attr( $class ); ?> cart-link">
 			<a class="cart-contents" href="<?php echo esc_url( WC()->cart->get_cart_url() ); ?>" title="<?php _e( 'View your shopping cart', 'harness-store' ); ?>">
 				<?php echo wp_kses_data( WC()->cart->get_cart_total() ); ?> <span class="count"><?php echo wp_kses_data( sprintf( _n( '%d item', '%d items', WC()->cart->get_cart_contents_count(), 'harness-store' ), WC()->cart->get_cart_contents_count() ) );?></span>
 			</a>
@@ -63,8 +63,7 @@ if ( ! function_exists( 'odin_header_cart' ) ) {
 	 */
 	function odin_header_cart() {
 		if ( is_woocommerce_activated() ) { ?>
-			<ul class="site-header-cart menu dropdown-menu">
-				<?php odin_cart_link(); ?>
+			<ul class="header-cart menu dropdown-menu">
 				<?php the_widget( 'WC_Widget_Cart', 'title=' ); ?>
 			</ul>
 		<?php
