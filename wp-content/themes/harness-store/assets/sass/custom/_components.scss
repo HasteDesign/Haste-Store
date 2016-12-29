@@ -1,3 +1,7 @@
+/**
+ *  Forms
+ */
+
 select,
 textarea,
 input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="reset"]) {
@@ -12,6 +16,9 @@ input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type=
 	@extend .form-group;
 }
 
+/**
+ * List groups
+ */
 
 .list-group-item.collapse {
 	padding: 0;
