@@ -86,7 +86,23 @@
 									?>
 								</p>
 
-								<a class="btn btn-default navbar-btn btn-link" href="<?php echo wp_logout_url( get_permalink() ); ?>">Sair</a>
+								<div class="btn-group" role="group" aria-label="login">
+									<a class="btn btn-default navbar-btn" href="<?php echo wp_logout_url( get_permalink() ); ?>"><?php _e('Logout', 'harness-store'); ?></a>
+
+									<div class="btn-group" role="group">
+										<button class="btn btn-default navbar-btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										<?php _e('My details', 'harness-store'); ?> <span class="caret"></span>
+										</button>
+										<ul class="dropdown-menu">
+											<li>
+												<a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>"><?php _e('My account', 'harness-store'); ?></a>
+											</li>
+											<li>
+												<a href="<?php echo wc_get_endpoint_url( 'orders', '', get_permalink( get_option('woocommerce_myaccount_page_id') ) );?>"><?php _e('My orders', 'harness-store'); ?></a>
+											</li>
+										</ul>
+									</div>
+								</div>
 								<?php
 							} else {
 
@@ -98,9 +114,9 @@
 									?>
 								</p>
 								<div class="btn-group" role="group" aria-label="login">
-									<a class="btn btn-default navbar-btn" href="<?php echo wp_login_url( get_permalink() ); ?>">
+									<a class="btn btn-default navbar-btn" href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>">
 										<?php _e('Login', 'harness-store')?></a>
-									<a class="btn btn-default navbar-btn" href="<?php echo wp_registration_url( get_permalink() ); ?>">
+									<a class="btn btn-default navbar-btn" href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>">
 										<?php _e('Register', 'harness-store')?></a>
 								</div>
 						<?php
