@@ -43,6 +43,7 @@ require_once get_template_directory() . '/core/classes/class-thumbnail-resizer.p
  * Odin Widgets.
  */
 require_once get_template_directory() . '/core/classes/widgets/class-widget-like-box.php';
+require_once get_template_directory() . '/inc/widgets/class-haste-woo-products.php';
 
 if ( ! function_exists( 'odin_setup_features' ) ) {
 
@@ -194,6 +195,17 @@ function odin_widgets_init() {
 			'after_widget' => '</aside>',
 			'before_title' => '<h3 class="widgettitle widget-title">',
 			'after_title' => '</h3>',
+		)
+	);
+	register_sidebar(
+		array(
+			'name' => __( 'Home main content', 'harness-store' ),
+			'id' => 'home-main-content',
+			'description' => __( 'Home main content ', 'harness-store' ),
+			'before_widget' => '<section id="%1$s" class="page-section widget %2$s"><div class="container">',
+			'after_widget' => '</div></section>',
+			'before_title' => '<h2 class="widgettitle widget-title section-title">',
+			'after_title' => '</h2>',
 		)
 	);
 }

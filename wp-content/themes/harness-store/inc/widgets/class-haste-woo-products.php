@@ -95,13 +95,9 @@ class Haste_Woo_Products extends WP_Widget {
 	 */
 	public function widget( $args, $instance ) {
 
-		echo '<section class="page-section haste-woo-products">';
-		echo '<div class="container">';
+		echo $instance['title'];
 
-			do_shortcode( $instance['shortcode'] );
-
-		echo '</div>';
-		echo '</section>';
+		do_shortcode( $instance['shortcode'] );
 
 	}
 }

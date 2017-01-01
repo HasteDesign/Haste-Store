@@ -38,46 +38,9 @@ get_header();
 			endwhile;
 		?>
 
-		<section class="page-section home-products woocommerce">
+		<section class="page-section">
 
-			<div class="container">
-
-				<header class="section-title">
-					<h2>Produtos</h2>
-					<p class="lead">
-						Descriçao da seção
-					</p>
-				</header>
-
-				<ul class="products">
-					<?php
-					// Implementar: pegar shortcode via customizer para fazer esse loop
-					    $q = new WP_Query([
-					      'post_type'   =>  'product',
-					      'stock'       =>  1,
-					      'showposts'   =>  3,
-					      'orderby'     =>  'date',
-					      'order'       =>  'DESC',
-					      'meta_query'  =>  [
-					        ['key' => '_featured', 'value' => 'yes' ]
-					        ]
-					    ]);
-					    if ( $q->have_posts() ) :
-					        while ( $q->have_posts() ) : $q->the_post(); ?>
-
-							<?php wc_get_template_part( 'content', 'product' ); ?>
-
-						<?php  endwhile;
-
-						wp_reset_query();
-
-						endif;
-					?>
-				</ul>
-
-			</div>
-
-		</section>
+		<?php get_sidebar('home'); ?>
 
 	</main><!-- #main -->
 
