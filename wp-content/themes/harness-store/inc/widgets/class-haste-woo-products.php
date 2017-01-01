@@ -35,7 +35,6 @@ class Haste_Woo_Products extends WP_Widget {
 		$title         = isset( $instance['title'] ) ? $instance['title'] : __('Featured products', 'harness-store');
 		$subtitle      = isset( $instance['subtitle'] ) ? $instance['subtitle'] : '';
 		$shortcode     = isset( $instance['shortcode'] ) ? $instance['shortcode'] : '';
-		$columns       = isset( $instance['height'] ) ? $instance['height'] : 1;
 
 		?>
 		<p>
@@ -53,13 +52,7 @@ class Haste_Woo_Products extends WP_Widget {
 		<p>
 			<label for="<?php echo $this->get_field_id( 'shortcode' ); ?>">
 				<?php _e( 'WooCommerce shortcode:', 'harness-store' ); ?>
-				<input id="<?php echo $this->get_field_id( 'shortcode' ); ?>" class="widefat" name="<?php echo $this->get_field_name( 'shortcode' ); ?>" type="text" value="<?php echo intval( $shortcode ); ?>" />
-			</label>
-		</p>
-		<p>
-			<label for="<?php echo $this->get_field_id( 'columns' ); ?>">
-				<?php _e( 'Products columns:', 'harness-store' ); ?>
-				<input id="<?php echo $this->get_field_id( 'columns' ); ?>" name="<?php echo $this->get_field_name( 'columns' ); ?>" type="number" min="1" max="12" value="<?php echo intval( $columns ); ?>" />
+				<input id="<?php echo $this->get_field_id( 'shortcode' ); ?>" class="widefat" name="<?php echo $this->get_field_name( 'shortcode' ); ?>" type="text" value="<?php echo esc_attr( $shortcode ); ?>" />
 			</label>
 		</p>
 		<?php
@@ -78,9 +71,8 @@ class Haste_Woo_Products extends WP_Widget {
 	public function update( $new_instance, $old_instance ) {
 		$instance = array();
 		$instance['title']         = ( ! empty( $new_instance['title'] ) ) ? sanitize_text_field( $new_instance['title'] ) : '';
-		$instance['subtitle']      = ( ! empty( $new_instance['subtitle'] ) ) ? esc_url( $new_instance['subtitle'] ) : '';
-		$instance['columns']       = ( ! empty( $new_instance['columns'] ) ) ? intval( $new_instance['columns'] ) : 1;
-		$instance['shortcode']     = ( ! empty( $new_instance['shortcode'] ) ) ? intval( $new_instance['shortcode'] ) : '';
+		$instance['subtitle']      = ( ! empty( $new_instance['subtitle'] ) ) ? sanitize_text_field( $new_instance['subtitle'] ) : '';
+		$instance['shortcode']     = ( ! empty( $new_instance['shortcode'] ) ) ? sanitize_text_field( $new_instance['shortcode'] ) : '';
 
 		return $instance;
 	}
@@ -95,9 +87,16 @@ class Haste_Woo_Products extends WP_Widget {
 	 */
 	public function widget( $args, $instance ) {
 
-		echo $instance['title'];
+		$title = apply_filters( 'widget_title', $instance['title'] );
 
-		do_shortcode( $instance['shortcode'] );
+		echo $args['before_widget'];
+		if ( ! empty( $title ) ) {
+			echo $args['before_title'] . $title . $args['after_title'];
+		}
+
+		echo '<p class="subtitle">' . $instance['subtitle'] . '</p>';
+
+		echo do_shortcode( $instance['shortcode'] );
 
 	}
 }
