@@ -38,7 +38,6 @@ get_header();
 			endwhile;
 		?>
 
-		<section class="page-section">
 
 		<?php get_sidebar('home'); ?>
 
