@@ -1,6 +1,6 @@
 <?php
 /**
- * Haste_Shortcode_Module class.
+ * Haste_Text_Image_Module class.
  *
  * Facebook like widget.
  *
@@ -9,17 +9,28 @@
  * @author   WPBrasil
  * @version  2.2.0
  */
-class Haste_Shortcode_Module extends WP_Widget {
+class Haste_Text_Image_Module extends WP_Widget {
 
 	/**
 	 * Register widget with WordPress.
 	 */
 	public function __construct() {
 		parent::__construct(
-			'haste_shortcode_module',
-			__( 'Haste Woo Products', 'harness-store' ),
-			array( 'description' => __( 'Displays WooCommerce products', 'harness-store' ), )
+			'haste_text_image_module',
+			__( 'Haste Text and Image Module', 'harness-store' ),
+			array( 'description' => __( 'Displays featured text and image, with few options.', 'harness-store' ), )
 		);
+	}
+
+	/**
+	 * Media uploader scripts enqueue
+	 */
+	public function haste_assets()
+	{
+	    wp_enqueue_script('media-upload');
+	    wp_enqueue_script('thickbox');
+	    wp_enqueue_script('haste-media-upload', plugin_dir_url(__FILE__) . '/js/haste-media-upload.js', array( 'jquery' )) ;
+	    wp_enqueue_style('thickbox');
 	}
 
 	/**
@@ -35,7 +46,8 @@ class Haste_Shortcode_Module extends WP_Widget {
 		$title         = isset( $instance['title'] ) ? $instance['title'] : __('My shortcode', 'harness-store');
 		$subtitle      = isset( $instance['subtitle'] ) ? $instance['subtitle'] : '';
 		$content       = isset( $instance['content'] ) ? $instance['content'] : '';
-		$shortcode     = isset( $instance['shortcode'] ) ? $instance['shortcode'] : '';
+		$image         = isset( $instance['image'] ) ? $instance['image'] : '';
+		$layout        = isset( $instance['layout'] ) ? $instance['layout'] : '';
 
 		?>
 		<p>
@@ -126,8 +138,8 @@ class Haste_Shortcode_Module extends WP_Widget {
 /**
  * Register the Like Box Widget.
  */
-function haste_shortcode_module() {
-	register_widget( 'Haste_Shortcode_Module' );
+function haste_text_image_module() {
+	register_widget( 'Haste_Text_Image_Module' );
 }
 
-add_action( 'widgets_init', 'haste_shortcode_module' );
+add_action( 'widgets_init', 'haste_text_image_module' );

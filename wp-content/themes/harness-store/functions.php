@@ -43,7 +43,6 @@ require_once get_template_directory() . '/core/classes/class-thumbnail-resizer.p
  * Odin Widgets.
  */
 require_once get_template_directory() . '/core/classes/widgets/class-widget-like-box.php';
-require_once get_template_directory() . '/inc/widgets/class-haste-woo-products.php';
 
 if ( ! function_exists( 'odin_setup_features' ) ) {
 
