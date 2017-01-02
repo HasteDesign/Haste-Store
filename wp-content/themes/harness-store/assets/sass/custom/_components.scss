@@ -50,3 +50,15 @@ input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type=
 		}
 	}
 }
+
+.widget-wrapper {
+	@include make-row();
+
+	.widget-container {
+		@include make-container();
+	}
+
+	.widget-header {
+		@include make-md-column(12);
+	}
+}

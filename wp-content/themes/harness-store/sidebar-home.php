@@ -9,7 +9,9 @@
  */
 ?>
 
+<section id="home-main-content" class="home-main-content" role="complementary">
 	<?php
 		if ( ! dynamic_sidebar( 'home-main-content' ) ) {
 		}
 	?>
+</section><!-- #sidebar -->

@@ -89,7 +89,7 @@ class Haste_Shortcode_Module extends WP_Widget {
 
 		echo '<div class="widget-wrapper"><div class="widget-container">';
 
-		echo '<header class="widget-wrapper">';
+		echo '<header class="widget-header">';
 
 		$title = apply_filters( 'widget_title', $instance['title'] );
 
