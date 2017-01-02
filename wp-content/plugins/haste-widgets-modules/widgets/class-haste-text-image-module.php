@@ -23,20 +23,6 @@ class Haste_Image_Button_Module extends WP_Widget {
 	}
 
 	/**
-	 * Media uploader scripts enqueue
-	 */
-	public function haste_assets()
-	{
-	    wp_enqueue_script('media-upload');
-	    wp_enqueue_script('thickbox');
-	    wp_enqueue_script('haste-media-upload', plugin_dir_url(__FILE__) . '/js/haste-media-upload.js', array( 'jquery' )) ;
-	    wp_enqueue_style('thickbox');
-
-		wp_enqueue_style( 'wp-color-picker' );
-		wp_enqueue_script( 'wp-color-picker' );
-	}
-
-	/**
 	 * Back-end widget form.
 	 *
 	 * @see WP_Widget::form()
@@ -46,15 +32,15 @@ class Haste_Image_Button_Module extends WP_Widget {
 	 * @return string          Widget options form.
 	 */
 	public function form( $instance ) {
-		$title         = isset( $instance['title'] ) ? $instance['title'] : __('My shortcode', 'harness-store');
+		$title         = isset( $instance['title'] ) ? $instance['title'] : __('My module title', 'harness-store');
 		$subtitle      = isset( $instance['subtitle'] ) ? $instance['subtitle'] : '';
 		$content       = isset( $instance['content'] ) ? $instance['content'] : '';
 		$align         = isset( $instance['align'] ) ? $instance['align'] : '';
-		$padding       = isset( $instance['padding'] ) ? $instance['padding'] : '10';
+		$padding       = isset( $instance['padding'] ) ? $instance['padding'] : 0;
 		$image         = isset( $instance['image'] ) ? $instance['image'] : '';
-		$img_offset_v  = isset( $instance['img_offset_v'] ) ? $instance['img_offset_v'] : '';
-		$img_offset_h  = isset( $instance['img_offset_h'] ) ? $instance['img_offset_h'] : '';
-		$cover 		   = isset( $instance[ 'cover' ] ) ? 'true' : 'false';
+		$img_offset_v  = isset( $instance['img_offset_v'] ) ? $instance['img_offset_v'] : 0;
+		$img_offset_h  = isset( $instance['img_offset_h'] ) ? $instance['img_offset_h'] : 0;
+		$cover 		   = isset( $instance['cover'] ) ? $instance['cover'] : 1;
 		$bg_color      = isset( $instance['bg_color'] ) ? $instance['bg_color'] : '#eeeeee';
 
 		?>
@@ -73,7 +59,7 @@ class Haste_Image_Button_Module extends WP_Widget {
 		<p>
 			<label for="<?php echo $this->get_field_id( 'content' ); ?>">
 				<?php _e( 'Content', 'harness-store' ); ?>
-				<textmodule id="<?php echo $this->get_field_id( 'content' ); ?>" class="widefat" name="<?php echo $this->get_field_name( 'content' ); ?>" type="text" height="5" value="<?php echo esc_attr( $content ); ?>" />
+				<textarea id="<?php echo $this->get_field_id( 'content' ); ?>" class="widefat" name="<?php echo $this->get_field_name( 'content' ); ?>" type="text" height="5" value="<?php echo esc_attr( $content ); ?>" />
 			</label>
 		</p>
 		<p>
@@ -84,18 +70,18 @@ class Haste_Image_Button_Module extends WP_Widget {
 				<select class='widefat' id="<?php echo $this->get_field_id('align'); ?>"
 					name="<?php echo $this->get_field_name( 'align' ); ?>" type="text">
 					<option
-						value='center'
-						<?php echo ($align=='center') ? 'selected' : ''; ?>>
+						value='content-center'
+						<?php echo ( $align =='center' ) ? 'selected' : ''; ?>>
 						<?php _e( 'Text centered, image on background', 'harness-store' ); ?>
 					</option>
 					<option
-						value='right'
-						<?php echo ($align=='content-left-image-right') ? 'selected' : ''; ?>>
+						value='content-right'
+						<?php echo ( $align =='content-left-image-right' ) ? 'selected' : ''; ?>>
 						<?php _e( 'Text on left, image on right', 'harness-store' ); ?>
 					</option>
 					<option
-						value='left'
-						<?php echo ($align=='content-right-image-left') ? 'selected' : ''; ?>>
+						value='content-left'
+						<?php echo ( $align =='content-right-image-left' ) ? 'selected' : ''; ?>>
 						<?php _e( 'Text on left, image on right', 'harness-store' ); ?>
 					</option>
 				</select>
@@ -107,10 +93,14 @@ class Haste_Image_Button_Module extends WP_Widget {
 				<input id="<?php echo $this->get_field_id( 'padding' ); ?>" class="widefat" name="<?php echo $this->get_field_name( 'padding' ); ?>" type="number" min="0" max="100" value="<?php echo esc_attr( $padding ); ?>" />
 			</label>
 		</p>
-		<p>
+		<p class="upload-img">
+			<div class='image-preview-wrapper'>
+				<img id='image-preview' src='' width='100' height='100' style='max-height: 100px; width: 100px;'>
+			</div>
 			<label for="<?php echo $this->get_field_name( 'image' ); ?>"><?php _e( 'Image:', 'harness-store' ); ?></label>
 			<input name="<?php echo $this->get_field_name( 'image' ); ?>" id="<?php echo $this->get_field_id( 'image' ); ?>" class="widefat" type="text" size="36"  value="<?php echo esc_url( $image ); ?>" />
 			<input class="upload_image_button" type="button" value="<?php _e( 'Upload image', 'harness-store' ); ?>" />
+			<input type='hidden' name='image_attachment_id' id='image_attachment_id' value=''>
 		</p>
 		<p>
 			<label for="<?php echo $this->get_field_id( 'img_offset_v' ); ?>">
@@ -125,16 +115,15 @@ class Haste_Image_Button_Module extends WP_Widget {
 			</label>
 		</p>
 		<p>
-		    <label for="<?php echo $this->get_field_id( 'cover' ); ?>">
-				<?php _e( 'Expand image to cover the entire module', 'harness-store' ); ?>
-				<input class="checkbox" type="checkbox" <?php checked( $instance[ 'cover' ], true ); ?> id="<?php echo $this->get_field_id( 'cover' ); ?>" name="<?php echo $this->get_field_name( 'cover' ); ?>" />
-		    </label>
+			<label for="<?php echo $this->get_field_id( 'cover' ); ?>">
+				<input id="<?php echo $this->get_field_id( 'cover' ); ?>" name="<?php echo $this->get_field_name( 'cover' ); ?>" type="checkbox" value="1" <?php checked( 1, $cover, true ); ?> /> <?php _e( 'Expand image to cover the entire module area', 'harness-store' ); ?>
+			</label>
 		</p>
-
 		<p>
-            <label for="<?php echo $this->get_field_id( 'bg_color' ); ?>"><?php _e( 'Background Color', 'harness-store' ); ?></label>
-            <?php _e( 'The module background color', 'harness-store' ); ?>
-            <input class="haste-color-picker" type="text" id="<?php echo $this->get_field_id( 'bg_color' ); ?>" name="<?php echo $this->get_field_name( 'bg_color' ); ?>" value="<?php echo esc_attr( $instance['bg_color'] ); ?>" />
+            <label for="<?php echo $this->get_field_id( 'bg_color' ); ?>">
+				<?php _e( 'Background Color', 'harness-store' ); ?>
+	            <input class="haste-color-picker" type="text" id="<?php echo $this->get_field_id( 'bg_color' ); ?>" name="<?php echo $this->get_field_name( 'bg_color' ); ?>" value="<?php echo esc_attr( $instance['bg_color'] ); ?>" />
+			</label>
         </p>
 		<?php
 	}
@@ -158,10 +147,8 @@ $instance['padding']	= ( ! empty( $new_instance['padding'] ) ) ? intval( $new_in
 $instance['image']	= ( ! empty( $new_instance['image'] ) ) ? sanitize_text_field( $new_instance['image'] ) : '';
 $instance['img_offset_v']	= ( ! empty( $new_instance['img_offset_v'] ) ) ? intval( $new_instance['img_offset_v'] ) : 0;
 $instance['img_offset_h']	= ( ! empty( $new_instance['img_offset_h'] ) ) ? intval( $new_instance['img_offset_h'] ) : 0;
-$instance['cover']	= ( ! empty( $new_instance['cover'] ) ) ? intval( $new_instance['cover'] ) : 0;
+$instance['cover'] = ( ! empty( $new_instance['cover'] ) ) ? intval( $new_instance['cover'] ) : 0;
 $instance['bg_color']	= ( ! empty( $new_instance['bg_color'] ) ) ? sanitize_text_field( $new_instance['bg_color'] ) : '#eeeeee';
-
-
 
 return $instance;
 	}
@@ -176,51 +163,68 @@ return $instance;
 	 */
 	public function widget( $args, $instance ) {
 
-		// Image settings
+		echo $args['before_widget'];
 
-		$pos_v 	= 50 - $instance['img_offset_v'] . "%";
-		$pos_h 	= 50 - $instance['img_offset_h'] . "%";
+		// Image settings
+			$pos_v 	= 50 - ( isset( $instance['img_offset_v'] ) ? $instance['img_offset_v'] : 0 ). "%";
+
+			$pos_h 	= 50 - ( isset( $instance['img_offset_h'] ) ? $instance['img_offset_h'] : 0 ) . "%";
 
 		echo '<div class="widget-wrapper"';
 
-		echo 'style="background-color: ' . $instance['bg_color'] . '; ' ;
+		if ( isset( $instance['bg_color'] ) ) :
+			echo 'style="background-color: ' . $instance['bg_color'] . '; ' ;
+		endif;
 
-		echo 'background-position: ' . $pos_v . ' ' . $pos_h . '; ' ;
+		if ( isset( $instance['img_offset_v'] ) || isset( $instance['img_offset_h'] ) ) :
+			echo 'background-position: ' . $pos_v . ' ' . $pos_h . '; ' ;
+		endif;
 
-		if ( $instance['image'] ) {
+		if ( isset( $instance['image'] )) {
 			echo 'background-image: url(" ' . $image . '"); ';
 		}
-		if ( $instance['cover'] ) {
+		if ( isset( $instance['cover'] ) ) {
 			echo 'background-size: cover; ';
 		}
 
-		echo 'padding-top: ' . $instance['padding'] . '%; ' ;
-
-		echo 'padding-bottom: ' . $instance['padding'] . '%; ' ;
+		if ( isset( $instance['padding'] ) ) :
+			echo 'padding-: ' . $instance['padding'] . ' ' . $instance['padding'] . '; ' ;
+		endif;
 
 		echo '">';
 
 		echo '<div class="widget-container">';
 
+		echo '<div class="widget-content-wrapper">';
+
 		echo '<header class="widget-header">';
 
 		$title = apply_filters( 'widget_title', $instance['title'] );
 
-		echo $args['before_widget'];
 		if ( ! empty( $title ) ) {
 			echo $args['before_title'] . $title . $args['after_title'];
 		}
-
-		echo '<p class="subtitle">' . $instance['subtitle'] . '</p>';
+		if ( isset( $instance['subtitle'] ) ) :
+			echo '<p class="subtitle">' . $instance['subtitle'] . '</p>';
+		endif;
 
 		echo '</header>';
 
-		echo '<div class="widget-content-wrapper">';
+		if ( isset( $instance['content'] ) ) :
+			echo '<div class="widget-content">' . $instance['content'] . '</div>';
+		endif;
 
-		echo '<div class="widget-content">' . $instance['content'] . '</div>';
+		echo '</div>';
+
+		echo '<div class="widget-shortcode">';
+
+		if ( isset( $instance['shortcode'] ) ) :
+			echo do_shortcode( $instance['shortcode'] );
+		endif;
 
 		echo '</div></div></div>';
 
+		echo $args['after_widget'];
 	}
 }
 
