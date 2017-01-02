@@ -1,5 +1,3 @@
-console.log("Worked!");
-
 jQuery(document).ready(function($) {
 
 	// Uploading files
@@ -47,6 +45,5 @@ jQuery(document).ready(function($) {
 				file_frame.open();
 			});
 
-
-	$('.haste-color-picker').wpColorPicker();
+    $('.haste-color-picker').wpColorPicker();
 });
