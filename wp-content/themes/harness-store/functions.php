@@ -201,7 +201,7 @@ function odin_widgets_init() {
 			'name' => __( 'Home main content', 'harness-store' ),
 			'id' => 'home-main-content',
 			'description' => __( 'Home main content ', 'harness-store' ),
-			'before_widget' => '<div>',
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
 			'after_widget' => '</div>',
 			'before_title' => '<h2 class="widgettitle widget-title section-title">',
 			'after_title' => '</h2>',
