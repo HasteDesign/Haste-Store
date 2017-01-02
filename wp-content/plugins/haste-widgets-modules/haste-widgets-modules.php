@@ -13,5 +13,5 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-require_once( plugin_dir_url( __FILE__ ) . 'widgets/class-haste-shortcodes-module.php');
-require_once( plugin_dir_url( __FILE__ ) . 'widgets/class-haste-text-image-module.php');
+require_once( plugin_dir_path( __FILE__ ) . 'widgets\class-haste-shortcode-module.php');
+require_once( plugin_dir_path( __FILE__ ) . 'widgets\class-haste-text-image-module.php');
