@@ -4,7 +4,7 @@ jQuery(document).ready(function($) {
 
 	// Uploading files
 	var file_frame;
-	var wp_media_post_id = wp.media.model.settings.post.id; // Store the old id
+	var wp_media_post_id = wp.media.model.settings.post.url; // Store the old id
 	var set_to_post_id; // Set this
 
     $(document).on("click", ".upload_image_button", function( event ) {
@@ -39,20 +39,14 @@ jQuery(document).ready(function($) {
 
 				// Do something with attachment.id and/or attachment.url here
 				$( '#image-preview' ).attr( 'src', attachment.url ).css( 'width', 'auto' );
-				$( '#image_attachment_id' ).val( attachment.id );
+				$( '.image_attachment_id' ).val( attachment.url );
 
-				// Restore the main post ID
-				wp.media.model.settings.post.id = wp_media_post_id;
 			});
 
 				// Finally, open the modal
 				file_frame.open();
 			});
 
-			// Restore the main ID when the add media button is pressed
-			jQuery( 'a.add_media' ).on( 'click', function() {
-				wp.media.model.settings.post.id = wp_media_post_id;
-			});
 
 	$('.haste-color-picker').wpColorPicker();
 });

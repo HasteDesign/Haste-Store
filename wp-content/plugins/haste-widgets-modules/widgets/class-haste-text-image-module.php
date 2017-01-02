@@ -95,12 +95,11 @@ class Haste_Image_Button_Module extends WP_Widget {
 		</p>
 		<p class="upload-img">
 			<div class='image-preview-wrapper'>
-				<img id='image-preview' src='' width='100' height='100' style='max-height: 100px; width: 100px;'>
+				<img id='image-preview' src='<?php echo esc_attr( $image ); ?>' width='100%' height='100' style='max-height: 100px; width: 100px;'>
 			</div>
 			<label for="<?php echo $this->get_field_name( 'image' ); ?>"><?php _e( 'Image:', 'harness-store' ); ?></label>
-			<input name="<?php echo $this->get_field_name( 'image' ); ?>" id="<?php echo $this->get_field_id( 'image' ); ?>" class="widefat" type="text" size="36"  value="<?php echo esc_url( $image ); ?>" />
+			<input class="image_attachment_id" name="<?php echo $this->get_field_name( 'image' ); ?>" id="<?php echo $this->get_field_id( 'image' ); ?>" class="widefat" type="text" size="36"  value="<?php echo esc_attr( $image ); ?>" />
 			<input class="upload_image_button" type="button" value="<?php _e( 'Upload image', 'harness-store' ); ?>" />
-			<input type='hidden' name='image_attachment_id' id='image_attachment_id' value=''>
 		</p>
 		<p>
 			<label for="<?php echo $this->get_field_id( 'img_offset_v' ); ?>">
@@ -144,11 +143,11 @@ $instance['title']		= ( ! empty( $new_instance['title'] ) ) ? sanitize_text_fiel
 $instance['subtitle']	= ( ! empty( $new_instance['subtitle'] ) ) ? sanitize_text_field( $new_instance['subtitle'] ) : '';
 $instance['content']	= ( ! empty( $new_instance['content'] ) ) ? sanitize_text_field( $new_instance['content'] ) : '';
 $instance['padding']	= ( ! empty( $new_instance['padding'] ) ) ? intval( $new_instance['padding'] ) : 0;
-$instance['image']	= ( ! empty( $new_instance['image'] ) ) ? sanitize_text_field( $new_instance['image'] ) : '';
+$instance['image']	= ( ! empty( $new_instance['image'] ) ) ? esc_url( $new_instance['image'] ) : '';
 $instance['img_offset_v']	= ( ! empty( $new_instance['img_offset_v'] ) ) ? intval( $new_instance['img_offset_v'] ) : 0;
 $instance['img_offset_h']	= ( ! empty( $new_instance['img_offset_h'] ) ) ? intval( $new_instance['img_offset_h'] ) : 0;
 $instance['cover'] = ( ! empty( $new_instance['cover'] ) ) ? intval( $new_instance['cover'] ) : 0;
-$instance['bg_color']	= ( ! empty( $new_instance['bg_color'] ) ) ? sanitize_text_field( $new_instance['bg_color'] ) : '#eeeeee';
+$instance['bg_color']	= ( ! empty( $new_instance['bg_color'] ) ) ? esc_attr( $new_instance['bg_color'] ) : '#eeeeee';
 
 return $instance;
 	}
@@ -180,16 +179,17 @@ return $instance;
 			echo 'background-position: ' . $pos_v . ' ' . $pos_h . '; ' ;
 		endif;
 
-		if ( isset( $instance['image'] )) {
-			echo 'background-image: url(" ' . $image . '"); ';
-		}
 		if ( isset( $instance['cover'] ) ) {
 			echo 'background-size: cover; ';
 		}
 
 		if ( isset( $instance['padding'] ) ) :
-			echo 'padding-: ' . $instance['padding'] . ' ' . $instance['padding'] . '; ' ;
+			echo 'padding-top: ' . $instance['padding'] . '%; padding-bottom: ' . $instance['padding'] . '%; ' ;
 		endif;
+
+		if ( isset( $instance['image'] )) {
+			echo 'background-image: url(\'' . esc_url( $instance['image'] ) . '\'); ';
+		}
 
 		echo '">';
 
