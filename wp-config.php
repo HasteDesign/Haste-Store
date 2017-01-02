@@ -33,6 +33,9 @@ define('NONCE_SALT',       '&;TE|:^WHPirb8w1Hb*d<{Zy}[l&Cu[Z$`(XY5;C~}-($M)yr3H9
 $table_prefix = 'wp_';
 
 
+define('WP_DEBUG', true );
+define( 'WP_DEBUG_DISPLAY', true );
+define( 'WP_DEBUG_LOG', true );
 
 
 
