@@ -105,14 +105,14 @@ class Haste_Image_Button_Module extends WP_Widget {
 						<?php _e( 'Content centered, image on background', 'harness-store' ); ?>
 					</option>
 					<option
-						value='content-right'
+						value='content-left'
 						<?php echo ( $align =='content-left-image-right' ) ? 'selected' : ''; ?>>
 						<?php _e( 'Content on left, image on right', 'harness-store' ); ?>
 					</option>
 					<option
-						value='content-left'
+						value='content-right'
 						<?php echo ( $align =='content-right-image-left' ) ? 'selected' : ''; ?>>
-						<?php _e( 'Content on left, image on right', 'harness-store' ); ?>
+						<?php _e( 'Content on right, image on left', 'harness-store' ); ?>
 					</option>
 				</select>
 			</label>
