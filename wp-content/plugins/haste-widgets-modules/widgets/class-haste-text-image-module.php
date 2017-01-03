@@ -65,7 +65,7 @@ class Haste_Image_Button_Module extends WP_Widget {
 		<p>
 			<label for="<?php echo $this->get_field_id( 'content' ); ?>">
 				<?php _e( 'Content', 'harness-store' ); ?>
-				<textarea id="<?php echo $this->get_field_id( 'content' ); ?>" class="widefat" name="<?php echo $this->get_field_name( 'content' ); ?>" type="text" height="5" value="<?php echo esc_attr( $content ); ?>" />
+				<textarea id="<?php echo $this->get_field_id( 'content' ); ?>" class="widefat" name="<?php echo $this->get_field_name( 'content' ); ?>" rows="5"><?php echo esc_attr( $content ); ?></textarea>
 			</label>
 		</p>
 		<p>
