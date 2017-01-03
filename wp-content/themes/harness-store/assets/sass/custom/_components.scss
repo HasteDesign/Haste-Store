@@ -58,7 +58,22 @@ input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type=
 		@include make-container();
 	}
 
-	.widget-header {
-		@include make-md-column(12);
+	.widget-content-wrapper {
+		
+		&.content-center {
+			@include make-md-column(12);
+			text-align: center;
+		}
+
+		&.content-left {
+			@include make-md-column(6);
+			text-align: left;
+		}
+
+		&.content-right {
+			@include make-md-column(6);
+			@include make-md-column-offset(6);
+			text-align: right;
+		}
 	}
 }
