@@ -35,6 +35,9 @@ class Haste_Image_Button_Module extends WP_Widget {
 		$title         = isset( $instance['title'] ) ? $instance['title'] : __('My module title', 'harness-store');
 		$subtitle      = isset( $instance['subtitle'] ) ? $instance['subtitle'] : '';
 		$content       = isset( $instance['content'] ) ? $instance['content'] : '';
+		$btn_text      = isset( $instance['btn_text'] ) ? $instance['btn_text'] : '';
+		$btn_link      = isset( $instance['btn_link'] ) ? $instance['btn_link'] : '#';
+		$btn_class     = isset( $instance['btn_class'] ) ? $instance['btn_class'] : '';
 		$align         = isset( $instance['align'] ) ? $instance['align'] : '';
 		$padding       = isset( $instance['padding'] ) ? $instance['padding'] : 0;
 		$image         = isset( $instance['image'] ) ? $instance['image'] : '';
@@ -63,6 +66,23 @@ class Haste_Image_Button_Module extends WP_Widget {
 			<label for="<?php echo $this->get_field_id( 'content' ); ?>">
 				<?php _e( 'Content', 'harness-store' ); ?>
 				<textarea id="<?php echo $this->get_field_id( 'content' ); ?>" class="widefat" name="<?php echo $this->get_field_name( 'content' ); ?>" type="text" height="5" value="<?php echo esc_attr( $content ); ?>" />
+			</label>
+		</p>
+		<p>
+			<label for="<?php echo $this->get_field_id( 'btn_text' ); ?>">
+				<?php _e( 'Button text', 'harness-store' ); ?>
+				<input id="<?php echo $this->get_field_id( 'btn_text' ); ?>" class="widefat" name="<?php echo $this->get_field_name( 'btn_text' ); ?>" type="text" value="<?php echo esc_attr( $btn_text ); ?>" />
+			</label>
+		</p>
+		<p>
+			<label for="<?php echo $this->get_field_name( 'btn_link' ); ?>"><?php _e( 'Button link:', 'harness-store' ); ?>
+				<input name="<?php echo $this->get_field_name( 'btn_link' ); ?>" id="<?php echo $this->get_field_id( 'btn_link' ); ?>" class="widefat" type="text" value="<?php echo esc_attr( $btn_link ); ?>" />
+			</label>
+		</p>
+		<p>
+			<label for="<?php echo $this->get_field_id( 'btn_class' ); ?>">
+				<?php _e( 'Subtitle', 'harness-store' ); ?>
+				<input id="<?php echo $this->get_field_id( 'btn_class' ); ?>" class="widefat" name="<?php echo $this->get_field_name( 'btn_class' ); ?>" type="text" value="<?php echo esc_attr( $btn_class ); ?>" />
 			</label>
 		</p>
 		<p>
@@ -103,7 +123,7 @@ class Haste_Image_Button_Module extends WP_Widget {
 				<img id='image-preview' src='<?php echo esc_attr( $image ); ?>' width='100%' height='100' style='max-height: 100px; width: 100px;'>
 			</div>
 			<label for="<?php echo $this->get_field_name( 'image' ); ?>"><?php _e( 'Image:', 'harness-store' ); ?></label>
-			<input class="image_attachment_id" name="<?php echo $this->get_field_name( 'image' ); ?>" id="<?php echo $this->get_field_id( 'image' ); ?>" class="widefat" type="text" size="36"  value="<?php echo esc_attr( $image ); ?>" />
+			<input class="image_attachment_id widefat" name="<?php echo $this->get_field_name( 'image' ); ?>" id="<?php echo $this->get_field_id( 'image' ); ?>" type="text" size="36"  value="<?php echo esc_attr( $image ); ?>" />
 			<input class="upload_image_button" type="button" value="<?php _e( 'Upload image', 'harness-store' ); ?>" />
 		</p>
 		<p>
@@ -181,9 +201,12 @@ class Haste_Image_Button_Module extends WP_Widget {
 		$instance['title']		= ( ! empty( $new_instance['title'] ) ) ? sanitize_text_field( $new_instance['title'] ) : '';
 		$instance['subtitle']	= ( ! empty( $new_instance['subtitle'] ) ) ? sanitize_text_field( $new_instance['subtitle'] ) : '';
 		$instance['content']	= ( ! empty( $new_instance['content'] ) ) ? sanitize_text_field( $new_instance['content'] ) : '';
+		$instance['btn_text']	= ( ! empty( $new_instance['btn_text'] ) ) ? sanitize_text_field( $new_instance['btn_text'] ) : '';
+		$instance['btn_link']	= ( ! empty( $new_instance['btn_link'] ) ) ? esc_url( $new_instance['btn_link'] ) : '#';
+		$instance['btn_class']	= ( ! empty( $new_instance['btn_class'] ) ) ? sanitize_text_field( $new_instance['btn_class'] ) : '';
 		$instance['align']  	= ( ! empty( $new_instance['align'] ) ) ? sanitize_text_field( $new_instance['align'] ) : '';
 		$instance['padding']	= ( ! empty( $new_instance['padding'] ) ) ? intval( $new_instance['padding'] ) : 0;
-		$instance['image']	= ( ! empty( $new_instance['image'] ) ) ? esc_url( $new_instance['image'] ) : '';
+		$instance['image']	    = ( ! empty( $new_instance['image'] ) ) ? esc_url( $new_instance['image'] ) : '';
 		$instance['img_pos_v']	= ( ! empty( $new_instance['img_pos_v'] ) ) ? intval( $new_instance['img_pos_v'] ) : 50;
 		$instance['img_pos_h']	= ( ! empty( $new_instance['img_pos_h'] ) ) ? intval( $new_instance['img_pos_h'] ) : 50;
 		$instance['img_size']	= ( ! empty( $new_instance['img_size'] ) ) ? intval( $new_instance['img_size'] ) : 100;
@@ -259,6 +282,21 @@ class Haste_Image_Button_Module extends WP_Widget {
 
 		if ( isset( $instance['content'] ) ) :
 			echo '<div class="widget-content">' . $instance['content'] . '</div>';
+		endif;
+
+		if ( isset( $instance['btn_text'] ) ) :
+			echo '<a href="' . $instance['btn_link'] . '" ';
+
+			if ( isset( $instance['btn_class'] ) ) :
+				echo 'class="' . $instance['btn_class'] . '"';
+			endif;
+
+			echo ">";
+
+			echo $instance['btn_text'];
+
+			echo '</a>';
+
 		endif;
 
 		echo '</div></div></div>';
