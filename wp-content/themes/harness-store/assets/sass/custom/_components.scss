@@ -61,7 +61,10 @@ input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type=
 	.widget-header {
 		margin: 0 0 1em 0;
 		padding: 0 0 2em 0;
-		text-align: center; 
+
+		.widget_haste_shortcode_module & {
+			text-align: center;
+		}
 	}
 
 	.widget-content-wrapper {
@@ -79,7 +82,6 @@ input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type=
 		&.content-right {
 			@include make-md-column(6);
 			@include make-md-column-offset(6);
-			text-align: right;
 		}
 	}
 }
