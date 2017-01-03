@@ -293,7 +293,7 @@ class Haste_Image_Button_Module extends WP_Widget {
 		echo '</header>';
 
 		if ( isset( $instance['content'] ) ) :
-			echo '<div class="widget-content">' . $instance['content'] . '</div>';
+			echo '<div class="widget-content">' . wpautop( do_shortcode( $instance['content'] ) ) . '</div>';
 		endif;
 
 		if ( isset( $instance['btn_text'] ) ) :
