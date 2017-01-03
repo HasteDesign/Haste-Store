@@ -87,13 +87,14 @@ class Haste_Shortcode_Module extends WP_Widget {
 	 */
 	public function widget( $args, $instance ) {
 
+		echo $args['before_widget'];
+
 		echo '<div class="widget-wrapper"><div class="widget-container">';
 
 		echo '<header class="widget-header">';
 
 		$title = apply_filters( 'widget_title', $instance['title'] );
 
-		echo $args['before_widget'];
 		if ( ! empty( $title ) ) {
 			echo $args['before_title'] . $title . $args['after_title'];
 		}
@@ -108,6 +109,8 @@ class Haste_Shortcode_Module extends WP_Widget {
 		echo do_shortcode( $instance['shortcode'] );
 
 		echo '</div></div></div>';
+
+		echo $args['after_widget'];
 
 	}
 }
