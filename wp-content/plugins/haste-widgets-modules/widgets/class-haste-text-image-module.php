@@ -215,8 +215,8 @@ class Haste_Image_Button_Module extends WP_Widget {
 		$instance['align']  	= ( ! empty( $new_instance['align'] ) ) ? sanitize_text_field( $new_instance['align'] ) : '';
 		$instance['padding']	= ( ! empty( $new_instance['padding'] ) ) ? intval( $new_instance['padding'] ) : 0;
 		$instance['image']	    = ( ! empty( $new_instance['image'] ) ) ? esc_url( $new_instance['image'] ) : '';
-		$instance['img_pos_v']	= ( ! empty( $new_instance['img_pos_v'] ) ) ? intval( $new_instance['img_pos_v'] ) : 50;
-		$instance['img_pos_h']	= ( ! empty( $new_instance['img_pos_h'] ) ) ? intval( $new_instance['img_pos_h'] ) : 50;
+		$instance['img_pos_v']	= ( ! empty( $new_instance['img_pos_v'] ) ) ? intval( $new_instance['img_pos_v'] ) : 0;
+		$instance['img_pos_h']	= ( ! empty( $new_instance['img_pos_h'] ) ) ? intval( $new_instance['img_pos_h'] ) : 0;
 		$instance['img_size']	= ( ! empty( $new_instance['img_size'] ) ) ? intval( $new_instance['img_size'] ) : 100;
 		$instance['cover'] = ( ! empty( $new_instance['cover'] ) ) ? intval( $new_instance['cover'] ) : 0;
 		$instance['bg_repeat']  	= ( ! empty( $new_instance['bg_repeat'] ) ) ? sanitize_text_field( $new_instance['bg_repeat'] ) : 'repeat';
