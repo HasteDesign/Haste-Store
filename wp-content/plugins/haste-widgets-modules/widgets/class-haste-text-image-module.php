@@ -35,6 +35,7 @@ class Haste_Image_Button_Module extends WP_Widget {
 		$title         = isset( $instance['title'] ) ? $instance['title'] : __('My module title', 'harness-store');
 		$subtitle      = isset( $instance['subtitle'] ) ? $instance['subtitle'] : '';
 		$content       = isset( $instance['content'] ) ? $instance['content'] : '';
+		$text_color    = isset( $instance['text_color'] ) ? $instance['text_color'] : '';
 		$btn_text      = isset( $instance['btn_text'] ) ? $instance['btn_text'] : '';
 		$btn_link      = isset( $instance['btn_link'] ) ? $instance['btn_link'] : '#';
 		$btn_class     = isset( $instance['btn_class'] ) ? $instance['btn_class'] : '';
@@ -68,6 +69,12 @@ class Haste_Image_Button_Module extends WP_Widget {
 				<textarea id="<?php echo $this->get_field_id( 'content' ); ?>" class="widefat" name="<?php echo $this->get_field_name( 'content' ); ?>" rows="5"><?php echo esc_attr( $content ); ?></textarea>
 			</label>
 		</p>
+		<p>
+            <label for="<?php echo $this->get_field_id( 'text_color' ); ?>">
+				<?php _e( 'Text Color', 'harness-store' ); ?>
+	            <input class="wp-color-picker widefat" type="text" id="<?php echo $this->get_field_id( 'text_color' ); ?>" name="<?php echo $this->get_field_name( 'text_color' ); ?>" value="<?php echo esc_attr( $instance['text_color'] ); ?>" />
+			</label>
+        </p>
 		<p>
 			<label for="<?php echo $this->get_field_id( 'btn_text' ); ?>">
 				<?php _e( 'Button text', 'harness-store' ); ?>
@@ -180,7 +187,7 @@ class Haste_Image_Button_Module extends WP_Widget {
 		<p>
             <label for="<?php echo $this->get_field_id( 'bg_color' ); ?>">
 				<?php _e( 'Background Color', 'harness-store' ); ?>
-	            <input class="haste-color-picker" type="text" id="<?php echo $this->get_field_id( 'bg_color' ); ?>" name="<?php echo $this->get_field_name( 'bg_color' ); ?>" value="<?php echo esc_attr( $instance['bg_color'] ); ?>" />
+	            <input class="wp-color-picker widefat" type="text" id="<?php echo $this->get_field_id( 'bg_color' ); ?>" name="<?php echo $this->get_field_name( 'bg_color' ); ?>" value="<?php echo esc_attr( $instance['bg_color'] ); ?>" />
 			</label>
         </p>
 		<?php
@@ -201,6 +208,7 @@ class Haste_Image_Button_Module extends WP_Widget {
 		$instance['title']		= ( ! empty( $new_instance['title'] ) ) ? sanitize_text_field( $new_instance['title'] ) : '';
 		$instance['subtitle']	= ( ! empty( $new_instance['subtitle'] ) ) ? sanitize_text_field( $new_instance['subtitle'] ) : '';
 		$instance['content']	= ( ! empty( $new_instance['content'] ) ) ? sanitize_text_field( $new_instance['content'] ) : '';
+		$instance['text_color']	= ( ! empty( $new_instance['text_color'] ) ) ? esc_attr( $new_instance['text_color'] ) : '';
 		$instance['btn_text']	= ( ! empty( $new_instance['btn_text'] ) ) ? sanitize_text_field( $new_instance['btn_text'] ) : '';
 		$instance['btn_link']	= ( ! empty( $new_instance['btn_link'] ) ) ? esc_url( $new_instance['btn_link'] ) : '#';
 		$instance['btn_class']	= ( ! empty( $new_instance['btn_class'] ) ) ? sanitize_text_field( $new_instance['btn_class'] ) : '';
@@ -247,13 +255,17 @@ class Haste_Image_Button_Module extends WP_Widget {
 			echo 'background-repeat: ' . $instance['bg_repeat'] . '; ' ;
 		}
 
+		if ( isset( $instance['image'] )) {
+			echo 'background-image: url(\'' . esc_url( $instance['image'] ) . '\'); ';
+		}
+
 		if ( isset( $instance['padding'] ) ) :
 			echo 'padding-top: ' . $instance['padding'] . '%; padding-bottom: ' . $instance['padding'] . '%; ' ;
 		endif;
 
-		if ( isset( $instance['image'] )) {
-			echo 'background-image: url(\'' . esc_url( $instance['image'] ) . '\'); ';
-		}
+		if ( isset( $instance['text_color'] ) ) :
+			echo 'color: ' . $instance['text_color'] . '; ' ;
+		endif;
 
 		echo '">';
 

@@ -1,5 +1,7 @@
 jQuery(document).ready(function($) {
 
+	$('.wp-color-picker').wpColorPicker();
+
 	// Uploading files
 	var file_frame;
 	var wp_media_post_id = wp.media.model.settings.post.url; // Store the old id
@@ -45,5 +47,4 @@ jQuery(document).ready(function($) {
 				file_frame.open();
 			});
 
-    $('.haste-color-picker').wpColorPicker();
 });
