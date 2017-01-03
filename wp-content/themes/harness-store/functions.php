@@ -207,6 +207,50 @@ function odin_widgets_init() {
 			'after_title' => '</h2>',
 		)
 	);
+	register_sidebar(
+		array(
+			'name' => __( 'Footer area 1', 'harness-store' ),
+			'id' => 'footer-widget-area-1',
+			'description' => __( 'First footer column ', 'harness-store' ),
+			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'after_widget' => '</aside>',
+			'before_title' => '<h3 class="widgettitle widget-title">',
+			'after_title' => '</h3>',
+		)
+	);
+	register_sidebar(
+		array(
+			'name' => __( 'Footer area 1', 'harness-store' ),
+			'id' => 'footer-widget-area-1',
+			'description' => __( 'First footer column ', 'harness-store' ),
+			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'after_widget' => '</aside>',
+			'before_title' => '<h3 class="widgettitle widget-title">',
+			'after_title' => '</h3>',
+		)
+	);
+	register_sidebar(
+		array(
+			'name' => __( 'Footer area 2', 'harness-store' ),
+			'id' => 'footer-widget-area-2',
+			'description' => __( 'First footer column ', 'harness-store' ),
+			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'after_widget' => '</aside>',
+			'before_title' => '<h3 class="widgettitle widget-title">',
+			'after_title' => '</h3>',
+		)
+	);
+	register_sidebar(
+		array(
+			'name' => __( 'Footer area 3', 'harness-store' ),
+			'id' => 'footer-widget-area-3',
+			'description' => __( 'First footer column ', 'harness-store' ),
+			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'after_widget' => '</aside>',
+			'before_title' => '<h3 class="widgettitle widget-title">',
+			'after_title' => '</h3>',
+		)
+	);
 }
 
 add_action( 'widgets_init', 'odin_widgets_init' );
