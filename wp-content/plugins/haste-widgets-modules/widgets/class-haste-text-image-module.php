@@ -38,12 +38,15 @@ class Haste_Image_Button_Module extends WP_Widget {
 		$align         = isset( $instance['align'] ) ? $instance['align'] : '';
 		$padding       = isset( $instance['padding'] ) ? $instance['padding'] : 0;
 		$image         = isset( $instance['image'] ) ? $instance['image'] : '';
-		$img_offset_v  = isset( $instance['img_offset_v'] ) ? $instance['img_offset_v'] : 0;
-		$img_offset_h  = isset( $instance['img_offset_h'] ) ? $instance['img_offset_h'] : 0;
+		$img_pos_v     = isset( $instance['img_pos_v'] ) ? $instance['img_pos_v'] : 50;
+		$img_pos_h     = isset( $instance['img_pos_h'] ) ? $instance['img_pos_h'] : 50;
+		$img_size      = isset( $instance['img_size'] ) ? $instance['img_size'] : 100;
 		$cover 		   = isset( $instance['cover'] ) ? $instance['cover'] : 1;
+		$bg_repeat     = isset( $instance['bg_repeat'] ) ? $instance['bg_repeat'] : '';
 		$bg_color      = isset( $instance['bg_color'] ) ? $instance['bg_color'] : '#eeeeee';
 
 		?>
+		<h3><?php _e( 'Content options', 'harness-store' ); ?></h3>
 		<p>
 			<label for="<?php echo $this->get_field_id( 'title' ); ?>">
 				<?php _e( 'Title:', 'harness-store' ); ?>
@@ -72,17 +75,17 @@ class Haste_Image_Button_Module extends WP_Widget {
 					<option
 						value='content-center'
 						<?php echo ( $align =='center' ) ? 'selected' : ''; ?>>
-						<?php _e( 'Text centered, image on background', 'harness-store' ); ?>
+						<?php _e( 'Content centered, image on background', 'harness-store' ); ?>
 					</option>
 					<option
 						value='content-right'
 						<?php echo ( $align =='content-left-image-right' ) ? 'selected' : ''; ?>>
-						<?php _e( 'Text on left, image on right', 'harness-store' ); ?>
+						<?php _e( 'Content on left, image on right', 'harness-store' ); ?>
 					</option>
 					<option
 						value='content-left'
 						<?php echo ( $align =='content-right-image-left' ) ? 'selected' : ''; ?>>
-						<?php _e( 'Text on left, image on right', 'harness-store' ); ?>
+						<?php _e( 'Content on left, image on right', 'harness-store' ); ?>
 					</option>
 				</select>
 			</label>
@@ -93,6 +96,8 @@ class Haste_Image_Button_Module extends WP_Widget {
 				<input id="<?php echo $this->get_field_id( 'padding' ); ?>" class="widefat" name="<?php echo $this->get_field_name( 'padding' ); ?>" type="number" min="0" max="100" value="<?php echo esc_attr( $padding ); ?>" />
 			</label>
 		</p>
+		<hr />
+		<h3><?php _e( 'Background options', 'harness-store' ); ?></h3>
 		<p class="upload-img">
 			<div class='image-preview-wrapper'>
 				<img id='image-preview' src='<?php echo esc_attr( $image ); ?>' width='100%' height='100' style='max-height: 100px; width: 100px;'>
@@ -102,20 +107,54 @@ class Haste_Image_Button_Module extends WP_Widget {
 			<input class="upload_image_button" type="button" value="<?php _e( 'Upload image', 'harness-store' ); ?>" />
 		</p>
 		<p>
-			<label for="<?php echo $this->get_field_id( 'img_offset_v' ); ?>">
-				<?php _e( 'Image vertical offset (from -50% to 50%)', 'harness-store' ); ?>
-				<input id="<?php echo $this->get_field_id( 'img_offset_v' ); ?>" class="widefat" name="<?php echo $this->get_field_name( 'img_offset_v' ); ?>" type="number" min="-50" max="50" value="<?php echo esc_attr( $img_offset_v ); ?>" />
+			<label for="<?php echo $this->get_field_id( 'img_pos_v' ); ?>">
+				<?php _e( 'Image vertical position (%)', 'harness-store' ); ?>
+				<input id="<?php echo $this->get_field_id( 'img_pos_v' ); ?>" class="widefat" name="<?php echo $this->get_field_name( 'img_pos_v' ); ?>" type="number" min="-50" max="150" value="<?php echo esc_attr( $img_pos_v ); ?>" />
 			</label>
 		</p>
 		<p>
-			<label for="<?php echo $this->get_field_id( 'img_offset_h' ); ?>">
-				<?php _e( 'Image horizontal offset (from -50% to 50%)', 'harness-store' ); ?>
-				<input id="<?php echo $this->get_field_id( 'img_offset_h' ); ?>" class="widefat" name="<?php echo $this->get_field_name( 'img_offset_h' ); ?>" type="number" min="-50" max="50" value="<?php echo esc_attr( $img_offset_h ); ?>" />
+			<label for="<?php echo $this->get_field_id( 'img_pos_h' ); ?>">
+				<?php _e( 'Image horizontal position (%)', 'harness-store' ); ?>
+				<input id="<?php echo $this->get_field_id( 'img_pos_h' ); ?>" class="widefat" name="<?php echo $this->get_field_name( 'img_pos_h' ); ?>" type="number" min="-50" max="150" value="<?php echo esc_attr( $img_pos_h ); ?>" />
 			</label>
 		</p>
 		<p>
+			<label for="<?php echo $this->get_field_id( 'img_size' ); ?>">
+				<?php _e( 'Image size (%)', 'harness-store' ); ?>
+				<input id="<?php echo $this->get_field_id( 'img_size' ); ?>" class="widefat" name="<?php echo $this->get_field_name( 'img_size' ); ?>" type="number" min="-50" max="150" value="<?php echo esc_attr( $img_size ); ?>" />
+			</label>
 			<label for="<?php echo $this->get_field_id( 'cover' ); ?>">
 				<input id="<?php echo $this->get_field_id( 'cover' ); ?>" name="<?php echo $this->get_field_name( 'cover' ); ?>" type="checkbox" value="1" <?php checked( 1, $cover, true ); ?> /> <?php _e( 'Expand image to cover the entire module area', 'harness-store' ); ?>
+			</label>
+		</p>
+		<p>
+			<label for="<?php echo $this->get_field_id( 'bg_repeat' ); ?>">
+
+				<?php _e( 'Background image repeat', 'harness-store' ); ?>
+
+				<select class='widefat' id="<?php echo $this->get_field_id('bg_repeat'); ?>"
+					name="<?php echo $this->get_field_name( 'bg_repeat' ); ?>" type="text">
+					<option
+						value='no-repeat'
+						<?php echo ( $align =='no-repeat' ) ? 'selected' : ''; ?>>
+						<?php _e( 'No repeat', 'harness-store' ); ?>
+					</option>
+					<option
+						value='repeat'
+						<?php echo ( $align =='repeat' ) ? 'selected' : ''; ?>>
+						<?php _e( 'Vertical and horizontal repeat', 'harness-store' ); ?>
+					</option>
+					<option
+						value='repeat-x'
+						<?php echo ( $align =='repeat-x' ) ? 'selected' : ''; ?>>
+						<?php _e( 'Horizontal repeat', 'harness-store' ); ?>
+					</option>
+					<option
+						value='repeat-y'
+						<?php echo ( $align =='repeat-y' ) ? 'selected' : ''; ?>>
+						<?php _e( 'Vertical repeat', 'harness-store' ); ?>
+					</option>
+				</select>
 			</label>
 		</p>
 		<p>
@@ -138,18 +177,21 @@ class Haste_Image_Button_Module extends WP_Widget {
 	 * @return array               Updated safe values to be saved.
 	 */
 	public function update( $new_instance, $old_instance ) {
-$instance = array();
-$instance['title']		= ( ! empty( $new_instance['title'] ) ) ? sanitize_text_field( $new_instance['title'] ) : '';
-$instance['subtitle']	= ( ! empty( $new_instance['subtitle'] ) ) ? sanitize_text_field( $new_instance['subtitle'] ) : '';
-$instance['content']	= ( ! empty( $new_instance['content'] ) ) ? sanitize_text_field( $new_instance['content'] ) : '';
-$instance['padding']	= ( ! empty( $new_instance['padding'] ) ) ? intval( $new_instance['padding'] ) : 0;
-$instance['image']	= ( ! empty( $new_instance['image'] ) ) ? esc_url( $new_instance['image'] ) : '';
-$instance['img_offset_v']	= ( ! empty( $new_instance['img_offset_v'] ) ) ? intval( $new_instance['img_offset_v'] ) : 0;
-$instance['img_offset_h']	= ( ! empty( $new_instance['img_offset_h'] ) ) ? intval( $new_instance['img_offset_h'] ) : 0;
-$instance['cover'] = ( ! empty( $new_instance['cover'] ) ) ? intval( $new_instance['cover'] ) : 0;
-$instance['bg_color']	= ( ! empty( $new_instance['bg_color'] ) ) ? esc_attr( $new_instance['bg_color'] ) : '#eeeeee';
+		$instance = array();
+		$instance['title']		= ( ! empty( $new_instance['title'] ) ) ? sanitize_text_field( $new_instance['title'] ) : '';
+		$instance['subtitle']	= ( ! empty( $new_instance['subtitle'] ) ) ? sanitize_text_field( $new_instance['subtitle'] ) : '';
+		$instance['content']	= ( ! empty( $new_instance['content'] ) ) ? sanitize_text_field( $new_instance['content'] ) : '';
+		$instance['align']  	= ( ! empty( $new_instance['align'] ) ) ? sanitize_text_field( $new_instance['align'] ) : '';
+		$instance['padding']	= ( ! empty( $new_instance['padding'] ) ) ? intval( $new_instance['padding'] ) : 0;
+		$instance['image']	= ( ! empty( $new_instance['image'] ) ) ? esc_url( $new_instance['image'] ) : '';
+		$instance['img_pos_v']	= ( ! empty( $new_instance['img_pos_v'] ) ) ? intval( $new_instance['img_pos_v'] ) : 50;
+		$instance['img_pos_h']	= ( ! empty( $new_instance['img_pos_h'] ) ) ? intval( $new_instance['img_pos_h'] ) : 50;
+		$instance['img_size']	= ( ! empty( $new_instance['img_size'] ) ) ? intval( $new_instance['img_size'] ) : 100;
+		$instance['cover'] = ( ! empty( $new_instance['cover'] ) ) ? intval( $new_instance['cover'] ) : 0;
+		$instance['bg_repeat']  	= ( ! empty( $new_instance['bg_repeat'] ) ) ? sanitize_text_field( $new_instance['bg_repeat'] ) : 'repeat';
+		$instance['bg_color']	= ( ! empty( $new_instance['bg_color'] ) ) ? esc_attr( $new_instance['bg_color'] ) : '#eeeeee';
 
-return $instance;
+		return $instance;
 	}
 
 	/**
@@ -164,23 +206,22 @@ return $instance;
 
 		echo $args['before_widget'];
 
-		// Image settings
-			$pos_v 	= 50 - ( isset( $instance['img_offset_v'] ) ? $instance['img_offset_v'] : 0 ). "%";
-
-			$pos_h 	= 50 - ( isset( $instance['img_offset_h'] ) ? $instance['img_offset_h'] : 0 ) . "%";
-
 		echo '<div class="widget-wrapper"';
 
 		if ( isset( $instance['bg_color'] ) ) :
 			echo 'style="background-color: ' . $instance['bg_color'] . '; ' ;
 		endif;
 
-		if ( isset( $instance['img_offset_v'] ) || isset( $instance['img_offset_h'] ) ) :
-			echo 'background-position: ' . $pos_v . ' ' . $pos_h . '; ' ;
-		endif;
+		echo 'background-position: ' . $instance['img_pos_h'] . '% ' . $instance['img_pos_v'] . '%; ' ;
 
-		if ( isset( $instance['cover'] ) ) {
+		if ( isset( $instance['cover'] ) && $instance['cover'] == true ) {
 			echo 'background-size: cover; ';
+		} else {
+			echo 'background-size: ' . $instance['img_size'] . '% ;';
+		}
+
+		if ( isset( $instance['bg_repeat'] ) ) {
+			echo 'background-repeat: ' . $instance['bg_repeat'] . '; ' ;
 		}
 
 		if ( isset( $instance['padding'] ) ) :
@@ -195,7 +236,13 @@ return $instance;
 
 		echo '<div class="widget-container">';
 
-		echo '<div class="widget-content-wrapper">';
+		echo '<div class="widget-content-wrapper';
+
+		if ( isset( $instance['align'] ) ) {
+			echo ' ' . $instance['align'] ;
+		}
+
+		echo '">';
 
 		echo '<header class="widget-header">';
 
@@ -212,14 +259,6 @@ return $instance;
 
 		if ( isset( $instance['content'] ) ) :
 			echo '<div class="widget-content">' . $instance['content'] . '</div>';
-		endif;
-
-		echo '</div>';
-
-		echo '<div class="widget-shortcode">';
-
-		if ( isset( $instance['shortcode'] ) ) :
-			echo do_shortcode( $instance['shortcode'] );
 		endif;
 
 		echo '</div></div></div>';
