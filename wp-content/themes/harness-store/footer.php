@@ -14,7 +14,7 @@
 	</div><!-- #wrapper -->
 
 	<footer id="footer" role="contentinfo">
-		<section class="footer-widgets">
+		<section class="footer-widgets sidebar">
 			<div class="container">
 				<div class="row">
 

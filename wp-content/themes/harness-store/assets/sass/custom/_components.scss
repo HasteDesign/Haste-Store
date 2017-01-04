@@ -51,6 +51,10 @@ input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type=
 	}
 }
 
+.section-title {
+	margin-top: 0;
+}
+
 .widget-wrapper {
 	@include make-row();
 
@@ -64,6 +68,7 @@ input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type=
 
 		.widget_haste_shortcode_module & {
 			text-align: center;
+			margin-top: 4em;
 		}
 	}
 
