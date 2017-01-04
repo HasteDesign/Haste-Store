@@ -66,10 +66,11 @@
 		}
 
 		.woocommerce-tabs {
-			clear: both;
+			@include make-container();
 
 			ul.tabs {
-				@include menu();
+				@extend .nav;
+				@extend .nav-tabs;
 			}
 		}
 
@@ -499,4 +500,8 @@
 			}
 		}
 	}
+}
+
+.related.products {
+	@include make-container();
 }
