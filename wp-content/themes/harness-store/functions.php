@@ -370,3 +370,20 @@ if ( is_woocommerce_activated() ) {
 	require get_template_directory() . '/inc/woocommerce/functions.php';
 	require get_template_directory() . '/inc/woocommerce/template-tags.php';
 }
+
+/**
+ * Code should be placed in your theme functions.php file.
+ */
+add_filter( 'woocommerce_loop_add_to_cart_link', 'button_class_add_to_cart_link', 10, 2 );
+function button_class_add_to_cart_link( $classes, $product ) {
+	$button = 	sprintf( '<a rel="nofollow" href="%s" data-quantity="%s" data-product_id="%s" data-product_sku="%s" class="%s">%s</a>',
+				esc_url( $product->add_to_cart_url() ),
+				esc_attr( isset( $quantity ) ? $quantity : 1 ),
+				esc_attr( $product->id ),
+				esc_attr( $product->get_sku() ),
+				esc_attr( isset( $class ) ? $class : 'btn-wc btn btn-primary' ),
+				esc_html( $product->add_to_cart_text() )
+			);
+
+	return $button;
+}
