@@ -96,11 +96,11 @@ $icon-font-svg-id:        "glyphicons_halflingsregular";
 //
 //## Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).
 
-$padding-base-vertical:     6px;
-$padding-base-horizontal:   12px;
+$padding-base-vertical:     10px;
+$padding-base-horizontal:   15px;
 
-$padding-large-vertical:    10px;
-$padding-large-horizontal:  16px;
+$padding-large-vertical:    15px;
+$padding-large-horizontal:  20px;
 
 $padding-small-vertical:    5px;
 $padding-small-horizontal:  10px;
@@ -153,29 +153,29 @@ $table-border-color:            #ddd;
 
 $btn-font-weight:                normal;
 
-$btn-default-color:              #333;
-$btn-default-bg:                 #fff;
-$btn-default-border:             #ccc;
+$btn-default-color:              currentColor;
+$btn-default-bg:                 transparent;
+$btn-default-border:             rgba(128,128,128,0.4);
 
 $btn-primary-color:              #fff;
 $btn-primary-bg:                 $brand-primary;
-$btn-primary-border:             darken($btn-primary-bg, 5%);
+$btn-primary-border:             transparent;
 
 $btn-success-color:              #fff;
 $btn-success-bg:                 $brand-success;
-$btn-success-border:             darken($btn-success-bg, 5%);
+$btn-success-border:             transparent;
 
 $btn-info-color:                 #fff;
 $btn-info-bg:                    $brand-info;
-$btn-info-border:                darken($btn-info-bg, 5%);
+$btn-info-border:                transparent;
 
 $btn-warning-color:              #fff;
 $btn-warning-bg:                 $brand-warning;
-$btn-warning-border:             darken($btn-warning-bg, 5%);
+$btn-warning-border:             transparent;
 
 $btn-danger-color:               #fff;
 $btn-danger-bg:                  $brand-danger;
-$btn-danger-border:              darken($btn-danger-bg, 5%);
+$btn-danger-border:              transparent;
 
 $btn-link-disabled-color:        $gray-light;
 

@@ -1,4 +1,12 @@
 /**
+ * Botões
+ */
+
+.btn {
+	background-clip: padding-box;
+}
+
+/**
  *  Forms
  */
 
@@ -51,8 +59,17 @@ input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type=
 	}
 }
 
-.section-title {
-	margin-top: 0;
+.page-section {
+	.section-title {
+		margin-top: 0;
+		color: inherit;
+	}
+
+	.entry-content,
+	.widget-header,
+	.widget-content {
+		color: inherit;
+	}
 }
 
 .widget-wrapper {
@@ -87,6 +104,7 @@ input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type=
 		&.content-right {
 			@include make-md-column(6);
 			@include make-md-column-offset(6);
+			text-align: left;
 		}
 	}
 }
