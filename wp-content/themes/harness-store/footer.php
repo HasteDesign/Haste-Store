@@ -18,23 +18,30 @@
 			<div class="container">
 				<div class="row">
 
-					<div class="col-md-4 footer-widget-area-1">
+					<div class="col-md-3 footer-widget-area-1">
 						<?php
 							if ( ! dynamic_sidebar( 'footer-widget-area-1' ) ) {
 							}
 						?>
 					</div>
 
-					<div class="col-md-4 footer-widget-area-2">
+					<div class="col-md-3 footer-widget-area-2">
 						<?php
 							if ( ! dynamic_sidebar( 'footer-widget-area-2' ) ) {
 							}
 						?>
 					</div>
 
-					<div class="col-md-4 footer-widget-area-2">
+					<div class="col-md-3 footer-widget-area-3">
 						<?php
 							if ( ! dynamic_sidebar( 'footer-widget-area-3' ) ) {
+							}
+						?>
+					</div>
+
+					<div class="col-md-3 footer-widget-area-4">
+						<?php
+							if ( ! dynamic_sidebar( 'footer-widget-area-4' ) ) {
 							}
 						?>
 					</div>
