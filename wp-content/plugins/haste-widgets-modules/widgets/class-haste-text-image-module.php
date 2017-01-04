@@ -109,17 +109,17 @@ class Haste_Image_Button_Module extends WP_Widget {
 					name="<?php echo $this->get_field_name( 'align' ); ?>" type="text">
 					<option
 						value='content-center'
-						<?php echo ( $align =='center' ) ? 'selected' : ''; ?>>
+						<?php echo ( $align == 'content-center' ) ? 'selected' : ''; ?>>
 						<?php _e( 'Content centered, image on background', 'harness-store' ); ?>
 					</option>
 					<option
 						value='content-left'
-						<?php echo ( $align =='content-left-image-right' ) ? 'selected' : ''; ?>>
+						<?php echo ( $align == 'content-left' ) ? 'selected' : ''; ?>>
 						<?php _e( 'Content on left, image on right', 'harness-store' ); ?>
 					</option>
 					<option
 						value='content-right'
-						<?php echo ( $align =='content-right-image-left' ) ? 'selected' : ''; ?>>
+						<?php echo ( $align == 'content-right' ) ? 'selected' : ''; ?>>
 						<?php _e( 'Content on right, image on left', 'harness-store' ); ?>
 					</option>
 				</select>
