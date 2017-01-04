@@ -28,5 +28,5 @@ node_modules/
 !.gitignore
 
 # Update files
-wp-content/updgrade
-wp-content/updgrade/*
+wp-content/upgrade
+wp-content/upgrade/*
