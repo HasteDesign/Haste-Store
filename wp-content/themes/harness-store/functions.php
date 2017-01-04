@@ -56,14 +56,14 @@ if ( ! function_exists( 'odin_setup_features' ) ) {
 		/**
 		 * Add support for multiple languages.
 		 */
-		load_theme_textdomain( 'harness-store', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'haste-store', get_template_directory() . '/languages' );
 
 		/**
 		 * Register nav menus.
 		 */
 		register_nav_menus(
 			array(
-				'main-menu' => __( 'Main Menu', 'harness-store' )
+				'main-menu' => __( 'Main Menu', 'haste-store' )
 			)
 		);
 
@@ -187,9 +187,9 @@ add_action( 'after_setup_theme', 'odin_setup_features' );
 function odin_widgets_init() {
 	register_sidebar(
 		array(
-			'name' => __( 'Main Sidebar', 'harness-store' ),
+			'name' => __( 'Main Sidebar', 'haste-store' ),
 			'id' => 'main-sidebar',
-			'description' => __( 'Site Main Sidebar', 'harness-store' ),
+			'description' => __( 'Site Main Sidebar', 'haste-store' ),
 			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 			'after_widget' => '</aside>',
 			'before_title' => '<h3 class="widgettitle widget-title">',
@@ -198,9 +198,9 @@ function odin_widgets_init() {
 	);
 	register_sidebar(
 		array(
-			'name' => __( 'Home main content', 'harness-store' ),
+			'name' => __( 'Home main content', 'haste-store' ),
 			'id' => 'home-main-content',
-			'description' => __( 'Home main content ', 'harness-store' ),
+			'description' => __( 'Home main content ', 'haste-store' ),
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
 			'after_widget' => '</div>',
 			'before_title' => '<h2 class="widgettitle widget-title section-title">',
@@ -209,9 +209,9 @@ function odin_widgets_init() {
 	);
 	register_sidebar(
 		array(
-			'name' => __( 'Footer area 1', 'harness-store' ),
+			'name' => __( 'Footer area 1', 'haste-store' ),
 			'id' => 'footer-widget-area-1',
-			'description' => __( 'First footer column ', 'harness-store' ),
+			'description' => __( 'First footer column ', 'haste-store' ),
 			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 			'after_widget' => '</aside>',
 			'before_title' => '<h3 class="widgettitle widget-title">',
@@ -220,9 +220,9 @@ function odin_widgets_init() {
 	);
 	register_sidebar(
 		array(
-			'name' => __( 'Footer area 1', 'harness-store' ),
+			'name' => __( 'Footer area 1', 'haste-store' ),
 			'id' => 'footer-widget-area-1',
-			'description' => __( 'First footer column ', 'harness-store' ),
+			'description' => __( 'First footer column ', 'haste-store' ),
 			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 			'after_widget' => '</aside>',
 			'before_title' => '<h3 class="widgettitle widget-title">',
@@ -231,9 +231,9 @@ function odin_widgets_init() {
 	);
 	register_sidebar(
 		array(
-			'name' => __( 'Footer area 2', 'harness-store' ),
+			'name' => __( 'Footer area 2', 'haste-store' ),
 			'id' => 'footer-widget-area-2',
-			'description' => __( 'First footer column ', 'harness-store' ),
+			'description' => __( 'First footer column ', 'haste-store' ),
 			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 			'after_widget' => '</aside>',
 			'before_title' => '<h3 class="widgettitle widget-title">',
@@ -242,9 +242,9 @@ function odin_widgets_init() {
 	);
 	register_sidebar(
 		array(
-			'name' => __( 'Footer area 3', 'harness-store' ),
+			'name' => __( 'Footer area 3', 'haste-store' ),
 			'id' => 'footer-widget-area-3',
-			'description' => __( 'First footer column ', 'harness-store' ),
+			'description' => __( 'First footer column ', 'haste-store' ),
 			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 			'after_widget' => '</aside>',
 			'before_title' => '<h3 class="widgettitle widget-title">',

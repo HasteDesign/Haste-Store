@@ -26,7 +26,7 @@
 <body <?php body_class(); ?>>
 	<a id="skippy" class="sr-only sr-only-focusable" href="#content">
 		<div class="container">
-			<span class="skiplink-text"><?php _e( 'Skip to content', 'harness-store' ); ?></span>
+			<span class="skiplink-text"><?php _e( 'Skip to content', 'haste-store' ); ?></span>
 		</div>
 	</a>
 
@@ -45,7 +45,7 @@
 			<div class="container">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-navigation">
-					<span class="sr-only"><?php _e( 'Toggle navigation', 'harness-store' ); ?></span>
+					<span class="sr-only"><?php _e( 'Toggle navigation', 'haste-store' ); ?></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
@@ -87,18 +87,18 @@
 								</p>
 
 								<div class="btn-group" role="group" aria-label="login">
-									<a class="btn btn-default navbar-btn" href="<?php echo wp_logout_url( get_permalink() ); ?>"><?php _e('Logout', 'harness-store'); ?></a>
+									<a class="btn btn-default navbar-btn" href="<?php echo wp_logout_url( get_permalink() ); ?>"><?php _e('Logout', 'haste-store'); ?></a>
 
 									<div class="btn-group" role="group">
 										<button class="btn btn-default navbar-btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										<?php _e('My details', 'harness-store'); ?> <span class="caret"></span>
+										<?php _e('My details', 'haste-store'); ?> <span class="caret"></span>
 										</button>
 										<ul class="dropdown-menu">
 											<li>
-												<a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>"><?php _e('My account', 'harness-store'); ?></a>
+												<a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>"><?php _e('My account', 'haste-store'); ?></a>
 											</li>
 											<li>
-												<a href="<?php echo wc_get_endpoint_url( 'orders', '', get_permalink( get_option('woocommerce_myaccount_page_id') ) );?>"><?php _e('My orders', 'harness-store'); ?></a>
+												<a href="<?php echo wc_get_endpoint_url( 'orders', '', get_permalink( get_option('woocommerce_myaccount_page_id') ) );?>"><?php _e('My orders', 'haste-store'); ?></a>
 											</li>
 										</ul>
 									</div>
@@ -110,14 +110,14 @@
 
 								<p class="navbar-text">
 									<?php
-								    	_e('Hello, guest user.', 'harness-store');
+								    	_e('Hello, guest user.', 'haste-store');
 									?>
 								</p>
 								<div class="btn-group" role="group" aria-label="login">
 									<a class="btn btn-default navbar-btn" href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>">
-										<?php _e('Login', 'harness-store')?></a>
+										<?php _e('Login', 'haste-store')?></a>
 									<a class="btn btn-default navbar-btn" href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>">
-										<?php _e('Register', 'harness-store')?></a>
+										<?php _e('Register', 'haste-store')?></a>
 								</div>
 						<?php
 								}
@@ -126,7 +126,7 @@
 						<button type="button" class="btn btn-primary navbar-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
 							<span class="badge"><?php echo WC()->cart->get_cart_contents_count(); ?></span>
-							<span class="sr-only"><?php _e('Cart', 'harness-store')?></span>
+							<span class="sr-only"><?php _e('Cart', 'haste-store')?></span>
 							<span class="caret"></span>
 						</button>
 							<?php odin_header_cart() ?>

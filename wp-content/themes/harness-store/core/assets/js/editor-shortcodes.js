@@ -9,7 +9,7 @@
 		var odin_ui = new Odin_Shortcode_UI( editor, ed );
 
 		editor.addButton(
-			'harness-store', {
+			'haste-store', {
 				text: ed.getLang( 'odin.shortcode_title' ),
 				type: 'menubutton',
 				menu: [ {

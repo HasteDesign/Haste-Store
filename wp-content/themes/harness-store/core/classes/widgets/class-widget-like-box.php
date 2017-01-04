@@ -17,8 +17,8 @@ class Odin_Widget_Like_Box extends WP_Widget {
 	public function __construct() {
 		parent::__construct(
 			'odin_facebook_like_box',
-			__( 'Facebook Like Box', 'harness-store' ),
-			array( 'description' => __( 'This widget includes a facebook like box on your blog', 'harness-store' ), )
+			__( 'Facebook Like Box', 'haste-store' ),
+			array( 'description' => __( 'This widget includes a facebook like box on your blog', 'haste-store' ), )
 		);
 	}
 
@@ -45,55 +45,55 @@ class Odin_Widget_Like_Box extends WP_Widget {
 		?>
 		<p>
 			<label for="<?php echo $this->get_field_id( 'title' ); ?>">
-				<?php _e( 'Title:', 'harness-store' ); ?>
+				<?php _e( 'Title:', 'haste-store' ); ?>
 				<input id="<?php echo $this->get_field_id( 'title' ); ?>" class="widefat" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
 			</label>
 		</p>
 		<p>
 			<label for="<?php echo $this->get_field_id( 'url' ); ?>">
-				<?php _e( 'Facebook Page URL:', 'harness-store' ); ?>
+				<?php _e( 'Facebook Page URL:', 'haste-store' ); ?>
 				<input id="<?php echo $this->get_field_id( 'url' ); ?>" class="widefat" name="<?php echo $this->get_field_name( 'url' ); ?>" type="text" value="<?php echo esc_attr( $url ); ?>" />
 			</label>
 		</p>
 		<p>
 			<label for="<?php echo $this->get_field_id( 'width' ); ?>">
-				<?php _e( 'Width:', 'harness-store' ); ?>
+				<?php _e( 'Width:', 'haste-store' ); ?>
 				<input id="<?php echo $this->get_field_id( 'width' ); ?>" size="5" name="<?php echo $this->get_field_name( 'width' ); ?>" type="text" value="<?php echo intval( $width ); ?>" />
 			</label>
 		</p>
 		<p>
 			<label for="<?php echo $this->get_field_id( 'height' ); ?>">
-				<?php _e( 'Height:', 'harness-store' ); ?>
+				<?php _e( 'Height:', 'haste-store' ); ?>
 				<input id="<?php echo $this->get_field_id( 'height' ); ?>" size="5" name="<?php echo $this->get_field_name( 'height' ); ?>" type="text" value="<?php echo intval( $height ); ?>" />
 			</label>
 		</p>
 		<p>
 			<label for="<?php echo $this->get_field_id( 'color_scheme' ); ?>">
-				<?php _e( 'Color Scheme:', 'harness-store' ); ?>
+				<?php _e( 'Color Scheme:', 'haste-store' ); ?>
 				<select id="<?php echo $this->get_field_id( 'color_scheme' ); ?>" class="widefat" name="<?php echo $this->get_field_name( 'color_scheme' ); ?>">
-					<option value="dark" <?php selected( 'dark', $color_scheme, true ); ?>><?php _e( 'Dark', 'harness-store' ); ?></option>
-					<option value="light" <?php selected( 'light', $color_scheme, true ); ?>><?php _e( 'Light', 'harness-store' ); ?></option>
+					<option value="dark" <?php selected( 'dark', $color_scheme, true ); ?>><?php _e( 'Dark', 'haste-store' ); ?></option>
+					<option value="light" <?php selected( 'light', $color_scheme, true ); ?>><?php _e( 'Light', 'haste-store' ); ?></option>
 				</select>
 			</label>
 		</p>
 		<p>
 			<label for="<?php echo $this->get_field_id( 'friends_faces' ); ?>">
-				<input id="<?php echo $this->get_field_id( 'friends_faces' ); ?>" name="<?php echo $this->get_field_name( 'friends_faces' ); ?>" type="checkbox" value="1" <?php checked( 1, $friends_faces, true ); ?> /> <?php _e( 'Show Friends Faces', 'harness-store' ); ?>
+				<input id="<?php echo $this->get_field_id( 'friends_faces' ); ?>" name="<?php echo $this->get_field_name( 'friends_faces' ); ?>" type="checkbox" value="1" <?php checked( 1, $friends_faces, true ); ?> /> <?php _e( 'Show Friends Faces', 'haste-store' ); ?>
 			</label>
 		</p>
 		<p>
 			<label for="<?php echo $this->get_field_id( 'show_posts' ); ?>">
-				<input id="<?php echo $this->get_field_id( 'show_posts' ); ?>" name="<?php echo $this->get_field_name( 'show_posts' ); ?>" type="checkbox" value="1" <?php checked( 1, $show_posts, true ); ?> /> <?php _e( 'Show Posts', 'harness-store' ); ?>
+				<input id="<?php echo $this->get_field_id( 'show_posts' ); ?>" name="<?php echo $this->get_field_name( 'show_posts' ); ?>" type="checkbox" value="1" <?php checked( 1, $show_posts, true ); ?> /> <?php _e( 'Show Posts', 'haste-store' ); ?>
 			</label>
 		</p>
 		<p>
 			<label for="<?php echo $this->get_field_id( 'show_header' ); ?>">
-				<input id="<?php echo $this->get_field_id( 'show_header' ); ?>" name="<?php echo $this->get_field_name( 'show_header' ); ?>" type="checkbox" value="1" <?php checked( 1, $show_header, true ); ?> /> <?php _e( 'Show Header', 'harness-store' ); ?>
+				<input id="<?php echo $this->get_field_id( 'show_header' ); ?>" name="<?php echo $this->get_field_name( 'show_header' ); ?>" type="checkbox" value="1" <?php checked( 1, $show_header, true ); ?> /> <?php _e( 'Show Header', 'haste-store' ); ?>
 			</label>
 		</p>
 		<p>
 			<label for="<?php echo $this->get_field_id( 'show_border' ); ?>">
-				<input id="<?php echo $this->get_field_id( 'show_border' ); ?>" name="<?php echo $this->get_field_name( 'show_border' ); ?>" type="checkbox" value="1" <?php checked( 1, $show_border, true ); ?> /> <?php _e( 'Show Border', 'harness-store' ); ?>
+				<input id="<?php echo $this->get_field_id( 'show_border' ); ?>" name="<?php echo $this->get_field_name( 'show_border' ); ?>" type="checkbox" value="1" <?php checked( 1, $show_border, true ); ?> /> <?php _e( 'Show Border', 'haste-store' ); ?>
 			</label>
 		</p>
 		<?php

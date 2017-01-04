@@ -179,7 +179,7 @@ class Odin_Contact_Form extends Odin_Front_End_Form {
 		} else {
 			// Default subject.
 			return sprintf(
-				__( 'Message sent by the form %s in %s at %s', 'harness-store' ),
+				__( 'Message sent by the form %s in %s at %s', 'haste-store' ),
 				$this->id,
 				date( get_option( 'date_format' ) ),
 				date( get_option( 'time_format' ) )

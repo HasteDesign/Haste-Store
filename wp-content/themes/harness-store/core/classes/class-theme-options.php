@@ -82,11 +82,11 @@ class Odin_Theme_Options {
 				'odin-admin',
 				'odinAdminParams',
 				array(
-					'galleryTitle'  => __( 'Add images in gallery', 'harness-store' ),
-					'galleryButton' => __( 'Add in gallery', 'harness-store' ),
-					'galleryRemove' => __( 'Remove image', 'harness-store' ),
-					'uploadTitle'   => __( 'Choose a file', 'harness-store' ),
-					'uploadButton'  => __( 'Add file', 'harness-store' ),
+					'galleryTitle'  => __( 'Add images in gallery', 'haste-store' ),
+					'galleryButton' => __( 'Add in gallery', 'haste-store' ),
+					'galleryRemove' => __( 'Remove image', 'haste-store' ),
+					'uploadTitle'   => __( 'Choose a file', 'haste-store' ),
+					'uploadButton'  => __( 'Add file', 'haste-store' ),
 				)
 			);
 		}
@@ -528,7 +528,7 @@ class Odin_Theme_Options {
 		// Sets current option.
 		$current = esc_url( $this->get_option( $tab, $id, $args['default'] ) );
 
-		$html = sprintf( '<input type="text" id="%1$s" name="%2$s[%1$s]" value="%3$s" class="regular-text"%5$s /> <input class="button odin-upload-button" id="%1$s-button" type="button" value="%4$s" />', $id, $tab, $current, __( 'Select file', 'harness-store' ), $this->build_field_attributes( $attrs ) );
+		$html = sprintf( '<input type="text" id="%1$s" name="%2$s[%1$s]" value="%3$s" class="regular-text"%5$s /> <input class="button odin-upload-button" id="%1$s-button" type="button" value="%4$s" />', $id, $tab, $current, __( 'Select file', 'haste-store' ), $this->build_field_attributes( $attrs ) );
 
 		// Displays the description.
 		if ( $args['description'] ) {
@@ -562,7 +562,7 @@ class Odin_Theme_Options {
 			$image = $image[0];
 		}
 
-		$html .= sprintf( '<input id="%1$s" name="%2$s[%1$s]" type="hidden" class="image" value="%3$s" /><img src="%4$s" class="preview" style="height: 150px; width: 150px;" alt="" /><input id="%1$s-button" class="button" type="button" value="%5$s" /><ul class="actions"><li><a href="#" class="delete" title="%6$s"><span class="dashicons dashicons-no"></span></a></li></ul>', $id, $tab, $current, $image, __( 'Select image', 'harness-store' ), __( 'Remove image', 'harness-store' ) );
+		$html .= sprintf( '<input id="%1$s" name="%2$s[%1$s]" type="hidden" class="image" value="%3$s" /><img src="%4$s" class="preview" style="height: 150px; width: 150px;" alt="" /><input id="%1$s-button" class="button" type="button" value="%5$s" /><ul class="actions"><li><a href="#" class="delete" title="%6$s"><span class="dashicons dashicons-no"></span></a></li></ul>', $id, $tab, $current, $image, __( 'Select image', 'haste-store' ), __( 'Remove image', 'haste-store' ) );
 
 		$html .= '<br class="clear" />';
 		$html .= '</div>';
@@ -600,7 +600,7 @@ class Odin_Theme_Options {
 							$html .= sprintf( '<li class="image" data-attachment_id="%1$s">%2$s<ul class="actions"><li><a href="#" class="delete" title="%3$s"><span class="dashicons dashicons-no"></span></a></li></ul></li>',
 								$attachment_id,
 								wp_get_attachment_image( $attachment_id, 'thumbnail' ),
-								__( 'Remove image', 'harness-store' )
+								__( 'Remove image', 'haste-store' )
 							);
 						}
 					}
@@ -611,7 +611,7 @@ class Odin_Theme_Options {
 			$html .= sprintf( '<input type="hidden" id="%1$s" name="%2$s[%1$s]" value="%3$s" class="odin-gallery-field" />', $id, $tab, $current );
 
 			// Adds "adds images in gallery" url.
-			$html .= sprintf( '<p class="odin-gallery-add hide-if-no-js"><a href="#">%s</a></p>', __( 'Add images in gallery', 'harness-store' ) );
+			$html .= sprintf( '<p class="odin-gallery-add hide-if-no-js"><a href="#">%s</a></p>', __( 'Add images in gallery', 'haste-store' ) );
 		$html .= '</div>';
 
 		// Displays the description.

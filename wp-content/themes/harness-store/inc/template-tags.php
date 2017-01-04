@@ -57,15 +57,15 @@ if ( ! function_exists( 'odin_posted_on' ) ) {
 	 */
 	function odin_posted_on() {
 		if ( is_sticky() && is_home() && ! is_paged() ) {
-			echo '<span class="featured-post">' . __( 'Sticky', 'harness-store' ) . ' </span>';
+			echo '<span class="featured-post">' . __( 'Sticky', 'haste-store' ) . ' </span>';
 		}
 
 		// Set up and print post meta information.
 		printf( '<span class="entry-date">%s <time class="entry-date" datetime="%s">%s</time></span> <span class="byline">%s <span class="author vcard"><a class="url fn n" href="%s" rel="author">%s</a></span>.</span>',
-			__( 'Posted in', 'harness-store' ),
+			__( 'Posted in', 'haste-store' ),
 			esc_attr( get_the_date( 'c' ) ),
 			esc_html( get_the_date() ),
-			__( 'by', 'harness-store' ),
+			__( 'by', 'haste-store' ),
 			esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
 			get_the_author()
 		);

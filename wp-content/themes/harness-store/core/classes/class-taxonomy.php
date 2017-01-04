@@ -66,21 +66,21 @@ class Odin_Taxonomy {
 	 */
 	protected function labels() {
 		$default = array(
-			'name'                       => sprintf( __( '%ss', 'harness-store' ), $this->name ),
-			'singular_name'              => sprintf( __( '%s', 'harness-store' ), $this->name ),
-			'add_or_remove_items'        => sprintf( __( 'Add or Remove %ss', 'harness-store' ), $this->name ),
-			'view_item'                  => sprintf( __( 'View %s', 'harness-store' ), $this->name ),
-			'edit_item'                  => sprintf( __( 'Edit %s', 'harness-store' ), $this->name ),
-			'search_items'               => sprintf( __( 'Search %s', 'harness-store' ), $this->name ),
-			'update_item'                => sprintf( __( 'Update %s', 'harness-store' ), $this->name ),
-			'parent_item'                => sprintf( __( 'Parent %s:', 'harness-store' ), $this->name ),
-			'parent_item_colon'          => sprintf( __( 'Parent %s:', 'harness-store' ), $this->name ),
-			'menu_name'                  => sprintf( __( '%ss', 'harness-store' ), $this->name ),
-			'add_new_item'               => sprintf( __( 'Add New %s', 'harness-store' ), $this->name ),
-			'new_item_name'              => sprintf( __( 'New %s', 'harness-store' ), $this->name ),
-			'all_items'                  => sprintf( __( 'All %ss', 'harness-store' ), $this->name ),
-			'separate_items_with_commas' => sprintf( __( 'Separate %ss with comma', 'harness-store' ), $this->name ),
-			'choose_from_most_used'      => sprintf( __( 'Choose from %ss most used', 'harness-store' ), $this->name )
+			'name'                       => sprintf( __( '%ss', 'haste-store' ), $this->name ),
+			'singular_name'              => sprintf( __( '%s', 'haste-store' ), $this->name ),
+			'add_or_remove_items'        => sprintf( __( 'Add or Remove %ss', 'haste-store' ), $this->name ),
+			'view_item'                  => sprintf( __( 'View %s', 'haste-store' ), $this->name ),
+			'edit_item'                  => sprintf( __( 'Edit %s', 'haste-store' ), $this->name ),
+			'search_items'               => sprintf( __( 'Search %s', 'haste-store' ), $this->name ),
+			'update_item'                => sprintf( __( 'Update %s', 'haste-store' ), $this->name ),
+			'parent_item'                => sprintf( __( 'Parent %s:', 'haste-store' ), $this->name ),
+			'parent_item_colon'          => sprintf( __( 'Parent %s:', 'haste-store' ), $this->name ),
+			'menu_name'                  => sprintf( __( '%ss', 'haste-store' ), $this->name ),
+			'add_new_item'               => sprintf( __( 'Add New %s', 'haste-store' ), $this->name ),
+			'new_item_name'              => sprintf( __( 'New %s', 'haste-store' ), $this->name ),
+			'all_items'                  => sprintf( __( 'All %ss', 'haste-store' ), $this->name ),
+			'separate_items_with_commas' => sprintf( __( 'Separate %ss with comma', 'haste-store' ), $this->name ),
+			'choose_from_most_used'      => sprintf( __( 'Choose from %ss most used', 'haste-store' ), $this->name )
 		);
 
 		return array_merge( $default, $this->labels );

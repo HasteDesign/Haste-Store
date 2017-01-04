@@ -19,7 +19,7 @@ get_header(); ?>
 						<div class="entry-meta entry-content">
 							<?php
 								$metadata = wp_get_attachment_metadata();
-								printf( __( 'Image total size: %s pixels', 'harness-store' ), sprintf( '<a href="%1$s" title="%2$s"><span>%3$s</span> &times; <span>%4$s</span></a>', wp_get_attachment_url(), esc_attr( __( 'Full image link', 'harness-store' ) ), $metadata['width'], $metadata['height'] ) );
+								printf( __( 'Image total size: %s pixels', 'haste-store' ), sprintf( '<a href="%1$s" title="%2$s"><span>%3$s</span> &times; <span>%4$s</span></a>', wp_get_attachment_url(), esc_attr( __( 'Full image link', 'haste-store' ) ), $metadata['width'], $metadata['height'] ) );
 							?>
 						</div><!-- .entry-meta -->
 					</header><!-- .entry-header -->
@@ -30,13 +30,13 @@ get_header(); ?>
 						<?php the_content(); ?>
 
 						<ul class="pager">
-							<li class="previous"><?php previous_image_link( false, __( '&larr; Previous image', 'harness-store' ) ); ?></li>
-							<li class="next"><?php next_image_link( false, __( 'Next image &rarr;', 'harness-store' ) ); ?></li>
+							<li class="previous"><?php previous_image_link( false, __( '&larr; Previous image', 'haste-store' ) ); ?></li>
+							<li class="next"><?php next_image_link( false, __( 'Next image &rarr;', 'haste-store' ) ); ?></li>
 						</ul><!-- .pager -->
 
 						<?php if ( ! empty( $post->post_parent ) ) : ?>
 							<ul class="pager page-title">
-								<li class="previous"><a href="<?php echo get_permalink( $post->post_parent ); ?>" title="<?php echo esc_attr( sprintf( __( 'Back to %s', 'harness-store' ), strip_tags( get_the_title( $post->post_parent ) ) ) ); ?>" rel="gallery"><?php printf( __( '<span class="meta-nav">&larr;</span> %s', 'harness-store' ), get_the_title( $post->post_parent ) ); ?></a></li>
+								<li class="previous"><a href="<?php echo get_permalink( $post->post_parent ); ?>" title="<?php echo esc_attr( sprintf( __( 'Back to %s', 'haste-store' ), strip_tags( get_the_title( $post->post_parent ) ) ) ); ?>" rel="gallery"><?php printf( __( '<span class="meta-nav">&larr;</span> %s', 'haste-store' ), get_the_title( $post->post_parent ) ); ?></a></li>
 							</ul><!-- .pager -->
 						<?php endif; ?>
 					</div><!-- .entry-content -->

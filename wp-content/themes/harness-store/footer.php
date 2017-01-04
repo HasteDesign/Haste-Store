@@ -45,7 +45,7 @@
 
 		<section class="footer-colophon">
 			<div class="container">
-				<p>&copy; <?php echo date( 'Y' ); ?> <a href="<?php echo home_url(); ?>"><?php bloginfo( 'name' ); ?></a> - <?php _e( 'All rights reserved', 'harness-store' ); ?> | <?php echo sprintf( __( 'Powered by the <a href="%s" rel="nofollow" target="_blank">Odin</a> forces and <a href="%s" rel="nofollow" target="_blank">WordPress</a>.', 'harness-store' ), 'http://wpod.in/', 'http://wordpress.org/' ); ?></p>
+				<p>&copy; <?php echo date( 'Y' ); ?> <a href="<?php echo home_url(); ?>"><?php bloginfo( 'name' ); ?></a> - <?php _e( 'All rights reserved', 'haste-store' ); ?> | <?php echo sprintf( __( 'Powered by the <a href="%s" rel="nofollow" target="_blank">Odin</a> forces and <a href="%s" rel="nofollow" target="_blank">WordPress</a>.', 'haste-store' ), 'http://wpod.in/', 'http://wordpress.org/' ); ?></p>
 			</div><!-- .container -->
 		</section>
 	</footer><!-- #footer -->
