@@ -37,6 +37,13 @@
 	}
 }
 
-.sidebar .widget + .widget {
-	margin-top: 60px;
+.sidebar {
+	
+	.widget-title {
+		margin-top: 0;
+	}
+
+	.widget + .widget {
+		margin-top: 60px;
+	}
 }
