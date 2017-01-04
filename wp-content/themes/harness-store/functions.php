@@ -395,3 +395,4 @@ function button_class_add_to_cart_link( $classes, $product ) {
 
  require_once get_template_directory() . '/inc/kirki/include-kirki.php';
  require_once get_template_directory() . '/inc/kirki/haste-store-kirki.php';
+ require_once get_template_directory() . '/inc/kirki/kirki-config.php';
