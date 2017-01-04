@@ -61,6 +61,7 @@ input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type=
 
 .page-section {
 	.section-title {
+		@extend .h1;
 		margin-top: 0;
 		color: inherit;
 	}
