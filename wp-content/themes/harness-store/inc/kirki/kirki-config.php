@@ -32,12 +32,8 @@ Haste_Store_Kirki::add_field( 'body_type', array(
 		'font-family'    => 'Roboto',
 		'variant'        => 'regular',
 		'font-size'      => '14px',
-		'line-height'    => '1.5',
-		'letter-spacing' => '0',
 		'subsets'        => array( 'latin-ext' ),
 		'color'          => '#333333',
-		'text-transform' => 'none',
-		'text-align'     => 'left'
 	),
 	'priority'	=> 10,
 	'transport'	=> 'postMessage',
@@ -67,9 +63,9 @@ Haste_Store_Kirki::add_field( 'headers_type', array(
 		'variant'        => 'regular',
 		'letter-spacing' => '0',
 		'subsets'        => array( 'latin-ext' ),
+		'line-height'    => '1',
 		'color'          => '#333333',
 		'text-transform' => 'none',
-		'text-align'     => 'left'
 	),
 	'priority'	=> 20,
 	'transport'	=> 'postMessage',
