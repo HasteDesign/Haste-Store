@@ -10,9 +10,9 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class('container'); ?>>
-	<header class="entry-header">
+	<header class="entry-header section-header">
 		<?php
-				the_title( '<h2 class="entry-title">', '</h2>' );
+				the_title( '<h2 class="entry-title section-title">', '</h2>' );
 		?>
 
 	</header><!-- .entry-header -->
