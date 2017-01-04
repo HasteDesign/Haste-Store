@@ -1,6 +1,7 @@
 jQuery(document).ready(function($) {
 
 	$('.wp-color-picker').wpColorPicker();
+	console.log( 'foi' );
 
 	// Uploading files
 	var file_frame;
