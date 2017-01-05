@@ -54,7 +54,7 @@ Haste_Store_Kirki::add_field( 'haste-store', array(
 	'transport'	=> 'postMessage',
 	'js_vars'   => array(
 		array(
-			'element'  => '#main-navigation',
+			'element'  => '#footer',
 			'function' => 'style',
 			'property' => 'color',
 		),
