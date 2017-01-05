@@ -3,14 +3,18 @@
 // ==========================================================================
 
 #footer {
+	background: #ddd;
 
 	.footer-widgets {
-		background: #ddd;
 		padding: 60px 0;
+
+		img {
+			width: inherit;
+		}
 	}
 
 	.footer-colophon {
-		background: #d3d3d3;
+		background: rgba(128,128,128,0.1);
 		font-size: $font-size-small;
 		text-align: center;
 		padding: 10px 0;
