@@ -89,6 +89,7 @@
 		li.product {
 			@include make-md-column(3);
 			margin: 0 0 60px 0;
+			text-align: center;
 		}
 	}
 
