@@ -23,7 +23,7 @@ Haste_Store_Kirki::add_config( 'haste-store', array(
 ) );
 
 
-Haste_Store_Kirki::add_field( 'body_type', array(
+Haste_Store_Kirki::add_field( 'haste-store', array(
 	'type'        => 'typography',
 	'settings'    => 'body_type',
 	'label'       => esc_attr__( 'Body typography', 'haste-store' ),
@@ -53,7 +53,7 @@ Haste_Store_Kirki::add_field( 'body_type', array(
 ) );
 
 
-Haste_Store_Kirki::add_field( 'headers_type', array(
+Haste_Store_Kirki::add_field( 'haste-store', array(
 	'type'        => 'typography',
 	'settings'    => 'header_type',
 	'label'       => esc_attr__( 'Headers typography', 'haste-store' ),
@@ -71,14 +71,14 @@ Haste_Store_Kirki::add_field( 'headers_type', array(
 	'transport'	=> 'postMessage',
 	'js_vars'   => array(
 		array(
-			'element'  => 'h1, h2, h3, h4, h5, h6',
+			'element'  => 'h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6',
 			'function' => 'style',
 			'property' => 'font',
 		),
 	),
 	'output'	=> array(
 		array(
-			'element' => 'h1', 'h2', 'h3',
+			'element' => 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', '.h1', '.h2', '.h3', '.h4', '.h5', '.h6',
 			'property' => 'font',
 		),
 	),
@@ -99,7 +99,7 @@ Haste_Store_Kirki::add_field( 'headers_type', array(
     'theme_supports' => '', // Rarely needed.
 ) );
 
-Haste_Store_Kirki::add_field( 'header-bg-color', array(
+Haste_Store_Kirki::add_field( 'haste-store', array(
 	'type'        => 'color',
 	'settings'    => 'header-bg-color',
 	'label'       => __( 'Header background-color', 'haste-store' ),
