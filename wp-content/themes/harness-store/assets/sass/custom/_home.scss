@@ -1,0 +1,77 @@
+
+/**
+ * Home page sections
+ */
+
+.home-jumbotron {
+	height: calc(100vh - 62px); // Altura total menos a altura da navbar
+	background-size: cover;
+	background-attachment: fixed;
+
+
+	.section-wrapper {
+		height: 100%;
+		width: 100%;
+		background: rgba(0,0,0,0.3);
+		display: flex;
+		text-align: center;
+		align-items: center;
+		color: #fff;
+		font-size: 150%;
+
+		a {
+			color: #fff;
+		}
+	}
+}
+
+.page-section {
+	.section-title {
+		@extend .h1;
+		margin-top: 0;
+		color: inherit;
+	}
+
+	.entry-content,
+	.widget-header,
+	.widget-content {
+		color: inherit;
+	}
+}
+
+.widget-wrapper {
+//	@include make-row();
+
+	.widget-container {
+		@include make-container();
+	}
+
+	.widget-header {
+		margin: 0 0 1em 0;
+		padding: 0 0 2em 0;
+
+		.widget_haste_shortcode_module & {
+			text-align: center;
+			margin-top: 4em;
+		}
+	}
+
+	.widget-content-wrapper {
+
+		&.content-center {
+			@include make-md-column(12);
+			text-align: center;
+		}
+
+		&.content-left {
+			@include make-md-column(6);
+			text-align: left;
+		}
+
+		&.content-right {
+			@include make-md-column(6);
+			@include make-md-column-offset(6);
+			text-align: left;
+		}
+	}
+}
