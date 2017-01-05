@@ -18,7 +18,7 @@
 Haste_Store_Kirki::add_field( 'haste-store', array(
 	'type'        => 'color',
 	'settings'    => 'header-bg-color',
-	'label'       => __( 'Header background-color', 'haste-store' ),
+	'label'       => __( 'Header background color', 'haste-store' ),
 	'section'     => 'header',
 	'default'     => '#e7e7e7',
 	'priority'    => 10,
@@ -37,6 +37,32 @@ Haste_Store_Kirki::add_field( 'haste-store', array(
 		array(
 			'element' => '#main-navigation',
 			'property' => 'background-color',
+		),
+	),
+) );
+
+Haste_Store_Kirki::add_field( 'haste-store', array(
+	'type'        => 'color',
+	'settings'    => 'header-text-color',
+	'label'       => __( 'Header text color', 'haste-store' ),
+	'section'     => 'header',
+	'default'     => 'inherit',
+	'priority'    => 10,
+	'choices'     => array(
+		'alpha' => true,
+	),
+	'transport'	=> 'postMessage',
+	'js_vars'   => array(
+		array(
+			'element'  => '#main-navigation',
+			'function' => 'style',
+			'property' => 'color',
+		),
+	),
+	'output'	=> array(
+		array(
+			'element' => '#main-navigation',
+			'property' => 'color',
 		),
 	),
 ) );
