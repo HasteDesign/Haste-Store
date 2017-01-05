@@ -483,11 +483,15 @@ p.demo_store {
 			h3 {
 				padding: .5em 0;
 				margin: 0;
-				font-size: 1em;
+				color: currentColor;
 			}
 
 			a {
 				text-decoration: none;
+			}
+
+			.woocommerce-LoopProduct-link {
+				color: currentColor;
 			}
 
 			a img {
@@ -515,7 +519,7 @@ p.demo_store {
 			}
 
 			.price {
-				color: $text-color;
+				color: currentColor;
 				display: block;
 				font-weight: normal;
 				margin-bottom: .5em;
