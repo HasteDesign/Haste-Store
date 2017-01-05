@@ -621,9 +621,8 @@ p.demo_store {
 		position: relative;
 		text-decoration: none;
 		overflow: visible;
-		padding: .618em 1em;
-		font-weight: 700;
-		border-radius: 3px;
+		@include button-size($padding-base-vertical, $padding-base-horizontal, $font-size-base, $line-height-base, $btn-border-radius-base);
+		font-weight: normal;
 		left: auto;
 		color: $secondarytext;
 		background-color: $secondary;
@@ -634,6 +633,9 @@ p.demo_store {
 		box-shadow: none;
 		-webkit-box-shadow: none;
 		text-shadow: none;
+
+		@extend .btn;
+		@extend .btn-primary;
 
 		&.loading {
 			opacity: 0.25;
