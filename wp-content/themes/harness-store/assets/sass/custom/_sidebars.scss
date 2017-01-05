@@ -1,7 +1,33 @@
 .sidebar {
+	.widget-title {
+		margin-top: 0;
+		color: currentColor;
+	}
+
+	.widget + .widget {
+		margin-top: 60px;
+	}
+
 	ul, ol {
 		list-style: none;
 		padding: 0;
+		line-height: 1.7;
+
+		ul, ol {
+			padding-left: 1.5em;
+		}
+	}
+
+	li {
+		&:before {
+			content: '\203A';
+			margin-right: 0.5em;
+			color: currentColor;
+		}
+	}
+
+	a {
+		color: currentColor;
 	}
 }
 
@@ -34,16 +60,5 @@
 		:last-child {
 			margin-bottom: 0;
 		}
-	}
-}
-
-.sidebar {
-	
-	.widget-title {
-		margin-top: 0;
-	}
-
-	.widget + .widget {
-		margin-top: 60px;
 	}
 }
