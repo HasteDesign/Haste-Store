@@ -6,9 +6,16 @@
     .navbar-brand {
 		padding: 0 30px 0 15px;
 
+		.site-title {
+			margin: 0;
+			font-size: $font-size-h2;
+			color: currentColor;
+		}
+
 		a {
 			display: block;
 			line-height: $navbar-height;
+			color: currentColor;
 		}
 
 		img {
@@ -16,6 +23,7 @@
 			max-width: 100%;
 			max-height: $navbar-height;
 			width: auto;
+			vertical-align: baseline;
 		}
 	}
 

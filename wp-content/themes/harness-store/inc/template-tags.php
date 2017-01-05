@@ -98,11 +98,13 @@ if ( ! function_exists( 'odin_the_custom_logo' ) ) {
 	 * @since Odin 2.2.10
 	 */
 	function odin_the_custom_logo() {
-		if ( function_exists( 'the_custom_logo' ) ) {
+		$custom_logo = get_theme_mod( 'custom_logo' );
+
+		if ( function_exists( 'the_custom_logo' ) && !empty( $custom_logo ) ) {
 			the_custom_logo();
 		}
 		else {
-			echo '<a class="navbar-brand" href="' . esc_url( home_url( '/' ) ) . '" title="' . esc_attr( get_bloginfo( 'name', 'display' ) ) . '" rel="home">';
+			echo '<a href="' . esc_url( home_url( '/' ) ) . '" title="' . esc_attr( get_bloginfo( 'name', 'display' ) ) . '" rel="home">';
 			bloginfo( 'name' );
 			echo '</a>';
 		}

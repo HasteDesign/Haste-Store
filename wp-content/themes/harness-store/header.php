@@ -51,9 +51,9 @@
 						<span class="icon-bar"></span>
 					</button>
 					<div class="navbar-brand">
-						<?php if ( is_home() ) echo '<h1 class="site-title">'; ?>
+						<?php echo is_home() ? '<h1 class="site-title">' : '<span class="h1 site-title">' ; ?>
 							<?php odin_the_custom_logo(); ?>
-						<?php if ( is_home() ) echo '</h1>'; ?>
+						<?php echo is_home() ? '</h1>' : '</span>' ; ?>
 					</div>
 				</div>
 				<nav class="collapse navbar-collapse navbar-main-navigation navbar-left" role="navigation">
