@@ -17,23 +17,23 @@ Haste_Store_Kirki::add_field( 'haste-store', array(
 	'transport'	=> 'postMessage',
 	'js_vars'   => array(
 		array(
-			'element'  => '.btn-primary',
+			'element'  => '[class*="primary"], .button, .woocommerce div.product form.cart .button',
 			'function' => 'style',
 			'property' => 'background-color',
 		),
 		array(
-			'element'  => 'a',
+			'element'  => 'a, [class*="primary"] .badge, .btn-link, .star-rating',
 			'function' => 'style',
 			'property' => 'color',
 		),
 	),
 	'output'	=> array(
 		array(
-			'element' => array( '.btn-primary' ),
+			'element' => array( '[class*="primary"]', '.button', '.woocommerce div.product form.cart .button' ),
 			'property' => 'background-color',
 		),
 		array(
-			'element' => array( '.a' ),
+			'element' => array( 'a', '[class*="primary"] .badge', '.btn-link', '.star-rating' ),
 			'property' => 'color',
 		),
 	),
