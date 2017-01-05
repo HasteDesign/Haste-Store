@@ -2,8 +2,25 @@
  * Botões
  */
 
-.btn {
+a {
+	&:hover {
+		opacity: 0.8;
+	}
+}
+
+.btn,
+.button {
+
 	background-clip: padding-box;
+
+	&:hover,
+	&:active,
+	&.active {
+
+		box-shadow: inset 0 0 50px rgba(200,200,200, 0.3);
+		opacity: 1;
+
+	}
 }
 
 /**
