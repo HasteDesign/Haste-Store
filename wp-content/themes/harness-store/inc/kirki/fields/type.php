@@ -32,13 +32,11 @@ Haste_Store_Kirki::add_field( 'haste-store', array(
 		array(
 			'element'  => 'body',
 			'function' => 'style',
-			'property' => 'font',
 		),
 	),
 	'output'	=> array(
 		array(
 			'element' => 'body',
-			'property' => 'font',
 		),
 	),
 ) );
@@ -64,13 +62,11 @@ Haste_Store_Kirki::add_field( 'haste-store', array(
 		array(
 			'element'  => 'h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6',
 			'function' => 'style',
-			'property' => 'font',
 		),
 	),
 	'output'	=> array(
 		array(
-			'element' => 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', '.h1', '.h2', '.h3', '.h4', '.h5', '.h6',
-			'property' => 'font',
+			'element' => array ('h1', 'h2', 'h3', 'h4', 'h5', 'h6', '.h1', '.h2', '.h3', '.h4', '.h5', '.h6'),
 		),
 	),
 ) );
