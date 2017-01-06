@@ -16,7 +16,12 @@ if ( ! function_exists( 'odin_classes_page_full' ) ) {
 	 * @return string Classes name.
 	 */
 	function odin_classes_page_full() {
-		return 'col-md-12';
+
+		if ( is_woocommerce() ) {
+			return 'col-md-12';
+		} else {
+			return 'col-md-8 col-md-offset-2';
+		}
 	}
 }
 
@@ -30,7 +35,7 @@ if ( ! function_exists( 'odin_classes_page_sidebar' ) ) {
 	 * @return string Classes name.
 	 */
 	function odin_classes_page_sidebar() {
-		return 'col-md-9';
+		return 'col-md-8';
 	}
 }
 
@@ -44,7 +49,7 @@ if ( ! function_exists( 'odin_classes_page_sidebar_aside' ) ) {
 	 * @return string Classes name.
 	 */
 	function odin_classes_page_sidebar_aside() {
-		return 'col-md-3 hidden-xs hidden-print widget-area';
+		return 'col-md-3 col-md-offset-1 hidden-xs hidden-print widget-area';
 	}
 }
 
