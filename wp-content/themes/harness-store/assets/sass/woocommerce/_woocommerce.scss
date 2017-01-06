@@ -78,16 +78,7 @@ p.demo_store {
 	.woocommerce-message,
 	.woocommerce-error,
 	.woocommerce-info {
-		padding: 1em 2em 1em 3.5em !important;
-		margin: 0 0 2em !important;
-		position: relative;
-		background-color: lighten($secondary,5%);
-		color: $secondarytext;
-		border-top: 3px solid $primary;
-		list-style: none outside !important;
-		@include clearfix();
-		width: auto;
-		word-wrap: break-word;
+		@include alert();
 
 		&:before {
 			font-family: "WooCommerce";
@@ -96,8 +87,13 @@ p.demo_store {
 			position: absolute;
 			top: 1em;
 			left: 1.5em;
+			color: currentColor;
 		}
 
+		a {
+			font-weight: 700;
+		}
+		
 		.button {
 			float: right;
 		}
@@ -110,29 +106,15 @@ p.demo_store {
 	}
 
 	.woocommerce-message {
-		border-top-color: #8fae1b;
-
-		&:before {
-			content: "\e015";
-			color: #8fae1b;
-		}
+		@include alert-variant($alert-success-bg, $alert-success-border, $alert-success-text);
 	}
 
 	.woocommerce-info {
-		border-top-color: #1e85be;
-
-		&:before {
-			color: #1e85be;
-		}
+		@include alert-variant($alert-info-bg, $alert-info-border, $alert-info-text);
 	}
 
 	.woocommerce-error {
-		border-top-color: #b81c23;
-
-		&:before {
-			content: "\e016";
-			color: #b81c23;
-		}
+		@include alert-variant($alert-danger-bg, $alert-danger-border, $alert-danger-text);
 	}
 
 	small.note {
