@@ -16,13 +16,13 @@
 Haste_Store_Kirki::add_field( 'haste-store', array(
 	'type'        => 'switch',
 	'settings'    => 'display_blog_sidebar',
-	'label'       => __( 'Display sidebar on blog and archives', 'my_textdomain' ),
+	'label'       => __( 'Display sidebar on blog and archives', 'haste-store' ),
 	'section'     => 'blog',
 	'default'     => '1',
 	'priority'    => 10,
 	'choices'     => array(
-		'on'  => esc_attr__( 'Enable', 'my_textdomain' ),
-		'off' => esc_attr__( 'Disable', 'my_textdomain' ),
+		'on'  => esc_attr__( 'Enable', 'haste-store' ),
+		'off' => esc_attr__( 'Disable', 'haste-store' ),
 	),
 ) );
 
@@ -30,13 +30,13 @@ Haste_Store_Kirki::add_field( 'haste-store', array(
 Haste_Store_Kirki::add_field( 'haste-store', array(
 	'type'        => 'switch',
 	'settings'    => 'display_posts_sidebar',
-	'label'       => __( 'Display sidebar on single posts', 'my_textdomain' ),
+	'label'       => __( 'Display sidebar on single posts', 'haste-store' ),
 	'section'     => 'blog',
 	'default'     => '1',
 	'priority'    => 20,
 	'choices'     => array(
-		'on'  => esc_attr__( 'Enable', 'my_textdomain' ),
-		'off' => esc_attr__( 'Disable', 'my_textdomain' ),
+		'on'  => esc_attr__( 'Enable', 'haste-store' ),
+		'off' => esc_attr__( 'Disable', 'haste-store' ),
 	),
 ) );
 
@@ -44,12 +44,12 @@ Haste_Store_Kirki::add_field( 'haste-store', array(
 Haste_Store_Kirki::add_field( 'haste-store', array(
 	'type'        => 'switch',
 	'settings'    => 'display_post_author',
-	'label'       => __( 'Display post author', 'my_textdomain' ),
+	'label'       => __( 'Display post author', 'haste-store' ),
 	'section'     => 'blog',
 	'default'     => '1',
 	'priority'    => 30,
 	'choices'     => array(
-		'on'  => esc_attr__( 'Enable', 'my_textdomain' ),
-		'off' => esc_attr__( 'Disable', 'my_textdomain' ),
+		'on'  => esc_attr__( 'Enable', 'haste-store' ),
+		'off' => esc_attr__( 'Disable', 'haste-store' ),
 	),
 ) );
