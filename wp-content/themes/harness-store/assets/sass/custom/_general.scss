@@ -1,6 +1,6 @@
 #wrapper {
 	overflow: auto;
-	
+
 	body:not(.home) & {
 		@include make-container();
 		margin-top: 80px;
@@ -13,4 +13,14 @@
 
 .page-section {
 	@include make-row();
+}
+
+/**
+ * Posts
+ */
+
+.entry-title {
+	a {
+		color: inherit;
+	}
 }
