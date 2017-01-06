@@ -614,28 +614,9 @@ p.demo_store {
 	button.button,
 	input.button,
 	#respond input#submit {
-		font-size: 100%;
-		margin: 0;
-		line-height: 1;
-		cursor: pointer;
-		position: relative;
-		text-decoration: none;
-		overflow: visible;
 		@include button-size($padding-base-vertical, $padding-base-horizontal, $font-size-base, $line-height-base, $btn-border-radius-base);
-		font-weight: normal;
-		left: auto;
-		color: $secondarytext;
-		background-color: $secondary;
-		border: 0;
-		white-space: nowrap;
-		display: inline-block;
-		background-image: none;
-		box-shadow: none;
-		-webkit-box-shadow: none;
-		text-shadow: none;
-
-		@extend .btn;
-		@extend .btn-primary;
+		@include btn();
+		@include btn-primary();
 
 		&.loading {
 			opacity: 0.25;
@@ -666,20 +647,12 @@ p.demo_store {
 		}
 
 		&:hover {
-			background-color: $secondary - #111;
-			text-decoration: none;
-			background-image: none;
-			color: $secondarytext;
 		}
 
 		&.alt {
-			background-color: $primary;
-			color: $primarytext;
-			-webkit-font-smoothing: antialiased;
+			@include btn-success();
 
 			&:hover {
-				background-color: $primary - #111;
-				color: $primarytext;
 			}
 
 			&.disabled,
@@ -688,8 +661,6 @@ p.demo_store {
 			&.disabled:hover,
 			&:disabled:hover,
 			&:disabled[disabled]:hover {
-				background-color: $primary;
-				color: $primarytext;
 			}
 		}
 
