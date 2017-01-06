@@ -429,4 +429,4 @@ function button_class_add_to_cart_link( $classes, $product ) {
 
    return $fonts;
  }
- add_filter( 'kirki/enqueue_google_fonts', 'enqueue_body_font_variants' );
+ //add_filter( 'kirki/enqueue_google_fonts', 'enqueue_body_font_variants' );
