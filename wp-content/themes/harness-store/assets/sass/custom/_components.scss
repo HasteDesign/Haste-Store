@@ -62,3 +62,11 @@ input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type=
 	padding: 0;
 	overflow: hidden;
 }
+
+/**
+ * BreadCrumbs
+ */
+
+.woocommerce-breadcrumb {
+	margin-bottom: 20px;
+}
