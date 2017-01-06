@@ -187,6 +187,17 @@ add_action( 'after_setup_theme', 'odin_setup_features' );
 function odin_widgets_init() {
 	register_sidebar(
 		array(
+			'name' => __( 'Home main content', 'haste-store' ),
+			'id' => 'home-main-content',
+			'description' => __( 'Home main content ', 'haste-store' ),
+			'before_widget' => '<div id="%1$s" class="widget page-section %2$s">',
+			'after_widget' => '</div>',
+			'before_title' => '<h2 class="widgettitle widget-title section-title">',
+			'after_title' => '</h2>',
+		)
+	);
+	register_sidebar(
+		array(
 			'name' => __( 'Main Sidebar', 'haste-store' ),
 			'id' => 'main-sidebar',
 			'description' => __( 'Site Main Sidebar', 'haste-store' ),
@@ -198,13 +209,13 @@ function odin_widgets_init() {
 	);
 	register_sidebar(
 		array(
-			'name' => __( 'Home main content', 'haste-store' ),
-			'id' => 'home-main-content',
-			'description' => __( 'Home main content ', 'haste-store' ),
-			'before_widget' => '<div id="%1$s" class="widget page-section %2$s">',
-			'after_widget' => '</div>',
-			'before_title' => '<h2 class="widgettitle widget-title section-title">',
-			'after_title' => '</h2>',
+			'name' => __( 'WooCommerce Sidebar', 'haste-store' ),
+			'id' => 'woo-sidebar',
+			'description' => __( 'Displays widgets on WooCommerce pages' , 'haste-store' ),
+			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'after_widget' => '</aside>',
+			'before_title' => '<h3 class="widgettitle widget-title">',
+			'after_title' => '</h3>',
 		)
 	);
 	register_sidebar(
