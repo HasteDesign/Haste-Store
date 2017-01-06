@@ -23,6 +23,10 @@ a {
 	}
 }
 
+.btn-outline {
+  @include button-variant($btn-outline-color, $btn-outline-bg, $btn-outline-border);
+}
+
 /**
  * Dropdowns
  */

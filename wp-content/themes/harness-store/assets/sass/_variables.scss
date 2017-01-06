@@ -152,9 +152,14 @@ $table-border-color:            #ddd;
 
 $btn-font-weight:                normal;
 
-$btn-default-color:              currentColor;
-$btn-default-bg:                 transparent;
-$btn-default-border:             currentColor;
+
+$btn-outline-color:              currentColor;
+$btn-outline-bg:                 transparent;
+$btn-outline-border:             currentColor;
+
+$btn-default-color:              #fff;
+$btn-default-bg:                 rgba(80,80,80,0.4);
+$btn-default-border:             transparent;
 
 $btn-primary-color:              #fff;
 $btn-primary-bg:                 $brand-primary;
