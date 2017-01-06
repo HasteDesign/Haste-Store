@@ -4,10 +4,13 @@
  */
 
 .home-jumbotron {
-	height: calc(100vh - 62px); // Altura total menos a altura da navbar
+	height: 100vh; // Altura total menos a altura da navbar
 	background-size: cover;
 	background-attachment: fixed;
 
+	.admin-bar & {
+		height: calc(100vh - 32px); // Altura total menos a altura da navbar
+	}
 
 	.section-wrapper {
 		height: 100%;
