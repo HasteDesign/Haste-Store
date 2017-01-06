@@ -384,6 +384,16 @@ require_once get_template_directory() . '/inc/optimize.php';
 require_once get_template_directory() . '/inc/template-tags.php';
 
 /**
+ * Custom Read More Link
+ */
+
+  function modify_read_more_link( $more_link_text ) {
+     return '<p><a class="more-link btn btn-primary" href="' . get_permalink() . '">' . __('Read more &rarr;', 'haste-store').'</a></p>';
+ }
+ add_filter( 'the_content_more_link', 'modify_read_more_link' );
+
+
+/**
  * WooCommerce compatibility files.
  */
 if ( is_woocommerce_activated() ) {
