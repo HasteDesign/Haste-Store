@@ -15,25 +15,69 @@
 	@include make-row();
 }
 
-/**
- * Posts
- */
-
-.entry-title {
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
 	a {
 		color: inherit;
 	}
 }
 
-.entry-meta {
-	opacity: 0.6;
-	font-size: 12px;
-	text-transform: uppercase;
-	padding: 10px 0;
-	margin: 0 0 10px;
-	letter-spacing: .1em;
-}
+/**
+ * Posts
+ */
 
-.entry-content {
-	font-size: 1.1em;
+.hentry {
+	margin: 40px 0;
+
+	&.loop {
+		> *:not(.entry-link) {
+			padding-left: 60px;
+			padding-right: 60px;
+		}
+
+		border: 1px solid $gray-lighter;
+	}
+
+	.entry-link {
+		&:hover,
+		&:active,
+		&:focus {
+			text-decoration: none;
+		}
+	}
+	
+	&.loop .wp-post-image {
+		margin: 0 -60px;
+		max-width: calc(100% + 120px);
+		width: calc(100% + 120px);
+	}
+
+	.entry-title {
+		a {
+			color: inherit;
+		}
+	}
+
+	.entry-meta {
+		font-size: 12px;
+		text-transform: uppercase;
+		padding: 10px 0;
+		margin: 0 0 10px;
+		letter-spacing: .1em;
+
+
+		> span {
+			margin-right: 2em;
+		}
+	}
+	header .entry-meta {
+		opacity: 0.6;
+	}
+
+	.entry-content {
+		font-size: 1.1em;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		border-top: 1px solid $gray-lighter;
+	}
 }

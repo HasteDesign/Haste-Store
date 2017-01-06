@@ -2,22 +2,49 @@
 /**
  * The default template for displaying content.
  *
- * Used for both single and index/archive/author/catagory/search/tag.
+ * Used for both single and index/archive/author/category/search/tag.
  *
  * @package Odin
  * @since 2.2.0
  */
+
+
+	$post_class;
+
+	if ( !is_single() ) {
+		$post_class = 'loop';
+	} else {
+		$post_class = 'single';
+	};
+
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class( $post_class ); ?>>
 	<header class="entry-header">
+
+		<?php
+			if ( !is_single() ) :
+		?>
+			<a class="entry-link" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+		<?php endif; ?>
+
+		<?php if ( has_post_thumbnail() ) : ?>
+				<?php the_post_thumbnail(); ?>
+		<?php endif; ?>
+
 		<?php
 			if ( is_single() ) :
 				the_title( '<h1 class="entry-title">', '</h1>' );
 			else :
-				the_title( '<h2 class="h1 entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+				the_title( '<h2 class="h1 entry-title">', '</h2>' );
 			endif;
 		?>
+
+		<?php
+			if ( !is_single() ) :
+		?>
+			</a>
+		<?php endif; ?>
 
 		<?php if ( 'post' == get_post_type() ) : ?>
 			<div class="entry-meta">
@@ -44,13 +71,22 @@
 		</div><!-- .entry-content -->
 	<?php endif; ?>
 
-	<footer class="entry-meta">
-		<?php if ( in_array( 'category', get_object_taxonomies( get_post_type() ) ) ) : ?>
-			<span class="cat-links"><?php echo __( 'Posted in:', 'haste-store' ) . ' ' . get_the_category_list( _x( ', ', 'Used between list items, there is a space after the comma.', 'haste-store' ) ); ?></span>
-		<?php endif; ?>
-		<?php the_tags( '<span class="tag-links">' . __( 'Tagged as:', 'haste-store' ) . ' ', ', ', '</span>' ); ?>
-		<?php if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) : ?>
-			<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'haste-store' ), __( '1 Comment', 'haste-store' ), __( '% Comments', 'haste-store' ) ); ?></span>
-		<?php endif; ?>
-	</footer>
+	<?php
+		if ( is_single() ) :
+	?>
+		<footer class="entry-meta">
+			<p><?php the_tags( '<span class="tag-links">' . __( 'Tagged as:', 'haste-store' ) . ' ', ', ', '</span>' ); ?></p>
+
+			<?php if ( true == get_theme_mod( 'display_post_author', true ) ) : ?>
+				<div class="author vcard row">
+					<?php echo get_avatar( get_the_author_meta( 'ID' ), 96, '' , '' , array( 'class' => 'img-circle col-md-3') ); ?>
+					<div class="col-md-9">
+						<h2><a class="url fn n" href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" rel="author"><?php the_author(); ?></a></h2>
+						<?php echo get_the_author_meta( 'description' ); ?>
+					</div>
+				</div>
+			<?php endif; ?>
+
+		</footer>
+	<?php endif; ?>
 </article><!-- #post-## -->

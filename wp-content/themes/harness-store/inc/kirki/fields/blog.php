@@ -33,7 +33,21 @@ Haste_Store_Kirki::add_field( 'haste-store', array(
 	'label'       => __( 'Display sidebar on posts', 'my_textdomain' ),
 	'section'     => 'blog',
 	'default'     => '1',
-	'priority'    => 10,
+	'priority'    => 20,
+	'choices'     => array(
+		'on'  => esc_attr__( 'Enable', 'my_textdomain' ),
+		'off' => esc_attr__( 'Disable', 'my_textdomain' ),
+	),
+) );
+
+
+Haste_Store_Kirki::add_field( 'haste-store', array(
+	'type'        => 'switch',
+	'settings'    => 'display_post_author',
+	'label'       => __( 'Display post author', 'my_textdomain' ),
+	'section'     => 'blog',
+	'default'     => '1',
+	'priority'    => 30,
 	'choices'     => array(
 		'on'  => esc_attr__( 'Enable', 'my_textdomain' ),
 		'off' => esc_attr__( 'Disable', 'my_textdomain' ),

@@ -61,14 +61,25 @@ if ( ! function_exists( 'odin_posted_on' ) ) {
 		}
 
 		// Set up and print post meta information.
-		printf( '<span class="entry-date">%s <time class="entry-date" datetime="%s">%s</time></span> <span class="byline">%s <span class="author vcard"><a class="url fn n" href="%s" rel="author">%s</a></span>.</span>',
-			__( 'Posted in', 'haste-store' ),
-			esc_attr( get_the_date( 'c' ) ),
-			esc_html( get_the_date() ),
-			__( 'by', 'haste-store' ),
-			esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
-			get_the_author()
-		);
+		echo '<span class="entry-date meta">';
+		echo '<time class="entry-date meta" datetime="'. esc_attr( get_the_date( 'c' ) ) .'">' . esc_html( get_the_date( 'd/m/Y' ) ) . '</time>';
+		echo '</span>';
+
+		if ( true == get_theme_mod( 'display_post_author', true ) ) :
+			if ( !is_single() ) :
+				echo '<span class="byline meta">' . __( 'by', 'haste-store' ) . '<span class="author vcard"> ';
+				echo '<a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '" rel="author">' . get_the_author() . '</a></span></span>';
+			endif;
+		endif;
+
+		if ( in_array( 'category', get_object_taxonomies( get_post_type() ) ) ) :
+			echo '<span class="cat-links meta">'. __( 'Posted in:', 'haste-store' ) . ' ' . get_the_category_list( _x( ', ', 'Used between list items, there is a space after the comma.', 'haste-store' ) ) . '</span>';
+		endif;
+
+		if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) :
+			echo '<span class="comments-link meta">' . comments_popup_link( __( 'Leave a comment', 'haste-store' ), __( '1 Comment', 'haste-store' ), __( '% Comments', 'haste-store' ) ) . '</span>';
+		endif;
+
 	}
 }
 
