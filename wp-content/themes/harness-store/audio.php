@@ -10,7 +10,7 @@
 
 get_header(); ?>
 
-	<main id="content" class="<?php echo odin_classes_page_sidebar(); ?>" tabindex="-1" role="main">
+	<main id="content" class="<?php echo get_theme_mod( 'display_posts_sidebar', true )? odin_classes_page_sidebar() : odin_classes_page_full(); ?>" tabindex="-1" role="main">
 
 			<?php while ( have_posts() ) : the_post(); $metadata = wp_get_attachment_metadata(); ?>
 				<article <?php post_class(); ?>>
@@ -36,4 +36,11 @@ get_header(); ?>
 	</main><!-- #main -->
 
 <?php
+
+if ( true == get_theme_mod( 'display_posts_sidebar', true ) ) :
+
+	get_sidebar();
+
+endif;
+
 get_footer();

@@ -8,8 +8,7 @@
 
 get_header(); ?>
 
-	<div id="primary" class="<?php echo odin_classes_page_sidebar(); ?>">
-		<main id="main-content" class="site-main" role="main">
+		<main id="content" class="<?php echo get_theme_mod( 'display_posts_sidebar', true )? odin_classes_page_sidebar() : odin_classes_page_full(); ?>" tabindex="-1" role="main">
 			<?php
 				// Start the Loop.
 				while ( have_posts() ) : the_post();
@@ -28,8 +27,13 @@ get_header(); ?>
 				endwhile;
 			?>
 		</main><!-- #main -->
-	</div><!-- #primary -->
 
 <?php
-get_sidebar();
+
+if ( true == get_theme_mod( 'display_posts_sidebar', true ) ) :
+
+	get_sidebar();
+
+endif;
+
 get_footer();

@@ -12,3 +12,4 @@ include_once dirname( __FILE__ ) . '/fields/color.php';
 include_once dirname( __FILE__ ) . '/fields/type.php';
 include_once dirname( __FILE__ ) . '/fields/header.php';
 include_once dirname( __FILE__ ) . '/fields/footer.php';
+include_once dirname( __FILE__ ) . '/fields/blog.php';

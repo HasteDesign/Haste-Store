@@ -10,8 +10,7 @@
 
 get_header(); ?>
 
-	<div id="primary" class="<?php echo odin_classes_page_sidebar(); ?>">
-		<div id="content" role="main">
+		<main id="content" class="<?php echo get_theme_mod( 'display_posts_sidebar', true )? odin_classes_page_sidebar() : odin_classes_page_full(); ?>" tabindex="-1" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
 				<article <?php post_class(); ?>>
@@ -34,8 +33,14 @@ get_header(); ?>
 				</article>
 			<?php endwhile; ?>
 
-		</div><!-- #content -->
-	</div><!-- #primary -->
+		</main><!-- main -->
 
 <?php
+
+if ( true == get_theme_mod( 'display_blog_sidebar', true ) ) :
+
+	get_sidebar();
+
+endif;
+
 get_footer();
