@@ -6,6 +6,10 @@
 	box-shadow: 0 0 40px rgba(0,0,0,0.1);
 	background: #fff;
 
+	body:not(.home) & {
+		margin-top: 60px;
+	}
+
 	.footer-widgets {
 		padding: 60px 0;
 
