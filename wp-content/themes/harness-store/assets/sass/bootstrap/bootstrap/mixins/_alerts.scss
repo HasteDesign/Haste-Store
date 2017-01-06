@@ -6,9 +6,10 @@
   color: $text-color;
 
   hr {
-    border-top-color: darken($border, 5%);
+    border-top-color: currentColor;
   }
-  .alert-link {
-    color: darken($text-color, 10%);
+  .alert-link,
+  a {
+    color: currentColor;
   }
 }
