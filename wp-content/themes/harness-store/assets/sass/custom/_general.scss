@@ -27,7 +27,10 @@ h1, h2, h3, h4, h5, h6,
  */
 
 .hentry {
-	margin: 40px 0;
+
+	&.loop {
+		margin-top: 30px;
+	}
 
 	&.loop {
 		> *:not(.entry-link) {
@@ -45,7 +48,7 @@ h1, h2, h3, h4, h5, h6,
 			text-decoration: none;
 		}
 	}
-	
+
 	&.loop .wp-post-image {
 		margin: 0 -60px;
 		max-width: calc(100% + 120px);
@@ -72,6 +75,7 @@ h1, h2, h3, h4, h5, h6,
 	}
 	header .entry-meta {
 		opacity: 0.6;
+		padding-top: 0;
 	}
 
 	.entry-content {

@@ -16,7 +16,7 @@
 Haste_Store_Kirki::add_field( 'haste-store', array(
 	'type'        => 'switch',
 	'settings'    => 'display_blog_sidebar',
-	'label'       => __( 'Display sidebar on blog', 'my_textdomain' ),
+	'label'       => __( 'Display sidebar on blog and archives', 'my_textdomain' ),
 	'section'     => 'blog',
 	'default'     => '1',
 	'priority'    => 10,
@@ -30,7 +30,7 @@ Haste_Store_Kirki::add_field( 'haste-store', array(
 Haste_Store_Kirki::add_field( 'haste-store', array(
 	'type'        => 'switch',
 	'settings'    => 'display_posts_sidebar',
-	'label'       => __( 'Display sidebar on posts', 'my_textdomain' ),
+	'label'       => __( 'Display sidebar on single posts', 'my_textdomain' ),
 	'section'     => 'blog',
 	'default'     => '1',
 	'priority'    => 20,
