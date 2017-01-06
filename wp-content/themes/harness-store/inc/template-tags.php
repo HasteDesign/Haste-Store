@@ -17,7 +17,7 @@ if ( ! function_exists( 'odin_classes_page_full' ) ) {
 	 */
 	function odin_classes_page_full() {
 
-		if ( is_woocommerce() ) {
+		if ( is_woocommerce() || is_home() || is_front_page() ) {
 			return 'col-md-12';
 		} else {
 			return 'col-md-8 col-md-offset-2';
@@ -67,22 +67,27 @@ if ( ! function_exists( 'odin_posted_on' ) ) {
 
 		// Set up and print post meta information.
 		echo '<span class="entry-date meta">';
-		echo '<time class="entry-date meta" datetime="'. esc_attr( get_the_date( 'c' ) ) .'">' . esc_html( get_the_date( 'd/m/Y' ) ) . '</time>';
+		echo '<span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> <time class="entry-date meta" datetime="'. esc_attr( get_the_date( 'c' ) ) .'">' . esc_html( get_the_date( 'd/m/Y' ) ) . '</time>';
 		echo '</span>';
 
 		if ( true == get_theme_mod( 'display_post_author', true ) ) :
 			if ( !is_single() ) :
-				echo '<span class="byline meta">' . __( 'by', 'haste-store' ) . '<span class="author vcard"> ';
+				echo '<span class="byline meta"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> <span class="sr-only">' . __( 'by', 'haste-store' ) . '</span><span class="author vcard"> ';
 				echo '<a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '" rel="author">' . get_the_author() . '</a></span></span>';
 			endif;
 		endif;
 
 		if ( in_array( 'category', get_object_taxonomies( get_post_type() ) ) ) :
-			echo '<span class="cat-links meta">'. __( 'Posted in:', 'haste-store' ) . ' ' . get_the_category_list( _x( ', ', 'Used between list items, there is a space after the comma.', 'haste-store' ) ) . '</span>';
+			echo '<span class="cat-links meta">';
+			echo '<span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span> ';
+			echo '<span class="sr-only">'. __( 'Posted in:', 'haste-store' ) . '</span> ' . get_the_category_list( _x( ', ', 'Used between list items, there is a space after the comma.', 'haste-store' ) ) . '</span></span>';
 		endif;
 
 		if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) :
-			echo '<span class="comments-link meta">' . comments_popup_link( __( 'Leave a comment', 'haste-store' ), __( '1 Comment', 'haste-store' ), __( '% Comments', 'haste-store' ) ) . '</span>';
+			echo '<span class="comments-link meta">';
+			echo '<span class="glyphicon glyphicon-comment" aria-hidden="true"></span> ';
+			echo comments_popup_link( __( 'Leave a comment', 'haste-store' ), __( '1 Comment', 'haste-store' ), __( '% Comments', 'haste-store' ) );
+			echo '</span>';
 		endif;
 
 	}
