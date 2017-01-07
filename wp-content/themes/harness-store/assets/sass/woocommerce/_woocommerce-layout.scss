@@ -506,3 +506,17 @@
 .related.products {
 	@include make-container();
 }
+
+
+.woocommerce-checkout {
+	.col2-set {
+		margin: 30px 0;
+
+		.col-1,
+		.col-2 {
+			width: 100%;
+			float: none;
+			padding: 0;
+		}
+	}
+}
