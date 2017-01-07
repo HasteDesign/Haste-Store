@@ -47,7 +47,8 @@ Haste_Store_Kirki::add_field( 'haste-store', array(
 							.woocommerce #respond input#submit:focus,
 							.woocommerce #respond input#submit:active,
 							.woocommerce .widget_price_filter .ui-slider .ui-slider-range,
-							.woocommerce .widget_price_filter .ui-slider .ui-slider-handle',
+							.woocommerce .widget_price_filter .ui-slider .ui-slider-handle,
+							.woocommerce .widget_price_filter .price_slider_wrapper .ui-widget-content',
 			'function' => 'style',
 			'property' => 'background-color',
 		),
@@ -105,7 +106,8 @@ Haste_Store_Kirki::add_field( 'haste-store', array(
 							'.woocommerce #respond input#submit:focus',
 							'.woocommerce #respond input#submit:active',
 							'.woocommerce .widget_price_filter .ui-slider .ui-slider-range',
-							'.woocommerce .widget_price_filter .ui-slider .ui-slider-handle'
+							'.woocommerce .widget_price_filter .ui-slider .ui-slider-handle',
+							'.woocommerce .widget_price_filter .price_slider_wrapper .ui-widget-content'
 						),
 			'property' => 'background-color',
 		),
