@@ -93,7 +93,7 @@ p.demo_store {
 		a {
 			font-weight: 700;
 		}
-		
+
 		.button {
 			float: right;
 		}
@@ -1519,17 +1519,32 @@ p.demo_store {
  */
 .woocommerce-account {
 	.woocommerce {
-		@include clearfix();
+		@include make-row();
 	}
 
 	.woocommerce-MyAccount-navigation {
 		float: left;
-		width: 30%;
+		@include make-md-column(4);
+
+		ul {
+			@extend .list-group;
+			padding: 0;
+			list-style: none;
+		}
+
+		li {
+
+			a {
+				@extend .list-group-item;
+				color: currentColor;
+				margin-top: -1px;
+			}
+		}
 	}
 
 	.woocommerce-MyAccount-content {
 		float: right;
-		width: 68%;
+		@include make-md-column(8);
 	}
 
 	.addresses {
