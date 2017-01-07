@@ -68,6 +68,7 @@
 		padding: 10px;
 		text-align: center;
 		display: block;
+		color: currentColor;
 	}
 
 	.mini_cart_item + .mini_cart_item {
@@ -90,13 +91,23 @@
 
 	.variation {
 		font-size: 0.7em;
-		color: $gray-light;
+		color: currentColor;
 		text-transform: uppercase;
 	}
 
 	.quantity {
 		font-size: $font-size-small;
 		letter-spacing: 0.05em;
+	}
+
+	.cart-info {
+		padding: 20px;
+		text-align: center;
+
+		h3 {
+			margin: 0;
+			color: currentColor;
+		}
 	}
 }
 

@@ -65,6 +65,15 @@ if ( ! function_exists( 'odin_header_cart' ) ) {
 		if ( is_woocommerce_activated() ) { ?>
 			<ul class="header-cart menu dropdown-menu">
 				<?php the_widget( 'WC_Widget_Cart', 'title=' ); ?>
+
+				<?php if ( is_cart() || is_checkout() ){
+						echo '<div class="cart-info">' . __( 'You are at', 'haste-store' );
+						echo '<h3>';
+						 	the_title();
+						echo '</h3></div>';
+					}
+				?>
+
 			</ul>
 		<?php
 		}

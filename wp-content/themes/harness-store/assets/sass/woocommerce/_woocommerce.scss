@@ -1135,13 +1135,12 @@ p.demo_store {
 	&.widget_shopping_cart,
 	.widget_shopping_cart {
 		.total {
-			border-top: 1px solid $gray-light;
+			border-top: 1px solid $gray-lighter;
 			padding: 10px;
 			margin: 0;
 			text-align: center;
 			display: flex;
 			justify-content: space-between;
-			background: rgba(0,0,0,0.1);
 
 			strong {
 				min-width: 40px;

@@ -28,14 +28,14 @@ Haste_Store_Kirki::add_field( 'haste-store', array(
 	'transport'	=> 'postMessage',
 	'js_vars'   => array(
 		array(
-			'element'  => '#main-navigation',
+			'element'  => '#main-navigation, .dropdown-menu',
 			'function' => 'style',
 			'property' => 'background-color',
 		),
 	),
 	'output'	=> array(
 		array(
-			'element' => '#main-navigation',
+			'element' => '#main-navigation', '.dropdown-menu',
 			'property' => 'background-color',
 		),
 	),
@@ -54,14 +54,14 @@ Haste_Store_Kirki::add_field( 'haste-store', array(
 	'transport'	=> 'postMessage',
 	'js_vars'   => array(
 		array(
-			'element'  => '#main-navigation',
+			'element'  => '#main-navigation, .dropdown-menu, .header-cart a',
 			'function' => 'style',
 			'property' => 'color',
 		),
 	),
 	'output'	=> array(
 		array(
-			'element' => '#main-navigation',
+			'element' => '#main-navigation', '.dropdown-menu', '.header-cart a',
 			'property' => 'color',
 		),
 	),

@@ -31,8 +31,11 @@ a {
  * Dropdowns
  */
 
-.dropdown-menu > li > a {
-	padding: $padding-small-vertical $padding-small-horizontal;
+.dropdown-menu {
+	> li > a {
+		padding: $padding-small-vertical $padding-small-horizontal;
+		color: currentColor !important;
+	}
 }
 
 
