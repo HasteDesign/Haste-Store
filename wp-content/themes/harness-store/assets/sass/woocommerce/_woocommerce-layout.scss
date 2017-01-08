@@ -505,6 +505,11 @@
 
 .related.products {
 	@include make-container();
+
+	h2 {
+		margin: 1em 0 1.5em 0;
+		text-align: center;
+	}
 }
 
 
