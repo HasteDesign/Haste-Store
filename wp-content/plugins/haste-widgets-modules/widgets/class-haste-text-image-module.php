@@ -45,7 +45,8 @@ class Haste_Image_Button_Module extends WP_Widget {
 		$img_pos_v     = isset( $instance['img_pos_v'] ) ? $instance['img_pos_v'] : 50;
 		$img_pos_h     = isset( $instance['img_pos_h'] ) ? $instance['img_pos_h'] : 50;
 		$img_size      = isset( $instance['img_size'] ) ? $instance['img_size'] : 100;
-		$cover 		   = isset( $instance['cover'] ) ? $instance['cover'] : 1;
+		$cover 		   = isset( $instance['cover'] ) ? $instance['cover'] : 0;
+		$bg_fix 	   = isset( $instance['bg_fix'] ) ? $instance['bg_fix'] : 0;
 		$bg_repeat     = isset( $instance['bg_repeat'] ) ? $instance['bg_repeat'] : '';
 		$bg_color      = isset( $instance['bg_color'] ) ? $instance['bg_color'] : '#eeeeee';
 
@@ -163,6 +164,11 @@ class Haste_Image_Button_Module extends WP_Widget {
 			</label>
 		</p>
 		<p>
+			<label for="<?php echo $this->get_field_id( 'bg_fix' ); ?>">
+				<input id="<?php echo $this->get_field_id( 'bg_fix' ); ?>" name="<?php echo $this->get_field_name( 'bg_fix' ); ?>" type="checkbox" value="1" <?php checked( 1, $cover, true ); ?> /> <?php _e( 'Fix the background image', 'harness-store' ); ?>
+			</label>
+		</p>
+		<p>
 			<label for="<?php echo $this->get_field_id( 'bg_repeat' ); ?>">
 
 				<?php _e( 'Background image repeat', 'harness-store' ); ?>
@@ -227,6 +233,7 @@ class Haste_Image_Button_Module extends WP_Widget {
 		$instance['img_pos_h']	= ( ! empty( $new_instance['img_pos_h'] ) ) ? intval( $new_instance['img_pos_h'] ) : 0;
 		$instance['img_size']	= ( ! empty( $new_instance['img_size'] ) ) ? intval( $new_instance['img_size'] ) : 100;
 		$instance['cover'] = ( ! empty( $new_instance['cover'] ) ) ? intval( $new_instance['cover'] ) : 0;
+		$instance['bg_fix'] = ( ! empty( $new_instance['bg_fix'] ) ) ? intval( $new_instance['bg_fix'] ) : 0;
 		$instance['bg_repeat']  	= ( ! empty( $new_instance['bg_repeat'] ) ) ? sanitize_text_field( $new_instance['bg_repeat'] ) : 'repeat';
 		$instance['bg_color']	= ( ! empty( $new_instance['bg_color'] ) ) ? esc_attr( $new_instance['bg_color'] ) : '#eeeeee';
 
@@ -257,6 +264,10 @@ class Haste_Image_Button_Module extends WP_Widget {
 			echo 'background-size: cover; ';
 		} else {
 			echo 'background-size: ' . $instance['img_size'] . '% ;';
+		}
+
+		if ( isset( $instance['bg_fix'] ) && $instance['bg_fix'] == true ) {
+			echo 'background-attachment: fixed; ';
 		}
 
 		if ( isset( $instance['bg_repeat'] ) ) {
