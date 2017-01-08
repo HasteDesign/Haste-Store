@@ -96,7 +96,7 @@ class Haste_Image_Button_Module extends WP_Widget {
 		</p>
 		<p>
 			<label for="<?php echo $this->get_field_id( 'btn_class' ); ?>">
-				<?php _e( 'Subtitle', 'harness-store' ); ?>
+				<?php _e( 'Button CSS classes', 'harness-store' ); ?>
 				<input id="<?php echo $this->get_field_id( 'btn_class' ); ?>" class="widefat" name="<?php echo $this->get_field_name( 'btn_class' ); ?>" type="text" value="<?php echo esc_attr( $btn_class ); ?>" />
 			</label>
 		</p>
@@ -110,17 +110,17 @@ class Haste_Image_Button_Module extends WP_Widget {
 					<option
 						value='content-center'
 						<?php echo ( $align == 'content-center' ) ? 'selected' : ''; ?>>
-						<?php _e( 'Content centered, image on background', 'harness-store' ); ?>
+						<?php _e( 'Content centered', 'harness-store' ); ?>
 					</option>
 					<option
 						value='content-left'
 						<?php echo ( $align == 'content-left' ) ? 'selected' : ''; ?>>
-						<?php _e( 'Content on left, image on right', 'harness-store' ); ?>
+						<?php _e( 'Content on left', 'harness-store' ); ?>
 					</option>
 					<option
 						value='content-right'
 						<?php echo ( $align == 'content-right' ) ? 'selected' : ''; ?>>
-						<?php _e( 'Content on right, image on left', 'harness-store' ); ?>
+						<?php _e( 'Content on right', 'harness-store' ); ?>
 					</option>
 				</select>
 			</label>
