@@ -945,7 +945,7 @@ p.demo_store {
 	 */
 	table.shop_attributes {
 		border: 0;
-		border-top: 1px dotted rgba(0,0,0,0.1);
+		border-top: 1px dotted $gray-lighter;
 		margin-bottom: 1.618em;
 		width: 100%;
 
@@ -954,7 +954,7 @@ p.demo_store {
 			font-weight: 700;
 			padding: 8px;
 			border-top: 0;
-			border-bottom: 1px dotted rgba(0,0,0,0.1);
+			border-bottom: 1px dotted $gray-lighter;
 			margin: 0;
 			line-height: 1.5;
 		}
@@ -963,7 +963,7 @@ p.demo_store {
 			font-style: italic;
 			padding: 0;
 			border-top: 0;
-			border-bottom: 1px dotted rgba(0,0,0,0.1);
+			border-bottom: 1px dotted $gray-lighter;
 			margin: 0;
 			line-height: 1.5;
 
@@ -980,12 +980,12 @@ p.demo_store {
 	}
 
 	table.shop_table {
-		border: 1px solid rgba(0,0,0,0.1);
+		border: 1px solid $gray-lighter;
 		margin: 0px -1px 24px 0px;
 		text-align: left;
 		width: 100%;
 		border-collapse: separate;
-		border-radius: 5px;
+		border-radius: 0;
 
 		th {
 			font-weight: 700;
@@ -993,8 +993,8 @@ p.demo_store {
 		}
 
 		td {
-			border-top: 1px solid rgba(0,0,0,0.1);
-			padding: 6px 12px;
+			border-top: 1px solid $gray-lighter;
+			padding: 12px;
 			vertical-align: middle;
 
 			small {
@@ -1015,7 +1015,7 @@ p.demo_store {
 		tfoot th,
 		tbody th {
 			font-weight: 700;
-			border-top: 1px solid rgba(0,0,0,0.1);
+			border-top: 1px solid $gray-lighter;
 		}
 	}
 
@@ -1043,25 +1043,27 @@ p.demo_store {
 
 	td.product-name {
 		dl.variation {
-			margin: .25em 0;
-			@include clearfix();
+			margin: .5em 0 0 0;
+			font-size: 0.8em;
+			text-transform: uppercase;
+			opacity: .7;
 
 			dt,
 			dd {
 				display: inline-block;
 				float: left;
-				margin-bottom: 1em;
+				margin-bottom: 0;
 			}
 
 			dt {
 				font-weight: 700;
-				padding: 0 0 .25em 0;
+				padding: 0;
 				margin: 0 4px 0 0;
 				clear: left;
 			}
 
 			dd {
-				padding: 0 0 .25em 0;
+				padding: 0;
 
 				p:last-child {
 					margin-bottom: 0;
@@ -1096,7 +1098,8 @@ p.demo_store {
 
 			a {
 				display: block;
-				font-weight: 700;
+				margin-bottom: .3em;
+				@extend .h4;
 			}
 
 			img {
@@ -1110,7 +1113,7 @@ p.demo_store {
 			dl {
 				margin: 0;
 				padding-left: 1em;
-				border-left: 2px solid rgba(0,0,0,0.1);
+				border-left: 2px solid $gray-lighter;
 				@include clearfix();
 
 				dt,
@@ -1283,7 +1286,7 @@ p.demo_store {
 		padding: 20px;
 		margin: 2em 0 2em 0px;
 		text-align: left;
-		border-radius: 5px;
+		border-radius: 0;
 	}
 
 	ul#shipping_method {
@@ -1619,16 +1622,33 @@ p.demo_store {
 	table.cart {
 		.product-thumbnail {
 			min-width: 32px;
+			padding: 5px;
 		}
 
 		img {
-			width: 32px;
+			max-width: 80px;
+			width: auto;
 			box-shadow: none;
 		}
 
 		th,
 		td {
 			vertical-align: middle;
+		}
+
+		.product-name {
+			width: 35%;
+
+
+			a {
+				color: currentColor;
+				font-weight: 700;
+				@extend .h3;
+			}
+		}
+
+		.product-quantity {
+			width: 15%;
 		}
 
 		td.actions {
@@ -1643,6 +1663,7 @@ p.demo_store {
 					margin: 0 4px 0 0;
 					outline: 0;
 					line-height: 1;
+					min-width: 180px;
 				}
 			}
 		}
@@ -1650,7 +1671,7 @@ p.demo_store {
 		input {
 			margin: 0;
 			vertical-align: middle;
-			line-height: 1;
+			line-height: inherit;
 		}
 	}
 
@@ -1782,7 +1803,7 @@ p.demo_store {
 
 	#payment {
 		background: $secondary;
-		border-radius: 5px;
+		border-radius: 0;
 
 		ul.payment_methods {
 			@include clearfix();
@@ -1828,7 +1849,7 @@ p.demo_store {
 			padding: 1em;
 			margin: 1em 0 1em 0;
 			font-size: 0.92em;
-			border-radius: 2px;
+			border-radius: 0;
 			line-height: 1.5;
 			background-color: darken( $secondary, 5% );
 			color: $secondarytext;
@@ -2062,4 +2083,8 @@ body:not(.search-results) {
 		background: inherit;
 		color: inherit;
 	}
+}
+
+a .product-title {
+	color: currentColor;
 }

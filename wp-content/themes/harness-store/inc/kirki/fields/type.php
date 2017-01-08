@@ -60,13 +60,13 @@ Haste_Store_Kirki::add_field( 'haste-store', array(
 	'transport'	=> 'postMessage',
 	'js_vars'   => array(
 		array(
-			'element'  => 'h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6',
+			'element'  => 'h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .product-name a, .mini_cart_item a, .product-title',
 			'function' => 'style',
 		),
 	),
 	'output'	=> array(
 		array(
-			'element' => array ('h1', 'h2', 'h3', 'h4', 'h5', 'h6', '.h1', '.h2', '.h3', '.h4', '.h5', '.h6'),
+			'element' => array ('h1', 'h2', 'h3', 'h4', 'h5', 'h6', '.h1', '.h2', '.h3', '.h4', '.h5', '.h6', '.product-name a', '.mini_cart_item a', '.product-title'),
 		),
 	),
 ) );
