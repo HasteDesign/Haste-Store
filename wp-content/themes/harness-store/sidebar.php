@@ -11,7 +11,7 @@
 
 <aside id="sidebar" class="sidebar <?php echo odin_classes_page_sidebar_aside(); ?>" role="complementary">
 	<?php
-		if ( is_woocommerce() ) {
+		if ( is_woocommerce_activated() && is_woocommerce() ) {
 
 			dynamic_sidebar( 'woo-sidebar' );
 
