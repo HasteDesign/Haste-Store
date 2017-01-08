@@ -63,6 +63,7 @@
 .header-cart {
 	min-width: 220px;
 	padding: 0;
+	margin: 1px 0;
 
 	.cart-link a {
 		padding: 10px;
@@ -93,6 +94,7 @@
 		font-size: 0.7em;
 		color: currentColor;
 		text-transform: uppercase;
+		opacity: .8;
 	}
 
 	.quantity {

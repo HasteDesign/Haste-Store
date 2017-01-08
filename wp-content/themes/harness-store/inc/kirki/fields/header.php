@@ -10,7 +10,7 @@
     'title'          => __( 'Header', 'haste-store' ),
     'description'    => __( 'Header options', 'haste-store' ),
     'panel'          => '', // Not typically needed.
-    'priority'       => 150,
+    'priority'       => 160,
     'capability'     => 'edit_theme_options',
     'theme_supports' => '', // Rarely needed.
 ) );
@@ -20,7 +20,7 @@ Haste_Store_Kirki::add_field( 'haste-store', array(
 	'settings'    => 'header-bg-color',
 	'label'       => __( 'Header background color', 'haste-store' ),
 	'section'     => 'header',
-	'default'     => '#e7e7e7',
+	'default'     => '#fff',
 	'priority'    => 10,
 	'choices'     => array(
 		'alpha' => true,
@@ -28,14 +28,14 @@ Haste_Store_Kirki::add_field( 'haste-store', array(
 	'transport'	=> 'postMessage',
 	'js_vars'   => array(
 		array(
-			'element'  => '#main-navigation, .dropdown-menu',
+			'element'  => '#main-navigation, #main-navigation .dropdown-menu',
 			'function' => 'style',
 			'property' => 'background-color',
 		),
 	),
 	'output'	=> array(
 		array(
-			'element' => '#main-navigation', '.dropdown-menu',
+			'element' => array( '#main-navigation', '#main-navigation .dropdown-menu' ),
 			'property' => 'background-color',
 		),
 	),
@@ -54,14 +54,14 @@ Haste_Store_Kirki::add_field( 'haste-store', array(
 	'transport'	=> 'postMessage',
 	'js_vars'   => array(
 		array(
-			'element'  => '#main-navigation, .dropdown-menu, .header-cart a',
+			'element'  => '#main-navigation, #main-navigation .dropdown-menu, .mini_cart_item a',
 			'function' => 'style',
 			'property' => 'color',
 		),
 	),
 	'output'	=> array(
 		array(
-			'element' => '#main-navigation', '.dropdown-menu', '.header-cart a',
+			'element' => array( '#main-navigation', '#main-navigation .dropdown-menu', '.mini_cart_item a' ),
 			'property' => 'color',
 		),
 	),

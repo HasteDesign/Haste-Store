@@ -8,7 +8,7 @@
     'title'          => __( 'Typography', 'haste-store' ),
     'description'    => __( 'Font options', 'haste-store' ),
     'panel'          => '', // Not typically needed.
-    'priority'       => 160,
+    'priority'       => 150,
     'capability'     => 'edit_theme_options',
     'theme_supports' => '', // Rarely needed.
 ) );
