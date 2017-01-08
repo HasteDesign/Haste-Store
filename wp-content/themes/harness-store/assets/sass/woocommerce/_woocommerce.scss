@@ -1099,6 +1099,7 @@ p.demo_store {
 			a {
 				display: block;
 				margin-bottom: .3em;
+				@extend .h4;
 			}
 
 			img {
