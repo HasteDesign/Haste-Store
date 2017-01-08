@@ -70,13 +70,11 @@
 						);
 					?>
 				</nav><!-- .navbar-collapse -->
-				<nav class="navbar-right">
 
-					<?php
-						if ( get_option( 'users_can_register' ) ) {
-
-							if ( is_user_logged_in() ) {
-							?>
+                <?php if( is_woocommerce_activated() ) : ?>
+                        <?php if ( get_option( 'users_can_register' ) ) : ?>
+                            <nav class="navbar-right">
+                                <?php if ( is_user_logged_in() ) : ?>
 
 								<p class="navbar-text">
 									<?php
@@ -103,10 +101,8 @@
 										</ul>
 									</div>
 								</div>
-								<?php
-							} else {
 
-							?>
+			                    <?php else : ?>
 
 								<p class="navbar-text">
 									<?php
@@ -119,19 +115,19 @@
 									<a class="btn btn-default navbar-btn" href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>">
 										<?php _e('Register', 'haste-store')?></a>
 								</div>
-						<?php
-								}
-							}
-						?>
-						<button type="button" class="btn btn-primary navbar-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
-							<span class="badge"><?php echo WC()->cart->get_cart_contents_count(); ?></span>
-							<span class="sr-only"><?php _e('Cart', 'haste-store')?></span>
-							<span class="caret"></span>
-						</button>
-							<?php odin_header_cart() ?>
 
-				</nav>
+            					<button type="button" class="btn btn-primary navbar-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            						<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+                                    <span class="badge"><?php echo WC()->cart->get_cart_contents_count(); ?></span>
+            						<span class="sr-only"><?php _e('Cart', 'haste-store')?></span>
+            						<span class="caret"></span>
+            					</button>
+            					<?php odin_header_cart() ?>
+
+                                <?php endif; ?>
+                            </nav><!-- .navbar-right -->
+                        <?php endif; ?>
+                    <?php endif; ?>
 			</div><!-- .container-->
 		</div><!-- #main-navigation-->
 	</header><!-- #header -->
