@@ -70,19 +70,11 @@ class Haste_Image_Button_Module extends WP_Widget {
 				<textarea id="<?php echo $this->get_field_id( 'content' ); ?>" class="widefat" name="<?php echo $this->get_field_name( 'content' ); ?>" rows="5"><?php echo esc_attr( $content ); ?></textarea>
 			</label>
 		</p>
-		<script>
-			(function( $ ) {
-			    // Add Color Picker to all inputs that have 'color-field' class
-			    $(function() {
-			    	$('.wp-color-picker').wpColorPicker();
-			    });
-			})( jQuery );
-		</script>
 		<p>
             <label for="<?php echo $this->get_field_id( 'text_color' ); ?>">
 				<?php _e( 'Text Color', 'harness-store' ); ?>
 			</label>
-            <input class="wp-color-picker widefat" type="text" id="<?php echo $this->get_field_id( 'text_color' ); ?>" name="<?php echo $this->get_field_name( 'text_color' ); ?>" value="<?php echo esc_attr( $instance['text_color'] ); ?>" />
+            <input class="wp-color-picker widefat" type="text" id="<?php echo $this->get_field_id( 'text_color' ); ?>" name="<?php echo $this->get_field_name( 'text_color' ); ?>" value="<?php echo esc_attr( $text_color ); ?>" />
         </p>
 		<p>
 			<label for="<?php echo $this->get_field_id( 'btn_text' ); ?>">

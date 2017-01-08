@@ -34,7 +34,7 @@ function haste_assets() {
 	);
 	wp_localize_script( 'wp-color-picker', 'wpColorPickerL10n', $colorpicker_l10n );
 
-	wp_enqueue_script('haste-widgets', plugin_dir_url(__FILE__) . 'js/haste-widgets.js', array( 'jquery', 'wp-color-picker' ) ) ;
+	wp_enqueue_script( 'haste-widgets', plugin_dir_url(__FILE__) . 'js/haste-widgets.js', array( 'jquery', 'wp-color-picker', 'media-upload', 'thickbox' ) ) ;
 }
 
 

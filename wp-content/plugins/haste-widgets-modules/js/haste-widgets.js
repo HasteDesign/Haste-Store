@@ -1,14 +1,48 @@
 jQuery(document).ready(function($) {
+    /**
+     * Color Picker
+     */
 
-	$('.wp-color-picker').wpColorPicker();
-	console.log( 'foi' );
+    /**
+     * initColorPicker inicializa o color picker no campo com seletor .wp-color-picker
+     * @param  {object} widget [description]
+     */
+    function initColorPicker( widget ) {
+            widget.find( '.wp-color-picker' ).wpColorPicker( {
+                    change: _.throttle( function() { // For Customizer
+                            $(this).trigger( 'change' );
+                    }, 3000 )
+            });
+    }
+
+    /**
+     * onFormUpdate Chama a função initColorPicker quando adicionado novo widget
+     * @param  {object} event
+     * @param  {object} widget
+     */
+    function onFormUpdate( event, widget ) {
+            initColorPicker( widget );
+    }
+
+    // Eventos
+    $( document ).on( 'widget-added widget-updated', onFormUpdate );
+
+    $( document ).ready( function() {
+            $( '#widgets-right .widget:has(.wp-color-picker)' ).each( function () {
+                    initColorPicker( $( this ) );
+            } );
+    } );
+
+    /**
+     * Media Upload
+     */
 
 	// Uploading files
 	var file_frame;
 	var wp_media_post_id = wp.media.model.settings.post.url; // Store the old id
 	var set_to_post_id; // Set this
 
-    $(document).on("click", ".upload_image_button", function( event ) {
+    $(document).on( 'click', '.upload_image_button', function( event ) {
 
 		event.preventDefault();
 
