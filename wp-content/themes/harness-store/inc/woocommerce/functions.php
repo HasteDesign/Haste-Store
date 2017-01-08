@@ -14,7 +14,7 @@ if ( ! function_exists( 'odin_before_content' ) ) {
 	 */
 	function odin_before_content() {
 
-		if ( is_single() || is_checkout() || is_cart() || is_product() || is_home() ) {
+		if ( is_single() || is_home() || ( is_woocommerce_activated() && is_checkout() || is_cart() || is_product() ) ) {
 		?>
 		<main id="content" class="<?php echo odin_classes_page_full(); ?>" tabindex="-1" role="main">
 		<?php
