@@ -230,9 +230,9 @@ p.demo_store {
 			ul.tabs {
 				list-style: none;
 				padding: 0 0 0 1em;
-				margin: 0 0 1.618em;
-				overflow: hidden;
-				position: relative;
+				margin: 2em 0 1.618em;
+				overflow: initial;
+				position: static;;
 
 				li {
 					background-color: transparent;
@@ -245,6 +245,7 @@ p.demo_store {
 					padding: 0;
 
 					a {
+						font-weight: normal;
 
 						&:hover {
 							text-decoration: none;
@@ -302,19 +303,21 @@ p.demo_store {
 				}
 
 				&:before {
-					position: absolute;
-					content: " ";
-					width: 100%;
-					bottom: 0;
-					left: 0;
-					border-bottom: 1px solid darken( $secondary, 10% );
-					z-index: 1;
+					content: none !important;
 				}
 			}
 
 			.panel {
 				margin: 0 0 2em;
-				padding: 0;
+				padding: 30px 16%;
+				border: 0;
+				border-bottom: 1px solid $gray-lighter;
+
+				h2 {
+					text-align: center;
+					margin: 0 0 1em 0;
+				}
+
 			}
 		}
 
@@ -690,7 +693,7 @@ p.demo_store {
 		}
 
 		h3 {
-			margin: 0;
+			margin: 2em 0 1em 0;
 		}
 
 		#respond {
@@ -728,8 +731,8 @@ p.demo_store {
 					border: 0;
 
 					.meta {
-						color: $subtext;
-						font-size: 0.75em;
+						color: $gray;
+						font-size: $font-size-small;
 					}
 
 					img.avatar {
@@ -741,15 +744,15 @@ p.demo_store {
 						width: 32px;
 						height: auto;
 						background: $secondary;
-						border: 1px solid darken( $secondary, 3% );
+						border: 1px solid $gray-lighter;
 						margin: 0;
 						box-shadow: none;
 					}
 
 					.comment-text {
 						margin: 0 0 0 50px;
-						border: 1px solid darken( $secondary, 3% );
-						border-radius: 4px;
+						border: 1px solid $gray-lighter;
+						border-radius: 0;
 						padding: 1em 1em 0;
 						@include clearfix();
 
@@ -861,7 +864,11 @@ p.demo_store {
 			border: 0;
 
 			p {
-				margin: 0 0 10px;
+				margin: 0 0 1em;
+			}
+
+			.stars {
+				font-size: 2em;
 			}
 
 			.form-submit {
