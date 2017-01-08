@@ -78,7 +78,7 @@ h1, h2, h3, h4, h5, h6,
 		padding-top: 0;
 	}
 
-	.entry-content {
+	&.post .entry-content {
 		font-size: 1.1em;
 		padding-top: 30px;
 		padding-bottom: 30px;

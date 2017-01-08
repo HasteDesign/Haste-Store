@@ -158,8 +158,9 @@ p.demo_store {
 
 		span.price,
 		p.price {
-			color: $highlight;
+			color: currentColor;
 			font-size: 1.25em;
+			margin-bottom: 2em;
 
 			ins {
 				background: inherit;
