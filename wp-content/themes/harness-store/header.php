@@ -110,9 +110,9 @@
 									?>
 								</p>
 								<div class="btn-group" role="group" aria-label="login">
-									<a class="btn btn-default navbar-btn" href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>">
+									<a class="btn btn-outline navbar-btn" href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>">
 										<?php _e('Login', 'haste-store')?></a>
-									<a class="btn btn-default navbar-btn" href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>">
+									<a class="btn btn-outline navbar-btn" href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>">
 										<?php _e('Register', 'haste-store')?></a>
 								</div>
 
