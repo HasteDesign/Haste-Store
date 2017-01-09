@@ -161,14 +161,26 @@ p.demo_store {
 			color: currentColor;
 			font-size: 1.25em;
 			margin-bottom: 2em;
-
-			ins {
-				background: inherit;
-				font-weight: 700;
-			}
+			display: block;
+			font-weight: normal;
 
 			del {
+				color: inherit;
 				opacity: 0.5;
+				display: inline-block;
+			}
+
+			ins {
+				background: none;
+				text-decoration: none;
+				font-weight: inherit;
+				display: inline-block;
+			}
+
+			.from {
+				margin: -2px 0 0 0;
+				text-transform: uppercase;
+				color: currentColor;
 			}
 		}
 
@@ -423,23 +435,20 @@ p.demo_store {
 	}
 
 	span.onsale {
-		min-height: 3.236em;
-		min-width: 3.236em;
-		padding: .202em;
-		font-size: 1em;
 		font-weight: 700;
 		position: absolute;
 		text-align: center;
-		line-height: 3.236;
-		top: -.5em;
-		left: -.5em;
-		margin: 0;
-		border-radius: 100%;
-		background-color: $highlight;
-		color: $highlightext;
 		font-size: .857em;
 		-webkit-font-smoothing: antialiased;
-	}
+		top: 0;
+		left: 0;
+		left: auto;
+		margin: 0 15px;
+		padding: 0px 10px;
+		line-height: 3;
+		min-height: 3em;
+		border-radius: 0 1.5em 1.5em 1.5em;
+		z-index: 10;	}
 
 	/**
 	 * Product loops
