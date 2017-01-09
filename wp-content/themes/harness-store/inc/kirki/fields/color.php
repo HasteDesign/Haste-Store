@@ -450,7 +450,8 @@ Haste_Store_Kirki::add_field( 'haste-store', array(
 							.has-warning.radio label,
 							.has-warning.checkbox label,
 							.has-warning.radio-inline label,
-							.has-warning.checkbox-inline label',
+							.has-warning.checkbox-inline label,
+							.woocommerce div.product .stock',
 
 			'function' => 'style',
 			'property' => 'color',
@@ -496,6 +497,7 @@ Haste_Store_Kirki::add_field( 'haste-store', array(
 							'.has-warning.checkbox label',
 							'.has-warning.radio-inline label',
 							'.has-warning.checkbox-inline label',
+							'.woocommerce div.product .stock',
 						),
 			'property' => 'color',
 		),
