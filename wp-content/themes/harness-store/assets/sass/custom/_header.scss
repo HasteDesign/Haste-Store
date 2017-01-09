@@ -64,6 +64,8 @@
 	min-width: 220px;
 	padding: 0;
 	margin: 1px 0;
+	max-height: calc(100vh - 70px);
+	overflow-y: auto;
 
 	.cart-link a {
 		padding: 10px;
