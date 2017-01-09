@@ -193,18 +193,21 @@
 .navbar-toggle {
   position: relative;
   float: right;
-  margin-right: $navbar-padding-horizontal;
-  padding: 9px 10px;
-  @include navbar-vertical-align(34px);
+  padding:  12px;
+  margin: 10px $navbar-padding-horizontal;
   background-color: transparent;
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
   border: 1px solid transparent;
   border-radius: $border-radius-base;
+  color: inherit;
 
   // We remove the `outline` here, but later compensate by attaching `:hover`
   // styles to `:focus`.
-  &:focus {
+  &:focus,
+  &:active,
+  &:hover {
     outline: 0;
+	color: inherit;
   }
 
   // Bars

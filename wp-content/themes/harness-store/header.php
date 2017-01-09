@@ -44,7 +44,7 @@
 		<div id="main-navigation" class="navbar navbar-default navbar-fixed-top">
 			<div class="container">
 				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-navigation">
+					<button type="button" class="navbar-toggle btn btn-" data-toggle="collapse" data-target=".navbar-main-navigation">
 					<span class="sr-only"><?php _e( 'Toggle navigation', 'haste-store' ); ?></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
@@ -56,6 +56,7 @@
 						<?php echo is_home() ? '</h1>' : '</span>' ; ?>
 					</div>
 				</div>
+
 				<nav class="collapse navbar-collapse navbar-main-navigation <?php echo is_woocommerce_activated() ? 'navbar-left' : 'navbar-right'; ?>" role="navigation">
 					<?php
 						wp_nav_menu(
@@ -76,15 +77,15 @@
                             <nav class="navbar-right">
                                 <?php if ( is_user_logged_in() ) : ?>
 
-								<p class="navbar-text">
+								<p class="navbar-text hidden-xs">
 									<?php
 										$user = wp_get_current_user();
 										$username = $user->user_firstname;
-									    printf( esc_html__( 'Hello, %s.', 'my-text-domain' ), $username );
+									    printf( esc_html__( 'Hello, %s!', 'haste-store' ), $username );
 									?>
 								</p>
 
-								<div class="btn-group" role="group" aria-label="login">
+								<div class="btn-group hidden-xs" role="group" aria-label="login">
 									<a class="btn btn-outline navbar-btn" href="<?php echo wp_logout_url( get_permalink() ); ?>"><?php _e('Logout', 'haste-store'); ?></a>
 
 									<div class="btn-group" role="group">
@@ -104,27 +105,29 @@
 
 			                    <?php else : ?>
 
-								<p class="navbar-text">
+								<p class="navbar-text hidden-xs">
 									<?php
-								    	_e('Hello, guest user.', 'haste-store');
+								    	_e('Hello, guest user!', 'haste-store');
 									?>
 								</p>
-								<div class="btn-group" role="group" aria-label="login">
+
+								<div class="btn-group hidden-xs" role="group" aria-label="login">
 									<a class="btn btn-outline navbar-btn" href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>">
 										<?php _e('Login', 'haste-store')?></a>
 									<a class="btn btn-outline navbar-btn" href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>">
 										<?php _e('Register', 'haste-store')?></a>
 								</div>
 
-            					<button type="button" class="btn btn-primary navbar-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            						<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
-                                    <span class="badge"><?php echo WC()->cart->get_cart_contents_count(); ?></span>
-            						<span class="sr-only"><?php _e('Cart', 'haste-store')?></span>
-            						<span class="caret"></span>
-            					</button>
-            					<?php odin_header_cart() ?>
 
                                 <?php endif; ?>
+
+								<button type="button" class="btn btn-primary navbar-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+									<span class="badge"><?php echo WC()->cart->get_cart_contents_count(); ?></span>
+									<span class="sr-only"><?php _e('Cart', 'haste-store')?></span>
+									<span class="caret"></span>
+								</button>
+								<?php odin_header_cart() ?>
                             </nav><!-- .navbar-right -->
                         <?php endif; ?>
                     <?php endif; ?>

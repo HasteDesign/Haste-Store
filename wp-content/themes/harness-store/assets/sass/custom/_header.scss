@@ -35,13 +35,26 @@
 			margin-bottom: 0;
 		}
 
-		.admin-bar &.navbar-fixed-top {
-			margin-top: 32px;
+		@media( min-width: $screen-sm-min ) {
+			.admin-bar &.navbar-fixed-top {
+				margin-top: 46px;
+			}
+		}
+		@media( min-width: $screen-md-min ) {
+			.admin-bar &.navbar-fixed-top {
+				margin-top: 32px;
+			}
 		}
 
 		.navbar-right {
 			position: relative;
 			margin-right: 0;
+
+			@media( max-width: $screen-xs-max ) {
+				position: absolute;
+				top: 0;
+				right: 70px;
+			}
 		}
     }
 
