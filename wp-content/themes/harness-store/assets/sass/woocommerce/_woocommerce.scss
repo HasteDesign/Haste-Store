@@ -1264,7 +1264,11 @@ p.demo_store {
 
 			.select2-container {
 				width: 100%;
-				line-height: 2em;
+				line-height: 2.7em;
+
+				.select2-choice {
+					border-radius: 0;
+				}
 			}
 
 			&.woocommerce-invalid {
