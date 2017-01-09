@@ -56,7 +56,7 @@
 						<?php echo is_home() ? '</h1>' : '</span>' ; ?>
 					</div>
 				</div>
-				<nav class="collapse navbar-collapse navbar-main-navigation navbar-left" role="navigation">
+				<nav class="collapse navbar-collapse navbar-main-navigation <?php echo is_woocommerce_activated() ? 'navbar-left' : 'navbar-right'; ?>" role="navigation">
 					<?php
 						wp_nav_menu(
 							array(
