@@ -562,7 +562,9 @@ Haste_Store_Kirki::add_field( 'haste-store', array(
 							.has-error.radio label,
 							.has-error.checkbox label,
 							.has-error.radio-inline label,
-							.has-error.checkbox-inline label',
+							.has-error.checkbox-inline label,
+							.woocommerce form .form-row .required,
+							.woocommerce form .form-row.woocommerce-invalid label',
 
 			'function' => 'style',
 			'property' => 'color',
@@ -615,6 +617,8 @@ Haste_Store_Kirki::add_field( 'haste-store', array(
 							'.has-error.checkbox label',
 							'.has-error.radio-inline label',
 							'.has-error.checkbox-inline label',
+							'.woocommerce form .form-row .required',
+							'.woocommerce form .form-row.woocommerce-invalid label'
 						),
 			'property' => 'color',
 		),
