@@ -87,6 +87,8 @@
 	ul.products {
 
 		li.product {
+			@include make-xs-column(6);
+			@include make-sm-column(3);
 			@include make-md-column(3);
 			margin: 0 0 60px 0;
 			text-align: center;
@@ -96,6 +98,8 @@
 	&.columns-1 {
 		ul.products {
 			li.product {
+				@include make-xs-column(12);
+				@include make-sm-column(12);
 				@include make-md-column(12);
 			}
 		}
@@ -104,6 +108,8 @@
 	&.columns-2 {
 		ul.products {
 			li.product {
+				@include make-xs-column(12);
+				@include make-sm-column(6);
 				@include make-md-column(6);
 			}
 		}
@@ -112,7 +118,19 @@
 	&.columns-3 {
 		ul.products {
 			li.product {
+				@include make-xs-column(12);
+				@include make-sm-column(4);
 				@include make-md-column(4);
+			}
+		}
+	}
+
+	&.columns-4 {
+		ul.products {
+			li.product {
+				@include make-xs-column(6);
+				@include make-sm-column(3);
+				@include make-md-column(3);
 			}
 		}
 	}
@@ -120,6 +138,8 @@
 	&.columns-5 {
 		ul.products {
 			li.product {
+				@include make-xs-column(6);
+				@include make-sm-column(3);
 				width: 16.95%;
 			}
 		}
@@ -128,6 +148,8 @@
 	&.columns-6 {
 		ul.products {
 			li.product {
+				@include make-xs-column(6);
+				@include make-sm-column(4);
 				@include make-md-column(2);
 			}
 		}

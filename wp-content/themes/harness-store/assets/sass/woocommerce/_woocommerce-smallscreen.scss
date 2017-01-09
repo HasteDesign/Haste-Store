@@ -99,14 +99,12 @@
 	&, &[class*="columns-"] {
 		ul.products {
 			li.product {
-				width: 48%;
 				float: left;
-				clear: both;
-				margin: 0 0 2.992em;
+				clear: none;
 
 				&:nth-child(2n) {
-					float: right;
-					clear: none !important;
+					float: left;;
+					clear: none;
 				}
 			}
 		}
