@@ -232,7 +232,7 @@ p.demo_store {
 				padding: 0 0 0 1em;
 				margin: 2em 0 1.618em;
 				overflow: initial;
-				position: static;;
+				position: static;
 
 				li {
 					background-color: transparent;
@@ -309,9 +309,13 @@ p.demo_store {
 
 			.panel {
 				margin: 0 0 2em;
-				padding: 30px 16%;
 				border: 0;
 				border-bottom: 1px solid $gray-lighter;
+				padding: 15px 0;
+
+				@media( min-width: $screen-sm-min ) {
+					padding: 30px 16%;
+				}
 
 				h2 {
 					text-align: center;
