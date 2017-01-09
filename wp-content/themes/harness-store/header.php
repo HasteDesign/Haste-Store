@@ -85,10 +85,10 @@
 								</p>
 
 								<div class="btn-group" role="group" aria-label="login">
-									<a class="btn btn-default navbar-btn" href="<?php echo wp_logout_url( get_permalink() ); ?>"><?php _e('Logout', 'haste-store'); ?></a>
+									<a class="btn btn-outline navbar-btn" href="<?php echo wp_logout_url( get_permalink() ); ?>"><?php _e('Logout', 'haste-store'); ?></a>
 
 									<div class="btn-group" role="group">
-										<button class="btn btn-default navbar-btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										<button class="btn btn-outline navbar-btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 										<?php _e('My details', 'haste-store'); ?> <span class="caret"></span>
 										</button>
 										<ul class="dropdown-menu">
