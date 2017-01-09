@@ -10,14 +10,14 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" class="container section">
-	<header class="entry-header section-header">
+	<header class="section-header">
 		<?php
 				the_title( '<h2 class="entry-title section-title">', '</h2>' );
 		?>
 
 	</header><!-- .entry-header -->
 
-		<div class="entry-content">
+		<div class="section-content">
 			<?php
 				the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'haste-store' ) );
 				wp_link_pages( array(
