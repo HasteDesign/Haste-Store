@@ -1310,6 +1310,20 @@ p.demo_store {
 		border-radius: 0;
 	}
 
+	form.checkout_coupon {
+		text-align: center;
+
+		p {
+			float: none;
+			display: inline-block;
+			width: auto;
+		}
+
+		#coupon_code {
+			min-width: 250px
+		}
+	}
+
 	ul#shipping_method {
 		list-style: none outside;
 		margin: 0;
