@@ -77,9 +77,21 @@
 	min-width: 250px;
 	padding: 0;
 	margin: 1px 0;
-	max-height: calc(100vh - 70px);
 	overflow-y: auto;
+	max-height: calc(100vh - 70px);
 
+	@media( max-width: $screen-xs-max ) {
+		right: 0;
+		position: fixed;
+		top: 60px;
+	}
+
+	@media( min-width: $screen-sm-min ) {
+		.admin-bar & {
+			max-height: calc(100vh - 100px);
+		}
+	}
+	
 	.cart-link a {
 		padding: 10px;
 		text-align: center;
