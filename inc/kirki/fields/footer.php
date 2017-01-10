@@ -20,7 +20,7 @@ Haste_Store_Kirki::add_field( 'haste-store', array(
 	'settings'    => 'footer-bg-color',
 	'label'       => __( 'Footer background color', 'haste-store' ),
 	'section'     => 'footer',
-	'default'     => '#e7e7e7',
+	'default'     => '#fff',
 	'priority'    => 10,
 	'choices'     => array(
 		'alpha' => true,
@@ -47,7 +47,7 @@ Haste_Store_Kirki::add_field( 'haste-store', array(
 	'label'       => __( 'Footer text color', 'haste-store' ),
 	'section'     => 'footer',
 	'default'     => 'inherit',
-	'priority'    => 10,
+	'priority'    => 20,
 	'choices'     => array(
 		'alpha' => true,
 	),
