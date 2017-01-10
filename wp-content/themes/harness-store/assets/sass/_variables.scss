@@ -439,16 +439,16 @@ $nav-disabled-link-color:                   $gray-light;
 $nav-disabled-link-hover-color:             $gray-light;
 
 //== Tabs
-$nav-tabs-border-color:                     #ddd;
+$nav-tabs-border-color:                     $gray-lighter;
 
 $nav-tabs-link-hover-border-color:          $gray-lighter;
 
-$nav-tabs-active-link-hover-bg:             $body-bg;
+$nav-tabs-active-link-hover-bg:             transparent;
 $nav-tabs-active-link-hover-color:          $gray;
-$nav-tabs-active-link-hover-border-color:   #ddd;
+$nav-tabs-active-link-hover-border-color:   $gray-lighter;
 
-$nav-tabs-justified-link-border-color:            #ddd;
-$nav-tabs-justified-active-link-border-color:     $body-bg;
+$nav-tabs-justified-link-border-color:            $gray-lighter;
+$nav-tabs-justified-active-link-border-color:     transparent;
 
 //== Pills
 $nav-pills-border-radius:                   $border-radius-base;
@@ -461,20 +461,20 @@ $nav-pills-active-link-hover-color:         $component-active-color;
 //##
 
 $pagination-color:                     $link-color;
-$pagination-bg:                        #fff;
-$pagination-border:                    #ddd;
+$pagination-bg:                        transparent;
+$pagination-border:                    $gray-lighter;
 
 $pagination-hover-color:               $link-hover-color;
-$pagination-hover-bg:                  $gray-lighter;
-$pagination-hover-border:              #ddd;
+$pagination-hover-bg:                  transparent;
+$pagination-hover-border:              $gray-lighter;
 
-$pagination-active-color:              #fff;
+$pagination-active-color:              transparent;
 $pagination-active-bg:                 $brand-primary;
 $pagination-active-border:             $brand-primary;
 
 $pagination-disabled-color:            $gray-light;
-$pagination-disabled-bg:               #fff;
-$pagination-disabled-border:           #ddd;
+$pagination-disabled-bg:               $gray-lighter;
+$pagination-disabled-border:           $gray-light;
 
 
 //== Pager
@@ -715,14 +715,14 @@ $list-group-link-heading-color: #333;
 //
 //##
 
-$panel-bg:                    #fff;
+$panel-bg:                    transparent;
 $panel-body-padding:          15px;
 $panel-heading-padding:       10px 15px;
 $panel-footer-padding:        $panel-heading-padding;
 $panel-border-radius:         $border-radius-base;
 
 //** Border color for elements within panels
-$panel-inner-border:          #ddd;
+$panel-inner-border:          $gray-lighter;
 $panel-footer-bg:             #f5f5f5;
 
 $panel-default-text:          $gray-dark;
@@ -757,14 +757,14 @@ $panel-danger-heading-bg:     $state-danger-bg;
 //** Padding around the thumbnail image
 $thumbnail-padding:           4px;
 //** Thumbnail background color
-$thumbnail-bg:                $body-bg;
+$thumbnail-bg:                transparent;
 //** Thumbnail border color
-$thumbnail-border:            #ddd;
+$thumbnail-border:            $gray-lighter;
 //** Thumbnail border radius
 $thumbnail-border-radius:     $border-radius-base;
 
 //** Custom text color for thumbnail captions
-$thumbnail-caption-color:     $text-color;
+$thumbnail-caption-color:     inherit;
 //** Padding around the thumbnail caption
 $thumbnail-caption-padding:   9px;
 
@@ -773,8 +773,8 @@ $thumbnail-caption-padding:   9px;
 //
 //##
 
-$well-bg:                     #f5f5f5;
-$well-border:                 darken($well-bg, 7%);
+$well-bg:                     transparent;
+$well-border:                 $gray-lighter;
 
 
 //== Badges
@@ -803,9 +803,9 @@ $badge-border-radius:         10px;
 $breadcrumb-padding-vertical:   8px;
 $breadcrumb-padding-horizontal: 15px;
 //** Breadcrumb background color
-$breadcrumb-bg:                 #f5f5f5;
+$breadcrumb-bg:                 transparent;
 //** Breadcrumb text color
-$breadcrumb-color:              #ccc;
+$breadcrumb-color:              inherit;
 //** Text color of current page in the breadcrumb
 $breadcrumb-active-color:       $gray-light;
 //** Textual separator for between breadcrumb elements
