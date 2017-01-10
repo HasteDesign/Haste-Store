@@ -138,8 +138,9 @@ p.demo_store {
 
 	.quantity {
 		.qty {
-			width: 3.631em;
-			text-align: center;
+			width: auto;
+			max-width: 5em;
+			padding-right: 0 !important;
 		}
 	}
 
@@ -214,6 +215,10 @@ p.demo_store {
 
 		div.summary {
 			margin-bottom: 2em;
+
+			button[class*='add_to_cart'] {
+				min-width: 150px;
+			}
 		}
 
 		div.social {
@@ -371,9 +376,7 @@ p.demo_store {
 			}
 
 			.variations {
-				display: none;
-
-				margin-bottom: 1em;
+				margin: 3em 0 2em 0;
 				border: 0;
 				width: 100%;
 
@@ -384,8 +387,11 @@ p.demo_store {
 					line-height: 2em;
 				}
 
-				label {
-					font-weight: 700;
+				.label, label {
+					font-size: 1em;
+					color: inherit;
+
+
 				}
 
 				select {
@@ -408,7 +414,8 @@ p.demo_store {
 
 			.reset_variations {
 				visibility: hidden;
-				font-size: 0.83em;
+				font-size: 1em;
+				float: right;
 			}
 
 			.wc-no-matching-variations {
@@ -661,6 +668,7 @@ p.demo_store {
 			&.disabled:hover,
 			&:disabled:hover,
 			&:disabled[disabled]:hover {
+				@include button-size($padding-base-vertical, $padding-base-horizontal, $font-size-base, $line-height-base, $btn-border-radius-base);
 			}
 		}
 
@@ -669,8 +677,7 @@ p.demo_store {
 		&:disabled[disabled] {
 			color: inherit;
 			cursor: not-allowed;
-			opacity: 0.5;
-			padding: .618em 1em;
+			@include button-size($padding-base-vertical, $padding-base-horizontal, $font-size-base, $line-height-base, $btn-border-radius-base);
 
 			&:hover {
 				color: inherit;
