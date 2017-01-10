@@ -13,31 +13,34 @@ get_header();
 
 	<main id="content" class="<?php echo odin_classes_page_full(); ?>" tabindex="-1" role="main">
 
-		<?php
-			// Start the Loop.
-			while ( have_posts() ) : the_post();
-		?>
+		<?php if ( true == get_theme_mod( 'enable-home-content-section', true ) ) : ?>
 
-			<section class="page-section home-jumbotron"
-			<?php if ( has_post_thumbnail() ) { ?>
-				style="background-image: url('<?php the_post_thumbnail_url( 'full' ); ?>')"
-			<?php } ?>>
+			<?php
+				// Start the Loop.
+				while ( have_posts() ) : the_post();
+			?>
 
-			<div class="section-wrapper">
+				<section class="page-section home-jumbotron"
+				<?php if ( has_post_thumbnail() ) { ?>
+					style="background-image: url('<?php the_post_thumbnail_url( 'full' ); ?>')"
+				<?php } ?>>
 
-				<?php
-					// Include the page content template.
-					get_template_part( 'content', 'section' );
-				?>
+				<div class="section-wrapper">
 
-			</div>
+					<?php
+						// Include the page content template.
+						get_template_part( 'content', 'section' );
+					?>
 
-			</section>
+				</div>
 
-		<?php
-			endwhile;
-		?>
+				</section>
 
+			<?php
+				endwhile;
+			?>
+
+		<?php endif; ?>
 
 		<?php get_sidebar('home'); ?>
 

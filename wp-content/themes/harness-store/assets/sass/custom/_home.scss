@@ -26,6 +26,15 @@
 			color: #fff;
 		}
 	}
+
+	.section-buttons {
+		margin: 3% 0;
+
+		a,
+		button, {
+			min-width: 15%;
+		}
+	}
 }
 
 .page-section {

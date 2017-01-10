@@ -28,4 +28,23 @@
 				) );
 			?>
 		</div><!-- .entry-content -->
+
+		<?php if ( true == get_theme_mod( 'enable-home-cta-btn' ) || true == get_theme_mod( 'enable-home-sec-btn' ) ) : ?>
+			<div class="section-content section-buttons">
+
+				<?php if ( true == get_theme_mod( 'enable-home-cta-btn', true ) ) : ?>
+					<a href="<?php echo get_theme_mod( 'home-cta-btn-link' ); ?>" class="<?php echo get_theme_mod( 'home-cta-btn-classes' ); ?>">
+						<?php echo get_theme_mod( 'home-cta-btn-text' ); ?>
+					</a>
+				<?php endif; ?>
+
+				<?php if ( true == get_theme_mod( 'enable-home-sec-btn', true ) ) : ?>
+					<a href="<?php echo get_theme_mod( 'home-sec-btn-link' ); ?>" class="<?php echo get_theme_mod( 'home-sec-btn-classes' ); ?>">
+						<?php echo get_theme_mod( 'home-sec-btn-text' ); ?>
+					</a>
+				<?php endif; ?>
+
+			</div>
+		<?php endif; ?>
+
 </article><!-- #post-## -->
