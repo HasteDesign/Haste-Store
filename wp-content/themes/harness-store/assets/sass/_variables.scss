@@ -181,7 +181,7 @@ $btn-danger-color:               #fff;
 $btn-danger-bg:                  $brand-danger;
 $btn-danger-border:              transparent;
 
-$btn-link-disabled-color:        $gray-light;
+$btn-link-disabled-color:        $gray-light !important;
 
 // Allows for customizing button radius independently from global border radius
 $btn-border-radius-base:         $border-radius-base;
@@ -199,7 +199,7 @@ $input-bg:                       #fff;
 $input-bg-disabled:              $gray-lighter;
 
 //** Text color for `<input>`s
-$input-color:                    $gray-light;
+$input-color:                    $gray;
 //** `<input>` border color
 $input-border:                   $gray-lighter;
 
@@ -213,10 +213,10 @@ $input-border-radius-large:      $border-radius-large;
 $input-border-radius-small:      $border-radius-small;
 
 //** Border color for inputs on focus
-$input-border-focus:             $gray-light;
+$input-border-focus:             $gray-lighter;
 
 //** Placeholder text color
-$input-color-placeholder:        #999;
+$input-color-placeholder:        $gray;
 
 //** Default `.form-control` height
 $input-height-base:              ($line-height-computed + ($padding-base-vertical * 2) + 2);
@@ -229,7 +229,7 @@ $input-height-small:             (floor($font-size-small * $line-height-small) +
 $form-group-margin-bottom:       15px;
 
 $legend-color:                   $gray-dark;
-$legend-border-color:            #e5e5e5;
+$legend-border-color:            $gray-lighter;
 
 //** Background color for textual input addons
 $input-group-addon-bg:           $gray-lighter;
@@ -272,7 +272,7 @@ $dropdown-link-disabled-color:   $gray-light;
 $dropdown-header-color:          $gray-light;
 
 //** Deprecated `$dropdown-caret-color` as of v3.1.0
-$dropdown-caret-color:           #000;
+$dropdown-caret-color:           currentColor;
 
 
 //-- Z-index master list
