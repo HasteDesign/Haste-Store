@@ -194,7 +194,7 @@ class Haste_Image_Button_Module extends WP_Widget {
             <label for="<?php echo $this->get_field_id( 'bg_color' ); ?>">
 				<?php _e( 'Background Color', 'harness-store' ); ?>
 			</label>
-            <input class="wp-color-picker widefat" type="text" id="<?php echo $this->get_field_id( 'bg_color' ); ?>" name="<?php echo $this->get_field_name( 'bg_color' ); ?>" value="<?php echo esc_attr( $instance['bg_color'] ); ?>" />
+            <input class="wp-color-picker widefat" type="text" id="<?php echo $this->get_field_id( 'bg_color' ); ?>" name="<?php echo $this->get_field_name( 'bg_color' ); ?>" value="<?php echo esc_attr( $bg_color ); ?>" />
         </p>
 		<?php
 	}
