@@ -1,7 +1,7 @@
 #wrapper {
 	overflow: auto;
 
-	body:not(.home) & {
+	body:not(.page-template-page-homeshop) & {
 		@include make-container();
 		margin-top: 80px;
 

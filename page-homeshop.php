@@ -11,7 +11,7 @@
 get_header();
 ?>
 
-	<main id="content" class="<?php echo odin_classes_page_full(); ?>" tabindex="-1" role="main">
+	<main id="content" class="col-md-12" tabindex="-1" role="main">
 
 		<?php if ( true == get_theme_mod( 'enable-home-content-section', true ) ) : ?>
 

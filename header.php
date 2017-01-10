@@ -138,7 +138,7 @@
 	<div id="wrapper">
 		<div class="wrapper-row">
 
-			<?php if( !is_front_page() || !is_home() ) : ?>
+			<?php if( !is_front_page() || !is_home() || !is_page_template( 'page-homeshop.php' )) : ?>
 				<div class="col-md-12">
 			<?php endif; ?>
 
