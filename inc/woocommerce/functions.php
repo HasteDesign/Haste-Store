@@ -71,7 +71,7 @@ function odin_products_per_page() {
 }
 
 /**
- * Harness shop addons
+ * Haste Store shop addons
  * =============================================
  */
 
@@ -86,7 +86,7 @@ function odin_products_per_page() {
   *
   * @return string|bool False on failure, the result of the shortcode on success.
   */
- function harness_do_shortcode( $tag, array $atts = array(), $content = null ) {
+ function haste_store_do_shortcode( $tag, array $atts = array(), $content = null ) {
  	global $shortcode_tags;
 
  	if ( ! isset( $shortcode_tags[ $tag ] ) ) {
@@ -104,11 +104,11 @@ function odin_products_per_page() {
  * Harnes shop categories
  */
 
- function harness_product_categories( $args ) {
+ function haste_store_product_categories( $args ) {
 
 	 if ( is_woocommerce_activated() ) {
 
-		 $args = apply_filters( 'harness_product_categories_args', array(
+		 $args = apply_filters( 'haste_store_product_categories_args', array(
 			 'limit' 			=> 2,
 			 'columns' 			=> 2,
 			 'child_categories' 	=> 0,
@@ -120,7 +120,7 @@ function odin_products_per_page() {
 
 		 echo '<div class="page-header"><h2 class="page-title">' . wp_kses_post( $args['title'] ) . '</h2></div>';
 
-		 echo harness_do_shortcode( 'product_categories', array(
+		 echo haste_store_do_shortcode( 'product_categories', array(
 			 'number'  => intval( $args['limit'] ),
 			 'columns' => intval( $args['columns'] ),
 			 'orderby' => esc_attr( $args['orderby'] ),
@@ -136,11 +136,11 @@ function odin_products_per_page() {
   * Harnes featured products
   */
 
-  function harness_featured_products( $args ) {
+  function haste_store_featured_products( $args ) {
 
  	 if ( is_woocommerce_activated() & is_front_page() & !is_paged() ) :
 
- 		 $args = apply_filters( 'harness_featured_products_args', array(
+ 		 $args = apply_filters( 'haste_store_featured_products_args', array(
  			 'limit' 			=> 3,
  			 'columns' 			=> 3,
  			 'orderby' 			=> 'name',
@@ -152,7 +152,7 @@ function odin_products_per_page() {
 
  		 echo '<div class="page-header"><h2 class="page-title">' . wp_kses_post( $args['title'] ) . '</h2></div>';
 
- 		 echo harness_do_shortcode( 'featured_products', array(
+ 		 echo haste_store_do_shortcode( 'featured_products', array(
  			 'per_page'=> intval( $args['limit'] ),
  			 'columns' => intval( $args['columns'] ),
  			 'orderby' => esc_attr( $args['orderby'] ),
@@ -165,9 +165,9 @@ function odin_products_per_page() {
 
 
 	/**
-	 * Harness top sidebar
+	 * Haste Store top sidebar
 	 */
 
-	 function harness_get_sidebar_top() {
+	 function haste_store_get_sidebar_top() {
 		 get_sidebar('top');
 	 }

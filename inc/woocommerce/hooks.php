@@ -69,13 +69,13 @@ add_filter( 'loop_shop_columns', 						'odin_loop_columns' );
  * Shop sections
  */
 
-add_action( 'woocommerce_before_main_content', 'harness_featured_products', 30 );
+add_action( 'woocommerce_before_main_content', 'haste_store_featured_products', 30 );
 
 
 /**
  * Add sidebar to shop header
  */
- //add_action( 'woocommerce_archive_description', 'harness_get_sidebar_top', 40 );
+ //add_action( 'woocommerce_archive_description', 'haste_store_get_sidebar_top', 40 );
 
 
 /**
