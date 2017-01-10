@@ -419,13 +419,18 @@ function button_class_add_to_cart_link( $classes, $product ) {
  require_once get_template_directory() . '/inc/kirki/kirki-config.php';
 
  function enqueue_body_font_variants( $fonts ) {
-   $fonts[ get_theme_mod( 'body_type', 'Roboto' ) ] = array(
-     'regular',
-     'italic',
-     '700',
-     '700italic',
-   );
+	 $body_type = get_theme_mod( 'body_type', 'Roboto' );
 
-   return $fonts;
+	 if( ! empty( $body_type['font-family'] ) ) {
+
+	   $fonts[ $body_type['font-family'] ] = array(
+	     'regular',
+	     'italic',
+	     '700',
+	     '700italic',
+	   );
+	 }
+
+	 return $fonts;
  }
- //add_filter( 'kirki/enqueue_google_fonts', 'enqueue_body_font_variants' );
+ add_filter( 'kirki/enqueue_google_fonts', 'enqueue_body_font_variants' );
