@@ -72,65 +72,65 @@
 					?>
 				</nav><!-- .navbar-collapse -->
 
-                <?php if( is_woocommerce_activated() ) : ?>
-                        <?php if ( get_option( 'users_can_register' ) ) : ?>
-                            <nav class="navbar-right">
-                                <?php if ( is_user_logged_in() ) : ?>
+	  		<?php if( is_woocommerce_activated() ) : ?>
+	          <?php if ( get_option( 'users_can_register' ) ) : ?>
+	              <nav class="navbar-right">
+	                  <?php if ( is_user_logged_in() ) : ?>
 
-								<p class="navbar-text hidden-xs">
-									<?php
-										$user = wp_get_current_user();
-										$username = $user->user_firstname;
-									    printf( esc_html__( 'Hello, %s!', 'haste-store' ), $username );
-									?>
-								</p>
+										<p class="navbar-text hidden-xs">
+											<?php
+												$user = wp_get_current_user();
+												$username = $user->user_firstname;
+											    printf( esc_html__( 'Hello, %s!', 'haste-store' ), $username );
+											?>
+										</p>
 
-								<div class="btn-group hidden-xs" role="group" aria-label="login">
-									<a class="btn btn-outline navbar-btn" href="<?php echo wp_logout_url( get_permalink() ); ?>"><?php _e('Logout', 'haste-store'); ?></a>
+										<div class="btn-group hidden-xs" role="group" aria-label="login">
+											<a class="btn btn-outline navbar-btn" href="<?php echo wp_logout_url( get_permalink() ); ?>"><?php _e('Logout', 'haste-store'); ?></a>
 
-									<div class="btn-group" role="group">
-										<button class="btn btn-outline navbar-btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										<?php _e('My details', 'haste-store'); ?> <span class="caret"></span>
-										</button>
-										<ul class="dropdown-menu">
-											<li>
-												<a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>"><?php _e('My account', 'haste-store'); ?></a>
-											</li>
-											<li>
-												<a href="<?php echo wc_get_endpoint_url( 'orders', '', get_permalink( get_option('woocommerce_myaccount_page_id') ) );?>"><?php _e('My orders', 'haste-store'); ?></a>
-											</li>
-										</ul>
-									</div>
-								</div>
+											<div class="btn-group" role="group">
+												<button class="btn btn-outline navbar-btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												<?php _e('My details', 'haste-store'); ?> <span class="caret"></span>
+												</button>
+												<ul class="dropdown-menu">
+													<li>
+														<a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>"><?php _e('My account', 'haste-store'); ?></a>
+													</li>
+													<li>
+														<a href="<?php echo wc_get_endpoint_url( 'orders', '', get_permalink( get_option('woocommerce_myaccount_page_id') ) );?>"><?php _e('My orders', 'haste-store'); ?></a>
+													</li>
+												</ul>
+											</div>
+										</div>
 
-			                    <?php else : ?>
+	            <?php else : ?>
 
-								<p class="navbar-text hidden-xs">
-									<?php
-								    	_e('Hello, guest user!', 'haste-store');
-									?>
-								</p>
+							<p class="navbar-text hidden-xs">
+								<?php
+							    	_e('Hello, guest user!', 'haste-store');
+								?>
+							</p>
 
-								<div class="btn-group hidden-xs" role="group" aria-label="login">
-									<a class="btn btn-outline navbar-btn" href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>">
-										<?php _e('Login', 'haste-store')?></a>
-									<a class="btn btn-outline navbar-btn" href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>">
-										<?php _e('Register', 'haste-store')?></a>
-								</div>
+							<div class="btn-group hidden-xs" role="group" aria-label="login">
+								<a class="btn btn-outline navbar-btn" href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>">
+									<?php _e('Login', 'haste-store')?></a>
+								<a class="btn btn-outline navbar-btn" href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>">
+									<?php _e('Register', 'haste-store')?></a>
+							</div>
 
 
-                                <?php endif; ?>
+	            <?php endif; ?>
 
-								<button type="button" class="btn btn-primary navbar-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-									<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
-									<span class="badge"><?php echo WC()->cart->get_cart_contents_count(); ?></span>
-									<span class="sr-only"><?php _e('Cart', 'haste-store')?></span>
-									<span class="caret"></span>
-								</button>
-								<?php odin_header_cart() ?>
-                            </nav><!-- .navbar-right -->
-                        <?php endif; ?>
-                    <?php endif; ?>
+							<button type="button" class="btn btn-primary navbar-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+								<span class="badge"><?php echo WC()->cart->get_cart_contents_count(); ?></span>
+								<span class="sr-only"><?php _e('Cart', 'haste-store')?></span>
+								<span class="caret"></span>
+							</button>
+							<?php odin_header_cart() ?>
+	            </nav><!-- .navbar-right -->
+	          <?php endif; ?>
+	      <?php endif; ?>
 			</div><!-- .container-->
 		</div><!-- #main-navigation-->
 	</header><!-- #header -->
