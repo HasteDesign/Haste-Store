@@ -40,8 +40,9 @@
     &.focus,
     &:active,
     &.active {
-      background-color: $gray;
-          border-color: $border;
+      background-color: $gray !important;
+	  color: $gray-darker !important;
+      border-color: $border;
     }
   }
 
