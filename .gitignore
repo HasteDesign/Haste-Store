@@ -1,12 +1,48 @@
-# Operational System Files
-ehthumbs.db
+# Numerous always-ignore extensions
+*.diff
+*.err
+*.log
+*.orig
+*.rej
+*.swo
+*.swp
+*.vi
+*.ini
+*~
+
+# OS or Editor folders
+._*
+.cache
+.DS_Store
+.idea
+.project
+.settings
+.tmproj
+*.esproj
+*.sublime-project
+*.sublime-workspace
+nbproject
 Thumbs.db
 
-# Log
-error_log
-*.debug_log
-*.log
-*.dat
+# Folders to ignore
+bower_components
+node_modules
+.sass-cache
+
+# Ignore project files
+sftp-config.json
+.ftppass
+*.zip
+
+# Node/Grunt Directories
+src/node_modules/
+src/.sass-cache/
+
+# Files starting with . or ~ except .gitignore
+.*
+~*
+!.gitignore
+!.gitattributes
 
 # Packaged Files
 *.7z
@@ -18,16 +54,6 @@ error_log
 *.tar
 *.zip
 
-# Node/Grunt Directories
-node_modules/
-.sass-cache/
-
-# Files starting with . or ~ except .gitignore
-.*
-~*
-!.gitignore
-!.gitattributes
-
-# Update files
-wp-content/upgrade
-wp-content/upgrade/*
+# Operational System Files
+ehthumbs.db
+Thumbs.db
