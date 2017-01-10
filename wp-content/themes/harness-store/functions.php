@@ -413,7 +413,7 @@ function button_class_add_to_cart_link( $classes, $product ) {
 				esc_attr( isset( $quantity ) ? $quantity : 1 ),
 				esc_attr( $product->id ),
 				esc_attr( $product->get_sku() ),
-				esc_attr( isset( $class ) ? $class : 'btn-wc btn btn-primary' ),
+				esc_attr( isset( $class ) ? $class : 'add_to_cart_button ajax_add_to_cart btn-wc btn btn-primary' ),
 				esc_html( $product->add_to_cart_text() )
 			);
 
