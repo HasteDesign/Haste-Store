@@ -1842,14 +1842,14 @@ p.demo_store {
 	}
 
 	#payment {
-		background: $secondary;
+		background: transparent;
 		border-radius: 0;
 
 		ul.payment_methods {
 			@include clearfix();
 			text-align: left;
 			padding: 1em;
-			border-bottom: 1px solid darken( $secondary, 10% );
+			border-bottom: 1px solid $gray-lighter;
 			margin: 0;
 			list-style: none outside;
 
@@ -1891,8 +1891,8 @@ p.demo_store {
 			font-size: 0.92em;
 			border-radius: 0;
 			line-height: 1.5;
-			background-color: darken( $secondary, 5% );
-			color: $secondarytext;
+			background-color: $gray-lighter;
+			color: inherit;
 
 			input.input-text, textarea {
 				border-color: darken( $secondary, 15% );
@@ -1991,12 +1991,12 @@ p.demo_store {
 			&:before {
 				content: "";
 				display: block;
-				border: 1em solid darken( $secondary, 5% ); /* arrow size / color */
+				border: 1em solid $gray-lighter; /* arrow size / color */
 				border-right-color: transparent;
 				border-left-color: transparent;
 				border-top-color: transparent;
 				position: absolute;
-				top: -.75em;
+				top: -.85em;
 				left: 0;
 				margin: -1em 0 0 2em;
 			}
@@ -2005,8 +2005,9 @@ p.demo_store {
 		.payment_method_paypal {
 			.about_paypal {
 				float: right;
-				line-height: 52px;
+				line-height: 2.5;
 				font-size: 0.83em;
+				margin-left: 1em;
 			}
 
 			img {
