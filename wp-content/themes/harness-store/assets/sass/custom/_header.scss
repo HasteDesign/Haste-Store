@@ -51,9 +51,18 @@
 			margin-right: 0;
 
 			@media( max-width: $screen-xs-max ) {
+				right: 70px;
+			}
+
+			@media( max-width: $screen-sm-max ) {
 				position: absolute;
 				top: 0;
-				right: 70px;
+				right: 100px;
+
+				.navbar-text {
+					float: left;
+					margin-right: 15px;
+				}
 			}
 		}
     }
@@ -91,7 +100,7 @@
 			max-height: calc(100vh - 100px);
 		}
 	}
-	
+
 	.cart-link a {
 		padding: 10px;
 		text-align: center;
