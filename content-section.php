@@ -29,17 +29,17 @@
 			?>
 		</div><!-- .entry-content -->
 
-		<?php if ( true == get_theme_mod( 'enable-home-cta-btn' ) || true == get_theme_mod( 'enable-home-sec-btn' ) ) : ?>
+		<?php if ( true == get_theme_mod( 'enable-home-1st-btn', true ) || true == get_theme_mod( 'enable-home-sec-btn', true ) ) : ?>
 			<div class="section-content section-buttons">
 
-				<?php if ( true == get_theme_mod( 'enable-home-cta-btn', true ) ) : ?>
-					<a href="<?php echo get_theme_mod( 'home-cta-btn-link', '#' ); ?>" class="<?php echo get_theme_mod( 'home-cta-btn-classes', 'btn btn-success' ); ?>">
-						<?php echo get_theme_mod( 'home-cta-btn-text', esc_attr__( 'View', 'haste-store' ) ); ?>
+				<?php if ( true == get_theme_mod( 'enable-home-1st-btn', true ) ) : ?>
+					<a href="<?php echo get_theme_mod( 'home-1st-btn-link', '#' ); ?>" class="btn-1st <?php echo get_theme_mod( 'home-1st-btn-classes', 'btn btn-success' ); ?>">
+						<?php echo get_theme_mod( 'home-1st-btn-text', esc_attr__( 'View', 'haste-store' ) ); ?>
 					</a>
 				<?php endif; ?>
 
 				<?php if ( true == get_theme_mod( 'enable-home-sec-btn', true ) ) : ?>
-					<a href="<?php echo esc_url( get_theme_mod( 'home-sec-btn-link', '#' ) ); ?>" class="<?php echo esc_attr( get_theme_mod( 'home-sec-btn-classes', 'btn btn-outline' ) ); ?>">
+					<a href="<?php echo esc_url( get_theme_mod( 'home-sec-btn-link', '#' ) ); ?>" class="btn-2nd <?php echo esc_attr( get_theme_mod( 'home-sec-btn-classes', 'btn btn-outline' ) ); ?>">
 						<?php echo esc_attr( get_theme_mod( 'home-sec-btn-text', __( 'Tell me more', 'haste-store' ) ) ); ?>
 					</a>
 				<?php endif; ?>
