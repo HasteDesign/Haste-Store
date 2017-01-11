@@ -23,6 +23,14 @@ Haste_Store_Kirki::add_field( 'haste-store', array(
 	 'priority'    => 100,
  ) );
 
+ Haste_Store_Kirki::add_field( 'haste-store', array(
+ 	 'type'     => 'text',
+ 	 'settings' => 'home-content-section-title',
+ 	 'label'    => __( 'Override home page title (leave empty to use the original page title)', 'haste-store' ),
+ 	 'section'  => 'static_front_page',
+ 	 'priority' => 105,
+ ) );
+
 // Home first button
 
 

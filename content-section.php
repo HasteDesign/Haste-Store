@@ -11,10 +11,15 @@
 
 <article id="post-<?php the_ID(); ?>" class="container section">
 	<header class="section-header">
-		<?php
-				the_title( '<h2 class="entry-title section-title">', '</h2>' );
-		?>
+		<h2 class="entry-title section-title">
 
+		<?php if ( true == get_theme_mod( 'home-content-section-title', get_the_title() ) ) :
+				echo get_theme_mod( 'home-content-section-title', get_the_title() );
+			else :
+				the_title();
+			endif ;?>
+
+		</h2>
 	</header><!-- .entry-header -->
 
 		<div class="section-content">
