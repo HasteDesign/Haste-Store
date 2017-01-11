@@ -16,14 +16,25 @@
 		height: 100%;
 		width: 100%;
 		background: rgba(0,0,0,0.3);
-		display: flex;
-		text-align: center;
-		align-items: center;
 		color: #fff;
 		font-size: 150%;
+		padding: 120px 0 60px 0;
+		text-align: center;
 
 		a {
 			color: #fff;
+		}
+
+		.section {
+			top: 50%;
+			transform: translateY(-50%);
+			position: relative;
+		}
+
+		.section-content {
+			a {
+				text-decoration: underline;
+			}
 		}
 	}
 

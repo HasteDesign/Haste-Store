@@ -35,7 +35,7 @@
 		</div><!-- .entry-content -->
 
 		<?php if ( true == get_theme_mod( 'enable-home-1st-btn', true ) || true == get_theme_mod( 'enable-home-sec-btn', true ) ) : ?>
-			<div class="section-content section-buttons">
+			<div class="section-buttons">
 
 				<?php if ( true == get_theme_mod( 'enable-home-1st-btn', true ) ) : ?>
 					<a href="<?php echo get_theme_mod( 'home-1st-btn-link', '#' ); ?>" class="btn-1st <?php echo get_theme_mod( 'home-1st-btn-classes', 'btn btn-success' ); ?>">
