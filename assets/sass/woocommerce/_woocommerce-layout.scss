@@ -155,6 +155,59 @@
 		}
 	}
 
+	/**
+	 * Custom columns
+	 */
+
+	ul.products.columns-1 {
+		li.product {
+			@include make-xs-column(12);
+			@include make-sm-column(12);
+			@include make-md-column(12);
+		}
+	}
+
+	ul.products.columns-2 {
+		li.product {
+			@include make-xs-column(12);
+			@include make-sm-column(6);
+			@include make-md-column(6);
+		}
+	}
+
+	ul.products.columns-3 {
+		li.product {
+			@include make-xs-column(12);
+			@include make-sm-column(4);
+			@include make-md-column(4);
+		}
+	}
+
+	ul.products.columns-4 {
+		li.product {
+			@include make-xs-column(6);
+			@include make-sm-column(3);
+			@include make-md-column(3);
+		}
+	}
+
+	ul.products.columns-5 {
+		li.product {
+			@include make-xs-column(6);
+			@include make-sm-column(3);
+			width: 20%;
+		}
+	}
+
+	ul.products.columns-6 {
+		li.product {
+			@include make-xs-column(6);
+			@include make-sm-column(4);
+			@include make-md-column(2);
+		}
+	}
+
+
 	.woocommerce-result-count {
 		float: left;
 	}

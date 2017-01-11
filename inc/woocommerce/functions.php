@@ -14,7 +14,7 @@ if ( ! function_exists( 'odin_before_content' ) ) {
 	 */
 	function odin_before_content() {
 
-		if ( is_single() || is_home() || ( is_woocommerce_activated() && is_checkout() || is_cart() || is_product() ) ) {
+		if ( is_single() || is_home() || ( is_woocommerce_activated() && is_checkout() || is_cart() || is_product() ) )  {
 		?>
 		<main id="content" class="<?php echo odin_classes_page_full(); ?>" tabindex="-1" role="main">
 		<?php
@@ -49,7 +49,7 @@ if ( ! function_exists( 'odin_after_content' ) ) {
  * @since  2.2.6
  */
 function odin_loop_columns() {
-	return apply_filters( 'odin_loop_columns', 4 ); // 4 products per row
+	return apply_filters( 'odin_loop_columns', get_theme_mod( 'shop_columns', 4 ) ); // 4 products per row
 }
 
 /**
@@ -67,7 +67,7 @@ function odin_thumbnail_columns() {
  * @since  2.2.6
  */
 function odin_products_per_page() {
-	return intval( apply_filters( 'odin_products_per_page', 12 ) );
+	return intval( apply_filters( 'odin_products_per_page', get_theme_mod( 'shop_products_per_page', 12 ) ) );
 }
 
 /**
@@ -101,7 +101,7 @@ function odin_products_per_page() {
 
 
 /**
- * Harnes shop categories
+ * Haste shop categories
  */
 
  function haste_store_product_categories( $args ) {
@@ -133,7 +133,7 @@ function odin_products_per_page() {
 
 
  /**
-  * Harnes featured products
+  * Haste featured products
   */
 
   function haste_store_featured_products( $args ) {
