@@ -52,7 +52,7 @@
 
 		<section class="footer-colophon">
 			<div class="container">
-				&copy; <?php echo date( 'Y' ); ?> <a href="<?php echo home_url(); ?>"><?php bloginfo( 'name' ); ?></a> - <?php _e( 'All rights reserved', 'haste-store' ); ?> | <?php echo sprintf( __( 'Powered by the <a href="%s" rel="nofollow" target="_blank">Odin</a> forces and <a href="%s" rel="nofollow" target="_blank">WordPress</a>.', 'haste-store' ), 'http://wpod.in/', 'http://wordpress.org/' ); ?>
+				&copy; <?php echo date( 'Y' ); ?> <a href="<?php echo home_url(); ?>"><?php bloginfo( 'name' ); ?></a> - <?php _e( 'All rights reserved', 'haste-store' ); ?> | <?php echo sprintf( __( 'Powered by <a href="%s" rel="nofollow" target="_blank">Haste Store</a> and <a href="%s" rel="nofollow" target="_blank">WordPress</a>.', 'haste-store' ), 'http://www.hastedesign.com.br/', 'http://wordpress.org/' ); ?>
 			</div><!-- .container -->
 		</section>
 	</footer><!-- #footer -->
