@@ -4,31 +4,36 @@
  */
 
 .home-jumbotron {
-	height: 100vh; // Altura total menos a altura da navbar
 	background-size: cover;
 	background-attachment: fixed;
 
-	.admin-bar & {
-		height: calc(100vh - 32px); // Altura total menos a altura da navbar
-	}
+	&.full-height {
+		height: 100vh; // Altura total menos a altura da navbar
 
-	.section-wrapper {
-		height: 100%;
-		width: 100%;
-		background: rgba(0,0,0,0.3);
-		color: #fff;
-		font-size: 150%;
-		padding: 120px 0 60px 0;
-		text-align: center;
-
-		a {
-			color: #fff;
+		.admin-bar & {
+			height: calc(100vh - 32px); // Altura total menos a altura da navbar
 		}
-
+		.section-wrapper {
+			height: 100%;
+			width: 100%;
+		}
+		
 		.section {
 			top: 50%;
 			transform: translateY(-50%);
 			position: relative;
+		}
+	}
+
+	.section-wrapper {
+		padding: 120px 0 60px 0;
+		background: rgba(0,0,0,0.3);
+		color: #fff;
+		font-size: 150%;
+		text-align: center;
+
+		a {
+			color: #fff;
 		}
 
 		.section-content {

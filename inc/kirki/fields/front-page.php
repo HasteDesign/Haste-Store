@@ -24,11 +24,25 @@ Haste_Store_Kirki::add_field( 'haste-store', array(
  ) );
 
  Haste_Store_Kirki::add_field( 'haste-store', array(
+ 	 'type'        => 'radio',
+ 	 'settings'    => 'home-content-section-height',
+ 	 'label'       => __( 'Home section height', 'haste-store' ),
+ 	 'section'     => 'static_front_page',
+ 	 'default'     => 'full-height',
+ 	 'priority'    => 102,
+	 'choices'     => array(
+ 		'full-height'  	=> esc_attr__( 'Full height', 'my_textdomain' ),
+ 		'auto-height' 	=> esc_attr__( 'Auto height', 'my_textdomain' ),
+ 	),
+  ) );
+
+ Haste_Store_Kirki::add_field( 'haste-store', array(
  	 'type'     => 'text',
  	 'settings' => 'home-content-section-title',
- 	 'label'    => __( 'Override home page title (leave empty to use the original page title)', 'haste-store' ),
+ 	 'label'    => __( 'Override home page title', 'haste-store' ),
  	 'section'  => 'static_front_page',
  	 'priority' => 105,
+	 'description' => 'Leave empty to use the original page title',
  ) );
 
 // Home first button
@@ -80,6 +94,14 @@ Haste_Store_Kirki::add_field( 'haste-store', array(
 ) );
 
 // Home second button
+
+Haste_Store_Kirki::add_field( 'haste-store', array(
+    'type'        => 'custom',
+    'settings'    => 'home-custom-settings-separator-3',
+    'section'     => 'static_front_page',
+    'default'     => '<hr>',
+    'priority'    => 149,
+) );
 
 Haste_Store_Kirki::add_field( 'haste-store', array(
 	 'type'        => 'toggle',
