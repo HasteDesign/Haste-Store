@@ -13,6 +13,10 @@
 	.footer-widgets {
 		padding: 60px 0;
 
+		.widget-title {
+			color: currentColor;
+		}
+
 		img {
 			width: inherit;
 		}
