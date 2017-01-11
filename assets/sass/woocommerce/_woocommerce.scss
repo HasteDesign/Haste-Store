@@ -1118,11 +1118,11 @@ p.demo_store {
 			margin: 0;
 			@include clearfix();
 			list-style: none;
+			line-height: 1.2;
 
 			a {
 				display: inline-block;
 				margin-bottom: .3em;
-				line-height: 1.2;
 				@extend .h4;
 			}
 
