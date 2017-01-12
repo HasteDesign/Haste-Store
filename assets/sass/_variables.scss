@@ -682,14 +682,14 @@ $progress-bar-info-bg:        $brand-info;
 //##
 
 //** Background color on `.list-group-item`
-$list-group-bg:                 #fff;
+$list-group-bg:                 transparent;
 //** `.list-group-item` border color
-$list-group-border:             #ddd;
+$list-group-border:             $gray-lighter;
 //** List group border radius
 $list-group-border-radius:      $border-radius-base;
 
 //** Background color of single list items on hover
-$list-group-hover-bg:           #f5f5f5;
+$list-group-hover-bg:           transparent;
 //** Text color of active list items
 $list-group-active-color:       $component-active-color;
 //** Background color of active list items
@@ -708,7 +708,7 @@ $list-group-disabled-text-color: $list-group-disabled-color;
 
 $list-group-link-color:         #555;
 $list-group-link-hover-color:   $list-group-link-color;
-$list-group-link-heading-color: #333;
+$list-group-link-heading-color: currentColor;
 
 
 //== Panels
@@ -723,10 +723,10 @@ $panel-border-radius:         $border-radius-base;
 
 //** Border color for elements within panels
 $panel-inner-border:          $gray-lighter;
-$panel-footer-bg:             #f5f5f5;
+$panel-footer-bg:             transparent;
 
-$panel-default-text:          $gray-dark;
-$panel-default-border:        $gray-light;
+$panel-default-text:          currentColor;
+$panel-default-border:        $gray-lighter;
 $panel-default-heading-bg:    $gray-lighter;
 
 $panel-primary-text:          #fff;
