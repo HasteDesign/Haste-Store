@@ -979,16 +979,17 @@ p.demo_store {
 			border-top: 0;
 			border-bottom: 1px dotted $gray-lighter;
 			margin: 0;
-			line-height: 1.5;
+			line-height: 1.7;
 		}
 
 		td {
-			font-style: italic;
+			font-style: normal;
 			padding: 0;
 			border-top: 0;
 			border-bottom: 1px dotted $gray-lighter;
 			margin: 0;
-			line-height: 1.5;
+			line-height: 1.7;
+			vertical-align: middle;
 
 			p {
 				margin: 0;
