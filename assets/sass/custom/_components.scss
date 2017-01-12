@@ -33,9 +33,26 @@ a {
  */
 
 .dropdown-menu {
-	> li > a {
-		padding: 10px;
-		color: currentColor !important;
+	> li {
+
+		& + li {
+			border-top: 1px solid $gray-lighter;
+		}
+
+		> a {
+			padding: 8px 20px;
+			color: currentColor;
+		}
+	}
+}
+
+
+.glyphicon {
+	.dropdown-menu &,
+	.btn &,
+	.list-group-item & {
+		display: inline-block;
+		min-width: 1.5em;
 	}
 }
 

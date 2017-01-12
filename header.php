@@ -77,30 +77,37 @@
 	              <nav class="navbar-right">
 	                  <?php if ( is_user_logged_in() ) : ?>
 
-										<p class="navbar-text hidden-xs">
-											<?php
-												$user = wp_get_current_user();
-												$username = $user->user_firstname;
-											    printf( esc_html__( 'Hello, %s!', 'haste-store' ), $username );
-											?>
-										</p>
 
 										<div class="btn-group hidden-xs" role="group" aria-label="login">
-											<a class="btn btn-outline navbar-btn" href="<?php echo wp_logout_url( get_permalink() ); ?>"><?php _e('Logout', 'haste-store'); ?></a>
-
-											<div class="btn-group" role="group">
-												<button class="btn btn-outline navbar-btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-												<?php _e('My details', 'haste-store'); ?> <span class="caret"></span>
-												</button>
-												<ul class="dropdown-menu">
-													<li>
-														<a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>"><?php _e('My account', 'haste-store'); ?></a>
-													</li>
-													<li>
-														<a href="<?php echo wc_get_endpoint_url( 'orders', '', get_permalink( get_option('woocommerce_myaccount_page_id') ) );?>"><?php _e('My orders', 'haste-store'); ?></a>
-													</li>
-												</ul>
-											</div>
+											<button class="btn btn-outline navbar-btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+												<span class="hidden-xs">
+													<?php
+													$user = wp_get_current_user();
+													$username = $user->user_firstname;
+													printf( esc_html__( 'Hello, %s!', 'haste-store' ), $username );
+													?>
+												 </span>
+												 <span class="caret"></span>
+											</button>
+											<ul class="dropdown-menu">
+												<li>
+													<a href="<?php echo wc_get_endpoint_url( 'orders', '', get_permalink( get_option('woocommerce_myaccount_page_id') ) );?>">
+														<span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
+														<?php _e('My orders', 'haste-store'); ?>
+													</a>
+												</li>
+												<li>
+													<a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>">
+														<span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+														<?php _e('My account', 'haste-store'); ?></a>
+												</li>
+												<li>
+													<a href="<?php echo wp_logout_url( get_permalink() ); ?>">
+														<span class="glyphicon glyphicon-log-out" aria-hidden="true"></span>
+														<?php _e('Logout', 'haste-store'); ?></a>
+												</li>
+											</ul>
 										</div>
 
 	            <?php else : ?>
