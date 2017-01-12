@@ -80,26 +80,6 @@ add_action( 'woocommerce_before_main_content', 'haste_store_featured_products', 
 
 
 /**
- * Add sidebar to shop header
- */
- //add_action( 'woocommerce_archive_description', 'haste_store_get_sidebar_top', 40 );
-
-
-/**
- * Remove item count
- */
-
-//remove_action( 'woocommerce_before_shop_loop', 'woocommerce_result_count', 20);
-//add_action( 'woocommerce_archive_description', 'woocommerce_result_count', 20);
-
-/**
- * Move ordering form to page header
- */
-//remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30);
-//add_action( 'woocommerce_archive_description', 'woocommerce_catalog_ordering', 30 );
-
-
-/**
  * Move single star rating on produtct single
  */
  remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_rating', 10);
