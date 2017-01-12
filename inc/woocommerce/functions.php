@@ -98,7 +98,15 @@ function odin_products_per_page() {
 
 
 
+/**
+ * Related products
+ */
 
+function haste_related_products_args( $args ) {
+	$args['posts_per_page'] = get_theme_mod( 'shop_columns', 4 ); // 4 related products
+	$args['columns'] = get_theme_mod( 'shop_columns', 4 ); // arranged in 2 columns
+	return $args;
+}
 
 /**
  * Haste shop categories

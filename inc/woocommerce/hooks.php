@@ -66,6 +66,13 @@ add_filter( 'loop_shop_columns', 						'odin_loop_columns' );
 
 
 /**
+ * Related products
+ */
+
+ add_filter( 'woocommerce_output_related_products_args', 'haste_related_products_args' );
+
+
+/**
  * Shop sections
  */
 

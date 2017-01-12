@@ -17,6 +17,7 @@ Haste_Store_Kirki::add_field( 'haste-store', array(
 	'type'        => 'slider',
 	'settings'    => 'shop_columns',
 	'label'       => __( 'Shop products columns', 'haste-store' ),
+	'description' => __( 'Also affects the related products'),
 	'section'     => 'shop',
 	'default'     => 4,
 	'choices'     => array(
