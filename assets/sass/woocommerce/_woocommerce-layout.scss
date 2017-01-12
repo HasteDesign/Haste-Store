@@ -39,7 +39,7 @@
 		@include make-row();
 
 		div.images {
-			@include make-md-column(7);
+			@include make-md-column(6);
 			display: flex;
 		}
 
@@ -63,6 +63,7 @@
 
 		div.summary {
 			@include make-md-column(5);
+			@include make-md-column-offset(1); 
 		}
 
 		.woocommerce-tabs {
