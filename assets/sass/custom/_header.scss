@@ -86,6 +86,12 @@
  * Header shopping cart WooCommerce
  */
 
+.btn-cart {
+	@media( max-width: $screen-xs-max ) {
+		padding: 10px;
+	}
+}
+
 .header-cart {
 	min-width: 250px;
 	padding: 0;

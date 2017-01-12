@@ -128,7 +128,7 @@
 
 	            <?php endif; ?>
 
-							<button type="button" class="btn btn-primary navbar-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<button type="button" class="btn btn-primary navbar-btn dropdown-toggle btn-cart" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
 								<span class="badge"><?php echo WC()->cart->get_cart_contents_count(); ?></span>
 								<span class="sr-only"><?php _e('Cart', 'haste-store')?></span>
