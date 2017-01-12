@@ -698,6 +698,20 @@ p.demo_store {
 		display: inline-block;
 	}
 
+	.checkout {
+		&.button {
+			@include btn-success();
+		}
+	}
+
+	.form-row.place-order {
+		padding: 15px 0;
+	}
+
+	#place_order {
+		@include button-size($padding-large-vertical, $padding-large-horizontal, $font-size-large, $line-height-large, 0);
+	}
+
 	/**
 	 * Reviews
 	 */
