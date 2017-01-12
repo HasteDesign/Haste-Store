@@ -73,13 +73,6 @@ add_filter( 'loop_shop_columns', 						'odin_loop_columns' );
 
 
 /**
- * Shop sections
- */
-
-add_action( 'woocommerce_before_main_content', 'haste_store_featured_products', 30 );
-
-
-/**
  * Move single star rating on produtct single
  */
  remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_rating', 10);
