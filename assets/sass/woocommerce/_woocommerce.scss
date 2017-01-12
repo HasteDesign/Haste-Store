@@ -1587,8 +1587,10 @@ p.demo_store {
  * Account page
  */
 .woocommerce-account {
-	.woocommerce {
-		@include make-row();
+	.entry-content {
+		.woocommerce {
+			@include make-row();
+		}
 	}
 
 	.woocommerce-MyAccount-navigation {
@@ -2138,4 +2140,20 @@ body:not(.search-results) {
 
 a .product-title {
 	color: currentColor;
+}
+
+.woocommerce {
+	> form {
+		padding: 0 15px;
+	}
+
+	> .col2-set {
+		margin: 0;
+	}
+}
+
+#customer_login {
+	.button {
+		float: right;
+	}
 }
