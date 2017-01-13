@@ -1221,6 +1221,15 @@ p.demo_store {
 			margin: 0;
 			padding: 10px;
 			text-align: center;
+			display: flex;
+
+			@media (max-width: $screen-sm-max) {
+				flex-wrap: wrap;
+
+				a {
+					flex: 1 0 auto;
+				}
+			}
 		}
 	}
 
