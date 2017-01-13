@@ -3,14 +3,16 @@
 
 	body:not(.page-template-page-homeshop) & {
 		@include make-container();
-		margin-top: 30px;
-
-		@media( min-width: $screen-md-min ) {
-			margin-top: 80px;
-		}
+		margin-top: 80px;
 
 		.wrapper-row {
 			@include make-row();
+		}
+	}
+
+	@media( min-width: $screen-md-min ) {
+		body.admin-bar:not(.page-template-page-homeshop) {
+			margin-top: 30px;
 		}
 	}
 }
