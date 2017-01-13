@@ -531,7 +531,7 @@ p.demo_store {
 				display: block;
 				font-weight: normal;
 				margin-bottom: .5em;
-				font-size: .857em;
+				font-size: .9em;
 
 				del {
 					color: inherit;
@@ -769,7 +769,7 @@ p.demo_store {
 
 					.meta {
 						color: $gray;
-						font-size: $font-size-small;
+						font-size: .9em;
 					}
 
 					img.avatar {
@@ -1138,15 +1138,20 @@ p.demo_store {
 			a {
 				display: block;
 				margin-bottom: .3em;
-				@extend .h4;
+				@extend .h5;
+				margin-top: 0;
 			}
 
 			img {
-				float: right;
-				margin-left: 4px;
-				width: 32px;
+				float: left;
+				margin-right: 10px;
+				width: 50px;
 				height: auto;
 				box-shadow: none;
+			}
+
+			.amount {
+				font-size: .9em;
 			}
 
 			dl {
