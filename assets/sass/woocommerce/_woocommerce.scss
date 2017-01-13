@@ -580,12 +580,12 @@ p.demo_store {
 			white-space: nowrap;
 			padding: 0;
 			clear: both;
-			border: 1px solid darken( $secondary, 10% );
+			border: 1px solid $gray-lighter;
 			border-right: 0;
 			margin: 1px;
 
 			li {
-				border-right: 1px solid darken( $secondary, 10% );
+				border-right: 1px solid $gray-lighter;
 				padding: 0;
 				margin: 0;
 				float: left;
@@ -787,7 +787,7 @@ p.demo_store {
 					}
 
 					.comment-text {
-						margin: 0 0 0 65px;
+						margin: 0 0 0 70px;
 						border: 1px solid $gray-lighter;
 						border-radius: 0;
 						padding: 1em 1em 0;
@@ -1346,7 +1346,7 @@ p.demo_store {
 	form.login,
 	form.checkout_coupon,
 	form.register {
-		border: 1px solid darken( $secondary, 10% );
+		border: 1px solid $gray-lighter;
 		padding: 20px;
 		margin: 2em 0 2em 0px;
 		text-align: left;
@@ -1408,7 +1408,7 @@ p.demo_store {
 			text-transform: uppercase;
 			font-size: 0.715em;
 			line-height: 1;
-			border-right: 1px dashed darken( $secondary, 10% );
+			border-right: 1px dashed $gray-lighter;
 			padding-right: 2em;
 			margin-left: 0;
 			padding-left: 0;
@@ -1738,7 +1738,7 @@ p.demo_store {
 					-webkit-box-sizing: border-box;
 					-moz-box-sizing: border-box;
 					box-sizing: border-box;
-					border: 1px solid darken( $secondary, 10% );
+					border: 1px solid $gray-lighter;
 					padding: 6px 6px 5px;
 					margin: 0 4px 0 0;
 					outline: 0;
