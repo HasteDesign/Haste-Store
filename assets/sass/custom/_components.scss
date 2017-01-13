@@ -29,6 +29,27 @@ a {
 }
 
 /**
+ * Navbar divider
+ */
+
+.navbar {
+	.divider {
+		pointer-events: none;
+		opacity: .6;
+		font-size: .9em;
+		border-top: 1px solid $gray-lighter;
+		margin-top: 10px;
+	}
+
+	.empty {
+		color: transparent;
+		height: 1px;
+		overflow: hidden;
+		margin: 10px 0;
+	}
+}
+
+/**
  * Dropdowns
  */
 
