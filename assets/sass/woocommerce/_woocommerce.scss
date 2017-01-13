@@ -1687,8 +1687,9 @@ p.demo_store {
 		}
 
 		.product-name {
-			width: 35%;
-
+			@media( min-width: $screen-sm-min ) {
+				width: 35%;
+			}
 
 			a {
 				color: currentColor;
@@ -1698,7 +1699,9 @@ p.demo_store {
 		}
 
 		.product-quantity {
-			width: 15%;
+			@media( min-width: $screen-sm-min ) {
+				width: 15%;
+			}
 		}
 
 		td.actions {

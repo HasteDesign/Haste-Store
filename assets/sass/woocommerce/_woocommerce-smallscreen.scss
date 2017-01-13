@@ -19,6 +19,8 @@
 		}
 
 		tbody {
+			counter-reset: tablebody;
+
 			tr:first-child {
 				td:first-child {
 					border-top: 0;
@@ -51,6 +53,41 @@
 				&.actions {
 					&:before {
 						display: none;
+					}
+				}
+
+				&.product-remove {
+					text-align: left !important;
+
+					a {
+						display: inline-block;
+					}
+
+					&:after {
+						counter-increment: tablebody;
+						content: "#" counter(tablebody);
+						float: right;
+						opacity: .5;
+					}
+				}
+
+				&.product-name {
+					display: table;
+					width: 100%;
+
+					dl.variation {
+						float: right;
+						clear: both;
+					}
+				}
+
+				&.product-quantity {
+					.quantity {
+						text-align: right;
+
+						input.qty {
+							display: inline-block;
+						}
 					}
 				}
 			}
@@ -144,6 +181,11 @@
 				.input-text {
 					width: 48%;
 					box-sizing: border-box;
+				}
+
+				.input-text {
+					float: left;
+					margin: 0;
 				}
 
 				.input-text + .button,
