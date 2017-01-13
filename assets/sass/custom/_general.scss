@@ -3,7 +3,11 @@
 
 	body:not(.page-template-page-homeshop) & {
 		@include make-container();
-		margin-top: 80px;
+		margin-top: 30px;
+
+		@media( min-width: $screen-md-min ) {
+			margin-top: 80px;
+		}
 
 		.wrapper-row {
 			@include make-row();
