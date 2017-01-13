@@ -10,8 +10,8 @@
 		}
 	}
 
-	@media( min-width: $screen-md-min ) {
-		body.admin-bar:not(.page-template-page-homeshop) {
+	@media( max-width: $screen-xs-max ) {
+		body.admin-bar:not(.page-template-page-homeshop) & {
 			margin-top: 30px;
 		}
 	}
