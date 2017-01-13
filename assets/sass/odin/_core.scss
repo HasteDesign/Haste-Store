@@ -11,9 +11,8 @@ ul.page-numbers {
 		&:hover,
 		&:focus {
 			z-index: 2;
-			color: $pagination-active-color;
-			background-color: $pagination-active-bg;
-			border-color: $pagination-active-bg;
+			background-color: transparent;
+			border-color: currentColor;
 			cursor: default;
 		}
 	}
