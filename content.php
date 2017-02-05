@@ -78,9 +78,12 @@
 			<p><?php the_tags( '<span class="tag-links">' . __( 'Tagged as:', 'haste-store' ) . ' ', ', ', '</span>' ); ?></p>
 
 			<?php if ( true == get_theme_mod( 'display_post_author', true ) ) : ?>
-				<div class="author vcard row">
-					<?php echo get_avatar( get_the_author_meta( 'ID' ), 96, '' , '' , array( 'class' => 'img-circle col-md-3') ); ?>
-					<div class="col-md-9">
+				<div class="author-box vcard row">
+					<div class="col-md-2 author-avatar">
+						<?php echo get_avatar( get_the_author_meta( 'ID' ), 96, '' , '' , array( 'class' => 'img-circle') ); ?>
+					</div>
+
+					<div class="col-md-10 author-description">
 						<h2><a class="url fn n" href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" rel="author"><?php the_author(); ?></a></h2>
 						<?php echo get_the_author_meta( 'description' ); ?>
 					</div>
