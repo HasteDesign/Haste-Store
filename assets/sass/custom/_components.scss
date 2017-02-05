@@ -117,3 +117,19 @@ input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type=
 .woocommerce-breadcrumb {
 	margin-bottom: 20px;
 }
+
+/**
+ * Tags
+ */
+
+ .tagcloud,
+ .tag-links {
+	a {
+		display: inline-block;
+		padding: 3px .3em;
+		border: 1px solid #ddd;
+		line-height: 2.5rem;
+		vertical-align: middle;
+		margin: 2px 1px;
+	}
+}

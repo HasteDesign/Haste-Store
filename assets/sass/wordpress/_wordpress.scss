@@ -236,14 +236,14 @@ img {
 //
 // TagCloud
 //
-.widget_tag_cloud {
-    @for $i from 1 through 12 {
-        $random: 12 + random(20) + px;
-        a:nth-child(#{$i}) {
-            font-size: #{$random}!important;
-        }
-    }
-}
+// .widget_tag_cloud {
+//     @for $i from 1 through 12 {
+//         $random: 12 + random(10) + px;
+//         a:nth-child(#{$i}) {
+//             font-size: #{$random}!important;
+//         }
+//     }
+// }
 
 // Shortcodes
 // ==========================================================================

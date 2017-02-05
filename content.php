@@ -75,7 +75,7 @@
 		if ( is_single() ) :
 	?>
 		<footer class="entry-meta">
-			<p><?php the_tags( '<span class="tag-links">' . __( 'Tagged as:', 'haste-store' ) . ' ', ', ', '</span>' ); ?></p>
+			<p><?php the_tags( '<span class="tag-links">' . __( 'Tagged as:', 'haste-store' ) . ' ', '', '</span>' ); ?></p>
 
 			<?php if ( true == get_theme_mod( 'display_post_author', true ) ) : ?>
 				<div class="author-box vcard row">
