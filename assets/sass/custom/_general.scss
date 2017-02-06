@@ -58,12 +58,22 @@ h1, .h1 {
 		> * {
 			padding-left: 60px;
 			padding-right: 60px;
+
+			@media ( max-width: $screen-xs-max) {
+				padding: 15px;
+			}
 		}
 
 		.wp-post-image {
 			margin: 0 -60px;
 			max-width: calc(100% + 120px);
 			width: calc(100% + 120px);
+
+			@media ( max-width: $screen-xs-max) {
+				margin: -15px -15px 0 -15px;
+				max-width: calc(100% + 30px);
+				width: calc(100% + 30px);
+			}
 		}
 	}
 
@@ -93,8 +103,13 @@ h1, .h1 {
 
 		> span {
 			margin-right: 2em;
+
+			@media ( max-width: $screen-xs-max) {
+				display: block;
+			}
 		}
 	}
+
 	header .entry-meta {
 		opacity: 0.6;
 		padding-top: 0;
