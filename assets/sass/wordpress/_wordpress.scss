@@ -23,12 +23,12 @@
 
 .alignright {
     @extend .pull-right;
-    margin: 0.5em 0 1em 1em;
+    margin: .3em 0 1em 2em;
 }
 
 .alignleft {
     @extend .pull-left;
-    margin: 0.5em 1em 1em 0;
+    margin: .3em 2em 1em 0;
 }
 
 .aligncenter {
@@ -165,21 +165,26 @@ img {
     &.aligncenter,
     &.aligncenter,
     &.alignnone {
-        margin-top: 1em;
-        margin-bottom: 2em;
+        margin-top: .3em;
+        margin-bottom: 1em;
     }
 }
 
 .wp-caption {
+
     @extend .thumbnail;
     &.aligncenter,
     &.alignnone {
         clear: both !important;
     }
+
     .wp-caption-text {
         display: inline-block;
         padding: $thumbnail-caption-padding;
         color: $thumbnail-caption-color;
+		font-size: $font-size-small;
+		opacity: .8;
+
         &:before {
             color: #666;
             content: '\2014';
@@ -231,14 +236,14 @@ img {
 //
 // TagCloud
 //
-.widget_tag_cloud {
-    @for $i from 1 through 12 {
-        $random: 12 + random(20) + px;
-        a:nth-child(#{$i}) {
-            font-size: #{$random}!important;
-        }
-    }
-}
+// .widget_tag_cloud {
+//     @for $i from 1 through 12 {
+//         $random: 12 + random(10) + px;
+//         a:nth-child(#{$i}) {
+//             font-size: #{$random}!important;
+//         }
+//     }
+// }
 
 // Shortcodes
 // ==========================================================================

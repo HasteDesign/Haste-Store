@@ -89,4 +89,32 @@ h1, h2, h3, h4, h5, h6,
 		padding-bottom: 30px;
 		border-top: 1px solid $gray-lighter;
 	}
+
+}
+
+.author-box {
+	margin: 15px 0;
+	border: 1px solid $gray-lighter;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+
+	.author-avatar {
+		padding-top: 15px;
+		padding-bottom: 15px;
+		border-right: 1px solid $gray-lighter;
+
+		.avatar {
+			border: 1px solid $gray-lighter;
+		}
+	}
+
+	.author-description {
+		padding-top: 15px;
+		padding-bottom: 15px;
+
+		h2 {
+			margin-top: 0;
+		}
+	}
 }

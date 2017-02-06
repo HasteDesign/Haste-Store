@@ -66,7 +66,7 @@ if ( ! function_exists( 'odin_posted_on' ) ) {
 
 		// Set up and print post meta information.
 		echo '<span class="entry-date meta">';
-		echo '<span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> <time class="entry-date meta" datetime="'. esc_attr( get_the_date( 'c' ) ) .'">' . esc_html( get_the_date( 'd/m/Y' ) ) . '</time>';
+		echo '<span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> <time class="entry-date meta" datetime="'. esc_attr( get_the_date( 'c' ) ) .'">' . esc_html( get_the_date() ) . '</time>';
 		echo '</span>';
 
 		if ( true == get_theme_mod( 'display_post_author', true ) ) :

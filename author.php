@@ -16,7 +16,6 @@ get_header(); ?>
 				<header class="page-header">
 					<?php
 						the_archive_title( '<h1 class="page-title">', '</h1>' );
-						the_archive_description( '<div class="taxonomy-description">', '</div>' );
 
 						/*
 						 * Queue the first post, that way we know what author
@@ -28,9 +27,13 @@ get_header(); ?>
 						the_post();
 					?>
 					<?php if ( get_the_author_meta( 'description' ) ) : ?>
-						<div class="author-biography">
-							<span class="author-avatar"><?php echo get_avatar( get_the_author_meta( 'ID' ), 60 ); ?></span>
-							<span class="author-description"><?php the_author_meta( 'description' ); ?></span>
+						<div class="author-box vcard row">
+							<div class="col-md-2 author-avatar">
+								<?php echo get_avatar( get_the_author_meta( 'ID' ), 96, '' , '' , array( 'class' => 'img-circle') ); ?>
+							</div>
+							<div class="col-md-10 author-description">
+								<?php the_author_meta( 'description' ); ?>
+							</div>
 						</div><!-- .author-biography -->
 					<?php endif; ?>
 				</header><!-- .archive-header -->
