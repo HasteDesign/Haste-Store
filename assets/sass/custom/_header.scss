@@ -20,6 +20,10 @@
 			display: block;
 			line-height: $navbar-height;
 			color: currentColor;
+
+			&:hover {
+				text-decoration: none;
+			}
 		}
 
 		img {
