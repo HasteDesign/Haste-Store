@@ -163,6 +163,8 @@ if ( ! function_exists( 'odin_setup_features' ) ) {
 			'width'       => 240,
 			'flex-height' => true,
 		) );
+
+		add_theme_support( 'customize-selective-refresh-widgets' );
 	}
 }
 
