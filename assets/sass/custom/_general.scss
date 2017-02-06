@@ -36,6 +36,12 @@ h1, h2, h3, h4, h5, h6,
 	}
 }
 
+h1, .h1 {
+	@media ( max-width: $screen-xs-max) {
+		font-size: floor(($font-size-base * 2.5));
+	}
+}
+
 /**
  * Posts
  */
