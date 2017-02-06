@@ -1,3 +1,11 @@
+a {
+	transition: all .1s ease;
+
+	&:hover {
+		transition: all .1s ease;
+	}
+}
+
 #wrapper {
 	overflow: auto;
 
@@ -35,8 +43,11 @@ h1, h2, h3, h4, h5, h6,
 .hentry {
 
 	&.loop {
-		margin-top: 30px;
 		border: 1px solid $gray-lighter;
+
+		& + & {
+			margin-top: 30px;
+		}
 
 		> * {
 			padding-left: 60px;
