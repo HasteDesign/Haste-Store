@@ -6,7 +6,7 @@
 .home-jumbotron {
 	background-size: cover;
 	background-attachment: fixed;
-	background-position: center;
+	background-position: top center;
 
 	&.full-height {
 		height: 100vh; // Altura total menos a altura da navbar
