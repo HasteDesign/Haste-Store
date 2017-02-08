@@ -587,6 +587,7 @@
 
 .related.products,
 .up-sells {
+	display: block;
 	@include make-container();
 
 	h2 {
