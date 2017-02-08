@@ -1,3 +1,17 @@
+body {
+	&.admin-bar {
+		@media ( max-width: $screen-xs-max ) {
+			margin-top: $navbar-height + 15px;
+		}
+	}
+}
+
+#wpadminbar {
+	@media ( max-width: $screen-xs-max ) {
+		position: fixed;
+	}
+}
+
 a {
 	transition: all .1s ease;
 
