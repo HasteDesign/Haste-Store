@@ -192,6 +192,13 @@
 				.button.alt {
 					float: right;
 				}
+
+				@media ( max-width: 424px ) {
+					input {
+						width: 100%;
+						float: none;
+					}
+				}
 			}
 
 			.button {
