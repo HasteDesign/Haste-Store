@@ -224,6 +224,7 @@ p.demo_store {
 
 			button[class*='add_to_cart'] {
 				min-width: 150px;
+				width: calc(100% - 75px);
 			}
 		}
 
