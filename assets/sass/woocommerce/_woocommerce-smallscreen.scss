@@ -186,6 +186,10 @@
 				.input-text {
 					float: left;
 					margin: 0;
+					@media ( max-width: 424px ) {
+						width: 100%;
+						float: none;
+					}
 				}
 
 				.input-text + .button,
@@ -193,12 +197,6 @@
 					float: right;
 				}
 
-				@media ( max-width: 424px ) {
-					input {
-						width: 100%;
-						float: none;
-					}
-				}
 			}
 
 			.button {
