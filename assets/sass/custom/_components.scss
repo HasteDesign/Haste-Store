@@ -89,7 +89,7 @@ a {
 
 select,
 textarea,
-input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="reset"]) {
+input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="reset"]):not([type="button"]) {
 	@extend .form-control;
 
 	&:focus {
