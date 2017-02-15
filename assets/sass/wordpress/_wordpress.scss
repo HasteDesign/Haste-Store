@@ -165,14 +165,17 @@ img {
     &.aligncenter,
     &.aligncenter,
     &.alignnone {
-        margin-top: .3em;
-        margin-bottom: 1em;
+        margin-top: 2em;
+        margin-bottom: 2.5em;
     }
 }
 
 .wp-caption {
 
     @extend .thumbnail;
+	border-width: 0 0 1px 0;
+	padding: 0;
+
     &.aligncenter,
     &.alignnone {
         clear: both !important;

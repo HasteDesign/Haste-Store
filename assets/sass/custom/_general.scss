@@ -6,17 +6,21 @@ body {
 	}
 }
 
-#wpadminbar {
-	@media ( max-width: $screen-xs-max ) {
-		position: fixed;
-	}
-}
-
 a {
 	transition: all .1s ease;
 
 	&:hover {
 		transition: all .1s ease;
+	}
+}
+
+p {
+	margin-bottom: 1.5em;
+}
+
+#wpadminbar {
+	@media ( max-width: $screen-xs-max ) {
+		position: fixed;
 	}
 }
 
@@ -53,6 +57,25 @@ h1, h2, h3, h4, h5, h6,
 h1, .h1 {
 	@media ( max-width: $screen-xs-max) {
 		font-size: floor(($font-size-base * 2.5));
+	}
+}
+
+blockquote {
+	padding: 1em 1em 1em 3em;
+	margin: 0 0 1.5em;
+	font-size: 1.3em;
+	border: none;
+	quotes: "\201C""\201D""\2018""\2019";
+	border: 1px solid $gray-lighter;
+	position: relative;
+
+	&:before {
+		content: open-quote;
+		font-size: 4em;
+		line-height: 1.2;
+		position: absolute;
+		left: .15em;
+		top: 0;
 	}
 }
 
@@ -129,13 +152,61 @@ h1, .h1 {
 		padding-top: 0;
 	}
 
-	&.post .entry-content {
+	h1, h2, h3, h4, h5, h6,
+	.h1, .h2, .h3, .h4, .h5, .h6 {
+		margin: 2em 0 1em 0;
+	}
+
+	ul,
+	ol {
+		list-style: none;
+		padding-left: 4em;
+		margin-bottom: 1.5em;
+
+		li {
+			padding: 1em 0;
+
+			&:before {
+				display: inline-block;
+				width: 2em;
+				margin: 0 .5em 0 -2.5em;
+				opacity: .6;
+			}
+
+			& + li {
+				border-top: 1px solid $gray-lighter;
+			}
+		}
+	}
+
+	ol {
+		counter-reset: ol;
+
+		li {
+			&:before {
+				counter-increment: ol;
+				content: counter(ol) ". ";
+			}
+		}
+	}
+
+	ul {
+		li {
+			&:before {
+				content: '\203A';
+			}
+		}
+	}
+}
+
+.hentry.post,
+.single-product {
+	.entry-content {
 		font-size: 1.1em;
 		padding-top: 30px;
 		padding-bottom: 30px;
 		border-top: 1px solid $gray-lighter;
 	}
-
 }
 
 .author-box {
@@ -163,4 +234,8 @@ h1, .h1 {
 			margin-top: 0;
 		}
 	}
+}
+
+#comments {
+	margin-top: 60px;
 }
