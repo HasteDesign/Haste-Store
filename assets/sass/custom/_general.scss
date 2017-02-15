@@ -144,6 +144,10 @@ blockquote {
 			@media ( max-width: $screen-xs-max) {
 				display: block;
 			}
+
+			.glyphicon {
+				min-width: 1.6em;
+			}
 		}
 	}
 
