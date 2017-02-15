@@ -34,6 +34,13 @@ Haste_Store_Kirki::add_field( 'haste-store', array(
  		'full-height'  	=> esc_attr__( 'Full height', 'my_textdomain' ),
  		'auto-height' 	=> esc_attr__( 'Auto height', 'my_textdomain' ),
  	),
+	'active_callback'  => array(
+		   array(
+			   'setting'  => 'enable-home-content-section',
+			   'operator' => '==',
+			   'value'    => 1,
+		   ),
+	   ),
   ) );
 
  Haste_Store_Kirki::add_field( 'haste-store', array(
@@ -43,7 +50,14 @@ Haste_Store_Kirki::add_field( 'haste-store', array(
  	 'section'  => 'static_front_page',
  	 'priority' => 105,
 	 'description' => 'Leave empty to use the original page title',
- ) );
+	 'active_callback'  => array(
+  		   array(
+  			   'setting'  => 'enable-home-content-section',
+  			   'operator' => '==',
+  			   'value'    => 1,
+  		   ),
+  	   ),
+) );
 
 // Home first button
 
@@ -54,6 +68,13 @@ Haste_Store_Kirki::add_field( 'haste-store', array(
     'section'     => 'static_front_page',
     'default'     => '<hr>',
     'priority'    => 109,
+	'active_callback'  => array(
+		   array(
+			   'setting'  => 'enable-home-content-section',
+			   'operator' => '==',
+			   'value'    => 1,
+		   ),
+	   ),
 ) );
 
 
@@ -64,7 +85,14 @@ Haste_Store_Kirki::add_field( 'haste-store', array(
 	 'section'     => 'static_front_page',
 	 'default'     => '1',
 	 'priority'    => 110,
- ) );
+	 'active_callback'  => array(
+  		   array(
+  			   'setting'  => 'enable-home-content-section',
+  			   'operator' => '==',
+  			   'value'    => 1,
+  		   ),
+  	   ),
+) );
 
 Haste_Store_Kirki::add_field( 'haste-store', array(
 	 'type'     => 'text',
@@ -73,6 +101,13 @@ Haste_Store_Kirki::add_field( 'haste-store', array(
 	 'section'  => 'static_front_page',
 	 'default'  => esc_attr__( 'View', 'haste-store' ),
 	 'priority' => 120,
+	 'active_callback'  => array(
+ 		   array(
+ 			   'setting'  => 'enable-home-content-section',
+ 			   'operator' => '==',
+ 			   'value'    => 1,
+ 		   ),
+ 	   ),
 ) );
 
 Haste_Store_Kirki::add_field( 'haste-store', array(
@@ -82,6 +117,13 @@ Haste_Store_Kirki::add_field( 'haste-store', array(
 	 'section'  => 'static_front_page',
 	 'default'  => '#',
 	 'priority' => 130,
+	 'active_callback'  => array(
+ 		   array(
+ 			   'setting'  => 'enable-home-content-section',
+ 			   'operator' => '==',
+ 			   'value'    => 1,
+ 		   ),
+ 	   ),
 ) );
 
 Haste_Store_Kirki::add_field( 'haste-store', array(
@@ -91,6 +133,13 @@ Haste_Store_Kirki::add_field( 'haste-store', array(
 	'section'  => 'static_front_page',
 	'default'  => 'btn btn-success',
 	'priority' => 140,
+	'active_callback'  => array(
+		  array(
+			  'setting'  => 'enable-home-content-section',
+			  'operator' => '==',
+			  'value'    => 1,
+		  ),
+	  ),
 ) );
 
 // Home second button
@@ -101,6 +150,13 @@ Haste_Store_Kirki::add_field( 'haste-store', array(
     'section'     => 'static_front_page',
     'default'     => '<hr>',
     'priority'    => 149,
+	'active_callback'  => array(
+		  array(
+			  'setting'  => 'enable-home-content-section',
+			  'operator' => '==',
+			  'value'    => 1,
+		  ),
+	  ),
 ) );
 
 Haste_Store_Kirki::add_field( 'haste-store', array(
@@ -110,7 +166,14 @@ Haste_Store_Kirki::add_field( 'haste-store', array(
 	 'section'     => 'static_front_page',
 	 'default'     => '1',
 	 'priority'    => 150,
- ) );
+	 'active_callback'  => array(
+ 		   array(
+ 			   'setting'  => 'enable-home-content-section',
+ 			   'operator' => '==',
+ 			   'value'    => 1,
+ 		   ),
+ 	   ),
+) );
 
 Haste_Store_Kirki::add_field( 'haste-store', array(
 	 'type'     => 'text',
@@ -119,6 +182,13 @@ Haste_Store_Kirki::add_field( 'haste-store', array(
 	 'section'  => 'static_front_page',
 	 'default'  => esc_attr__( 'Tell me more', 'haste-store' ),
 	 'priority' => 160,
+	 'active_callback'  => array(
+ 		   array(
+ 			   'setting'  => 'enable-home-content-section',
+ 			   'operator' => '==',
+ 			   'value'    => 1,
+ 		   ),
+ 	   ),
 ) );
 
 Haste_Store_Kirki::add_field( 'haste-store', array(
@@ -128,6 +198,13 @@ Haste_Store_Kirki::add_field( 'haste-store', array(
 	 'section'  => 'static_front_page',
 	 'default'  => '#',
 	 'priority' => 170,
+	 'active_callback'  => array(
+ 		   array(
+ 			   'setting'  => 'enable-home-content-section',
+ 			   'operator' => '==',
+ 			   'value'    => 1,
+ 		   ),
+ 	   ),
 ) );
 
 Haste_Store_Kirki::add_field( 'haste-store', array(
@@ -137,4 +214,11 @@ Haste_Store_Kirki::add_field( 'haste-store', array(
 	'section'  => 'static_front_page',
 	'default'  => 'btn btn-outline',
 	'priority' => 180,
+	'active_callback'  => array(
+		  array(
+			  'setting'  => 'enable-home-content-section',
+			  'operator' => '==',
+			  'value'    => 1,
+		  ),
+	  ),
 ) );
