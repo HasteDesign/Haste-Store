@@ -23,7 +23,7 @@ a {
 #wrapper {
 	overflow: auto;
 
-	body:not(.page-template-page-homeshop) & {
+	body:not(.page-template-page-home) & {
 		@include make-container();
 		margin-top: 80px;
 
@@ -33,7 +33,7 @@ a {
 	}
 
 	@media( max-width: $screen-xs-max ) {
-		body.admin-bar:not(.page-template-page-homeshop) & {
+		body.admin-bar:not(.page-template-page-home) & {
 			margin-top: 30px;
 		}
 	}

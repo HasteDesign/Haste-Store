@@ -10,7 +10,7 @@ Haste_Store_Kirki::add_field( 'haste-store', array(
     'type'        => 'custom',
     'settings'    => 'home-custom-settings-separator',
     'section'     => 'static_front_page',
-    'default'     => '<hr> <h2>' . __('Haste Store Custom Settings', 'haste-store') . '</h2> <p>' . __('This options applies to the Home Shop page template.', 'haste-store') . '</p>',
+    'default'     => '<hr> <h2>' . __('Haste Store Custom Settings', 'haste-store') . '</h2> <p>' . __('This options applies to the Home page template.', 'haste-store') . '</p>',
     'priority'    => 99,
 ) );
 

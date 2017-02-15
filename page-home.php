@@ -1,8 +1,8 @@
 <?php
 /**
- * Template Name: Home Shop
+ * Template Name: Home
  *
- * The template for displaying the shop homepage.
+ * The template for displaying the homepage.
  *
  * @package Odin
  * @since 2.2.0
