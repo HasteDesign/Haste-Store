@@ -180,7 +180,7 @@ function odin_widgets_init() {
 		array(
 			'name' => __( 'Home main content', 'haste-store' ),
 			'id' => 'home-main-content',
-			'description' => __( 'Home main content ', 'haste-store' ),
+			'description' => __( 'Home page template main content area', 'haste-store' ),
 			'before_widget' => '<div id="%1$s" class="widget page-section %2$s">',
 			'after_widget' => '</div>',
 			'before_title' => '<h2 class="widgettitle widget-title section-title">',

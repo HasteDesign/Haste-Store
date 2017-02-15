@@ -1,100 +1,55 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Odin v2.2.0\n"
+"Project-Id-Version: Haste Store 0.0.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-10 07:21-0300\n"
-"PO-Revision-Date: 2014-02-10 07:21-0300\n"
-"Last-Translator: Rafael Funchal <rafaelfunchal@gmail.com>\n"
-"Language-Team: WordPress Brasil Group\n"
+"POT-Creation-Date: 2017-02-13 22:37-0200\n"
+"PO-Revision-Date: 2017-02-13 22:56-0200\n"
+"Last-Translator: Anyssa Ferreira <anyssacristina@yahoo.com.br>\n"
+"Language-Team: Haste Design\n"
+"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 1.8.11\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
 "_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
-"X-Poedit-Basepath: .\n"
+"X-Poedit-Basepath: ..\n"
 "X-Textdomain-Support: yes\n"
-"X-Poedit-SearchPath-0: ..\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: src\n"
 
 # @ odin
-#: ../404.php:15
+#: 404.php:14
 msgid "Not Found"
 msgstr "Nada Encontrado"
 
 # @ odin
-#: ../404.php:19
+#: 404.php:18
 msgid "It looks like nothing was found at this location. Maybe try a search?"
 msgstr ""
 "Parece que nada foi encontrado neste local. Talvez tentar uma pesquisa?"
 
 # @ odin
-#: ../archive.php:30
-#, php-format
-msgid "Daily Archives: %s"
-msgstr "Arquivos Diários: %s"
-
-# @ odin
-#: ../archive.php:33
-#, php-format
-msgid "Monthly Archives: %s"
-msgstr "Arquivos Mensais: %s"
-
-# @ odin
-#: ../archive.php:33
-msgctxt "monthly archives date format"
-msgid "F Y"
-msgstr "F Y"
-
-# @ odin
-#: ../archive.php:36
-#, php-format
-msgid "Yearly Archives: %s"
-msgstr "Arquivos Anuais: %s"
-
-# @ odin
-#: ../archive.php:36
-msgctxt "yearly archives date format"
-msgid "Y"
-msgstr "Y"
-
-# @ odin
-#: ../archive.php:39
-msgid "Archives"
-msgstr "Arquivos"
-
-# @ odin
-#: ../audio.php:24 ../video.php:24
+#: audio.php:23 video.php:23
 msgid "URL:"
 msgstr "URL:"
 
 # @ odin
-#: ../audio.php:30 ../image.php:40 ../video.php:30
+#: audio.php:29 image.php:39 video.php:29
 #, php-format
 msgid "Back to %s"
 msgstr "Voltar para %s"
 
 # @ odin
-#: ../audio.php:30 ../image.php:40 ../video.php:30
+#: audio.php:29 image.php:39 video.php:29
 #, php-format
 msgid "<span class=\"meta-nav\">&larr;</span> %s"
 msgstr "<span class=\"meta-nav\">&larr;</span> %s"
 
 # @ odin
-#: ../author.php:30
-#, php-format
-msgid "All posts by %s"
-msgstr "Todas as publicações por %s"
-
-# @ odin
-#: ../category.php:19
-#, php-format
-msgid "Category Archives: %s"
-msgstr "Arquivo da Categoria: %s"
-
-# @ odin
-#: ../comments.php:13
+#: comments.php:13
 msgid ""
 "This post is password protected. Enter the password to view all comments."
 msgstr ""
@@ -102,67 +57,67 @@ msgstr ""
 "comentários."
 
 # @ odin
-#: ../comments.php:22
+#: comments.php:22
 msgid "0 Comments"
 msgstr "0 Comentários"
 
 # @ odin
-#: ../comments.php:22 ../content.php:53
+#: comments.php:22 inc/template-tags.php:88
 msgid "1 Comment"
 msgstr "1 Comentário"
 
 # @ odin
-#: ../comments.php:22 ../content.php:53
+#: comments.php:22 inc/template-tags.php:88
 msgid "% Comments"
 msgstr "% Comentários"
 
 # @ odin
-#: ../comments.php:23
+#: comments.php:23
 msgid "to"
 msgstr "para"
 
 # @ odin
-#: ../comments.php:28 ../comments.php:37
+#: comments.php:29 comments.php:40
 msgid "&larr; Old Comments"
 msgstr "&larr; Comentários Antigos"
 
 # @ odin
-#: ../comments.php:29 ../comments.php:38
+#: comments.php:30 comments.php:41
 msgid "New Comments &rarr;"
 msgstr "Novos Comentários &rarr;"
 
 # @ odin
-#: ../comments.php:43
+#: comments.php:47
 msgid "Comments closed."
 msgstr "Comentários não são permitidos."
 
 # @ odin
-#: ../comments.php:54
+#: comments.php:56
 msgid "Comment"
 msgstr "Comentário"
 
 # @ odin
-#: ../comments.php:56
+#: comments.php:59
 msgid "Name"
 msgstr "Nome"
 
 # @ odin
-#: ../comments.php:57
+#: comments.php:61
 msgid "E-mail"
 msgstr "E-mail"
 
 # @ odin
-#: ../comments.php:58
+#: comments.php:63
 msgid "Website"
 msgstr "Website"
 
 # @ odin
-#: ../content-none.php:11
+#: content-none.php:11
 msgid "Nothing Found"
 msgstr "Nada Encontrado"
 
 # @ odin
-#: ../content-none.php:17
+#: content-none.php:17
 #, php-format
 msgid ""
 "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
@@ -171,7 +126,7 @@ msgstr ""
 "aqui</a>."
 
 # @ odin
-#: ../content-none.php:21
+#: content-none.php:21
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
@@ -180,7 +135,7 @@ msgstr ""
 "tente novamente com algumas palavras-chave diferentes."
 
 # @ odin
-#: ../content-none.php:26
+#: content-none.php:26
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
@@ -189,456 +144,1057 @@ msgstr ""
 "pesquisa pode ajudar."
 
 # @ odin
-#: ../content-page.php:17 ../content.php:38
+#: content-page.php:17 content-section.php:29 content.php:65
 msgid "Pages:"
 msgstr "Páginas:"
 
 # @ odin
-#: ../content.php:36
+#: content-section.php:27 content.php:63
 msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
 msgstr "Continue lendo <span class=\"meta-nav\">&rarr;</span>"
 
-# @ odin
-#: ../content.php:49
-msgid "Posted in:"
-msgstr "Publicado em:"
+#: content-section.php:48
+msgid "Tell me more"
+msgstr "Saiba mais"
 
 # @ odin
-#: ../content.php:49
-msgctxt "Used between list items, there is a space after the comma."
-msgid ", "
-msgstr ", "
-
-# @ odin
-#: ../content.php:51
+#: content.php:78
 msgid "Tagged as:"
 msgstr "Marcado como:"
 
 # @ odin
-#: ../content.php:53
-msgid "Leave a comment"
-msgstr "Deixe um comentário"
+#: core/classes/class-bootstrap-nav.php:203
+msgid "Add a menu"
+msgstr "Adicionar um menu"
+
+#: core/classes/widgets/class-widget-like-box.php:20
+msgid "Facebook Like Box"
+msgstr "Caixa de Curtir do Facebook"
+
+#: core/classes/widgets/class-widget-like-box.php:21
+msgid "This widget includes a facebook like box on your blog"
+msgstr "Esse widget inclui a caixa de curtir do Facebook em seu site"
+
+#: core/classes/widgets/class-widget-like-box.php:48
+msgid "Title:"
+msgstr "Título:"
+
+#: core/classes/widgets/class-widget-like-box.php:54
+msgid "Facebook Page URL:"
+msgstr "URL da página do Facebook:"
+
+#: core/classes/widgets/class-widget-like-box.php:60
+msgid "Width:"
+msgstr "Largura:"
+
+#: core/classes/widgets/class-widget-like-box.php:66
+msgid "Height:"
+msgstr "Altura:"
+
+#: core/classes/widgets/class-widget-like-box.php:72
+msgid "Color Scheme:"
+msgstr "Esquema de cores:"
+
+#: core/classes/widgets/class-widget-like-box.php:74
+msgid "Dark"
+msgstr "Escuro"
+
+#: core/classes/widgets/class-widget-like-box.php:75
+msgid "Light"
+msgstr "Claro"
+
+#: core/classes/widgets/class-widget-like-box.php:81
+msgid "Show Friends Faces"
+msgstr "Exibir rostos dos amigos"
+
+#: core/classes/widgets/class-widget-like-box.php:86
+msgid "Show Posts"
+msgstr "Exibir atualizações"
+
+#: core/classes/widgets/class-widget-like-box.php:91
+msgid "Show Header"
+msgstr "Exibir cabeçalho"
+
+#: core/classes/widgets/class-widget-like-box.php:96
+msgid "Show Border"
+msgstr "Exibir borda"
 
 # @ odin
-#: ../footer.php:17
-msgid "All rights reserved"
-msgstr "Todos os direitos reservados"
-
-# @ odin
-#: ../footer.php:17
-#, php-format
-msgid ""
-"Powered by the <a href=\"%s\" rel=\"nofollow\" target=\"_blank\">Odin</a> "
-"forces and <a href=\"%s\" rel=\"nofollow\" target=\"_blank\">WordPress</a>."
-msgstr ""
-"Powered by the <a href=\"%s\" rel=\"nofollow\" target=\"_blank\">Odin</a> "
-"forces and <a href=\"%s\" rel=\"nofollow\" target=\"_blank\">WordPress</a>."
-
-# @ odin
-#: ../functions.php:64
-msgid "Main Menu"
-msgstr "Menu Principal"
-
-# @ odin
-#: ../functions.php:157
-msgid "Main Sidebar"
-msgstr "Sidebar Principal"
-
-# @ odin
-#: ../functions.php:159
-msgid "Site Main Sidebar"
-msgstr "Sidebar principal do site"
-
-# @ odin
-#: ../header.php:53
-msgid "Skip to content"
-msgstr "Pular para o conteúdo"
-
-# @ odin
-#: ../header.php:56
-msgid "Toggle navigation"
-msgstr "Alternar navegação"
-
-# @ odin
-#: ../header.php:83
-msgid "Search:"
-msgstr "Pesquisar:"
-
-# @ odin
-#: ../header.php:87 ../searchform.php:12
-msgid "Search"
-msgstr "Pesquisa"
-
-# @ odin
-#: ../image.php:23
-#, php-format
-msgid "Image total size: %s pixels"
-msgstr "Tamanho total da imagem: %s pixels"
-
-# @ odin
-#: ../image.php:23
-msgid "Full image link"
-msgstr "Link da imagem completa"
-
-# @ odin
-#: ../image.php:34
-msgid "&larr; Previous image"
-msgstr "&larr; Imagem anterior"
-
-# @ odin
-#: ../image.php:35
-msgid "Next image &rarr;"
-msgstr "Próxima imagem &rarr;"
-
-# @ odin
-#: ../search.php:17
-#, php-format
-msgid "Search Results for: %s"
-msgstr "Resultado de Busca por: %s"
-
-# @ odin
-#: ../tag.php:21
-#, php-format
-msgid "Tag Archives: %s"
-msgstr "Arquivo da Tag: %s"
-
-# @ odin
-#: ../core/helpers.php:56
+#: core/helpers.php:53
 msgid "&laquo; Previous"
 msgstr "&laquo; Anterior"
 
 # @ odin
-#: ../core/helpers.php:57
+#: core/helpers.php:54
 msgid "Next &raquo;"
 msgstr "Próximo &raquo;"
 
 # @ odin
-#: ../core/helpers.php:99
+#: core/helpers.php:96
 msgid "Related Posts"
 msgstr "Artigos Relacionados"
 
 # @ odin
-#: ../core/helpers.php:228
+#: core/helpers.php:232
 msgid "Home"
 msgstr "Início"
 
 # @ odin
-#: ../core/helpers.php:320
+#: core/helpers.php:359
 #, php-format
 msgid "%sCategory: %s%s"
 msgstr "%sCategoria: %s%s"
 
 # @ odin
-#: ../core/helpers.php:324
+#: core/helpers.php:363
 #, php-format
 msgid "%sTag: %s%s"
 msgstr "%sTag: %s%s"
 
 # @ odin
-#: ../core/helpers.php:332
+#: core/helpers.php:378
 #, php-format
 msgid "%sSearch result for: &quot;%s&quot;%s"
 msgstr "%sResultado da busca para: &quot;%s&quot;%s"
 
 # @ odin
-#: ../core/helpers.php:339
+#: core/helpers.php:384
 msgid "Posted by"
 msgstr "Publicado por"
 
 # @ odin
-#: ../core/helpers.php:378
+#: core/helpers.php:434
 msgid "404 Error"
 msgstr "Erro 404"
 
 # @ odin
-#: ../core/helpers.php:385 ../core/helpers.php:387 ../inc/optimize.php:27
+#: core/helpers.php:439
 #, php-format
 msgid "Page %s"
 msgstr "Página %s"
 
 # @ odin
-#: ../core/classes/class-bootstrap-nav.php:203
-msgid "Add a menu"
-msgstr "Adicionar um menu"
+#: footer.php:55
+msgid "All rights reserved"
+msgstr "Todos os direitos reservados"
 
 # @ odin
-#: ../core/classes/class-contact-form.php:170
-#, php-format
-msgid "Message sent by the form %s in %s at %s"
-msgstr "Mensagem enviada pelo formulário %s em %s às %s"
+#: footer.php:55
+#, fuzzy, php-format
+msgid ""
+"Powered by <a href=\"%s\" rel=\"nofollow\" target=\"_blank\">Haste Store</a> "
+"and <a href=\"%s\" rel=\"nofollow\" target=\"_blank\">WordPress</a>."
+msgstr ""
+"Powered by the <a href=\"%s\" rel=\"nofollow\" target=\"_blank\">Odin</a> "
+"forces and <a href=\"%s\" rel=\"nofollow\" target=\"_blank\">WordPress</a>."
 
 # @ odin
-#: ../core/classes/class-metabox.php:78 ../core/classes/class-metabox.php:424
-#: ../core/classes/class-theme-options.php:89
-#: ../core/classes/class-theme-options.php:616
-msgid "Add images in gallery"
-msgstr "Adicionar imagens na galeria"
+#: functions.php:55
+msgid "Main Menu"
+msgstr "Menu Principal"
+
+#: functions.php:181
+msgid "Home main content"
+msgstr "Conteúdo principal da home"
+
+#: functions.php:183
+msgid "Home page template main content area"
+msgstr "Area de conteúdo principal do template da home"
 
 # @ odin
-#: ../core/classes/class-metabox.php:79
-#: ../core/classes/class-theme-options.php:90
-msgid "Add in gallery"
-msgstr "Adicionar na galeria"
+#: functions.php:192
+msgid "Main Sidebar"
+msgstr "Sidebar Principal"
 
 # @ odin
-#: ../core/classes/class-metabox.php:80 ../core/classes/class-metabox.php:388
-#: ../core/classes/class-metabox.php:413
-#: ../core/classes/class-theme-options.php:91
-#: ../core/classes/class-theme-options.php:570
-#: ../core/classes/class-theme-options.php:605
-msgid "Remove image"
-msgstr "Remover imagem"
+#: functions.php:194
+msgid "Site Main Sidebar"
+msgstr "Sidebar principal do site"
+
+#: functions.php:203
+msgid "WooCommerce Sidebar"
+msgstr "Sidebar do WooCommerce"
+
+#: functions.php:205
+msgid "Displays widgets on WooCommerce pages"
+msgstr "Exibe widgets nas páginas do WooCommerce"
+
+#: functions.php:214 functions.php:225
+msgid "Footer area 1"
+msgstr "Área do rodapé 1"
+
+#: functions.php:216 functions.php:227
+msgid "First footer column "
+msgstr "Primeira coluna do rodapé"
+
+#: functions.php:236
+msgid "Footer area 2"
+msgstr "Área do rodapé 2"
+
+#: functions.php:238
+msgid "Second footer column "
+msgstr "Segunda coluna do rodapé"
+
+#: functions.php:247
+msgid "Footer area 3"
+msgstr "Área do rodapé 3"
+
+#: functions.php:249
+msgid "Third footer column "
+msgstr "Terceira coluna do rodapé"
+
+#: functions.php:258
+msgid "Footer area 4"
+msgstr "Área do rodapé 4"
+
+#: functions.php:260
+msgid "Fourth footer column "
+msgstr "Quarta coluna do rodapé"
 
 # @ odin
-#: ../core/classes/class-metabox.php:81
-#: ../core/classes/class-theme-options.php:92
-msgid "Choose a file"
-msgstr "Selecione um arquivo"
+#: functions.php:382
+#, fuzzy
+msgid "Read more &rarr;"
+msgstr "Próxima imagem &rarr;"
 
 # @ odin
-#: ../core/classes/class-metabox.php:82
-#: ../core/classes/class-theme-options.php:93
-msgid "Add file"
-msgstr "Adicionar arquivo"
+#: header.php:29
+msgid "Skip to content"
+msgstr "Pular para o conteúdo"
 
 # @ odin
-#: ../core/classes/class-metabox.php:366
-#: ../core/classes/class-theme-options.php:537
-msgid "Select file"
-msgstr "Selecionar arquivo"
+#: header.php:48
+msgid "Toggle navigation"
+msgstr "Alternar navegação"
 
-# @ odin
-#: ../core/classes/class-metabox.php:388
-#: ../core/classes/class-theme-options.php:570
-msgid "Select image"
-msgstr "Selecionar imagem"
-
-# @ odin
-#: ../core/classes/class-post-type.php:73
-#: ../core/classes/class-post-type.php:80
-#: ../core/classes/class-taxonomy.php:75 ../core/classes/class-taxonomy.php:84
-#, php-format
-msgid "%ss"
-msgstr "%ss"
-
-# @ odin
-#: ../core/classes/class-post-type.php:74
-#: ../core/classes/class-taxonomy.php:76
-#, php-format
-msgid "%s"
-msgstr "%s"
-
-# @ odin
-#: ../core/classes/class-post-type.php:75
-#: ../core/classes/class-taxonomy.php:78
-#, php-format
-msgid "View %s"
-msgstr "Ver %s"
-
-# @ odin
-#: ../core/classes/class-post-type.php:76
-#: ../core/classes/class-taxonomy.php:79
-#, php-format
-msgid "Edit %s"
-msgstr "Editar %s"
-
-# @ odin
-#: ../core/classes/class-post-type.php:77
-#: ../core/classes/class-taxonomy.php:80
-#, php-format
-msgid "Search %s"
-msgstr "Pesquisar %s"
-
-# @ odin
-#: ../core/classes/class-post-type.php:78
-#: ../core/classes/class-taxonomy.php:81
-#, php-format
-msgid "Update %s"
-msgstr "Atualizar  %s"
-
-# @ odin
-#: ../core/classes/class-post-type.php:79
-#: ../core/classes/class-taxonomy.php:82 ../core/classes/class-taxonomy.php:83
-#, php-format
-msgid "Parent %s:"
-msgstr "Parente %s"
-
-# @ odin
-#: ../core/classes/class-post-type.php:81
-msgid "Add New"
-msgstr "Adicionar Novo"
-
-# @ odin
-#: ../core/classes/class-post-type.php:82
-#: ../core/classes/class-taxonomy.php:85
-#, php-format
-msgid "Add New %s"
-msgstr "Adicionar Novo %s"
-
-# @ odin
-#: ../core/classes/class-post-type.php:83
-#: ../core/classes/class-taxonomy.php:86
-#, php-format
-msgid "New %s"
-msgstr "Novo %s"
-
-# @ odin
-#: ../core/classes/class-post-type.php:84
-#: ../core/classes/class-taxonomy.php:87
-#, php-format
-msgid "All %ss"
-msgstr "Todos os %ss"
-
-# @ odin
-#: ../core/classes/class-post-type.php:85
-#, php-format
-msgid "No %s found"
-msgstr "Nenhum %s encontrado"
-
-# @ odin
-#: ../core/classes/class-post-type.php:86
-#, php-format
-msgid "No %s found in Trash"
-msgstr "Nenhum %s encontrado na Lixeira"
-
-# @ odin
-#: ../core/classes/class-taxonomy.php:77
-#, php-format
-msgid "Add or Remove %ss"
-msgstr "Adicionar ou Remover %ss"
-
-# @ odin
-#: ../core/classes/class-taxonomy.php:88
-#, php-format
-msgid "Separate %ss with comma"
-msgstr "Separe %ss com vírgula"
-
-# @ odin
-#: ../core/classes/class-taxonomy.php:89
-#, php-format
-msgid "Choose from %ss most used"
-msgstr "Escolher entre os %ss mais usados"
-
-# @ odin
-#: ../core/classes/abstracts/abstract-front-end-form.php:234
-msgid "Submit"
-msgstr "Enviar"
-
-# @ odin
-#: ../core/classes/abstracts/abstract-front-end-form.php:276
-msgid "Form submitted successfully!"
-msgstr "Formulário enviado com sucesso!"
-
-# @ odin
-#: ../core/classes/abstracts/abstract-front-end-form.php:514
-#, php-format
-msgid "%s is required."
-msgstr "%s é um campo obrigatório."
-
-# @ odin
-#: ../core/classes/abstracts/abstract-front-end-form.php:520
-#, php-format
-msgid "%s must be an email address valid."
-msgstr "%s precisa ser um endereço de email válido"
-
-#: ../core/classes/widgets/class-widget-like-box.php:20
-msgid "Facebook Like Box"
-msgstr "Caixa de Curtir do Facebook"
-
-#: ../core/classes/widgets/class-widget-like-box.php:21
-msgid "This widget includes a facebook like box on your blog"
-msgstr "Esse widget inclui a caixa de curtir do Facebook em seu site"
-
-#: ../core/classes/widgets/class-widget-like-box.php:48
-msgid "Title:"
-msgstr "Título:"
-
-#: ../core/classes/widgets/class-widget-like-box.php:54
-msgid "Facebook Page URL:"
-msgstr "URL da página do Facebook:"
-
-#: ../core/classes/widgets/class-widget-like-box.php:60
-msgid "Width:"
-msgstr "Largura:"
-
-#: ../core/classes/widgets/class-widget-like-box.php:66
-msgid "Height:"
-msgstr "Altura:"
-
-#: ../core/classes/widgets/class-widget-like-box.php:72
-msgid "Color Scheme:"
-msgstr "Esquema de cores:"
-
-#: ../core/classes/widgets/class-widget-like-box.php:74
-msgid "Dark"
-msgstr "Escuro"
-
-#: ../core/classes/widgets/class-widget-like-box.php:75
-msgid "Light"
-msgstr "Claro"
-
-#: ../core/classes/widgets/class-widget-like-box.php:81
-msgid "Show Friends Faces"
-msgstr "Exibir rostos dos amigos"
-
-#: ../core/classes/widgets/class-widget-like-box.php:86
-msgid "Show Posts"
-msgstr "Exibir atualizações"
-
-#: ../core/classes/widgets/class-widget-like-box.php:91
-msgid "Show Header"
-msgstr "Exibir cabeçalho"
-
-#: ../core/classes/widgets/class-widget-like-box.php:96
-msgid "Show Border"
+#: header.php:97
+#, fuzzy
+msgid "My orders"
 msgstr "Exibir borda"
 
+#: header.php:103
+msgid "My account"
+msgstr "Minha conta"
+
+#: header.php:108
+msgid "Logout"
+msgstr "Sair"
+
+#: header.php:117
+msgid "Hello, guest user!"
+msgstr "Olá, visitante!"
+
+#: header.php:123
+msgid "Login"
+msgstr "Login"
+
+#: header.php:125
+msgid "Register"
+msgstr "Registrar"
+
+#: header.php:134
+msgid "Cart"
+msgstr "Carrinho"
+
 # @ odin
-#: ../inc/comments-loop.php:23
+#: image.php:22
+#, php-format
+msgid "Image total size: %s pixels"
+msgstr "Tamanho total da imagem: %s pixels"
+
+# @ odin
+#: image.php:22
+msgid "Full image link"
+msgstr "Link da imagem completa"
+
+# @ odin
+#: image.php:33
+msgid "&larr; Previous image"
+msgstr "&larr; Imagem anterior"
+
+# @ odin
+#: image.php:34
+msgid "Next image &rarr;"
+msgstr "Próxima imagem &rarr;"
+
+# @ odin
+#: inc/comments-loop.php:21
 msgid "Pingback:"
 msgstr "Pingback:"
 
 # @ odin
-#: ../inc/comments-loop.php:23 ../inc/comments-loop.php:33
+#: inc/comments-loop.php:21 inc/comments-loop.php:44
 msgid "Edit"
 msgstr "Editar"
 
 # @ odin
-#: ../inc/comments-loop.php:32
+#: inc/comments-loop.php:37
 msgid "in"
 msgstr "em"
 
 # @ odin
-#: ../inc/comments-loop.php:32
+#: inc/comments-loop.php:40
 msgid "at"
 msgstr "as"
 
 # @ odin
-#: ../inc/comments-loop.php:32
+#: inc/comments-loop.php:41
 msgid "said:"
 msgstr "disse:"
 
 # @ odin
-#: ../inc/comments-loop.php:36
+#: inc/comments-loop.php:47
 msgid "Your comment is awaiting moderation."
 msgstr "Seu comentário está aguardando moderação."
 
 # @ odin
-#: ../inc/comments-loop.php:41
+#: inc/comments-loop.php:56
 msgid "Respond"
 msgstr "Responder"
 
+#: inc/kirki/fields/blog.php:8
+msgid "Blog options"
+msgstr "Opções do blog"
+
+#: inc/kirki/fields/blog.php:9
+msgid "Blog and post options"
+msgstr "Opções do blog e dos posts"
+
+#: inc/kirki/fields/blog.php:19
+msgid "Display sidebar on blog and archives"
+msgstr "Exibir sidebar nos blogs e arquivos"
+
+#: inc/kirki/fields/blog.php:33
+msgid "Display sidebar on single posts"
+msgstr "Exibir sidebar em posts"
+
+#: inc/kirki/fields/blog.php:47
+msgid "Display post author"
+msgstr "Exibir autor dos posts"
+
+#: inc/kirki/fields/color.php:13
+msgid "Primary color"
+msgstr "Cor primária"
+
+#: inc/kirki/fields/color.php:148
+msgid "Action color"
+msgstr "Cor de ação"
+
+#: inc/kirki/fields/color.php:320
+msgid "Info color"
+msgstr "Cor de informação"
+
+#: inc/kirki/fields/color.php:435
+msgid "Warning color"
+msgstr "Cor de aviso"
+
+#: inc/kirki/fields/color.php:542
+msgid "Danger / Error color"
+msgstr "Cor de erro"
+
+#: inc/kirki/fields/footer.php:10
+msgid "Footer"
+msgstr "Rodapé"
+
+#: inc/kirki/fields/footer.php:11
+msgid "Footer options"
+msgstr "Opções do rodapé"
+
+#: inc/kirki/fields/footer.php:21
+msgid "Footer background color"
+msgstr "Cor de fundo do rodapé"
+
+#: inc/kirki/fields/footer.php:47
+msgid "Footer text color"
+msgstr "Cor de texto do rodapé"
+
+#: inc/kirki/fields/front-page.php:13
+msgid "Haste Store Custom Settings"
+msgstr "Configurações do Haste Store"
+
+#: inc/kirki/fields/front-page.php:13
+msgid "This options applies to the Home Shop page template."
+msgstr "Estas opções se aplicam ao template de página Home Shop."
+
+#: inc/kirki/fields/front-page.php:20
+msgid "Display a section with the page content and featured image"
+msgstr "Exibir uma seção com o conteúdo da página e a imagem destacada"
+
+#: inc/kirki/fields/front-page.php:29
+msgid "Home section height"
+msgstr "Altura da seção da home"
+
+#: inc/kirki/fields/front-page.php:42
+msgid "Override home page title"
+msgstr "Sobrescrever título da página home"
+
+#: inc/kirki/fields/front-page.php:63
+msgid "Display first button"
+msgstr "Exibir primeiro botão"
+
+#: inc/kirki/fields/front-page.php:72
+msgid "Home first button text"
+msgstr "Texto do primeiro botão da home"
+
+#: inc/kirki/fields/front-page.php:81
+msgid "Home first button link"
+msgstr ""
+
+#: inc/kirki/fields/front-page.php:90
+msgid "Home first button CSS classes"
+msgstr ""
+
+#: inc/kirki/fields/front-page.php:109
+msgid "Display second button"
+msgstr ""
+
+#: inc/kirki/fields/front-page.php:118
+msgid "Home second button text"
+msgstr ""
+
+#: inc/kirki/fields/front-page.php:127
+msgid "Home second button link"
+msgstr ""
+
+#: inc/kirki/fields/front-page.php:136
+msgid "Home second button CSS classes"
+msgstr ""
+
+#: inc/kirki/fields/header.php:10
+#, fuzzy
+msgid "Header"
+msgstr "Área do Header 1"
+
+#: inc/kirki/fields/header.php:11
+msgid "Header options"
+msgstr ""
+
+#: inc/kirki/fields/header.php:21
+msgid "Header background color"
+msgstr ""
+
+#: inc/kirki/fields/header.php:47
+msgid "Header text color"
+msgstr ""
+
+#: inc/kirki/fields/shop.php:8
+msgid "Shop options"
+msgstr ""
+
+#: inc/kirki/fields/shop.php:9
+msgid "WooCommerce shop options"
+msgstr ""
+
+#: inc/kirki/fields/shop.php:19
+msgid "Shop products columns"
+msgstr ""
+
+#: inc/kirki/fields/shop.php:20
+msgid "Also affects the related products"
+msgstr ""
+
+#: inc/kirki/fields/shop.php:33
+msgid "Products per page"
+msgstr ""
+
+#: inc/kirki/fields/type.php:8
+msgid "Typography"
+msgstr ""
+
+#: inc/kirki/fields/type.php:9
+msgid "Font options"
+msgstr ""
+
+#: inc/odin-shortcodes-editor-i18n.php:9
+msgid "Odin shortcodes"
+msgstr ""
+
+#: inc/odin-shortcodes-editor-i18n.php:10
+#, fuzzy
+msgid "Id"
+msgstr "ID"
+
+#: inc/odin-shortcodes-editor-i18n.php:11
+#, fuzzy
+msgid "default"
+msgstr "Configurações redefinidas para o padrão."
+
+#: inc/odin-shortcodes-editor-i18n.php:12
+msgid "Buttons"
+msgstr ""
+
+#: inc/odin-shortcodes-editor-i18n.php:13
+#, fuzzy
+msgid "Button"
+msgstr "Insira o texto deste botão"
+
+#: inc/odin-shortcodes-editor-i18n.php:14
+#, fuzzy
+msgid "Title"
+msgstr "Título"
+
+#: inc/odin-shortcodes-editor-i18n.php:15
+#, fuzzy
+msgid "Text"
+msgstr "Insira o texto deste botão"
+
+#: inc/odin-shortcodes-editor-i18n.php:16
+#, fuzzy
+msgid "Type"
+msgstr "Tipo"
+
+#: inc/odin-shortcodes-editor-i18n.php:17
+msgid "Size"
+msgstr ""
+
+#: inc/odin-shortcodes-editor-i18n.php:18
+msgid "lg (large)"
+msgstr ""
+
+#: inc/odin-shortcodes-editor-i18n.php:19
+msgid "sm (small)"
+msgstr ""
+
+#: inc/odin-shortcodes-editor-i18n.php:20
+msgid "xs (extra small)"
+msgstr ""
+
+#: inc/odin-shortcodes-editor-i18n.php:21
+#, fuzzy
+msgid "Link"
+msgstr "Link"
+
+#: inc/odin-shortcodes-editor-i18n.php:22
+#, fuzzy
+msgid "Class"
+msgstr "Continue lendo <span class=\"meta-nav\">&rarr;</span>"
+
+#: inc/odin-shortcodes-editor-i18n.php:23
+msgid "Tooltip"
+msgstr ""
+
+#: inc/odin-shortcodes-editor-i18n.php:24
+msgid "Direction"
+msgstr ""
+
 # @ odin
-#: ../inc/template-tags.php:62
+#: inc/odin-shortcodes-editor-i18n.php:25
+#, fuzzy
+msgid "top"
+msgstr "para"
+
+#: inc/odin-shortcodes-editor-i18n.php:26
+msgid "left"
+msgstr ""
+
+#: inc/odin-shortcodes-editor-i18n.php:27
+#, fuzzy
+msgid "right"
+msgstr "Claro"
+
+#: inc/odin-shortcodes-editor-i18n.php:28
+msgid "bottom"
+msgstr ""
+
+#: inc/odin-shortcodes-editor-i18n.php:29
+msgid "success"
+msgstr ""
+
+#: inc/odin-shortcodes-editor-i18n.php:30
+msgid "danger"
+msgstr ""
+
+#: inc/odin-shortcodes-editor-i18n.php:31
+msgid "warning"
+msgstr ""
+
+#: inc/odin-shortcodes-editor-i18n.php:32
+msgid "info"
+msgstr ""
+
+#: inc/odin-shortcodes-editor-i18n.php:33
+msgid "Group button"
+msgstr ""
+
+#: inc/odin-shortcodes-editor-i18n.php:34
+#, fuzzy
+msgid "List"
+msgstr "Lista de navegação de itens"
+
+#: inc/odin-shortcodes-editor-i18n.php:35
+msgid "Alert"
+msgstr ""
+
+#: inc/odin-shortcodes-editor-i18n.php:36
+msgid "vertical"
+msgstr ""
+
+#: inc/odin-shortcodes-editor-i18n.php:37
+msgid "group"
+msgstr ""
+
+#: inc/odin-shortcodes-editor-i18n.php:38
+msgid "Justified"
+msgstr ""
+
+#: inc/odin-shortcodes-editor-i18n.php:39
+msgid "Content"
+msgstr ""
+
+#: inc/odin-shortcodes-editor-i18n.php:40
+msgid "Close"
+msgstr ""
+
+#: inc/odin-shortcodes-editor-i18n.php:41
+msgid "Label"
+msgstr ""
+
+#: inc/odin-shortcodes-editor-i18n.php:42
+msgid "Badge"
+msgstr ""
+
+#: inc/odin-shortcodes-editor-i18n.php:43
+msgid "Well"
+msgstr ""
+
+#: inc/odin-shortcodes-editor-i18n.php:44
+msgid "Table"
+msgstr ""
+
+#: inc/odin-shortcodes-editor-i18n.php:45
+msgid "striped"
+msgstr ""
+
+#: inc/odin-shortcodes-editor-i18n.php:46
+msgid "hover"
+msgstr ""
+
+#: inc/odin-shortcodes-editor-i18n.php:47
+msgid "condensed"
+msgstr ""
+
+#: inc/odin-shortcodes-editor-i18n.php:48
+msgid "responsive"
+msgstr ""
+
+#: inc/odin-shortcodes-editor-i18n.php:49
+#, fuzzy
+msgid "Border"
+msgstr "Exibir borda"
+
+#: inc/odin-shortcodes-editor-i18n.php:50
+#: inc/odin-shortcodes-editor-i18n.php:93
+msgid "Columns"
+msgstr ""
+
+#: inc/odin-shortcodes-editor-i18n.php:51
+msgid "Rows"
+msgstr ""
+
+#: inc/odin-shortcodes-editor-i18n.php:52
+#: inc/odin-shortcodes-editor-i18n.php:53
+msgid "Progress bar"
+msgstr ""
+
+#: inc/odin-shortcodes-editor-i18n.php:54
+msgid "progress-striped"
+msgstr ""
+
+#: inc/odin-shortcodes-editor-i18n.php:55
+msgid "active"
+msgstr ""
+
+#: inc/odin-shortcodes-editor-i18n.php:56
+#, fuzzy
+msgid "Value (%)"
+msgstr "Valor padrão"
+
+#: inc/odin-shortcodes-editor-i18n.php:57
+msgid "Max value"
+msgstr ""
+
+#: inc/odin-shortcodes-editor-i18n.php:58
+msgid "Min value"
+msgstr ""
+
+#: inc/odin-shortcodes-editor-i18n.php:59
+msgid "Panel"
+msgstr ""
+
+#: inc/odin-shortcodes-editor-i18n.php:60
+msgid "primary"
+msgstr ""
+
+#: inc/odin-shortcodes-editor-i18n.php:61
+msgid "Data"
+msgstr ""
+
+#: inc/odin-shortcodes-editor-i18n.php:62
+msgid "QRcode"
+msgstr ""
+
+#: inc/odin-shortcodes-editor-i18n.php:63
+msgid "Clear"
+msgstr ""
+
+#: inc/odin-shortcodes-editor-i18n.php:64
+msgid "Latitude"
+msgstr ""
+
+#: inc/odin-shortcodes-editor-i18n.php:65
+msgid "Longitude"
+msgstr ""
+
+#: inc/odin-shortcodes-editor-i18n.php:66
+msgid "Zoom"
+msgstr ""
+
+#: inc/odin-shortcodes-editor-i18n.php:67
+#, fuzzy
+msgid "Width"
+msgstr "Largura:"
+
+#: inc/odin-shortcodes-editor-i18n.php:68
+#, fuzzy
+msgid "Height"
+msgstr "Altura:"
+
+#: inc/odin-shortcodes-editor-i18n.php:69
+msgid "Map type"
+msgstr ""
+
+#: inc/odin-shortcodes-editor-i18n.php:70
+#: inc/odin-shortcodes-editor-i18n.php:73
+msgid "ROADMAP"
+msgstr ""
+
+#: inc/odin-shortcodes-editor-i18n.php:71
+msgid "SATELLITE"
+msgstr ""
+
+#: inc/odin-shortcodes-editor-i18n.php:72
+msgid "HYBRID"
+msgstr ""
+
+#: inc/odin-shortcodes-editor-i18n.php:74
+msgid "TERRAIN"
+msgstr ""
+
+#: inc/odin-shortcodes-editor-i18n.php:75
+#, fuzzy
+msgid "Address"
+msgstr "endereço de email para resposta automática e notificação"
+
+#: inc/odin-shortcodes-editor-i18n.php:76
+msgid "Kml"
+msgstr ""
+
+#: inc/odin-shortcodes-editor-i18n.php:77
+msgid "Kml autofit"
+msgstr ""
+
+#: inc/odin-shortcodes-editor-i18n.php:78
+msgid "Marker"
+msgstr "Marcador"
+
+#: inc/odin-shortcodes-editor-i18n.php:79
+msgid "Marker image"
+msgstr "Imagem do marcador"
+
+#: inc/odin-shortcodes-editor-i18n.php:80
+msgid "Traffic"
+msgstr "Tráfego"
+
+#: inc/odin-shortcodes-editor-i18n.php:81
+msgid "Bike"
+msgstr "Bicicleta"
+
+#: inc/odin-shortcodes-editor-i18n.php:82
+msgid "Fusion"
+msgstr "Fusão"
+
+#: inc/odin-shortcodes-editor-i18n.php:83
+msgid "Info window"
+msgstr "Janela de informação"
+
+#: inc/odin-shortcodes-editor-i18n.php:84
+msgid "Info window default"
+msgstr "Janela de informação padrão"
+
+#: inc/odin-shortcodes-editor-i18n.php:85
+msgid "Hide controls"
+msgstr "Esconder controles"
+
+#: inc/odin-shortcodes-editor-i18n.php:86
+msgid "Scale"
+msgstr "Escala"
+
+#: inc/odin-shortcodes-editor-i18n.php:87
+msgid "Scrollwheel"
+msgstr "Barra de rolagem"
+
+#: inc/odin-shortcodes-editor-i18n.php:88
+msgid "Map"
+msgstr "Mapa"
+
+#: inc/odin-shortcodes-editor-i18n.php:89
+msgid "Accordion"
+msgstr "Accordion"
+
+#: inc/odin-shortcodes-editor-i18n.php:90
+msgid "Accordion id"
+msgstr "ID do Accordion"
+
+#: inc/odin-shortcodes-editor-i18n.php:91
+msgid "Childs"
+msgstr "Filhos"
+
+#: inc/odin-shortcodes-editor-i18n.php:92
+msgid "Grid"
+msgstr "Grid"
+
+#: inc/odin-shortcodes-editor-i18n.php:94
+msgid "Tabs"
+msgstr "Tabs"
+
+#: inc/odin-shortcodes-editor-i18n.php:95
+#, fuzzy
+msgid "Icon"
+msgstr "Ícone"
+
+# @ odin
+#: inc/template-tags.php:64
 msgid "Sticky"
 msgstr "Destacado"
 
 # @ odin
-#: ../inc/template-tags.php:67
-msgid "Posted in"
-msgstr "Publicado em"
-
-# @ odin
-#: ../inc/template-tags.php:70
+#: inc/template-tags.php:74
 msgid "by"
 msgstr "por"
+
+# @ odin
+#: inc/template-tags.php:82
+msgid "Posted in:"
+msgstr "Publicado em:"
+
+# @ odin
+#: inc/template-tags.php:82
+msgctxt "Used between list items, there is a space after the comma."
+msgid ", "
+msgstr ", "
+
+# @ odin
+#: inc/template-tags.php:88
+msgid "Leave a comment"
+msgstr "Deixe um comentário"
+
+#: inc/woocommerce/template-tags.php:28
+msgid "View your shopping cart"
+msgstr "Ver seu carrinho de compras"
+
+#: inc/woocommerce/template-tags.php:29
+#, php-format
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] "%d item"
+msgstr[1] "%d itens"
+
+#: inc/woocommerce/template-tags.php:70
+#, fuzzy
+msgid "You are at"
+msgstr "Você não tem permissão para visualizar este anexo"
+
+# @ odin
+#: search.php:16
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Resultado de Busca por: %s"
+
+# @ odin
+#: searchform.php:12
+msgid "Search"
+msgstr "Pesquisa"
+
+#, fuzzy
+#~ msgid "Hello "
+#~ msgstr "Olá"
+
+# @ odin
+#, fuzzy
+#~ msgid " "
+#~ msgstr ", "
+
+# @ odin
+#, fuzzy
+#~ msgid "a"
+#~ msgstr "as"
+
+#, fuzzy
+#~ msgid "this Is A Test"
+#~ msgstr "Enviar email de teste"
+
+#, fuzzy
+#~ msgid "Hello"
+#~ msgstr "Olá"
+
+#, fuzzy
+#~ msgid "1"
+#~ msgstr "%1$s-%2$s"
+
+# @ odin
+#~ msgid "Daily Archives: %s"
+#~ msgstr "Arquivos Diários: %s"
+
+# @ odin
+#~ msgid "Monthly Archives: %s"
+#~ msgstr "Arquivos Mensais: %s"
+
+# @ odin
+#~ msgctxt "monthly archives date format"
+#~ msgid "F Y"
+#~ msgstr "F Y"
+
+# @ odin
+#~ msgid "Yearly Archives: %s"
+#~ msgstr "Arquivos Anuais: %s"
+
+# @ odin
+#~ msgctxt "yearly archives date format"
+#~ msgid "Y"
+#~ msgstr "Y"
+
+# @ odin
+#~ msgid "Archives"
+#~ msgstr "Arquivos"
+
+# @ odin
+#~ msgid "All posts by %s"
+#~ msgstr "Todas as publicações por %s"
+
+# @ odin
+#~ msgid "Category Archives: %s"
+#~ msgstr "Arquivo da Categoria: %s"
+
+# @ odin
+#~ msgid "Search:"
+#~ msgstr "Pesquisar:"
+
+# @ odin
+#~ msgid "Tag Archives: %s"
+#~ msgstr "Arquivo da Tag: %s"
+
+# @ odin
+#~ msgid "Message sent by the form %s in %s at %s"
+#~ msgstr "Mensagem enviada pelo formulário %s em %s às %s"
+
+# @ odin
+#~ msgid "Add images in gallery"
+#~ msgstr "Adicionar imagens na galeria"
+
+# @ odin
+#~ msgid "Add in gallery"
+#~ msgstr "Adicionar na galeria"
+
+# @ odin
+#~ msgid "Remove image"
+#~ msgstr "Remover imagem"
+
+# @ odin
+#~ msgid "Choose a file"
+#~ msgstr "Selecione um arquivo"
+
+# @ odin
+#~ msgid "Add file"
+#~ msgstr "Adicionar arquivo"
+
+# @ odin
+#~ msgid "Select file"
+#~ msgstr "Selecionar arquivo"
+
+# @ odin
+#~ msgid "Select image"
+#~ msgstr "Selecionar imagem"
+
+# @ odin
+#~ msgid "%ss"
+#~ msgstr "%ss"
+
+# @ odin
+#~ msgid "%s"
+#~ msgstr "%s"
+
+# @ odin
+#~ msgid "View %s"
+#~ msgstr "Ver %s"
+
+# @ odin
+#~ msgid "Edit %s"
+#~ msgstr "Editar %s"
+
+# @ odin
+#~ msgid "Search %s"
+#~ msgstr "Pesquisar %s"
+
+# @ odin
+#~ msgid "Update %s"
+#~ msgstr "Atualizar  %s"
+
+# @ odin
+#~ msgid "Parent %s:"
+#~ msgstr "Parente %s"
+
+# @ odin
+#~ msgid "Add New"
+#~ msgstr "Adicionar Novo"
+
+# @ odin
+#~ msgid "Add New %s"
+#~ msgstr "Adicionar Novo %s"
+
+# @ odin
+#~ msgid "New %s"
+#~ msgstr "Novo %s"
+
+# @ odin
+#~ msgid "All %ss"
+#~ msgstr "Todos os %ss"
+
+# @ odin
+#~ msgid "No %s found"
+#~ msgstr "Nenhum %s encontrado"
+
+# @ odin
+#~ msgid "No %s found in Trash"
+#~ msgstr "Nenhum %s encontrado na Lixeira"
+
+# @ odin
+#~ msgid "Add or Remove %ss"
+#~ msgstr "Adicionar ou Remover %ss"
+
+# @ odin
+#~ msgid "Separate %ss with comma"
+#~ msgstr "Separe %ss com vírgula"
+
+# @ odin
+#~ msgid "Choose from %ss most used"
+#~ msgstr "Escolher entre os %ss mais usados"
+
+# @ odin
+#~ msgid "Submit"
+#~ msgstr "Enviar"
+
+# @ odin
+#~ msgid "Form submitted successfully!"
+#~ msgstr "Formulário enviado com sucesso!"
+
+# @ odin
+#~ msgid "%s is required."
+#~ msgstr "%s é um campo obrigatório."
+
+# @ odin
+#~ msgid "%s must be an email address valid."
+#~ msgstr "%s precisa ser um endereço de email válido"
+
+# @ odin
+#~ msgid "Posted in"
+#~ msgstr "Publicado em"
