@@ -20,7 +20,7 @@ get_header();
 				while ( have_posts() ) : the_post();
 			?>
 
-				<section class="page-section home-jumbotron <?php echo get_theme_mod( 'home-content-section-height', 'full-height' ); ?>"
+				<section class="page-section home-banners <?php echo get_theme_mod( 'home-content-section-height', 'full-height' ); ?>"
 				<?php if ( has_post_thumbnail() ) { ?>
 					style="background-image: url('<?php the_post_thumbnail_url( 'full' ); ?>')"
 				<?php } ?>>
