@@ -191,7 +191,7 @@ function odin_widgets_init() {
 		array(
 			'name' => __( 'Main Sidebar', 'haste-store' ),
 			'id' => 'main-sidebar',
-			'description' => __( 'Site Main Sidebar', 'haste-store' ),
+			'description' => __( 'Site Main Sidebar, displayed on pages and posts', 'haste-store' ),
 			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 			'after_widget' => '</aside>',
 			'before_title' => '<h3 class="widgettitle widget-title">',
@@ -205,7 +205,7 @@ function odin_widgets_init() {
 			'description' => __( 'Displays widgets on WooCommerce pages' , 'haste-store' ),
 			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 			'after_widget' => '</aside>',
-			'before_title' => '<h3 class="widgettitle widget-title">',
+			'before_title' => '<h3 class="widgettitle widget-title HHHAHAHAHA">',
 			'after_title' => '</h3>',
 		)
 	);

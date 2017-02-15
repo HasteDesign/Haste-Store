@@ -4,7 +4,7 @@
 	}
 
 	.widget + .widget {
-		margin-top: 60px;
+		margin-top: 40px;
 	}
 
 	ul, ol {
@@ -18,10 +18,13 @@
 	}
 
 	li {
+		margin: 6px 0 0 0;
+
 		&:before {
 			content: '\203A';
-			margin-right: 0.5em;
+			margin-right: 0.8em;
 			color: currentColor;
+			opacity: .8;
 		}
 	}
 
