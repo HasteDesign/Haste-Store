@@ -162,13 +162,13 @@ blockquote {
 			margin: 2em 0 1em 0;
 		}
 
-		ul,
-		ol {
+		ul:not([class*="woo"]),
+		ol:not([class*="woo"]) {
 			list-style: none;
 			padding-left: 4em;
 			margin-bottom: 1.5em;
 
-			li {
+			li { 
 				padding: 1em 0;
 
 				&:before {
