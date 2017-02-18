@@ -28,6 +28,20 @@ a {
   @include button-size($padding-base-vertical, $padding-base-horizontal, $font-size-base, 1.25, $btn-border-radius-base);
 }
 
+.btn-forward {
+	&:after {
+		content: "\2002\2192";
+		margin-right: -.5em;
+	}
+}
+
+.btn-backward {
+	&:before {
+		content: "\2190\2002";
+		margin-left: -.5em;
+	}
+}
+
 /**
  * Navbar divider
  */
