@@ -43,9 +43,9 @@
 					</a>
 				<?php endif; ?>
 
-				<?php if ( true == get_theme_mod( 'enable-home-sec-btn', true ) ) : ?>
-					<a href="<?php echo esc_url( get_theme_mod( 'home-sec-btn-link', '#' ) ); ?>" class="btn-2nd <?php echo esc_attr( get_theme_mod( 'home-sec-btn-classes', 'btn btn-outline' ) ); ?>">
-						<?php echo esc_attr( get_theme_mod( 'home-sec-btn-text', __( 'Tell me more', 'haste-store' ) ) ); ?>
+				<?php if ( true == get_theme_mod( 'enable-home-2nd-btn', true ) ) : ?>
+					<a href="<?php echo esc_url( get_theme_mod( 'home-2nd-btn-link', '#' ) ); ?>" class="btn-2nd <?php echo esc_attr( get_theme_mod( 'home-2nd-btn-classes', 'btn btn-outline' ) ); ?>">
+						<?php echo esc_attr( get_theme_mod( 'home-2nd-btn-text', __( 'Tell me more', 'haste-store' ) ) ); ?>
 					</a>
 				<?php endif; ?>
 
