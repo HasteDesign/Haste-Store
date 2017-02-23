@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Haste Store 0.0.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-13 22:37-0200\n"
-"PO-Revision-Date: 2017-02-13 22:56-0200\n"
+"PO-Revision-Date: 2017-02-23 20:33-0300\n"
 "Last-Translator: Anyssa Ferreira <anyssacristina@yahoo.com.br>\n"
 "Language-Team: Haste Design\n"
 "Language: pt_BR\n"
@@ -538,27 +538,27 @@ msgstr "Texto do primeiro botão da home"
 
 #: inc/kirki/fields/front-page.php:81
 msgid "Home first button link"
-msgstr ""
+msgstr "Link do primeiro botão da home"
 
 #: inc/kirki/fields/front-page.php:90
 msgid "Home first button CSS classes"
-msgstr ""
+msgstr "Classes do primeiro botão da home"
 
 #: inc/kirki/fields/front-page.php:109
 msgid "Display second button"
-msgstr ""
+msgstr "Exibir o primeiro botão da home"
 
 #: inc/kirki/fields/front-page.php:118
 msgid "Home second button text"
-msgstr ""
+msgstr "Texto do segundo botão da home"
 
 #: inc/kirki/fields/front-page.php:127
 msgid "Home second button link"
-msgstr ""
+msgstr "Link do segundo botão da home"
 
 #: inc/kirki/fields/front-page.php:136
 msgid "Home second button CSS classes"
-msgstr ""
+msgstr "Classes do segundo botão da home"
 
 #: inc/kirki/fields/header.php:10
 #, fuzzy
@@ -567,47 +567,47 @@ msgstr "Área do Header 1"
 
 #: inc/kirki/fields/header.php:11
 msgid "Header options"
-msgstr ""
+msgstr "Opções do cabeçalho"
 
 #: inc/kirki/fields/header.php:21
 msgid "Header background color"
-msgstr ""
+msgstr "Cor de fundo do cabeçalho"
 
 #: inc/kirki/fields/header.php:47
 msgid "Header text color"
-msgstr ""
+msgstr "Cor do texto do cabeçalho"
 
 #: inc/kirki/fields/shop.php:8
 msgid "Shop options"
-msgstr ""
+msgstr "Opções da loja"
 
 #: inc/kirki/fields/shop.php:9
 msgid "WooCommerce shop options"
-msgstr ""
+msgstr "Opções da loja do WooCommerce"
 
 #: inc/kirki/fields/shop.php:19
 msgid "Shop products columns"
-msgstr ""
+msgstr "Colunas de produtos da loja"
 
 #: inc/kirki/fields/shop.php:20
 msgid "Also affects the related products"
-msgstr ""
+msgstr "Também afeta os produtos relacionados"
 
 #: inc/kirki/fields/shop.php:33
 msgid "Products per page"
-msgstr ""
+msgstr "Produtos por página"
 
 #: inc/kirki/fields/type.php:8
 msgid "Typography"
-msgstr ""
+msgstr "Tipografia"
 
 #: inc/kirki/fields/type.php:9
 msgid "Font options"
-msgstr ""
+msgstr "Opções de fonte"
 
 #: inc/odin-shortcodes-editor-i18n.php:9
 msgid "Odin shortcodes"
-msgstr ""
+msgstr "Shortcodes do Odin"
 
 #: inc/odin-shortcodes-editor-i18n.php:10
 #, fuzzy
@@ -621,7 +621,7 @@ msgstr "Configurações redefinidas para o padrão."
 
 #: inc/odin-shortcodes-editor-i18n.php:12
 msgid "Buttons"
-msgstr ""
+msgstr "Botões"
 
 #: inc/odin-shortcodes-editor-i18n.php:13
 #, fuzzy
@@ -645,19 +645,19 @@ msgstr "Tipo"
 
 #: inc/odin-shortcodes-editor-i18n.php:17
 msgid "Size"
-msgstr ""
+msgstr "Tamanho"
 
 #: inc/odin-shortcodes-editor-i18n.php:18
 msgid "lg (large)"
-msgstr ""
+msgstr "lg (grande)"
 
 #: inc/odin-shortcodes-editor-i18n.php:19
 msgid "sm (small)"
-msgstr ""
+msgstr "sm (pequeno"
 
 #: inc/odin-shortcodes-editor-i18n.php:20
 msgid "xs (extra small)"
-msgstr ""
+msgstr "xs (extra pequeno)"
 
 #: inc/odin-shortcodes-editor-i18n.php:21
 #, fuzzy
@@ -671,11 +671,11 @@ msgstr "Continue lendo <span class=\"meta-nav\">&rarr;</span>"
 
 #: inc/odin-shortcodes-editor-i18n.php:23
 msgid "Tooltip"
-msgstr ""
+msgstr "Tooltip"
 
 #: inc/odin-shortcodes-editor-i18n.php:24
 msgid "Direction"
-msgstr ""
+msgstr "Direção"
 
 # @ odin
 #: inc/odin-shortcodes-editor-i18n.php:25
@@ -685,7 +685,7 @@ msgstr "para"
 
 #: inc/odin-shortcodes-editor-i18n.php:26
 msgid "left"
-msgstr ""
+msgstr "esquerda"
 
 #: inc/odin-shortcodes-editor-i18n.php:27
 #, fuzzy
@@ -694,27 +694,27 @@ msgstr "Claro"
 
 #: inc/odin-shortcodes-editor-i18n.php:28
 msgid "bottom"
-msgstr ""
+msgstr "abaixo"
 
 #: inc/odin-shortcodes-editor-i18n.php:29
 msgid "success"
-msgstr ""
+msgstr "sucesso"
 
 #: inc/odin-shortcodes-editor-i18n.php:30
 msgid "danger"
-msgstr ""
+msgstr "perigo"
 
 #: inc/odin-shortcodes-editor-i18n.php:31
 msgid "warning"
-msgstr ""
+msgstr "aviso"
 
 #: inc/odin-shortcodes-editor-i18n.php:32
 msgid "info"
-msgstr ""
+msgstr "info"
 
 #: inc/odin-shortcodes-editor-i18n.php:33
 msgid "Group button"
-msgstr ""
+msgstr "Grupo de botões"
 
 #: inc/odin-shortcodes-editor-i18n.php:34
 #, fuzzy
@@ -723,59 +723,59 @@ msgstr "Lista de navegação de itens"
 
 #: inc/odin-shortcodes-editor-i18n.php:35
 msgid "Alert"
-msgstr ""
+msgstr "Alerta"
 
 #: inc/odin-shortcodes-editor-i18n.php:36
 msgid "vertical"
-msgstr ""
+msgstr "vertical"
 
 #: inc/odin-shortcodes-editor-i18n.php:37
 msgid "group"
-msgstr ""
+msgstr "grupo"
 
 #: inc/odin-shortcodes-editor-i18n.php:38
 msgid "Justified"
-msgstr ""
+msgstr "Justificado"
 
 #: inc/odin-shortcodes-editor-i18n.php:39
 msgid "Content"
-msgstr ""
+msgstr "Conteúdo"
 
 #: inc/odin-shortcodes-editor-i18n.php:40
 msgid "Close"
-msgstr ""
+msgstr "Fechar"
 
 #: inc/odin-shortcodes-editor-i18n.php:41
 msgid "Label"
-msgstr ""
+msgstr "Etiqueta"
 
 #: inc/odin-shortcodes-editor-i18n.php:42
 msgid "Badge"
-msgstr ""
+msgstr "Badge"
 
 #: inc/odin-shortcodes-editor-i18n.php:43
 msgid "Well"
-msgstr ""
+msgstr "Well"
 
 #: inc/odin-shortcodes-editor-i18n.php:44
 msgid "Table"
-msgstr ""
+msgstr "Tabela"
 
 #: inc/odin-shortcodes-editor-i18n.php:45
 msgid "striped"
-msgstr ""
+msgstr "listrada"
 
 #: inc/odin-shortcodes-editor-i18n.php:46
 msgid "hover"
-msgstr ""
+msgstr "hover"
 
 #: inc/odin-shortcodes-editor-i18n.php:47
 msgid "condensed"
-msgstr ""
+msgstr "condensada"
 
 #: inc/odin-shortcodes-editor-i18n.php:48
 msgid "responsive"
-msgstr ""
+msgstr "responsiva"
 
 #: inc/odin-shortcodes-editor-i18n.php:49
 #, fuzzy
@@ -785,24 +785,24 @@ msgstr "Exibir borda"
 #: inc/odin-shortcodes-editor-i18n.php:50
 #: inc/odin-shortcodes-editor-i18n.php:93
 msgid "Columns"
-msgstr ""
+msgstr "COlunas"
 
 #: inc/odin-shortcodes-editor-i18n.php:51
 msgid "Rows"
-msgstr ""
+msgstr "Linhas"
 
 #: inc/odin-shortcodes-editor-i18n.php:52
 #: inc/odin-shortcodes-editor-i18n.php:53
 msgid "Progress bar"
-msgstr ""
+msgstr "Barra de progresso"
 
 #: inc/odin-shortcodes-editor-i18n.php:54
 msgid "progress-striped"
-msgstr ""
+msgstr "progresso-listrada"
 
 #: inc/odin-shortcodes-editor-i18n.php:55
 msgid "active"
-msgstr ""
+msgstr "ativa"
 
 #: inc/odin-shortcodes-editor-i18n.php:56
 #, fuzzy
@@ -811,43 +811,43 @@ msgstr "Valor padrão"
 
 #: inc/odin-shortcodes-editor-i18n.php:57
 msgid "Max value"
-msgstr ""
+msgstr "Valor máximo"
 
 #: inc/odin-shortcodes-editor-i18n.php:58
 msgid "Min value"
-msgstr ""
+msgstr "Valor mínimo"
 
 #: inc/odin-shortcodes-editor-i18n.php:59
 msgid "Panel"
-msgstr ""
+msgstr "Painel"
 
 #: inc/odin-shortcodes-editor-i18n.php:60
 msgid "primary"
-msgstr ""
+msgstr "primárioa"
 
 #: inc/odin-shortcodes-editor-i18n.php:61
 msgid "Data"
-msgstr ""
+msgstr "Dado"
 
 #: inc/odin-shortcodes-editor-i18n.php:62
 msgid "QRcode"
-msgstr ""
+msgstr "QRcode"
 
 #: inc/odin-shortcodes-editor-i18n.php:63
 msgid "Clear"
-msgstr ""
+msgstr "Limpar"
 
 #: inc/odin-shortcodes-editor-i18n.php:64
 msgid "Latitude"
-msgstr ""
+msgstr "Latitude"
 
 #: inc/odin-shortcodes-editor-i18n.php:65
 msgid "Longitude"
-msgstr ""
+msgstr "Longitude"
 
 #: inc/odin-shortcodes-editor-i18n.php:66
 msgid "Zoom"
-msgstr ""
+msgstr "Zoom"
 
 #: inc/odin-shortcodes-editor-i18n.php:67
 #, fuzzy
@@ -861,24 +861,24 @@ msgstr "Altura:"
 
 #: inc/odin-shortcodes-editor-i18n.php:69
 msgid "Map type"
-msgstr ""
+msgstr "Tipo de mapa"
 
 #: inc/odin-shortcodes-editor-i18n.php:70
 #: inc/odin-shortcodes-editor-i18n.php:73
 msgid "ROADMAP"
-msgstr ""
+msgstr "ESTRADA"
 
 #: inc/odin-shortcodes-editor-i18n.php:71
 msgid "SATELLITE"
-msgstr ""
+msgstr "SATÉLITE"
 
 #: inc/odin-shortcodes-editor-i18n.php:72
 msgid "HYBRID"
-msgstr ""
+msgstr "HÍBRIDO"
 
 #: inc/odin-shortcodes-editor-i18n.php:74
 msgid "TERRAIN"
-msgstr ""
+msgstr "TERRENO"
 
 #: inc/odin-shortcodes-editor-i18n.php:75
 #, fuzzy
@@ -887,11 +887,11 @@ msgstr "endereço de email para resposta automática e notificação"
 
 #: inc/odin-shortcodes-editor-i18n.php:76
 msgid "Kml"
-msgstr ""
+msgstr "Kml"
 
 #: inc/odin-shortcodes-editor-i18n.php:77
 msgid "Kml autofit"
-msgstr ""
+msgstr "Kml autofit"
 
 #: inc/odin-shortcodes-editor-i18n.php:78
 msgid "Marker"
