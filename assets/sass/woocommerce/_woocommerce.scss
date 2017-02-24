@@ -47,11 +47,6 @@ p.demo_store {
  * Main WooCommerce styles
  */
 
-.products {
-	display: flex;
-	flex-wrap: wrap;
-}
-
 .woocommerce {
 	.blockUI.blockOverlay {
 		position: relative;
@@ -480,6 +475,7 @@ p.demo_store {
 		clear: both;
 		display: flex;
 		flex-wrap: wrap;
+	    justify-content: center;
 		@include make-row();
 
 		li {
