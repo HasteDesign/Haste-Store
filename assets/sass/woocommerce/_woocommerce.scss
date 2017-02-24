@@ -1696,7 +1696,7 @@ p.demo_store {
 		}
 
 		.product-name {
-			@media( min-width: $screen-sm-min ) {
+			@media( min-width: $screen-md-min ) {
 				width: 35%;
 			}
 
@@ -1707,7 +1707,7 @@ p.demo_store {
 		}
 
 		.product-quantity {
-			@media( min-width: $screen-sm-min ) {
+			@media( min-width: $screen-md-min ) {
 				width: 15%;
 			}
 		}
