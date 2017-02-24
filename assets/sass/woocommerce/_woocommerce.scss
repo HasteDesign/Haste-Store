@@ -475,8 +475,7 @@ p.demo_store {
 		clear: both;
 		display: flex;
 		flex-wrap: wrap;
-	    justify-content: center;
-		@include make-row();
+		@include make-row(); 
 
 		li {
 			list-style: none outside;
