@@ -47,6 +47,52 @@ p.demo_store {
  * Main WooCommerce styles
  */
 
+
+
+ 	.woocommerce-message,
+ 	.woocommerce-error,
+ 	.woocommerce-info {
+ 		@include alert();
+
+ 		&:before {
+ 			font-family: "WooCommerce";
+ 			content: "\e028";
+ 			display: inline-block;
+ 			position: absolute;
+ 			top: 1em;
+ 			left: 1.5em;
+ 			color: currentColor;
+ 		}
+
+ 		a {
+ 			font-weight: 700;
+ 		}
+
+ 		.button {
+ 			float: right;
+ 		}
+
+ 		li {
+ 			list-style: none outside !important;
+ 			padding-left: 0 !important;
+ 			margin-left: 0 !important;
+ 		}
+ 	}
+
+ 	.woocommerce-message {
+ 		@include alert-variant($alert-success-bg, $alert-success-border, $alert-success-text);
+ 	}
+
+ 	.woocommerce-info {
+ 		@include alert-variant($alert-info-bg, $alert-info-border, $alert-info-text);
+ 	}
+
+ 	.woocommerce-error {
+ 		@include alert-variant($alert-danger-bg, $alert-danger-border, $alert-danger-text);
+ 	}
+
+
+
 .woocommerce {
 	.blockUI.blockOverlay {
 		position: relative;
@@ -475,7 +521,7 @@ p.demo_store {
 		clear: both;
 		display: flex;
 		flex-wrap: wrap;
-		@include make-row(); 
+		@include make-row();
 
 		li {
 			list-style: none outside;
