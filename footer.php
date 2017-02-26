@@ -52,7 +52,14 @@
 
 		<section class="footer-colophon">
 			<div class="container">
-				&copy; <?php echo date( 'Y' ); ?> <a href="<?php echo home_url(); ?>"><?php bloginfo( 'name' ); ?></a> - <?php _e( 'All rights reserved', 'haste-store' ); ?> | <?php echo sprintf( __( 'Powered by <a href="%s" rel="nofollow" target="_blank">Haste Store</a> and <a href="%s" rel="nofollow" target="_blank">WordPress</a>.', 'haste-store' ), 'http://www.hastedesign.com.br/', 'http://wordpress.org/' ); ?>
+				<div class="col-md-6">
+					&copy; <?php echo date( 'Y' ); ?> <a href="<?php echo home_url(); ?>"><?php bloginfo( 'name' ); ?></a> - <?php _e( 'All rights reserved', 'haste-store' ); ?>
+				</div>
+				<div class="col-md-6 text-right">
+					<a href="<?php echo esc_url( get_theme_mod( 'site-credits-link', 'http://www.hastedesign.com.br' ) ); ?>">
+						<?php echo esc_attr( get_theme_mod( 'site-credits-text', __( 'Proudly powered by Haste Store and WordPress', 'haste-store' ) ) ); ?>
+					</a>
+				</div>
 			</div><!-- .container -->
 		</section>
 	</footer><!-- #footer -->

@@ -66,3 +66,23 @@ Haste_Store_Kirki::add_field( 'haste-store', array(
 		),
 	),
 ) );
+
+
+ Haste_Store_Kirki::add_field( 'haste-store', array(
+ 	 'type'     => 'text',
+ 	 'settings' => 'site-credits-text',
+ 	 'label'    => __( 'Site credit text', 'haste-store' ),
+ 	 'section'  => 'footer',
+ 	 'priority' => 30,
+	 'default' => __( 'Proudly powered by Haste Store and WordPress', 'haste-store' ),
+) );
+
+
+ Haste_Store_Kirki::add_field( 'haste-store', array(
+ 	 'type'     => 'url',
+ 	 'settings' => 'site-credits-link',
+ 	 'label'    => __( 'Site credit link', 'haste-store' ),
+ 	 'section'  => 'footer',
+ 	 'priority' => 40,
+	 'default'	=> 'http://'
+) );
