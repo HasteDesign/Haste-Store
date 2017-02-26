@@ -8,7 +8,7 @@
     'title'          => __( 'Buttons', 'haste-store' ),
     'description'    => __( 'Buttons options', 'haste-store' ),
     'panel'          => '', // Not typically needed.
-    'priority'       => 140,
+    'priority'       => 150,
     'capability'     => 'edit_theme_options',
     'theme_supports' => '', // Rarely needed.
 ) );
