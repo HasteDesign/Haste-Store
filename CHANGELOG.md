@@ -6,18 +6,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 ### Added
-- Added support to customizer selective refresh for widgets
-- Move out of stock products to the end of queries
 ### Changed
-- New default favicon
 ### Deprecated
 ### Removed
 ### Fixed
 ### Security
 
-## 0.0.3 - 2017-31-01
-### Added
-- Added CHANGELOG to document theme development evolution
-
-[Unreleased]: https://bitbucket.org/hastedesign/haste-store/compare/v0.0.3..HEAD
-[0.0.3]: https://bitbucket.org/hastedesign/haste-store/compare/v0.0.3..HEAD
+[Unreleased]: https://bitbucket.org/hastedesign/haste-store/compare/v1.0.0..HEAD
+[1.0.0]: https://bitbucket.org/hastedesign/haste-store/compare/v1.0.0..v0.0.3
+[0.0.3]: https://bitbucket.org/hastedesign/haste-store/compare/v0.0.3..v0.0.2
+[0.0.2]: https://bitbucket.org/hastedesign/haste-store/compare/v0.0.2..v0.0.1
+[0.0.1]: https://bitbucket.org/hastedesign/haste-store/compare/v0.0.1..HEAD
