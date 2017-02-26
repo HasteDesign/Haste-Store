@@ -86,3 +86,8 @@ add_filter( 'woocommerce_cross_sells_total', 'change_cross_sells_product_number'
   */
   remove_action( 'woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_rating', 5);
   add_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_rating', 5 );
+
+  /**
+   * Out of Stock
+   */
+  add_action( 'pre_get_posts', 'move_out_of_stock_products_to_end' );
