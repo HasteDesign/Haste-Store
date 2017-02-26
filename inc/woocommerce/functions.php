@@ -129,40 +129,20 @@ function change_cross_sells_product_number( $n_products ) {
 /**
  * Out of Stock
  */
-function move_out_of_stock_products_to_end( $q ) {
+function move_out_of_stock_products_to_end( $query ) {
 	// checks whether it is product query or skip next steps
-	if ( ( ! isset( $q->query_vars['wc_query'] ) || ! isset( $q->query_vars['post_type'] ) )
-	    || ( $q->query_vars['wc_query'] != 'product_query' && $q->query_vars['post_type'] != 'product' )
+	if ( ( ! isset( $query->query_vars['wc_query'] ) || ! isset( $query->query_vars['post_type'] ) )
+	    || ( $query->query_vars['wc_query'] != 'product_query' && $query->query_vars['post_type'] != 'product' )
 	    || is_admin() ) {
 			return;
 	}
 
 	// this code just adds postmeta table into search query
-	$q->set( 'meta_query', array(array(
+	$query->set( 'meta_query', array(array(
 		'key' => '_stock_status',
 		'value' => '',
 		'compare' => 'NOT IN'
 	)));
 
-	// filter to handle final post request
-	add_filter( 'posts_request', 'add_stock_status_in_request' );
-
-	// filter to handle additional post fields in select statement
-	add_filter( 'posts_fields', 'add_stock_status_in_post_fields', 10, 2);
-
-	remove_action( 'pre_get_posts', 'move_out_of_stock_products_to_end' );
-}
-
-function add_stock_status_in_post_fields( $fields, $query ) {
-	$fields .= ", IF(mt1.meta_value = 'instock', 10, 5) as stock_status";
-	remove_filter('posts_fields', 'add_stock_status_in_post_fields');
-	return $fields;
-}
-
-function add_stock_status_in_request( $input ) {
-	if ( preg_match("@\((.*?)\.meta_key = '_stock_status'@i", $input, $table_name ) ) {
-		$input = str_ireplace("mt1.", $table_name[1] . '.', $input);
-	}
-	$input = str_ireplace("ORDER BY", "ORDER BY stock_status DESC,", $input);
-	return $input;
+    $query->set( 'orderby', '_stock_status' );
 }
