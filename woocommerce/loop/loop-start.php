@@ -16,4 +16,4 @@
  * @version     2.0.0
  */
 ?>
-<ul class="products columns-<?php echo get_theme_mod( 'shop_columns', 4 ); ?>">
+<ul class="products columns-<?php echo ! is_cart() ? get_theme_mod( 'shop_columns', 4 ) : 2; ?>">

@@ -58,12 +58,14 @@ add_action( 'odin_content_top', 'woocommerce_breadcrumb', 10 );
  * @see  odin_thumbnail_columns()
  * @see  odin_products_per_page()
  * @see  odin_loop_columns()
+ * @see
  * @since  2.2.6
  */
 add_filter( 'woocommerce_product_thumbnails_columns', 	'odin_thumbnail_columns' );
 add_filter( 'loop_shop_per_page', 						'odin_products_per_page' );
 add_filter( 'loop_shop_columns', 						'odin_loop_columns' );
-
+add_filter( 'woocommerce_cross_sells_columns', 'change_cross_sells_columns' );
+add_filter( 'woocommerce_cross_sells_total', 'change_cross_sells_product_number' );
 
 /**
  * Related products
