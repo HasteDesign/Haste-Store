@@ -79,3 +79,14 @@ if ( ! function_exists( 'odin_header_cart' ) ) {
 		}
 	}
 }
+
+/**
+ * Out of stock badge
+ */
+
+ function haste_out_of_stock_badge() {
+	global $product;
+  	if ( ! $product->is_in_stock() ) {
+		 echo '<span class="out-of-stock-badge">'. __( 'Out of stock', 'haste-store' ) .'</span>';
+	}
+ }

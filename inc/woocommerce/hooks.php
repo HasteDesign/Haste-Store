@@ -86,3 +86,13 @@ add_filter( 'woocommerce_cross_sells_total', 'change_cross_sells_product_number'
   */
   remove_action( 'woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_rating', 5);
   add_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_rating', 5 );
+
+  /**
+   * Out of stock badge
+   */
+
+  // Loop
+  add_action( 'woocommerce_before_shop_loop_item_title','haste_out_of_stock_badge', 9 );
+
+  // Single
+  add_action( 'woocommerce_before_single_product_summary','haste_out_of_stock_badge', 9 );

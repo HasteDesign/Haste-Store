@@ -494,8 +494,8 @@ p.demo_store {
 		}
 	}
 
-	span.onsale {
-		font-weight: 700;
+	span.onsale,
+	.out-of-stock-badge {
 		position: absolute;
 		text-align: center;
 		font-size: .857em;
@@ -504,11 +504,14 @@ p.demo_store {
 		left: 0;
 		left: auto;
 		margin: 0 15px;
-		padding: 0px 10px;
+		padding: 0 15px;
 		line-height: 3;
 		min-height: 3em;
 		border-radius: 0 1.5em 1.5em 1.5em;
-		z-index: 10;	}
+		z-index: 10;
+		color: #fff;
+		font-weight: 700;
+	}
 
 	/**
 	 * Product loops
@@ -528,9 +531,17 @@ p.demo_store {
 		}
 	}
 
+	.outofstock {
+		.onsale {
+			display: none;
+		}
+	}
+
+
 	ul.products {
 		li.product {
-			.onsale {
+			span.onsale,
+			.out-of-stock-badge {
 				top: 0;
 				right: 0;
 				left: auto;
@@ -539,6 +550,18 @@ p.demo_store {
 				line-height: 3;
 				min-height: 3em;
 				border-radius: 1.5em 0 1.5em 1.5em;
+			}
+
+			&.outofstock {
+				a {
+					&:hover {
+						opacity: 1;
+					}
+
+					img {
+						opacity: .3;
+					}
+				}
 			}
 
 			h3 {
