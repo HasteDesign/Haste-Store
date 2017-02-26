@@ -96,3 +96,8 @@ add_filter( 'woocommerce_cross_sells_total', 'change_cross_sells_product_number'
 
   // Single
   add_action( 'woocommerce_before_single_product_summary','haste_out_of_stock_badge', 9 );
+
+  /**
+   * Out of Stock products order
+   */
+  add_action( 'pre_get_posts', 'move_out_of_stock_products_to_end' );

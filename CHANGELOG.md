@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 ### Added
 - Added support to customizer selective refresh for widgets
+- Move out of stock products to the end of queries
 ### Changed
 - New default favicon
 ### Deprecated
