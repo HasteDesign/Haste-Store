@@ -107,3 +107,21 @@ function haste_related_products_args( $args ) {
 	$args['columns'] = get_theme_mod( 'shop_columns', 4 ); // arranged in 2 columns
 	return $args;
 }
+
+/**
+ * Change the number of columns displayed in cart cross sells area
+ * @param  int $columns number of product columns to be displayed in cart cross sells
+ * @return int          [description]
+ */
+function change_cross_sells_columns( $columns ) {
+	return 2;
+}
+
+/**
+ * Change the number of products to be displayed in cross sells area
+ * @param  int $n_products number of products to be displayed in cross sells
+ * @return int
+ */
+function change_cross_sells_product_number( $n_products ) {
+    return 2;
+}

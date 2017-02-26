@@ -15,4 +15,7 @@ include_once dirname( __FILE__ ) . '/fields/header.php';
 include_once dirname( __FILE__ ) . '/fields/footer.php';
 include_once dirname( __FILE__ ) . '/fields/blog.php';
 include_once dirname( __FILE__ ) . '/fields/front-page.php';
-include_once dirname( __FILE__ ) . '/fields/shop.php';
+
+if( is_woocommerce_activated() ) {
+	include_once dirname( __FILE__ ) . '/fields/shop.php';
+}
