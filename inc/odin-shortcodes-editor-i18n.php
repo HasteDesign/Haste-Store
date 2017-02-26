@@ -6,7 +6,7 @@ if ( ! defined('ABSPATH' ) ) {
 
 $strings = 'tinyMCE.addI18n({' . _WP_Editors::$mce_locale . ': {
 	odin: {
-		shortcode_title: "' . esc_js( __( 'Odin shortcodes', 'haste-store' ) ) . '",
+		shortcode_title: "' . esc_js( __( 'Haste Store Shortcodes', 'haste-store' ) ) . '",
 		id: "' . esc_js( __( 'Id', 'haste-store' ) ) . '",
 		default: "' . esc_js( __( 'default', 'haste-store' ) ) . '",
 		buttons: "' . esc_js( __( 'Buttons', 'haste-store' ) ) . '",
