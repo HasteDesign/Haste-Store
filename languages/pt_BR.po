@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Haste Store 0.0.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-13 22:37-0200\n"
-"PO-Revision-Date: 2017-02-23 20:33-0300\n"
+"POT-Creation-Date: 2017-02-25 22:23-0300\n"
+"PO-Revision-Date: 2017-02-25 22:26-0300\n"
 "Last-Translator: Anyssa Ferreira <anyssacristina@yahoo.com.br>\n"
 "Language-Team: Haste Design\n"
 "Language: pt_BR\n"
@@ -14,7 +14,8 @@ msgstr ""
 "X-Generator: Poedit 1.8.11\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
-"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
+"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;"
+"esc_html__;esc_attr__;esc_html_e;esc_attr_e\n"
 "X-Poedit-Basepath: ..\n"
 "X-Textdomain-Support: yes\n"
 "X-Poedit-SearchPath-0: .\n"
@@ -153,7 +154,12 @@ msgstr "Páginas:"
 msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
 msgstr "Continue lendo <span class=\"meta-nav\">&rarr;</span>"
 
-#: content-section.php:48
+# @ odin
+#: content-section.php:42 inc/kirki/fields/front-page.php:102
+msgid "View"
+msgstr "Visualizar"
+
+#: content-section.php:48 inc/kirki/fields/front-page.php:183
 msgid "Tell me more"
 msgstr "Saiba mais"
 
@@ -237,7 +243,7 @@ msgstr "Artigos Relacionados"
 # @ odin
 #: core/helpers.php:232
 msgid "Home"
-msgstr "Início"
+msgstr "Home"
 
 # @ odin
 #: core/helpers.php:359
@@ -274,19 +280,13 @@ msgid "Page %s"
 msgstr "Página %s"
 
 # @ odin
-#: footer.php:55
+#: footer.php:56
 msgid "All rights reserved"
 msgstr "Todos os direitos reservados"
 
-# @ odin
-#: footer.php:55
-#, fuzzy, php-format
-msgid ""
-"Powered by <a href=\"%s\" rel=\"nofollow\" target=\"_blank\">Haste Store</a> "
-"and <a href=\"%s\" rel=\"nofollow\" target=\"_blank\">WordPress</a>."
-msgstr ""
-"Powered by the <a href=\"%s\" rel=\"nofollow\" target=\"_blank\">Odin</a> "
-"forces and <a href=\"%s\" rel=\"nofollow\" target=\"_blank\">WordPress</a>."
+#: footer.php:60 inc/kirki/fields/footer.php:77
+msgid "Proudly powered by Haste Store and WordPress"
+msgstr "Orgulhosamente desenvolvido com Haste Store e WordPress"
 
 # @ odin
 #: functions.php:55
@@ -306,10 +306,9 @@ msgstr "Area de conteúdo principal do template da home"
 msgid "Main Sidebar"
 msgstr "Sidebar Principal"
 
-# @ odin
 #: functions.php:194
-msgid "Site Main Sidebar"
-msgstr "Sidebar principal do site"
+msgid "Site Main Sidebar, displayed on pages and posts"
+msgstr "Sidebar principal do site, exibida em páginas e posts"
 
 #: functions.php:203
 msgid "WooCommerce Sidebar"
@@ -353,9 +352,8 @@ msgstr "Quarta coluna do rodapé"
 
 # @ odin
 #: functions.php:382
-#, fuzzy
 msgid "Read more &rarr;"
-msgstr "Próxima imagem &rarr;"
+msgstr "Ler mais &rarr;"
 
 # @ odin
 #: header.php:29
@@ -367,20 +365,24 @@ msgstr "Pular para o conteúdo"
 msgid "Toggle navigation"
 msgstr "Alternar navegação"
 
-#: header.php:97
-#, fuzzy
-msgid "My orders"
-msgstr "Exibir borda"
+#: header.php:90
+#, php-format
+msgid "Hello, %s!"
+msgstr "Olá, %s!"
 
-#: header.php:103
+#: header.php:99
+msgid "My orders"
+msgstr "Meus pedidos"
+
+#: header.php:105
 msgid "My account"
 msgstr "Minha conta"
 
-#: header.php:108
+#: header.php:110
 msgid "Logout"
 msgstr "Sair"
 
-#: header.php:117
+#: header.php:118
 msgid "Hello, guest user!"
 msgstr "Olá, visitante!"
 
@@ -392,7 +394,7 @@ msgstr "Login"
 msgid "Register"
 msgstr "Registrar"
 
-#: header.php:134
+#: header.php:136
 msgid "Cart"
 msgstr "Carrinho"
 
@@ -464,6 +466,16 @@ msgstr "Opções do blog e dos posts"
 msgid "Display sidebar on blog and archives"
 msgstr "Exibir sidebar nos blogs e arquivos"
 
+#: inc/kirki/fields/blog.php:24 inc/kirki/fields/blog.php:38
+#: inc/kirki/fields/blog.php:52
+msgid "Enable"
+msgstr "Ativar"
+
+#: inc/kirki/fields/blog.php:25 inc/kirki/fields/blog.php:39
+#: inc/kirki/fields/blog.php:53
+msgid "Disable"
+msgstr "Desativar"
+
 #: inc/kirki/fields/blog.php:33
 msgid "Display sidebar on single posts"
 msgstr "Exibir sidebar em posts"
@@ -472,23 +484,39 @@ msgstr "Exibir sidebar em posts"
 msgid "Display post author"
 msgstr "Exibir autor dos posts"
 
+#: inc/kirki/fields/button.php:8 inc/odin-shortcodes-editor-i18n.php:12
+msgid "Buttons"
+msgstr "Botões"
+
+#: inc/kirki/fields/button.php:9
+msgid "Buttons options"
+msgstr "Opções dos botões"
+
+#: inc/kirki/fields/button.php:20
+msgid "Button typography"
+msgstr "Tipografia dos botões"
+
+#: inc/kirki/fields/button.php:71
+msgid "Button border radius"
+msgstr "Canto arredondado do botão"
+
 #: inc/kirki/fields/color.php:13
 msgid "Primary color"
 msgstr "Cor primária"
 
-#: inc/kirki/fields/color.php:148
+#: inc/kirki/fields/color.php:192
 msgid "Action color"
 msgstr "Cor de ação"
 
-#: inc/kirki/fields/color.php:320
+#: inc/kirki/fields/color.php:306
 msgid "Info color"
 msgstr "Cor de informação"
 
-#: inc/kirki/fields/color.php:435
+#: inc/kirki/fields/color.php:421
 msgid "Warning color"
 msgstr "Cor de aviso"
 
-#: inc/kirki/fields/color.php:542
+#: inc/kirki/fields/color.php:528
 msgid "Danger / Error color"
 msgstr "Cor de erro"
 
@@ -508,12 +536,20 @@ msgstr "Cor de fundo do rodapé"
 msgid "Footer text color"
 msgstr "Cor de texto do rodapé"
 
+#: inc/kirki/fields/footer.php:74
+msgid "Site credit text"
+msgstr "Texto do crédito do site"
+
+#: inc/kirki/fields/footer.php:84
+msgid "Site credit link"
+msgstr "Link do crédito do site"
+
 #: inc/kirki/fields/front-page.php:13
 msgid "Haste Store Custom Settings"
 msgstr "Configurações do Haste Store"
 
 #: inc/kirki/fields/front-page.php:13
-msgid "This options applies to the Home Shop page template."
+msgid "This options applies to the Home page template."
 msgstr "Estas opções se aplicam ao template de página Home Shop."
 
 #: inc/kirki/fields/front-page.php:20
@@ -524,46 +560,53 @@ msgstr "Exibir uma seção com o conteúdo da página e a imagem destacada"
 msgid "Home section height"
 msgstr "Altura da seção da home"
 
-#: inc/kirki/fields/front-page.php:42
+#: inc/kirki/fields/front-page.php:34
+msgid "Full height"
+msgstr "Altura completa"
+
+#: inc/kirki/fields/front-page.php:35
+msgid "Auto height"
+msgstr "Altura automática"
+
+#: inc/kirki/fields/front-page.php:49
 msgid "Override home page title"
 msgstr "Sobrescrever título da página home"
 
-#: inc/kirki/fields/front-page.php:63
+#: inc/kirki/fields/front-page.php:84
 msgid "Display first button"
 msgstr "Exibir primeiro botão"
 
-#: inc/kirki/fields/front-page.php:72
+#: inc/kirki/fields/front-page.php:100
 msgid "Home first button text"
 msgstr "Texto do primeiro botão da home"
 
-#: inc/kirki/fields/front-page.php:81
+#: inc/kirki/fields/front-page.php:116
 msgid "Home first button link"
 msgstr "Link do primeiro botão da home"
 
-#: inc/kirki/fields/front-page.php:90
+#: inc/kirki/fields/front-page.php:132
 msgid "Home first button CSS classes"
 msgstr "Classes do primeiro botão da home"
 
-#: inc/kirki/fields/front-page.php:109
+#: inc/kirki/fields/front-page.php:165
 msgid "Display second button"
 msgstr "Exibir o primeiro botão da home"
 
-#: inc/kirki/fields/front-page.php:118
+#: inc/kirki/fields/front-page.php:181
 msgid "Home second button text"
 msgstr "Texto do segundo botão da home"
 
-#: inc/kirki/fields/front-page.php:127
+#: inc/kirki/fields/front-page.php:197
 msgid "Home second button link"
 msgstr "Link do segundo botão da home"
 
-#: inc/kirki/fields/front-page.php:136
+#: inc/kirki/fields/front-page.php:213
 msgid "Home second button CSS classes"
 msgstr "Classes do segundo botão da home"
 
 #: inc/kirki/fields/header.php:10
-#, fuzzy
 msgid "Header"
-msgstr "Área do Header 1"
+msgstr "Cabeçalho"
 
 #: inc/kirki/fields/header.php:11
 msgid "Header options"
@@ -605,43 +648,66 @@ msgstr "Tipografia"
 msgid "Font options"
 msgstr "Opções de fonte"
 
+#: inc/kirki/fields/type.php:20
+msgid "Body typography"
+msgstr "Tipografia do corpo de texto"
+
+#: inc/kirki/fields/type.php:48
+msgid "Headers typography"
+msgstr "Tipografia dos títulos"
+
+#: inc/kirki/include-kirki.php:54
+msgid ""
+"A plugin is required to take full advantage of all Haste Store theme's "
+"features in the customizer. Don't worry! It's free and fast to install."
+msgstr ""
+"Um plugin é necessário para tirar o máximo proveito de todos os recursos do "
+"tema Haste Store no personalizador. Não se preocupe! É grátis e rápido de "
+"instalar."
+
+#: inc/kirki/include-kirki.php:56
+msgid "Install Now"
+msgstr "Instalar agora"
+
+#: inc/kirki/include-kirki.php:59
+msgid ""
+"You have installed Kirki. Activate it to take advantage of Haste Store "
+"theme's features in the customizer."
+msgstr ""
+"Você instalou o Kirki. Ative-o para tirar proveito dos recursos do tema "
+"Haste Store no personalizador."
+
+#: inc/kirki/include-kirki.php:61
+msgid "Activate Now"
+msgstr "Ativar agora"
+
 #: inc/odin-shortcodes-editor-i18n.php:9
 msgid "Odin shortcodes"
 msgstr "Shortcodes do Odin"
 
 #: inc/odin-shortcodes-editor-i18n.php:10
-#, fuzzy
 msgid "Id"
 msgstr "ID"
 
 #: inc/odin-shortcodes-editor-i18n.php:11
-#, fuzzy
 msgid "default"
-msgstr "Configurações redefinidas para o padrão."
-
-#: inc/odin-shortcodes-editor-i18n.php:12
-msgid "Buttons"
-msgstr "Botões"
+msgstr "padrão"
 
 #: inc/odin-shortcodes-editor-i18n.php:13
-#, fuzzy
 msgid "Button"
-msgstr "Insira o texto deste botão"
+msgstr "Botão"
 
 #: inc/odin-shortcodes-editor-i18n.php:14
-#, fuzzy
 msgid "Title"
 msgstr "Título"
 
 #: inc/odin-shortcodes-editor-i18n.php:15
-#, fuzzy
 msgid "Text"
-msgstr "Insira o texto deste botão"
+msgstr "Texto"
 
 #: inc/odin-shortcodes-editor-i18n.php:16
-#, fuzzy
 msgid "Type"
-msgstr "Tipo"
+msgstr "Tipografia"
 
 #: inc/odin-shortcodes-editor-i18n.php:17
 msgid "Size"
@@ -660,14 +726,12 @@ msgid "xs (extra small)"
 msgstr "xs (extra pequeno)"
 
 #: inc/odin-shortcodes-editor-i18n.php:21
-#, fuzzy
 msgid "Link"
 msgstr "Link"
 
 #: inc/odin-shortcodes-editor-i18n.php:22
-#, fuzzy
 msgid "Class"
-msgstr "Continue lendo <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Classe"
 
 #: inc/odin-shortcodes-editor-i18n.php:23
 msgid "Tooltip"
@@ -679,18 +743,16 @@ msgstr "Direção"
 
 # @ odin
 #: inc/odin-shortcodes-editor-i18n.php:25
-#, fuzzy
 msgid "top"
-msgstr "para"
+msgstr "topo"
 
 #: inc/odin-shortcodes-editor-i18n.php:26
 msgid "left"
 msgstr "esquerda"
 
 #: inc/odin-shortcodes-editor-i18n.php:27
-#, fuzzy
 msgid "right"
-msgstr "Claro"
+msgstr "direita"
 
 #: inc/odin-shortcodes-editor-i18n.php:28
 msgid "bottom"
@@ -717,9 +779,8 @@ msgid "Group button"
 msgstr "Grupo de botões"
 
 #: inc/odin-shortcodes-editor-i18n.php:34
-#, fuzzy
 msgid "List"
-msgstr "Lista de navegação de itens"
+msgstr "Lista"
 
 #: inc/odin-shortcodes-editor-i18n.php:35
 msgid "Alert"
@@ -778,9 +839,8 @@ msgid "responsive"
 msgstr "responsiva"
 
 #: inc/odin-shortcodes-editor-i18n.php:49
-#, fuzzy
 msgid "Border"
-msgstr "Exibir borda"
+msgstr "Borda"
 
 #: inc/odin-shortcodes-editor-i18n.php:50
 #: inc/odin-shortcodes-editor-i18n.php:93
@@ -805,9 +865,8 @@ msgid "active"
 msgstr "ativa"
 
 #: inc/odin-shortcodes-editor-i18n.php:56
-#, fuzzy
 msgid "Value (%)"
-msgstr "Valor padrão"
+msgstr "Valor (%)"
 
 #: inc/odin-shortcodes-editor-i18n.php:57
 msgid "Max value"
@@ -850,14 +909,12 @@ msgid "Zoom"
 msgstr "Zoom"
 
 #: inc/odin-shortcodes-editor-i18n.php:67
-#, fuzzy
 msgid "Width"
-msgstr "Largura:"
+msgstr "Largura"
 
 #: inc/odin-shortcodes-editor-i18n.php:68
-#, fuzzy
 msgid "Height"
-msgstr "Altura:"
+msgstr "Altura"
 
 #: inc/odin-shortcodes-editor-i18n.php:69
 msgid "Map type"
@@ -881,9 +938,8 @@ msgid "TERRAIN"
 msgstr "TERRENO"
 
 #: inc/odin-shortcodes-editor-i18n.php:75
-#, fuzzy
 msgid "Address"
-msgstr "endereço de email para resposta automática e notificação"
+msgstr "Endereço"
 
 #: inc/odin-shortcodes-editor-i18n.php:76
 msgid "Kml"
@@ -958,7 +1014,6 @@ msgid "Tabs"
 msgstr "Tabs"
 
 #: inc/odin-shortcodes-editor-i18n.php:95
-#, fuzzy
 msgid "Icon"
 msgstr "Ícone"
 
@@ -1000,9 +1055,8 @@ msgstr[0] "%d item"
 msgstr[1] "%d itens"
 
 #: inc/woocommerce/template-tags.php:70
-#, fuzzy
 msgid "You are at"
-msgstr "Você não tem permissão para visualizar este anexo"
+msgstr "Você está em"
 
 # @ odin
 #: search.php:16
@@ -1011,13 +1065,23 @@ msgid "Search Results for: %s"
 msgstr "Resultado de Busca por: %s"
 
 # @ odin
-#: searchform.php:12
+#: searchform.php:12 searchform.php:14
 msgid "Search"
 msgstr "Pesquisa"
 
+# @ odin
 #, fuzzy
-#~ msgid "Hello "
-#~ msgstr "Olá"
+#~ msgid ""
+#~ "Powered by <a href=\"%s\" rel=\"nofollow\" target=\"_blank\">Haste Store</"
+#~ "a> and <a href=\"%s\" rel=\"nofollow\" target=\"_blank\">WordPress</a>."
+#~ msgstr ""
+#~ "Powered by the <a href=\"%s\" rel=\"nofollow\" target=\"_blank\">Odin</a> "
+#~ "forces and <a href=\"%s\" rel=\"nofollow\" target=\"_blank\">WordPress</"
+#~ "a>."
+
+# @ odin
+#~ msgid "Site Main Sidebar"
+#~ msgstr "Sidebar principal do site"
 
 # @ odin
 #, fuzzy
@@ -1122,10 +1186,6 @@ msgstr "Pesquisa"
 # @ odin
 #~ msgid "%s"
 #~ msgstr "%s"
-
-# @ odin
-#~ msgid "View %s"
-#~ msgstr "Ver %s"
 
 # @ odin
 #~ msgid "Edit %s"
