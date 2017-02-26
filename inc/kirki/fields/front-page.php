@@ -111,7 +111,7 @@ Haste_Store_Kirki::add_field( 'haste-store', array(
 ) );
 
 Haste_Store_Kirki::add_field( 'haste-store', array(
-	'type'     => 'text',
+	'type'     => 'url',
 	'settings' => 'home-1st-btn-link',
 	 'label'    => __( 'Home first button link', 'haste-store' ),
 	 'section'  => 'static_front_page',
@@ -192,7 +192,7 @@ Haste_Store_Kirki::add_field( 'haste-store', array(
 ) );
 
 Haste_Store_Kirki::add_field( 'haste-store', array(
-	'type'     => 'text',
+	'type'     => 'url',
 	'settings' => 'home-2nd-btn-link',
 	 'label'    => __( 'Home second button link', 'haste-store' ),
 	 'section'  => 'static_front_page',
