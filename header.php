@@ -1,12 +1,12 @@
 <?php
 /**
- * The Header for our theme.
- *
- * Displays all of the <head> section and everything up till #main div
- *
- * @package Odin
- * @since 2.2.0
- */
+* The Header for our theme.
+*
+* Displays all of the <head> section and everything up till #main div
+*
+* @package Odin
+* @since 2.2.0
+*/
 ?><!DOCTYPE html>
 <html class="no-js" <?php language_attributes(); ?>>
 <head>
@@ -32,9 +32,9 @@
 
 	<header id="header" role="banner">
 		<?php
-			$header_image = get_header_image();
-			if ( ! empty( $header_image ) ) :
-		?>
+		$header_image = get_header_image();
+		if ( ! empty( $header_image ) ) :
+			?>
 			<div class="page-header">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
 					<img src="<?php echo esc_url( $header_image ); ?>" height="<?php esc_attr_e( $header_image->height ); ?>" width="<?php esc_attr_e( $header_image->width ); ?>" alt="" />
@@ -45,7 +45,7 @@
 			<div class="container">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle btn btn-" data-toggle="collapse" data-target=".navbar-main-navigation">
-					<span class="sr-only"><?php _e( 'Toggle navigation', 'haste-store' ); ?></span>
+						<span class="sr-only"><?php _e( 'Toggle navigation', 'haste-store' ); ?></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
@@ -53,12 +53,12 @@
 					<div class="navbar-brand">
 						<?php echo is_home() ? '<h1 class="site-title">' : '<span class="h1 site-title">' ; ?>
 							<?php odin_the_custom_logo(); ?>
-						<?php echo is_home() ? '</h1>' : '</span>' ; ?>
+							<?php echo is_home() ? '</h1>' : '</span>' ; ?>
+						</div>
 					</div>
-				</div>
 
-				<nav class="collapse navbar-collapse navbar-main-navigation <?php echo is_woocommerce_activated() ? 'navbar-left' : 'navbar-right'; ?>" role="navigation">
-					<?php
+					<nav class="collapse navbar-collapse navbar-main-navigation <?php echo is_woocommerce_activated() ? 'navbar-left' : 'navbar-right'; ?>" role="navigation">
+						<?php
 						wp_nav_menu(
 							array(
 								'theme_location' => 'main-menu',
@@ -67,16 +67,18 @@
 								'menu_class'     => 'nav navbar-nav',
 								'fallback_cb'    => 'Odin_Bootstrap_Nav_Walker::fallback',
 								'walker'         => new Odin_Bootstrap_Nav_Walker()
-							)
-						);
-					?>
-				</nav><!-- .navbar-collapse -->
+								)
+							);
+							?>
+						</nav><!-- .navbar-collapse -->
 
-	  		<?php if( is_woocommerce_activated() ) : ?>
-	          <?php if ( get_option( 'users_can_register' ) ) : ?>
-	              <nav class="navbar-right">
-	                  <?php if ( is_user_logged_in() ) : ?>
+						<?php if( is_woocommerce_activated() ) : ?>
 
+							<nav class="navbar-right">
+
+								<?php if ( get_option( 'users_can_register' ) ) : ?>
+
+									<?php if ( is_user_logged_in() ) : ?>
 
 										<div class="btn-group hidden-xs" role="group" aria-label="login">
 											<button class="btn btn-outline navbar-btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -87,8 +89,8 @@
 													$username = $user->user_firstname;
 													printf( esc_html__( 'Hello, %s!', 'haste-store' ), $username );
 													?>
-												 </span>
-												 <span class="caret"></span>
+												</span>
+												<span class="caret"></span>
 											</button>
 											<ul class="dropdown-menu">
 												<li>
@@ -110,47 +112,51 @@
 											</ul>
 										</div>
 
-	            <?php else : ?>
+									<?php else : ?>
 
-							<p class="navbar-text hidden-xs">
-								<?php
-							    	_e('Hello, guest user!', 'haste-store');
-								?>
-							</p>
+										<p class="navbar-text hidden-xs">
+											<?php _e('Hello, guest user!', 'haste-store'); ?>
+										</p>
 
-							<div class="btn-group hidden-xs" role="group" aria-label="login">
-								<a class="btn btn-outline navbar-btn" href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>">
-									<?php _e('Login', 'haste-store')?></a>
-								<a class="btn btn-outline navbar-btn" href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>">
-									<?php _e('Register', 'haste-store')?></a>
-							</div>
+										<div class="btn-group hidden-xs" role="group" aria-label="login">
+											<a class="btn btn-outline navbar-btn" href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>">
+											<?php _e('Login', 'haste-store')?></a>
+											<a class="btn btn-outline navbar-btn" href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>">
+											<?php _e('Register', 'haste-store')?></a>
+										</div>
 
 
-	            <?php endif; ?>
+									<?php endif; // is_user_logged_in ?>
 
-							<button type="button" class="btn btn-primary navbar-btn dropdown-toggle btn-cart" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
-								<span class="badge"><?php echo WC()->cart->get_cart_contents_count(); ?></span>
-								<span class="sr-only"><?php _e('Cart', 'haste-store')?></span>
-								<span class="caret"></span>
-							</button>
-							<?php odin_header_cart() ?>
-	            </nav><!-- .navbar-right -->
-	          <?php endif; ?>
-	      <?php endif; ?>
-			</div><!-- .container-->
-		</div><!-- #main-navigation-->
-	</header><!-- #header -->
+								<?php endif; // users_can_register ?>
 
-	<div id="wrapper">
-		<div class="wrapper-row">
+								<button type="button" class="btn btn-primary navbar-btn dropdown-toggle btn-cart" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+									<span class="badge"><?php echo WC()->cart->get_cart_contents_count(); ?></span>
+									<span class="sr-only"><?php _e('Cart', 'haste-store')?></span>
+									<span class="caret"></span>
+								</button>
+								<?php odin_header_cart() ?>
 
-			<?php if( !is_front_page() || !is_home() || !is_page_template( 'page-home.php' ) ) : ?>
-				<div class="col-md-12">
-			<?php endif; ?>
+							</nav><!-- .navbar-right -->
 
-					<?php do_action( 'odin_content_top' ); ?>
+						<?php endif; // is_woocommerce_activated ?>
 
-			<?php if( !is_front_page() || !is_home() || !is_page_template( 'page-home.php' ) ) : ?>
-				</div>
-			<?php endif; ?>
+					</div><!-- .container-->
+
+				</div><!-- #main-navigation-->
+
+			</header><!-- #header -->
+
+			<div id="wrapper">
+				<div class="wrapper-row">
+
+					<?php if( !is_front_page() || !is_home() || !is_page_template( 'page-home.php' ) ) : ?>
+						<div class="col-md-12">
+					<?php endif; ?>
+
+							<?php do_action( 'odin_content_top' ); ?>
+
+					<?php if( !is_front_page() || !is_home() || !is_page_template( 'page-home.php' ) ) : ?>
+						</div>
+					<?php endif; ?>
