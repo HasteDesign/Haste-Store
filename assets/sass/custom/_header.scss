@@ -32,6 +32,11 @@
 			max-height: $navbar-height;
 			width: auto;
 			vertical-align: baseline;
+
+			@media( max-width: $screen-xs-max ) {
+				max-width: 120px;
+				vertical-align: middle;
+			}
 		}
 	}
 
