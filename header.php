@@ -44,7 +44,7 @@
 		<div id="main-navigation" class="navbar navbar-default navbar-fixed-top">
 			<div class="container">
 				<div class="navbar-header">
-					<button type="button" class="navbar-toggle btn btn-" data-toggle="collapse" data-target=".navbar-main-navigation">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-navigation">
 						<span class="sr-only"><?php _e( 'Toggle navigation', 'haste-store' ); ?></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
