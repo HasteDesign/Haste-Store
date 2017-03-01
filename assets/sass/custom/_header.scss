@@ -8,6 +8,8 @@
 
 		.site-title {
 			margin: 0;
+			height: $navbar-height;
+			display: inline-block;
 			font-size: $font-size-h2;
 			color: currentColor;
 
@@ -18,8 +20,15 @@
 
 		a {
 			display: block;
-			line-height: $navbar-height;
 			color: currentColor;
+			line-height: 1.1;
+			position: relative;
+			top: 50%;
+			transform: translateY(-50%);
+
+			@media( max-width: $screen-xs-max ) {
+				max-width: 120px;
+			}
 
 			&:hover {
 				text-decoration: none;
@@ -32,11 +41,6 @@
 			max-height: $navbar-height;
 			width: auto;
 			vertical-align: baseline;
-
-			@media( max-width: $screen-xs-max ) {
-				max-width: 120px;
-				vertical-align: middle;
-			}
 		}
 	}
 
