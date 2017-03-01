@@ -162,10 +162,11 @@ blockquote {
 			margin: 2em 0 1em 0;
 		}
 
-		ul:not([class*="woo"]):not([class*="products"]),
-		ol:not([class*="woo"]) {
+		> ul:not([class*="woo"]):not([class*="products"]),
+		> :not(.woocommerce) > :not(nav) ul:not([class*="woo"]):not([class*="products"]),
+		> ol:not([class*="woo"]) {
 			list-style: none;
-			padding-left: 4em;
+			padding-left: 2.5em;
 			margin-bottom: 1.5em;
 
 			li {
@@ -195,7 +196,8 @@ blockquote {
 			}
 		}
 
-		ul:not([class*="woo"]):not([class*="products"]) {
+		> ul:not([class*="woo"]):not([class*="products"]),
+		> :not(.woocommerce) > :not(nav) ul:not([class*="woo"]):not([class*="products"]) {
 			li {
 				&:before {
 					content: '\203A';
