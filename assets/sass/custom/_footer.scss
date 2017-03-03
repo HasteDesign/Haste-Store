@@ -44,5 +44,22 @@
 		a {
 			color: currentColor;
 		}
+
+		.copy,
+		.credits {
+			text-align: center;
+		}
+
+		.copy {
+			@media ( min-width: $screen-md-min) {
+				text-align: left;
+			}
+		}
+
+		.credits {
+			@media ( min-width: $screen-md-min) {
+				text-align: right;
+			}
+		}
 	}
 }

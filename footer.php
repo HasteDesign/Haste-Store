@@ -52,10 +52,10 @@
 
 		<section class="footer-colophon">
 			<div class="container">
-				<div class="col-md-6">
+				<div class="col-md-6 copy">
 					&copy; <?php echo date( 'Y' ); ?> <a href="<?php echo home_url(); ?>"><?php bloginfo( 'name' ); ?></a> - <?php _e( 'All rights reserved', 'haste-store' ); ?>
 				</div>
-				<div class="col-md-6 text-right">
+				<div class="col-md-6 credits">
 					<a href="<?php echo esc_url( get_theme_mod( 'site-credits-link', 'http://www.hastedesign.com.br' ) ); ?>">
 						<?php echo esc_attr( get_theme_mod( 'site-credits-text', __( 'Proudly powered by Haste Store and WordPress', 'haste-store' ) ) ); ?>
 					</a>
