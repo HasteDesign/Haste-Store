@@ -77,7 +77,12 @@ Haste_Store_Kirki::add_field( 'haste-store', array(
 							.alert-primary
 							.panel-primary,
 							.list-group-item active,
-							.pagination>li>a,',
+							.pagination>li>a,
+							.woocommerce nav.woocommerce-pagination ul>li>a,
+							ul.page-numbers>li>a,
+							.pagination>li>span,
+							.woocommerce nav.woocommerce-pagination ul>li>span,
+							ul.page-numbers>li>span',
 
 			'function' => 'style',
 			'property' => 'color',
@@ -166,7 +171,12 @@ Haste_Store_Kirki::add_field( 'haste-store', array(
 							'.alert-primary',
 							'.panel-primary',
 							'.list-group-item active',
-							'.pagination>li>a'
+							'.pagination>li>a',
+							'.woocommerce nav.woocommerce-pagination ul>li>a',
+							'ul.page-numbers>li>a',
+							'.pagination>li>span',
+							'.woocommerce nav.woocommerce-pagination ul>li>span',
+							'ul.page-numbers>li>span',
 						),
 			'property' => 'color',
 		),
