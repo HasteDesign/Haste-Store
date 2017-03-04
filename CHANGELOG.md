@@ -12,7 +12,16 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Fixed
 ### Security
 
-[Unreleased]: https://bitbucket.org/hastedesign/haste-store/compare/v1.0.0..HEAD
+## [1.0.1]
+### Added
+- Added pagination links and mini cart checkout button to color options in customizer.
+### Fixed
+- Fixed the move of out of stock product to the end of product lists.
+- Fixed the visibility of navbar toggle button.
+- Corrected list styles that were affecting "My Account" nav list.
+
+[Unreleased]: https://bitbucket.org/hastedesign/haste-store/compare/v1.0.1..HEAD
+[1.0.1]: https://bitbucket.org/hastedesign/haste-store/compare/v1.0.1..v1.0.0
 [1.0.0]: https://bitbucket.org/hastedesign/haste-store/compare/v1.0.0..v0.0.3
 [0.0.3]: https://bitbucket.org/hastedesign/haste-store/compare/v0.0.3..v0.0.2
 [0.0.2]: https://bitbucket.org/hastedesign/haste-store/compare/v0.0.2..v0.0.1
