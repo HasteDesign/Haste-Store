@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 ### Added
 - New page template: Page with Banner
+- New page template: Landing Page
 ### Changed
 ### Deprecated
 ### Removed
