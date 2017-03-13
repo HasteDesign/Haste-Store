@@ -26,14 +26,17 @@ p {
 
 #wrapper {
 	overflow: auto;
+	@include make-container();
+	margin-top: 80px;
 
-	body:not(.page-template-page-home) & {
-		@include make-container();
-		margin-top: 80px;
+	body.page-template-page-home &,
+	body.page-template-page-banner & {
+		width: 100%;
+		margin-top: 0;
+	}
 
-		.wrapper-row {
-			@include make-row();
-		}
+	.wrapper-row {
+		@include make-row();
 	}
 
 	@media( max-width: $screen-xs-max ) {

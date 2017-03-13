@@ -29,7 +29,7 @@ get_header();
 
 					<?php
 						// Include the page content template.
-						get_template_part( 'content', 'section' );
+						get_template_part( 'content', 'banner-home' );
 					?>
 
 				</div>
