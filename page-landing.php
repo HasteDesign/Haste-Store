@@ -1,8 +1,8 @@
 <?php
 /**
- * Template Name: Banner
+ * Template Name: Landing page
  *
- * The template for displaying the homepage.
+ * The template for displaying landing pages.
  *
  * @package Odin
  * @since 2.2.0
@@ -18,23 +18,23 @@ get_header();
 				while ( have_posts() ) : the_post();
 			?>
 
-		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-			<?php if ( has_post_thumbnail() ) : ?>
-				<section class="page-section home-banners <?php echo get_theme_mod( 'home-content-section-height', 'full-height' ); ?>"
-						style="background-image: url('<?php the_post_thumbnail_url( 'full' ); ?>')"
+	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+		<?php if ( has_post_thumbnail() ) : ?>
+		<section class="page-section home-banners <?php echo get_theme_mod( 'home-content-section-height', 'full-height' ); ?>"
+				style="background-image: url('<?php the_post_thumbnail_url( 'full' ); ?>')"
 
-					<div class="section-wrapper">
+			<div class="section-wrapper">
 
-						<?php
-							// Include the page content template.
-							get_template_part( 'content', 'banner' );
-						?>
+				<?php
+					// Include the page content template.
+					get_template_part( 'content', 'banner' );
+				?>
 
-					</div>
-				</section>
-			<?php else: ?>
-				<?php the_title( '<header class="entry-header content-section container"><h1 class="entry-title">', '</h1></header><!-- .entry-header -->' ); ?>
-			<?php endif; ?>
+			</div>
+		</section>
+	<?php else: ?>
+		<?php the_title( '<header class="entry-header content-section container"><h1 class="entry-title">', '</h1></header><!-- .entry-header -->' ); ?>
+	<?php endif; ?>
 
 
 		<section class="content-section entry-content container">
