@@ -20,7 +20,7 @@ get_header();
 
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<?php if ( has_post_thumbnail() ) : ?>
-		<section class="page-section home-banners <?php echo get_theme_mod( 'home-content-section-height', 'full-height' ); ?>"
+		<section class="page-section banner <?php echo get_theme_mod( 'home-content-section-height', 'full-height' ); ?>"
 				style="background-image: url('<?php the_post_thumbnail_url( 'full' ); ?>')"
 
 			<div class="section-wrapper">
