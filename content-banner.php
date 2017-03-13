@@ -9,10 +9,12 @@
  */
 ?>
 
-<section class="container section">
-	<header class="section-header">
-		<h2 class="entry-title section-title">
-			<?php the_title(); ?>
-		</h2>
-	</header><!-- .entry-header -->
-</section><!-- #post-## -->
+<div class="section-wrapper">
+	<section class="container section">
+		<header class="section-header">
+			<h2 class="entry-title section-title">
+				<?php the_title(); ?>
+			</h2>
+		</header><!-- .entry-header -->
+	</section><!-- #post-## -->
+</div>
