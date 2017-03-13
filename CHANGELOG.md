@@ -6,13 +6,16 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 ### Added
-- New page template: Page with Banner
-- New page template: Landing Page
 ### Changed
 ### Deprecated
 ### Removed
 ### Fixed
 ### Security
+
+## [1.0.2]
+### Added
+- New page template: Page with Banner
+- New page template: Landing Page
 
 ## [1.0.1]
 ### Added
@@ -22,7 +25,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Fixed the visibility of navbar toggle button.
 - Corrected list styles that were affecting "My Account" nav list.
 
-[Unreleased]: https://bitbucket.org/hastedesign/haste-store/compare/v1.0.1..HEAD
+[Unreleased]: https://bitbucket.org/hastedesign/haste-store/compare/v1.0.2..HEAD
+[1.0.2]: https://bitbucket.org/hastedesign/haste-store/compare/v1.0.2..v1.0.1
 [1.0.1]: https://bitbucket.org/hastedesign/haste-store/compare/v1.0.1..v1.0.0
 [1.0.0]: https://bitbucket.org/hastedesign/haste-store/compare/v1.0.0..v0.0.3
 [0.0.3]: https://bitbucket.org/hastedesign/haste-store/compare/v0.0.3..v0.0.2
