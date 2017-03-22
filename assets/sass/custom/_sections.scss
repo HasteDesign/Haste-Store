@@ -13,6 +13,10 @@
 
 		.admin-bar & {
 			height: calc(100vh - 32px); // Altura total menos a altura da navbar
+
+			@media (max-width: $screen-xs-max) {
+				height: calc(100vh - 105px); // Altura total menos (altura da navbar + altura admin bar)
+			}
 		}
 		.section-wrapper {
 			height: 100%;
@@ -27,11 +31,15 @@
 	}
 
 	.section-wrapper {
-		padding: 120px 0 60px 0;
+		padding: 60px 0;
 		background: rgba(0,0,0,0.3);
 		color: #fff;
 		font-size: 150%;
 		text-align: center;
+
+		@media (min-width: $screen-sm-min) {
+			padding-top: 120px;
+		}
 
 		a {
 			color: #fff;

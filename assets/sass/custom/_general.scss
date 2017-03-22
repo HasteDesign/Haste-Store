@@ -1,7 +1,7 @@
 body {
 	&.admin-bar {
 		@media ( max-width: $screen-xs-max ) {
-			margin-top: $navbar-height + 15px;
+			margin-top: $navbar-height;
 		}
 	}
 }
