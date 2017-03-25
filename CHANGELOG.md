@@ -6,6 +6,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 ### Added
+- Haste Content Image Module widget.
+- Haste Posts Module widget.
 ### Changed
 ### Deprecated
 ### Removed

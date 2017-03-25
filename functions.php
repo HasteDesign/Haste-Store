@@ -32,6 +32,8 @@ require_once get_template_directory() . '/core/classes/class-thumbnail-resizer.p
  * Odin Widgets.
  */
 require_once get_template_directory() . '/core/classes/widgets/class-widget-like-box.php';
+require_once get_template_directory() . '/core/classes/widgets/class-haste-posts-module.php';
+require_once get_template_directory() . '/core/classes/widgets/class-haste-content-image-module.php';
 
 if ( ! function_exists( 'odin_setup_features' ) ) {
 
@@ -319,6 +321,32 @@ function odin_enqueue_scripts() {
 
 // Enqueue dos estilos com prioridade mais alta pra ser carregado depois do WooCommerce
 add_action( 'wp_enqueue_scripts', 'odin_enqueue_scripts', 205 );
+
+/**
+ * Enqueue haste widgets modules scripts.
+ * Enqueue dependency scripts and custom haste widgets modules script in widget
+ * screen and customizer.
+ */
+function haste_store_widgets_modules_assets() {
+	wp_enqueue_script('media-upload');
+	wp_enqueue_script('thickbox');
+	wp_enqueue_style('thickbox');
+
+	wp_enqueue_style( 'wp-color-picker' );
+	wp_enqueue_script( 'wp-color-picker' );
+
+	$colorpicker_l10n = array(
+	    'clear' => __( 'Clear' , 'haste-widgets-modules'),
+	    'defaultString' => __( 'Default', 'haste-widgets-modules' ),
+	    'pick' => __( 'Select Color', 'haste-widgets-modules' ),
+	    'current' => __( 'Current Color', 'haste-widgets-modules' ),
+	);
+	wp_localize_script( 'wp-color-picker', 'wpColorPickerL10n', $colorpicker_l10n );
+
+	wp_enqueue_script( 'haste-widgets', get_template_directory_uri() . 'core/assets/js/haste-widgets.js', array( 'jquery', 'wp-color-picker', 'media-upload', 'thickbox' ) ) ;
+}
+add_action( 'customizer_enqueue_scripts', 'haste_store_widgets_modules_assets' );
+add_action( 'admin_print_scripts-widgets.php', 'haste_store_widgets_modules_assets' );
 
 /**
  * Odin custom stylesheet URI.
