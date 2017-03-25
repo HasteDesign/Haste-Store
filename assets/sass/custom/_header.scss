@@ -47,20 +47,20 @@
     #main-navigation {
 		box-shadow: 0 0 40px rgba(0,0,0,0.1);
 
-		@media ( min-width: $screen-md-min ) {
-			height: $navbar-height;
-
-			.admin-bar &.navbar-fixed-top {
-				margin-top: 32px;
-			}
-		}
-
 		.page-template-page-home & {
 			margin-bottom: 0;
 		}
 
 		.admin-bar &.navbar-fixed-top {
 			margin-top: 46px;
+		}
+
+		@media ( min-width: $screen-md-min ) {
+			height: $navbar-height;
+
+			.admin-bar &.navbar-fixed-top {
+				margin-top: 32px;
+			}
 		}
 
 		.navbar-right {

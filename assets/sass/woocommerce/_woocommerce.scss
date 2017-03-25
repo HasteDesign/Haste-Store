@@ -1675,7 +1675,7 @@ p.demo_store {
 
 	.woocommerce-MyAccount-navigation {
 		float: left;
-		@include make-md-column(4);
+		@include make-md-column(3);
 
 		ul {
 			@extend .list-group;
@@ -1695,7 +1695,7 @@ p.demo_store {
 
 	.woocommerce-MyAccount-content {
 		float: right;
-		@include make-md-column(8);
+		@include make-md-column(9);
 	}
 
 	.addresses {
