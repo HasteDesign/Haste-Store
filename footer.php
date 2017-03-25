@@ -19,33 +19,41 @@
 				<div class="container">
 					<div class="row">
 
-						<div class="footer-widget-area footer-widget-area-1 col-md-3 col-sm-6 col-xs-12">
-							<?php
-								if ( ! dynamic_sidebar( 'footer-widget-area-1' ) ) {
-								}
-							?>
-						</div>
+						<?php if ( is_active_sidebar( 'footer-widget-area-1' ) ) : ?>
+							<div class="footer-widget-area footer-widget-area-1 col-md-3 col-sm-6 col-xs-12">
+								<?php
+									if ( ! dynamic_sidebar( 'footer-widget-area-1' ) ) {
+									}
+								?>
+							</div>
+						<?php endif; ?>
 
-						<div class="footer-widget-area footer-widget-area-2 col-md-3 col-sm-6 col-xs-12">
-							<?php
-								if ( ! dynamic_sidebar( 'footer-widget-area-2' ) ) {
-								}
-							?>
-						</div>
+						<?php if ( is_active_sidebar( 'footer-widget-area-2' ) ) : ?>
+							<div class="footer-widget-area footer-widget-area-2 col-md-3 col-sm-6 col-xs-12">
+								<?php
+									if ( ! dynamic_sidebar( 'footer-widget-area-2' ) ) {
+									}
+								?>
+							</div>
+						<?php endif; ?>
 
-						<div class="footer-widget-area footer-widget-area-3 col-md-3 col-sm-6 col-xs-12">
-							<?php
-								if ( ! dynamic_sidebar( 'footer-widget-area-3' ) ) {
-								}
-							?>
-						</div>
+						<?php if ( is_active_sidebar( 'footer-widget-area-3' ) ) : ?>
+							<div class="footer-widget-area footer-widget-area-3 col-md-3 col-sm-6 col-xs-12">
+								<?php
+									if ( ! dynamic_sidebar( 'footer-widget-area-3' ) ) {
+									}
+								?>
+							</div>
+						<?php endif; ?>
 
-						<div class="footer-widget-area footer-widget-area-4 col-md-3 col-sm-6 col-xs-12">
-							<?php
-								if ( ! dynamic_sidebar( 'footer-widget-area-4' ) ) {
-								}
-							?>
-						</div>
+						<?php if ( is_active_sidebar( 'footer-widget-area-4' ) ) : ?>
+							<div class="footer-widget-area footer-widget-area-4 col-md-3 col-sm-6 col-xs-12">
+								<?php
+									if ( ! dynamic_sidebar( 'footer-widget-area-4' ) ) {
+									}
+								?>
+							</div>
+						<?php endif; ?>
 
 					</div>
 				</div>
