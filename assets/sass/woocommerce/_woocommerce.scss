@@ -2235,3 +2235,21 @@ a .product-title {
 		float: right;
 	}
 }
+
+.add_to_cart_inline {
+	border: 1px solid $gray-light !important;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	.amount {
+		padding: 5px 30px;
+	}
+
+	a {
+		flex: 1 0;
+		margin-left: 15px;
+		max-width: 350px;
+	}
+}
