@@ -1942,7 +1942,7 @@ p.demo_store {
 		ul.payment_methods {
 			@include clearfix();
 			text-align: left;
-			padding: 1em;
+			padding: 0;
 			border-bottom: 1px solid $gray-lighter;
 			margin: 0;
 			list-style: none outside;
@@ -1950,12 +1950,24 @@ p.demo_store {
 			li {
 				line-height: 2;
 				text-align: left;
-				margin: 0;
 				font-weight: normal;
+				margin: 0;
+				padding: 0 10px;
+				border: 1px solid $gray-lighter;
+				cursor: pointer;
 				@include clearfix;
 
 				input {
 					margin: 0 1em 0 0;
+					float: left;
+					height: 4em;
+					cursor: pointer;
+				}
+
+				label {
+					padding: 1em;
+					display: block;
+					cursor: pointer;
 				}
 
 				img {
@@ -1981,7 +1993,7 @@ p.demo_store {
 			box-sizing: border-box;
 			width: 100%;
 			padding: 1em;
-			margin: 1em 0 1em 0;
+			margin: 0 0 10px 0;
 			font-size: 0.92em;
 			border-radius: 0;
 			line-height: 1.5;
