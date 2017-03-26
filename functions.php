@@ -464,3 +464,16 @@ function button_class_add_to_cart_link( $classes, $product ) {
 	 return $fonts;
  }
  add_filter( 'kirki/enqueue_google_fonts', 'enqueue_body_font_variants' );
+
+
+// Get user name
+
+function haste_get_user_name() {
+	$user = wp_get_current_user();
+	$username = $user->user_firstname;
+	if ( ! $username ) {
+		$username = $user->user_login;
+	}
+
+	return $username;
+}

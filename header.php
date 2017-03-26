@@ -86,9 +86,7 @@
 													<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
 													<span class="hidden-xs">
 														<?php
-														$user = wp_get_current_user();
-														$username = $user->user_firstname;
-														printf( esc_html__( 'Hello, %s!', 'haste-store' ), $username );
+														printf( esc_html__( 'Hello, %s!', 'haste-store' ), haste_get_user_name() );
 														?>
 													</span>
 													<span class="caret"></span>
