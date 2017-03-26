@@ -21,6 +21,25 @@
 		.section-wrapper {
 			height: 100%;
 			width: 100%;
+			position: relative;
+
+			&:after {
+				opacity: .3;
+				content: "";
+				border: 1px solid #fff;
+				padding: 10px;
+				position: absolute;
+				margin-bottom: 40px;
+				border-top: 0;
+				border-left: 0;
+				transform: rotate(45deg);
+				animation: up-down 1s ease infinite;
+				transition: all .2s ease;
+			}
+
+			&:hover:after {
+				opacity: 1;
+			}
 		}
 
 		.section {
