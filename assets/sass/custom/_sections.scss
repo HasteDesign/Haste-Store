@@ -117,3 +117,11 @@
 		}
 	}
 }
+
+#home-main-content {
+	> :not([id^="haste"]) {
+		@include make-container();
+		margin-top: 5vh;
+		margin-bottom: 5vh;
+	}
+}
