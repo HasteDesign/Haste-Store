@@ -286,7 +286,7 @@ class Haste_Content_Image_Module extends WP_Widget {
 			echo 'background-image: url(\'' . esc_url( $image ) . '\'); ';
 		}
 
-		echo 'padding-top: ' . $padding . '%; padding-bottom: ' . $padding . '%; ' ;
+		echo 'padding-top: ' . $padding . 'vh; padding-bottom: ' . $padding . 'vh; ' ;
 
 		if ( ! empty( $text_color ) ) :
 			echo 'color: ' . $text_color . '; ' ;

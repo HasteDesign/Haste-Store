@@ -103,17 +103,20 @@
 		&.content-center {
 			@include make-md-column(12);
 			text-align: center;
+			padding: 0;
 		}
 
 		&.content-left {
 			@include make-md-column(6);
 			text-align: left;
+			padding: 0;
 		}
 
 		&.content-right {
 			@include make-md-column(6);
 			@include make-md-column-offset(6);
 			text-align: left;
+			padding: 0;
 		}
 	}
 }
