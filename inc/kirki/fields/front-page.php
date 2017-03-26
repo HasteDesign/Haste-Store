@@ -43,6 +43,32 @@ Haste_Store_Kirki::add_field( 'haste-store', array(
 	   ),
   ) );
 
+  Haste_Store_Kirki::add_field( 'haste-store', array(
+  	'type'        => 'color',
+  	'settings'    => 'banner-overlay',
+  	'label'       => __( 'Banner overlay color', 'haste-store' ),
+  	'section'     => 'static_front_page',
+  	'default'     => 'rgba(0,0,0,0.3)',
+  	'priority'    => 10,
+  	'choices'     => array(
+  		'alpha' => true,
+  	),
+  	'transport'	=> 'postMessage',
+  	'js_vars'   => array(
+  		array(
+  			'element'  => '.banner .section-wrapper',
+  			'function' => 'style',
+  			'property' => 'background-color',
+  		),
+  	),
+  	'output'	=> array(
+  		array(
+  			'element' => '.banner .section-wrapper',
+  			'property' => 'background-color',
+  		),
+  	),
+  ) );
+
  Haste_Store_Kirki::add_field( 'haste-store', array(
  	 'type'     => 'text',
  	 'settings' => 'home-content-section-title',

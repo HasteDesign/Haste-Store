@@ -19,7 +19,7 @@ if ( ! function_exists( 'odin_classes_page_full' ) ) {
     	if ( ( is_woocommerce_activated() && is_woocommerce() ) || is_home() || is_front_page() ) {
     		return 'col-md-12';
     	} else {
-        	return 'col-md-8 col-md-offset-2';
+        	return 'col-md-10 col-md-offset-1';
         }
 	}
 }

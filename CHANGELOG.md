@@ -6,6 +6,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 ### Added
+- Customizer option for the color of banner overlay.
 - Haste Content Image Module widget.
 - Haste Posts Module widget.
 ### Changed

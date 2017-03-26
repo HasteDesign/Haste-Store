@@ -1675,7 +1675,7 @@ p.demo_store {
 
 	.woocommerce-MyAccount-navigation {
 		float: left;
-		@include make-md-column(4);
+		@include make-md-column(3);
 
 		ul {
 			@extend .list-group;
@@ -1695,7 +1695,7 @@ p.demo_store {
 
 	.woocommerce-MyAccount-content {
 		float: right;
-		@include make-md-column(8);
+		@include make-md-column(9);
 	}
 
 	.addresses {
@@ -2233,5 +2233,23 @@ a .product-title {
 #customer_login {
 	.button {
 		float: right;
+	}
+}
+
+.add_to_cart_inline {
+	border: 1px solid $gray-light !important;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	.amount {
+		padding: 5px 30px;
+	}
+
+	a {
+		flex: 1 0;
+		margin-left: 15px;
+		max-width: 350px;
 	}
 }

@@ -12,8 +12,12 @@
 	}
 
 	.footer-widgets {
-		@media( min-width: $screen-md-min ) {
-			padding: 60px 0;
+
+		.footer-widget-area {
+			@media( min-width: $screen-md-min ) {
+				padding-top: 60px;
+				padding-bottom: 60px;
+			}
 		}
 
 		> .container > .row {
@@ -23,6 +27,11 @@
 
 		@media( max-width: $screen-sm-max ) {
 			padding: 20px 0;
+			
+			.footer-widget-area {
+				padding-top: 0;
+				padding-bottom: 0;
+			}
 
 			.widget {
 				padding: 20px 0;

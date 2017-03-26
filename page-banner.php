@@ -38,6 +38,7 @@ get_header();
 
 
 		<section class="content-section entry-content container">
+			<div class="<?php echo odin_classes_page_full(); ?>">
 				<?php
 					the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'haste-store' ) );
 					wp_link_pages( array(
@@ -47,6 +48,8 @@ get_header();
 						'link_after'  => '</span>',
 					) );
 				?>
+			</div>
+		</div>
 		</section><!-- .entry-content -->
 
 	</article>
