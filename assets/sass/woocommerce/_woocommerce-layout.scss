@@ -602,7 +602,7 @@
 
 
 .woocommerce-checkout {
-	.col2-set {
+	#customer_details {
 		margin: 30px 0;
 
 		.col-1,
@@ -612,4 +612,8 @@
 			padding: 0;
 		}
 	}
+}
+
+.col2-set.addresses {
+	margin: 0 15px;
 }
