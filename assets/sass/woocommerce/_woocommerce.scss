@@ -1236,6 +1236,7 @@ p.demo_store {
 	.widget_shopping_cart {
 		.total {
 			border-top: 1px solid $gray-lighter;
+			border-bottom: 1px solid $gray-lighter;
 			padding: 10px;
 			margin: 0;
 			text-align: center;
@@ -1278,13 +1279,11 @@ p.demo_store {
 			padding: 10px;
 			text-align: center;
 			display: flex;
+			flex-wrap: wrap;
 
-			@media (max-width: $screen-sm-max) {
-				flex-wrap: wrap;
-
-				a {
-					flex: 1 0 auto;
-				}
+			a {
+				flex: 1 0 auto;
+				display: block;
 			}
 		}
 	}
