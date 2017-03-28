@@ -24,7 +24,7 @@ p.demo_store {
 	background-color: $primary;
 	color: $primarytext;
 	z-index: 99998;
-	box-shadow: 0 1px 1em rgba(0,0,0,0.2);
+	box-shadow: 0 1px 1em rgba(#000,0.2);
 	a {
 		color: $primarytext;
 	}
@@ -1062,7 +1062,7 @@ p.demo_store {
 
 		.alt td,
 		.alt th {
-			background: rgba(0,0,0,0.025);
+			background: rgba(#000,0.025);
 		}
 	}
 
@@ -1567,7 +1567,7 @@ p.demo_store {
 		}
 
 		.price_slider_amount {
-			text-align: right;
+			text-align: left;
 			line-height: 2.4;
 			font-size: 0.8751em;
 
@@ -1576,38 +1576,38 @@ p.demo_store {
 			}
 
 			.button {
-				float: left;
+				float: right;
 			}
 		}
 
 		.ui-slider {
 			position: relative;
 			text-align: left;
-			margin-left: .5em;
-			margin-right: .5em;
+			margin: 3em 0;
 		}
 
 		.ui-slider .ui-slider-handle {
 			position: absolute;
 			z-index: 2;
-			width: 1em;
-			height: 1em;
+			width: 2em;
+			height: 2em;
 			background-color: $primary;
 			border-radius: 1em;
 			cursor: ew-resize;
 			outline: none;
-			top: -.3em;
+			top: -.5em;
 			background-image: repeating-linear-gradient(
 			-45deg,
-			rgba(255,255,255,0.3),
-			rgba(0,0,0,0.05) 2px,
-			rgba(255,255,255,0.3) 2px,
-			rgba(255,255,255,0.3) 4px,
-			rgba(0,0,0,0.05) 4px
+			rgba(#fff,0.1),
+			rgba(#000,0.05) 2px,
+			rgba(#fff,0.1) 2px,
+			rgba(#fff,0.1) 4px,
+			rgba(#000,0.05) 4px
 			);
+			box-shadow: 0 2px 5px rgba(#000,0.5);
 
 			//&:last-child {
-				margin-left: -.5em;
+				margin-left: -1em;
 			//}
 		}
 
@@ -1618,21 +1618,24 @@ p.demo_store {
 			display: block;
 			border: 0;
 			border-radius: 1em;
-			background-color: $primary;
+			background-color: currentColor;
+			box-shadow: inset 0 0 12px rgba(#fff,0.8);
+			margin-top: .2em;
 		}
 
 		.price_slider_wrapper .ui-widget-content {
 			border-radius: 1em;
 			background-color: $primary;
-			box-shadow: inset 0 0 20px rgba(80,80,80,0.6);
+			box-shadow: inset 0 0 20px rgba(#000,0.9);
 			border: 0;
 		}
 
 		.ui-slider-horizontal {
-			height: .5em;
+			height: 1em;
 		}
 
 		.ui-slider-horizontal .ui-slider-range {
+			height: 1em !important;
 			top: 0;
 			height: 100%;
 		}
