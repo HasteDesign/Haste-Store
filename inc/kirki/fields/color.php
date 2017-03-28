@@ -584,10 +584,23 @@ Haste_Store_Kirki::add_field( 'haste-store', array(
 							.has-error.checkbox-inline label,
 							.woocommerce form .form-row .required,
 							.woocommerce form .form-row.woocommerce-invalid label,
-							.woocommerce div.product .out-of-stock',
-
+							.woocommerce div.product .out-of-stock,
+							.woocommerce .widget_layered_nav_filters ul li a:before',
 			'function' => 'style',
 			'property' => 'color',
+		),
+		array(
+			'element'  => 	'.woocommerce a.remove,
+							.product-remove',
+			'function' => 	'style',
+			'property' => 	'color',
+			'suffix'   => 	' !important',
+		),
+		array(
+			'element'  => 	'.woocommerce a.remove:hover,',
+			'function' => 	'style',
+			'property' => 	'background-color',
+			'suffix'   => 	' !important',
 		),
 		array(
 			'element'  => 	'.panel-danger,
@@ -641,8 +654,24 @@ Haste_Store_Kirki::add_field( 'haste-store', array(
 							'.woocommerce form .form-row .required',
 							'.woocommerce form .form-row.woocommerce-invalid label',
 							'.woocommerce div.product .out-of-stock',
+							'.woocommerce .widget_layered_nav_filters ul li a:before',
 						),
 			'property' => 'color',
+		),
+		array(
+			'element' => array(
+							'.woocommerce a.remove',
+							'.product-remove',
+						),
+			'property' => 	'color',
+			'suffix'   => 	' !important',
+		),
+		array(
+			'element' => array(
+							'.woocommerce a.remove:hover',
+						),
+			'property' => 	'background-color',
+			'suffix'   => 	' !important',
 		),
 		array(
 			'element'  => array(

@@ -111,15 +111,10 @@ p.demo_store {
 		text-align: center;
 		line-height: 1;
 		border-radius: 100%;
-		color: red !important;
+		color: inherit !important;
 		text-decoration: none;
 		font-weight: 700;
 		border: 0;
-
-		&:hover {
-			color: #fff !important;
-			background: red;
-		}
 	}
 
 	.woocommerce-message,
