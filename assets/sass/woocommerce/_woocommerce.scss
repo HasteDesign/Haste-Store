@@ -1269,8 +1269,14 @@ p.demo_store {
 			}
 
 			.empty {
+				opacity: .3;
 				padding: 1em;
 				text-align: center;
+				color: currentColor;
+				text-align: center;
+				font-size: 1.5em;
+				height: 100%;
+				width: 100%;
 			}
 		}
 
