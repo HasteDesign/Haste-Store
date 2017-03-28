@@ -128,9 +128,38 @@ input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type=
  * BreadCrumbs
  */
 
+.breadcrumb-wrapper {
+	width: 100%;
+
+	body.page-template-page-banner & {
+		position: absolute;
+		top: 80px;
+		z-index: 9;
+		color: rgba(#fff, .6);
+		text-shadow: 0 0 20px rgba(#000, .5);
+
+		a {
+			color: #fff;
+		}
+	}
+
+	body.page-template-page-banner.admin-bar & {
+		top: 115px;
+
+		@media( max-width: $screen-sm-max ) {
+			top: 125px;
+		}
+	}
+
+	body.page-template-page-landing & {
+
+	}
+}
+.woocommerce .woocommerce-breadcrumb,
 .woocommerce-breadcrumb {
 	margin-bottom: 20px;
 	font-size: .9em;
+	@include make-container();
 }
 
 /**
