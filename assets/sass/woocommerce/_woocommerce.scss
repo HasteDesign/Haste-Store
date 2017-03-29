@@ -24,7 +24,7 @@ p.demo_store {
 	background-color: $primary;
 	color: $primarytext;
 	z-index: 99998;
-	box-shadow: 0 1px 1em rgba(0,0,0,0.2);
+	box-shadow: 0 1px 1em rgba(#000,0.2);
 	a {
 		color: $primarytext;
 	}
@@ -111,15 +111,9 @@ p.demo_store {
 		text-align: center;
 		line-height: 1;
 		border-radius: 100%;
-		color: red !important;
 		text-decoration: none;
 		font-weight: 700;
 		border: 0;
-
-		&:hover {
-			color: #fff !important;
-			background: red;
-		}
 	}
 
 	.woocommerce-message,
@@ -173,8 +167,6 @@ p.demo_store {
 
 	.woocommerce-breadcrumb {
 		@include clearfix();
-		margin: 0 0 1em;
-		padding: 0;
 		font-size: 0.92em;
 		color: $subtext;
 
@@ -892,11 +884,12 @@ p.demo_store {
 
 		&:before {
 			content: "\73\73\73\73\73";
-			color: darken( $secondary, 10% );
+			color: currentColor;
 			float: left;
 			top: 0;
 			left: 0;
 			position: absolute;
+			opacity: .5;
 		}
 
 		span {
@@ -1064,7 +1057,7 @@ p.demo_store {
 
 		.alt td,
 		.alt th {
-			background: rgba(0,0,0,0.025);
+			background: rgba(#000,0.025);
 		}
 	}
 
@@ -1243,6 +1236,7 @@ p.demo_store {
 	.widget_shopping_cart {
 		.total {
 			border-top: 1px solid $gray-lighter;
+			border-bottom: 1px solid $gray-lighter;
 			padding: 10px;
 			margin: 0;
 			text-align: center;
@@ -1269,8 +1263,14 @@ p.demo_store {
 			}
 
 			.empty {
+				opacity: .3;
 				padding: 1em;
 				text-align: center;
+				color: currentColor;
+				text-align: center;
+				font-size: 1.5em;
+				height: 100%;
+				width: 100%;
 			}
 		}
 
@@ -1279,13 +1279,11 @@ p.demo_store {
 			padding: 10px;
 			text-align: center;
 			display: flex;
+			flex-wrap: wrap;
 
-			@media (max-width: $screen-sm-max) {
-				flex-wrap: wrap;
-
-				a {
-					flex: 1 0 auto;
-				}
+			a {
+				flex: 1 0 auto;
+				display: block;
 			}
 		}
 	}
@@ -1563,47 +1561,45 @@ p.demo_store {
 		}
 
 		.price_slider_amount {
-			text-align: right;
+			text-align: left;
 			line-height: 2.4;
 			font-size: 0.8751em;
 
 			.button {
 				font-size: 1.15em;
-			}
-
-			.button {
-				float: left;
+				float: right;
+				margin-top: -.5em;
 			}
 		}
 
 		.ui-slider {
 			position: relative;
 			text-align: left;
-			margin-left: .5em;
-			margin-right: .5em;
+			margin: 3em 0;
 		}
 
 		.ui-slider .ui-slider-handle {
 			position: absolute;
 			z-index: 2;
-			width: 1em;
-			height: 1em;
+			width: 2em;
+			height: 2em;
 			background-color: $primary;
 			border-radius: 1em;
 			cursor: ew-resize;
 			outline: none;
-			top: -.3em;
+			top: -.5em;
 			background-image: repeating-linear-gradient(
 			-45deg,
-			rgba(255,255,255,0.3),
-			rgba(0,0,0,0.05) 2px,
-			rgba(255,255,255,0.3) 2px,
-			rgba(255,255,255,0.3) 4px,
-			rgba(0,0,0,0.05) 4px
+			rgba(#fff,0.1),
+			rgba(#000,0.05) 2px,
+			rgba(#fff,0.1) 2px,
+			rgba(#fff,0.1) 4px,
+			rgba(#000,0.05) 4px
 			);
+			box-shadow: 0 1px 2px currentColor;
 
 			//&:last-child {
-				margin-left: -.5em;
+				margin-left: -1em;
 			//}
 		}
 
@@ -1614,18 +1610,17 @@ p.demo_store {
 			display: block;
 			border: 0;
 			border-radius: 1em;
-			background-color: $primary;
+			background-color: currentColor;
 		}
 
 		.price_slider_wrapper .ui-widget-content {
 			border-radius: 1em;
-			background-color: $primary;
-			box-shadow: inset 0 0 20px rgba(80,80,80,0.6);
+			background-color: currentColor;
 			border: 0;
 		}
 
 		.ui-slider-horizontal {
-			height: .5em;
+			height: 1em;
 		}
 
 		.ui-slider-horizontal .ui-slider-range {

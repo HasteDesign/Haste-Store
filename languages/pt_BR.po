@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Haste Store 0.0.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-26 00:22-0300\n"
-"PO-Revision-Date: 2017-02-26 00:22-0300\n"
+"POT-Creation-Date: 2017-03-28 21:27-0300\n"
+"PO-Revision-Date: 2017-03-28 21:38-0300\n"
 "Last-Translator: Anyssa Ferreira <anyssacristina@yahoo.com.br>\n"
 "Language-Team: Haste Design\n"
 "Language: pt_BR\n"
@@ -113,6 +113,27 @@ msgid "Website"
 msgstr "Website"
 
 # @ odin
+#: content-banner-home.php:27 content.php:63 page-banner.php:43
+#: page-landing.php:44
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Continue lendo <span class=\"meta-nav\">&rarr;</span>"
+
+# @ odin
+#: content-banner-home.php:29 content-page.php:17 content.php:65
+#: page-banner.php:45 page-landing.php:46
+msgid "Pages:"
+msgstr "Páginas:"
+
+# @ odin
+#: content-banner-home.php:42 inc/kirki/fields/front-page.php:128
+msgid "View"
+msgstr "Visualizar"
+
+#: content-banner-home.php:48 inc/kirki/fields/front-page.php:209
+msgid "Tell me more"
+msgstr "Saiba mais"
+
+# @ odin
 #: content-none.php:11
 msgid "Nothing Found"
 msgstr "Nada Encontrado"
@@ -145,25 +166,6 @@ msgstr ""
 "pesquisa pode ajudar."
 
 # @ odin
-#: content-page.php:17 content-section.php:29 content.php:65
-msgid "Pages:"
-msgstr "Páginas:"
-
-# @ odin
-#: content-section.php:27 content.php:63
-msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
-msgstr "Continue lendo <span class=\"meta-nav\">&rarr;</span>"
-
-# @ odin
-#: content-section.php:42 inc/kirki/fields/front-page.php:102
-msgid "View"
-msgstr "Visualizar"
-
-#: content-section.php:48 inc/kirki/fields/front-page.php:183
-msgid "Tell me more"
-msgstr "Saiba mais"
-
-# @ odin
 #: content.php:78
 msgid "Tagged as:"
 msgstr "Marcado como:"
@@ -173,6 +175,221 @@ msgstr "Marcado como:"
 msgid "Add a menu"
 msgstr "Adicionar um menu"
 
+#: core/classes/widgets/class-haste-content-image-module.php:20
+msgid "Haste Content and Image Module"
+msgstr "Haste Módulo de Conteúdo e Imagem"
+
+#: core/classes/widgets/class-haste-content-image-module.php:21
+msgid ""
+"Displays title, content (shotcodes included), a button and image as "
+"background, with few options."
+msgstr ""
+"Exibe um título, conteúdo (inclusive shortcodes), um botão e imagem como "
+"background, com algumas opções."
+
+#: core/classes/widgets/class-haste-content-image-module.php:35
+#: core/classes/widgets/class-haste-content-image-module.php:245
+#: core/classes/widgets/class-haste-posts-module.php:33
+#: core/classes/widgets/class-haste-posts-module.php:187
+msgid "My module title"
+msgstr "Título do meu módulo"
+
+#: core/classes/widgets/class-haste-content-image-module.php:54
+msgid "Content options"
+msgstr "Opções de conteúdo"
+
+#: core/classes/widgets/class-haste-content-image-module.php:57
+#: core/classes/widgets/class-haste-posts-module.php:49
+#: core/classes/widgets/class-widget-like-box.php:48
+msgid "Title:"
+msgstr "Título:"
+
+#: core/classes/widgets/class-haste-content-image-module.php:63
+#: core/classes/widgets/class-haste-posts-module.php:55
+msgid "Subtitle"
+msgstr "Subtítulo"
+
+#: core/classes/widgets/class-haste-content-image-module.php:69
+#: inc/odin-shortcodes-editor-i18n.php:39
+msgid "Content"
+msgstr "Conteúdo"
+
+#: core/classes/widgets/class-haste-content-image-module.php:75
+msgid "Text Color"
+msgstr "Cor do texto"
+
+#: core/classes/widgets/class-haste-content-image-module.php:81
+msgid "Button text"
+msgstr "Texto do botão"
+
+#: core/classes/widgets/class-haste-content-image-module.php:86
+msgid "Button link:"
+msgstr "Link do botão:"
+
+#: core/classes/widgets/class-haste-content-image-module.php:92
+msgid "Button CSS classes"
+msgstr "Classes CSS do botão"
+
+#: core/classes/widgets/class-haste-content-image-module.php:99
+msgid "Content alignment"
+msgstr "Alinhamento do conteúdo"
+
+#: core/classes/widgets/class-haste-content-image-module.php:106
+msgid "Content centered"
+msgstr "Conteúdo centralizado"
+
+#: core/classes/widgets/class-haste-content-image-module.php:111
+msgid "Content on left"
+msgstr "Conteúdo à esquerda"
+
+#: core/classes/widgets/class-haste-content-image-module.php:116
+msgid "Content on right"
+msgstr "Conteúdo à direita"
+
+#: core/classes/widgets/class-haste-content-image-module.php:123
+msgid "Area padding (%)"
+msgstr "Padding da área (%)"
+
+#: core/classes/widgets/class-haste-content-image-module.php:128
+msgid "Background options"
+msgstr "Opções de background"
+
+#: core/classes/widgets/class-haste-content-image-module.php:133
+msgid "Image:"
+msgstr "Imagem:"
+
+# @ odin
+#: core/classes/widgets/class-haste-content-image-module.php:135
+msgid "Set image "
+msgstr "Definir imagem"
+
+# @ odin
+#: core/classes/widgets/class-haste-content-image-module.php:136
+msgid "Remove"
+msgstr "Remover"
+
+#: core/classes/widgets/class-haste-content-image-module.php:140
+msgid "Image vertical position (%)"
+msgstr "Posição vertical da imagem (%)"
+
+#: core/classes/widgets/class-haste-content-image-module.php:146
+msgid "Image horizontal position (%)"
+msgstr "Posição horizontal da imagem (%)"
+
+#: core/classes/widgets/class-haste-content-image-module.php:152
+msgid "Image size (%)"
+msgstr "Tamanho da imagem (%)"
+
+#: core/classes/widgets/class-haste-content-image-module.php:156
+msgid "Expand image to cover the entire module area"
+msgstr "Expandir a imagem para cobrir toda a área do módulo"
+
+#: core/classes/widgets/class-haste-content-image-module.php:161
+msgid "Fix the background image"
+msgstr "Fixar imagem de background"
+
+#: core/classes/widgets/class-haste-content-image-module.php:167
+msgid "Background image repeat"
+msgstr "Repetição da imagem do background"
+
+#: core/classes/widgets/class-haste-content-image-module.php:174
+msgid "No repeat"
+msgstr "Não repetir"
+
+#: core/classes/widgets/class-haste-content-image-module.php:179
+msgid "Vertical and horizontal repeat"
+msgstr "Repetir na vertical e horizontal"
+
+#: core/classes/widgets/class-haste-content-image-module.php:184
+msgid "Horizontal repeat"
+msgstr "Repetir na horizontal"
+
+#: core/classes/widgets/class-haste-content-image-module.php:189
+msgid "Vertical repeat"
+msgstr "Repetir na vertical"
+
+#: core/classes/widgets/class-haste-content-image-module.php:196
+msgid "Background Color"
+msgstr "Cor de fundo"
+
+#: core/classes/widgets/class-haste-posts-module.php:18
+msgid "Haste Posts Module"
+msgstr "Haste Módulo de Posts"
+
+#: core/classes/widgets/class-haste-posts-module.php:19
+msgid "Display blog posts."
+msgstr "Exibir posts do blog"
+
+#: core/classes/widgets/class-haste-posts-module.php:61
+msgid "Number of posts to display (use -1 to show all posts)"
+msgstr "Número de posts a serem exibidos (use -1 para exibir todos os posts)"
+
+#: core/classes/widgets/class-haste-posts-module.php:65
+msgid "Post selection criteria"
+msgstr "Critérios de seleção de posts"
+
+#: core/classes/widgets/class-haste-posts-module.php:68
+msgid "From a category (category slug)"
+msgstr "De uma categoria (slug da categoria)"
+
+#: core/classes/widgets/class-haste-posts-module.php:74
+msgid "From keyword"
+msgstr "De palavra chave"
+
+# @ odin
+#: core/classes/widgets/class-haste-posts-module.php:81
+msgid "Order posts by"
+msgstr "Ordenar posts por"
+
+#: core/classes/widgets/class-haste-posts-module.php:88
+msgid "Date"
+msgstr "Data"
+
+#: core/classes/widgets/class-haste-posts-module.php:93
+#: inc/odin-shortcodes-editor-i18n.php:14
+msgid "Title"
+msgstr "Título"
+
+#: core/classes/widgets/class-haste-posts-module.php:98
+msgid "Random"
+msgstr "Aleatório"
+
+#: core/classes/widgets/class-haste-posts-module.php:106
+msgid "Order"
+msgstr "Ordem"
+
+#: core/classes/widgets/class-haste-posts-module.php:113
+msgid "Descending"
+msgstr "Descendente"
+
+#: core/classes/widgets/class-haste-posts-module.php:118
+msgid "Ascending"
+msgstr "Ascendente"
+
+#: core/classes/widgets/class-haste-posts-module.php:125
+msgid "CSS posts classes"
+msgstr "Classes CSS dos posts"
+
+#: core/classes/widgets/class-haste-posts-module.php:129
+msgid "Post display options"
+msgstr "Opções de exibição de posts"
+
+#: core/classes/widgets/class-haste-posts-module.php:132
+msgid "Display post thumbnails"
+msgstr "Exibir imagem dos posts"
+
+#: core/classes/widgets/class-haste-posts-module.php:137
+msgid "Display post excerpts"
+msgstr "Exibir resumo do post"
+
+#: core/classes/widgets/class-haste-posts-module.php:142
+msgid "Display post dates"
+msgstr "Exibir data dos posts"
+
+#: core/classes/widgets/class-haste-posts-module.php:287
+msgid "Sorry, no posts matched your criteria."
+msgstr "Desculpe, nenhum post atendeu aos seus critérios."
+
 #: core/classes/widgets/class-widget-like-box.php:20
 msgid "Facebook Like Box"
 msgstr "Caixa de Curtir do Facebook"
@@ -180,10 +397,6 @@ msgstr "Caixa de Curtir do Facebook"
 #: core/classes/widgets/class-widget-like-box.php:21
 msgid "This widget includes a facebook like box on your blog"
 msgstr "Esse widget inclui a caixa de curtir do Facebook em seu site"
-
-#: core/classes/widgets/class-widget-like-box.php:48
-msgid "Title:"
-msgstr "Título:"
 
 #: core/classes/widgets/class-widget-like-box.php:54
 msgid "Facebook Page URL:"
@@ -280,78 +493,95 @@ msgid "Page %s"
 msgstr "Página %s"
 
 # @ odin
-#: footer.php:56
+#: footer.php:66
 msgid "All rights reserved"
 msgstr "Todos os direitos reservados"
 
-#: footer.php:60 inc/kirki/fields/footer.php:77
+#: footer.php:70 inc/kirki/fields/footer.php:77
 msgid "Proudly powered by Haste Store and WordPress"
 msgstr "Orgulhosamente desenvolvido com Haste Store e WordPress"
 
 # @ odin
-#: functions.php:55
+#: functions.php:57
 msgid "Main Menu"
 msgstr "Menu Principal"
 
-#: functions.php:181
+#: functions.php:183
 msgid "Home main content"
 msgstr "Conteúdo principal da home"
 
-#: functions.php:183
+#: functions.php:185
 msgid "Home page template main content area"
 msgstr "Area de conteúdo principal do template da home"
 
 # @ odin
-#: functions.php:192
+#: functions.php:194
 msgid "Main Sidebar"
 msgstr "Sidebar Principal"
 
-#: functions.php:194
+#: functions.php:196
 msgid "Site Main Sidebar, displayed on pages and posts"
 msgstr "Sidebar principal do site, exibida em páginas e posts"
 
-#: functions.php:203
+#: functions.php:205
 msgid "WooCommerce Sidebar"
 msgstr "Sidebar do WooCommerce"
 
-#: functions.php:205
+#: functions.php:207
 msgid "Displays widgets on WooCommerce pages"
 msgstr "Exibe widgets nas páginas do WooCommerce"
 
-#: functions.php:214 functions.php:225
+#: functions.php:216 functions.php:227
 msgid "Footer area 1"
 msgstr "Área do rodapé 1"
 
-#: functions.php:216 functions.php:227
+#: functions.php:218 functions.php:229
 msgid "First footer column "
 msgstr "Primeira coluna do rodapé"
 
-#: functions.php:236
+#: functions.php:238
 msgid "Footer area 2"
 msgstr "Área do rodapé 2"
 
-#: functions.php:238
+#: functions.php:240
 msgid "Second footer column "
 msgstr "Segunda coluna do rodapé"
 
-#: functions.php:247
+#: functions.php:249
 msgid "Footer area 3"
 msgstr "Área do rodapé 3"
 
-#: functions.php:249
+#: functions.php:251
 msgid "Third footer column "
 msgstr "Terceira coluna do rodapé"
 
-#: functions.php:258
+#: functions.php:260
 msgid "Footer area 4"
 msgstr "Área do rodapé 4"
 
-#: functions.php:260
+#: functions.php:262
 msgid "Fourth footer column "
 msgstr "Quarta coluna do rodapé"
 
+#: functions.php:339 inc/odin-shortcodes-editor-i18n.php:63
+msgid "Clear"
+msgstr "Limpar"
+
+#: functions.php:340
+msgid "Default"
+msgstr "Padrão"
+
 # @ odin
-#: functions.php:382
+#: functions.php:341
+msgid "Select Color"
+msgstr "Selecionar cor"
+
+#: functions.php:342
+msgid "Current Color"
+msgstr "Cor atual"
+
+# @ odin
+#: functions.php:410
 msgid "Read more &rarr;"
 msgstr "Ler mais &rarr;"
 
@@ -365,36 +595,36 @@ msgstr "Pular para o conteúdo"
 msgid "Toggle navigation"
 msgstr "Alternar navegação"
 
-#: header.php:90
+#: header.php:89
 #, php-format
 msgid "Hello, %s!"
 msgstr "Olá, %s!"
 
-#: header.php:99
+#: header.php:98
 msgid "My orders"
 msgstr "Meus pedidos"
 
-#: header.php:105
+#: header.php:104
 msgid "My account"
 msgstr "Minha conta"
 
-#: header.php:110
+#: header.php:109
 msgid "Logout"
 msgstr "Sair"
 
-#: header.php:118
+#: header.php:117
 msgid "Hello, guest user!"
 msgstr "Olá, visitante!"
 
-#: header.php:123
+#: header.php:122
 msgid "Login"
 msgstr "Login"
 
-#: header.php:125
+#: header.php:124
 msgid "Register"
 msgstr "Registrar"
 
-#: header.php:136
+#: header.php:135
 msgid "Cart"
 msgstr "Carrinho"
 
@@ -496,7 +726,7 @@ msgstr "Opções dos botões"
 msgid "Button typography"
 msgstr "Tipografia dos botões"
 
-#: inc/kirki/fields/button.php:75
+#: inc/kirki/fields/button.php:71
 msgid "Button border radius"
 msgstr "Canto arredondado do botão"
 
@@ -504,19 +734,19 @@ msgstr "Canto arredondado do botão"
 msgid "Primary color"
 msgstr "Cor primária"
 
-#: inc/kirki/fields/color.php:192
+#: inc/kirki/fields/color.php:200
 msgid "Action color"
 msgstr "Cor de ação"
 
-#: inc/kirki/fields/color.php:306
+#: inc/kirki/fields/color.php:324
 msgid "Info color"
 msgstr "Cor de informação"
 
-#: inc/kirki/fields/color.php:421
+#: inc/kirki/fields/color.php:439
 msgid "Warning color"
 msgstr "Cor de aviso"
 
-#: inc/kirki/fields/color.php:528
+#: inc/kirki/fields/color.php:544
 msgid "Danger / Error color"
 msgstr "Cor de erro"
 
@@ -569,38 +799,42 @@ msgid "Auto height"
 msgstr "Altura automática"
 
 #: inc/kirki/fields/front-page.php:49
+msgid "Banner overlay color"
+msgstr "Cor de sobreposição do banner"
+
+#: inc/kirki/fields/front-page.php:75
 msgid "Override home page title"
 msgstr "Sobrescrever título da página home"
 
-#: inc/kirki/fields/front-page.php:84
+#: inc/kirki/fields/front-page.php:110
 msgid "Display first button"
 msgstr "Exibir primeiro botão"
 
-#: inc/kirki/fields/front-page.php:100
+#: inc/kirki/fields/front-page.php:126
 msgid "Home first button text"
 msgstr "Texto do primeiro botão da home"
 
-#: inc/kirki/fields/front-page.php:116
+#: inc/kirki/fields/front-page.php:142
 msgid "Home first button link"
 msgstr "Link do primeiro botão da home"
 
-#: inc/kirki/fields/front-page.php:132
+#: inc/kirki/fields/front-page.php:158
 msgid "Home first button CSS classes"
 msgstr "Classes do primeiro botão da home"
 
-#: inc/kirki/fields/front-page.php:165
+#: inc/kirki/fields/front-page.php:191
 msgid "Display second button"
 msgstr "Exibir o primeiro botão da home"
 
-#: inc/kirki/fields/front-page.php:181
+#: inc/kirki/fields/front-page.php:207
 msgid "Home second button text"
 msgstr "Texto do segundo botão da home"
 
-#: inc/kirki/fields/front-page.php:197
+#: inc/kirki/fields/front-page.php:223
 msgid "Home second button link"
 msgstr "Link do segundo botão da home"
 
-#: inc/kirki/fields/front-page.php:213
+#: inc/kirki/fields/front-page.php:239
 msgid "Home second button CSS classes"
 msgstr "Classes do segundo botão da home"
 
@@ -696,10 +930,6 @@ msgstr "padrão"
 #: inc/odin-shortcodes-editor-i18n.php:13
 msgid "Button"
 msgstr "Botão"
-
-#: inc/odin-shortcodes-editor-i18n.php:14
-msgid "Title"
-msgstr "Título"
 
 #: inc/odin-shortcodes-editor-i18n.php:15
 msgid "Text"
@@ -798,10 +1028,6 @@ msgstr "grupo"
 msgid "Justified"
 msgstr "Justificado"
 
-#: inc/odin-shortcodes-editor-i18n.php:39
-msgid "Content"
-msgstr "Conteúdo"
-
 #: inc/odin-shortcodes-editor-i18n.php:40
 msgid "Close"
 msgstr "Fechar"
@@ -891,10 +1117,6 @@ msgstr "Dado"
 #: inc/odin-shortcodes-editor-i18n.php:62
 msgid "QRcode"
 msgstr "QRcode"
-
-#: inc/odin-shortcodes-editor-i18n.php:63
-msgid "Clear"
-msgstr "Limpar"
 
 #: inc/odin-shortcodes-editor-i18n.php:64
 msgid "Latitude"
@@ -1139,10 +1361,6 @@ msgstr "Pesquisa"
 #~ msgstr "Arquivos"
 
 # @ odin
-#~ msgid "All posts by %s"
-#~ msgstr "Todas as publicações por %s"
-
-# @ odin
 #~ msgid "Category Archives: %s"
 #~ msgstr "Arquivo da Categoria: %s"
 
@@ -1167,24 +1385,12 @@ msgstr "Pesquisa"
 #~ msgstr "Adicionar na galeria"
 
 # @ odin
-#~ msgid "Remove image"
-#~ msgstr "Remover imagem"
-
-# @ odin
 #~ msgid "Choose a file"
 #~ msgstr "Selecione um arquivo"
 
 # @ odin
 #~ msgid "Add file"
 #~ msgstr "Adicionar arquivo"
-
-# @ odin
-#~ msgid "Select file"
-#~ msgstr "Selecionar arquivo"
-
-# @ odin
-#~ msgid "Select image"
-#~ msgstr "Selecionar imagem"
 
 # @ odin
 #~ msgid "%ss"

@@ -129,6 +129,13 @@
 	overflow-y: auto;
 	max-height: calc(100vh - 70px);
 
+	@media( max-width: $screen-xs-max ) {
+		.admin-bar & {
+			max-height: calc(100vh - 106px);
+			top: 106px;
+		}
+	}
+
 	@media( max-width: $screen-sm-max ) {
 		right: 0;
 		position: fixed;
