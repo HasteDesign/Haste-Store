@@ -6,14 +6,23 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 ### Added
-- Customizer option for the color of banner overlay.
-- Haste Content Image Module widget.
-- Haste Posts Module widget.
 ### Changed
 ### Deprecated
 ### Removed
 ### Fixed
 ### Security
+
+## [1.1.0]
+### Added
+- Customizer option for the color of banner overlay.
+- Haste Content Image Module widget.
+- Haste Posts Module widget.
+- New strings from the new widgets translated to pt_BR
+### Changed
+- Several CSS styles improvements
+- Pages content width of 10 cols now
+### Fixed
+- Breadcrumbs conditional exhibition, hidden on landing template
 
 ## [1.0.2]
 ### Added
