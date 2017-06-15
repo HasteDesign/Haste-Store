@@ -219,8 +219,7 @@ Haste_Store_Kirki::add_field( 'haste-store', array(
 							.woocommerce .checkout.button:hover,
 							.woocommerce .checkout.button:active,
 							.woocommerce .checkout.button:focus,
-							.btn-cart .badge,
-							',
+							.btn-cart .badge',
 			'function' => 'style',
 			'property' => 'background-color',
 		),
@@ -274,8 +273,9 @@ Haste_Store_Kirki::add_field( 'haste-store', array(
 							'.woocommerce .checkout.button',
 							'.woocommerce .checkout.button:hover',
 							'.woocommerce .checkout.button:active',
-							'.woocommerce .checkout.button:focus',						),
-							'.btn-cart .badge',
+							'.woocommerce .checkout.button:focus',
+							'.btn-cart .badge'
+						),
 			'property' => 'background-color',
 		),
 		array(
