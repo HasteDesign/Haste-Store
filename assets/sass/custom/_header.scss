@@ -117,8 +117,30 @@
  */
 
 .btn-cart {
+	position: relative;
+
 	@media( max-width: $screen-xs-max ) {
 		padding: 10px;
+	}
+
+	.glyphicon {
+		font-size: 1.5em;
+		line-height: 1;
+		vertical-align: middle;
+		margin-top: -.2em;
+	}
+
+	.badge {
+		top: 5px;
+		font-size: .6em;
+		left: 40px;
+		position: absolute;
+		background: $brand-success;
+		color: #fff !important; 
+	}
+
+	.caret {
+		margin-left: 10px;
 	}
 }
 
