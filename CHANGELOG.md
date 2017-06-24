@@ -12,6 +12,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Fixed
 ### Security
 
+## [1.1.1]
+## Fixed
+- Fixed ID call in functions.php for WooCommerce 3.0
+### Added
+- Custom header cart badge style and notification
+
 ## [1.1.0]
 ### Added
 - Customizer option for the color of banner overlay.
@@ -37,7 +43,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Fixed the visibility of navbar toggle button.
 - Corrected list styles that were affecting "My Account" nav list.
 
-[Unreleased]: https://bitbucket.org/hastedesign/haste-store/compare/v1.0.2..HEAD
+[Unreleased]: https://bitbucket.org/hastedesign/haste-store/compare/v1.1.1..HEAD
+[1.1.1]: https://bitbucket.org/hastedesign/haste-store/compare/v1.1.1..1.1.0
+[1.1.0]: https://bitbucket.org/hastedesign/haste-store/compare/v1.1.0..1.0.2
 [1.0.2]: https://bitbucket.org/hastedesign/haste-store/compare/v1.0.2..v1.0.1
 [1.0.1]: https://bitbucket.org/hastedesign/haste-store/compare/v1.0.1..v1.0.0
 [1.0.0]: https://bitbucket.org/hastedesign/haste-store/compare/v1.0.0..v0.0.3
