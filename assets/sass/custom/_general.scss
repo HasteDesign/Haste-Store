@@ -30,7 +30,7 @@ p {
 	margin-top: 80px;
 
 	body.page-template-page-home &,
-	body.page-template-page-full &, 
+	body.page-template-page-full &,
 	body.page-template-page-banner &,
 	body.page-template-page-banner-full &,
 	body.page-template-page-landing & {
@@ -60,9 +60,9 @@ h1, h2, h3, h4, h5, h6,
 	}
 }
 
-h1, .h1 {
+h1, .h1, .page-section .section-title {
 	@media ( max-width: $screen-xs-max) {
-		font-size: floor(($font-size-base * 2.5));
+		font-size: calc(24px + 3vw);
 	}
 }
 
