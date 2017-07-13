@@ -1261,17 +1261,20 @@ p.demo_store {
 					z-index: 10;
 				}
 			}
+		}
 
-			.empty {
-				opacity: .3;
-				padding: 1em;
-				text-align: center;
-				color: currentColor;
-				text-align: center;
-				font-size: 1.5em;
-				height: 100%;
-				width: 100%;
-			}
+		.empty,
+		.woocommerce-mini-cart__empty-message {
+			opacity: .3;
+			padding: 1em;
+			text-align: center;
+			color: currentColor;
+			text-align: center;
+			font-size: 1.5em;
+			height: 100%;
+			width: 100%;
+			margin: 0;
+			line-height: 1.1;
 		}
 
 		.buttons {
