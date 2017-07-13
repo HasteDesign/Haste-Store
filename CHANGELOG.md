@@ -12,6 +12,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Fixed
 ### Security
 
+## [1.1.3]
+### Changed
+- Style adjustments of the lists and titles within the content
+### Fixed
+- Style of empty mini cart
+
 ## [1.1.2]
 ### Added
 - 2 new page templates: Full Width and Full Width with Banner
