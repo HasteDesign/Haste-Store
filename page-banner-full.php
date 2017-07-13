@@ -3,9 +3,7 @@
  * Template Name: Banner Full Width
  *
  * Full width content with banner.
- *
- * @package Odin
- * @since 2.2.0
+ * 
  */
 
 get_header();

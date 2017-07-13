@@ -136,7 +136,7 @@
 		left: 40px;
 		position: absolute;
 		background: $brand-success;
-		color: #fff !important; 
+		color: #fff !important;
 	}
 
 	.caret {
@@ -231,5 +231,10 @@
 body.page .entry-header {
 	padding-bottom: 10px;
 	margin-bottom: 40px;
-	border-bottom: 1px solid $gray-lighter;
+}
+
+
+body.page-template-page-full .entry-header {
+	margin-top: 80px;
+	text-align: center;
 }
