@@ -12,8 +12,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Fixed
 ### Security
 
+## [1.1.2]
+### Added
+- 2 new page templates: Full Width and Full Width with Banner
+### Changed
+- Style adjustments of the page headers and breadcrumbs
+
 ## [1.1.1]
-## Fixed
+### Fixed
 - Fixed ID call in functions.php for WooCommerce 3.0
 ### Added
 - Custom header cart badge style and notification
