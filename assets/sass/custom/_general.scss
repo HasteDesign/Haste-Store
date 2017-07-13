@@ -161,56 +161,6 @@ blockquote {
 		opacity: 0.6;
 		padding-top: 0;
 	}
-
-	.entry-content {
-		h1, h2, h3, h4, h5, h6,
-		.h1, .h2, .h3, .h4, .h5, .h6 {
-			margin: 2em 0 1em 0;
-		}
-
-		> ul:not([class*="woo"]):not([class*="products"]),
-		> :not(.woocommerce) > :not(nav) ul:not([class*="woo"]):not([class*="products"]),
-		> ol:not([class*="woo"]) {
-			list-style: none;
-			padding-left: 2.5em;
-			margin-bottom: 1.5em;
-
-			li {
-				padding: 1em 0;
-
-				&:before {
-					display: inline-block;
-					width: 2em;
-					margin: 0 .5em 0 -2.5em;
-					opacity: .6;
-				}
-
-				& + li {
-					border-top: 1px solid $gray-lighter;
-				}
-			}
-		}
-
-		ol:not([class*="woo"]) {
-			counter-reset: ol;
-
-			li {
-				&:before {
-					counter-increment: ol;
-					content: counter(ol) ". ";
-				}
-			}
-		}
-
-		> ul:not([class*="woo"]):not([class*="products"]),
-		> :not(.woocommerce) > :not(nav) ul:not([class*="woo"]):not([class*="products"]) {
-			li {
-				&:before {
-					content: '\203A';
-				}
-			}
-		}
-	}
 }
 
 .hentry.post,
