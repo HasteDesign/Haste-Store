@@ -131,9 +131,14 @@ input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type=
 .breadcrumb-wrapper {
 	width: 100%;
 
-	body.page-template-page-banner & {
+	body.page-template-page-full & {
+		margin-top: 80px;
+	}
+
+	body.page-template-page-banner &,
+	body.page-template-page-banner-full & {
+		margin-top: 80px;
 		position: absolute;
-		top: 80px;
 		z-index: 9;
 		color: rgba(#fff, .6);
 		text-shadow: 0 0 20px rgba(#000, .5);
@@ -150,11 +155,8 @@ input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type=
 			top: 125px;
 		}
 	}
-
-	body.page-template-page-landing & {
-
-	}
 }
+
 .woocommerce .woocommerce-breadcrumb,
 .woocommerce-breadcrumb {
 	margin-bottom: 20px;
