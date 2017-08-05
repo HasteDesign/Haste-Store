@@ -64,10 +64,12 @@ if ( ! function_exists( 'odin_posted_on' ) ) {
 			echo '<span class="featured-post">' . __( 'Sticky', 'haste-store' ) . ' </span>';
 		}
 
-		// Set up and print post meta information.
-		echo '<span class="entry-date meta">';
-		echo '<span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> <time class="entry-date meta" datetime="'. esc_attr( get_the_date( 'c' ) ) .'">' . esc_html( get_the_date() ) . '</time>';
-		echo '</span>';
+		if ( true == get_theme_mod( 'display_post_dated', true ) ) :
+			// Set up and print post meta information.
+			echo '<span class="entry-date meta">';
+			echo '<span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> <time class="entry-date meta" datetime="'. esc_attr( get_the_date( 'c' ) ) .'">' . esc_html( get_the_date() ) . '</time>';
+			echo '</span>';
+		endif;
 
 		if ( true == get_theme_mod( 'display_post_author', true ) ) :
 			if ( !is_single() ) :
@@ -76,10 +78,12 @@ if ( ! function_exists( 'odin_posted_on' ) ) {
 			endif;
 		endif;
 
-		if ( in_array( 'category', get_object_taxonomies( get_post_type() ) ) ) :
-			echo '<span class="cat-links meta">';
-			echo '<span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span> ';
-			echo '<span class="sr-only">'. __( 'Posted in:', 'haste-store' ) . '</span> ' . get_the_category_list( _x( ', ', 'Used between list items, there is a space after the comma.', 'haste-store' ) ) . '</span></span>';
+		if ( true == get_theme_mod( 'display_post_category', true ) ) :
+			if ( in_array( 'category', get_object_taxonomies( get_post_type() ) ) ) :
+				echo '<span class="cat-links meta">';
+				echo '<span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span> ';
+				echo '<span class="sr-only">'. __( 'Posted in:', 'haste-store' ) . '</span> ' . get_the_category_list( _x( ', ', 'Used between list items, there is a space after the comma.', 'haste-store' ) ) . '</span></span>';
+			endif;
 		endif;
 
 		if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) :
