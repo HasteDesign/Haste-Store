@@ -130,6 +130,54 @@ select + .select2-container--default {
 	padding: 0;
 }
 
+
+// PagSeguro transparent checkout
+
+
+.woocommerce-checkout,
+#add_payment_method {
+	#payment {
+		ul.payment_methods {
+			li {
+				input {
+					height: 2em;
+				}
+				label {
+					padding: 1em 0;
+					line-height: 1.3;
+				}
+				#pagseguro-payment-methods label {
+					padding: 15px;
+				}
+			}
+		}
+		div.payment_box {
+			padding: 3em;
+			background-color: #f2f2f2;
+			color: $text-color;
+
+			&:before {
+				border-bottom-color: #f2f2f2;
+			}
+		}
+	}
+}
+
+#pagseguro-bank-transfer-form ul,
+#pagseguro-payment-methods {
+	margin: 0 0 20px;
+}
+
+.woocommerce ul.order_details li {
+	margin-right: .2em;
+	font-size: 1em;
+	padding: 1em;
+	margin-left: 0;
+}
+
+
+
+
 /**
  * List groups
  */
