@@ -92,31 +92,13 @@ blockquote {
 .hentry {
 
 	&.loop {
-		border: 1px solid $gray-lighter;
 
 		& + & {
-			margin-top: 30px;
-		}
-
-		> * {
-			padding-left: 60px;
-			padding-right: 60px;
-
-			@media ( max-width: $screen-xs-max) {
-				padding: 15px;
-			}
+			margin-top: 60px;
 		}
 
 		.wp-post-image {
-			margin: 0 -60px;
-			max-width: calc(100% + 120px);
-			width: calc(100% + 120px);
-
-			@media ( max-width: $screen-xs-max) {
-				margin: -15px -15px 0 -15px;
-				max-width: calc(100% + 30px);
-				width: calc(100% + 30px);
-			}
+			width: 100%;
 		}
 	}
 
@@ -131,6 +113,8 @@ blockquote {
 	}
 
 	.entry-title {
+		margin: 1em 0 .5em 0;
+
 		a {
 			color: inherit;
 		}
