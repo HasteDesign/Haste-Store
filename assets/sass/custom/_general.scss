@@ -112,6 +112,18 @@ blockquote {
 		}
 	}
 
+	&.post-full {
+		.entry-header {
+			text-align: center;
+		}
+	}
+
+	&.single {
+		.entry-header {
+			margin-bottom: 3em;
+		}
+	}
+
 	.entry-title {
 		margin: 1em 0 .5em 0;
 

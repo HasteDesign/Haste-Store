@@ -8,13 +8,14 @@
  * @since 2.2.0
  */
 
-
-	$post_class;
+$post_class;
 
 	if ( !is_single() ) {
-		$post_class = 'loop';
+		//$post_class = get_theme_mod( 'display_blog_sidebar', true ) ? 'post-side': 'post-full';
+		$post_class .= ' loop';
 	} else {
-		$post_class = 'single';
+		$post_class = get_theme_mod( 'display_posts_sidebar', true ) ? 'post-side': 'post-full';
+		$post_class .= ' single';
 	};
 
 ?>
