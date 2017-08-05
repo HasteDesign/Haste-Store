@@ -92,10 +92,7 @@ blockquote {
 .hentry {
 
 	&.loop {
-
-		& + & {
-			margin-top: 60px;
-		}
+		margin-top: 60px;
 
 		.wp-post-image {
 			width: 100%;
