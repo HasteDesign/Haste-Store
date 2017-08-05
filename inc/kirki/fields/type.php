@@ -20,7 +20,7 @@ Haste_Store_Kirki::add_field( 'haste-store', array(
 	'label'       => esc_attr__( 'Body typography', 'haste-store' ),
 	'section'     => 'typography',
 	'default'     => array(
-		'font-family'    => 'Roboto',
+		'font-family'    => 'Arial',
 		'variant'        => 'regular',
 		'font-size'      => '14px',
 		'subsets'        => array( 'latin-ext' ),
@@ -48,7 +48,7 @@ Haste_Store_Kirki::add_field( 'haste-store', array(
 	'label'       => esc_attr__( 'Headers typography', 'haste-store' ),
 	'section'     => 'typography',
 	'default'     => array(
-		'font-family'    => 'Roboto',
+		'font-family'    => 'Arial',
 		'variant'        => 'regular',
 		'letter-spacing' => '0',
 		'subsets'        => array( 'latin-ext' ),
