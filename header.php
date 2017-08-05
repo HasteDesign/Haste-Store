@@ -152,7 +152,7 @@
 			<div id="wrapper">
 				<div class="wrapper-row">
 
-					<?php if( !is_front_page() && !is_home() && !is_page_template( 'page-home.php' ) && !is_page_template( 'page-landing.php' ) ) : ?>
+					<?php if( !is_front_page() && !is_page_template( 'page-home.php' ) && !is_page_template( 'page-landing.php' ) ) : ?>
 						<div class="breadcrumb-wrapper">
 
 						<?php do_action( 'odin_content_top' ); ?>
