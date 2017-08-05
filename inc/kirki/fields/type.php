@@ -14,6 +14,29 @@
 ) );
 
 
+
+Haste_Store_Kirki::add_field( 'haste-store', array(
+	'type'        => 'checkbox',
+	'settings'    => 'body_type_extra_variants',
+	'label'       => __( 'Load extra variants for the body font', 'haste-store' ),
+	'description' => __( 'Includes also the Regular, italic, bold and bold italic variants', 'haste-store' ),
+	'section'     => 'typography',
+	'default'     => '1',
+	'priority'    => 20,
+	'multiple'    => 1,
+) );
+
+$body_variants = array();
+
+if ( true == get_theme_mod( 'body_type_extra_variants', true ) ) :
+	$body_variants = array(
+		'regular',
+		'italic',
+		'700',
+		'700italic',
+	);
+endif;
+
 Haste_Store_Kirki::add_field( 'haste-store', array(
 	'type'        => 'typography',
 	'settings'    => 'body_type',
@@ -27,7 +50,7 @@ Haste_Store_Kirki::add_field( 'haste-store', array(
 		'color'          => '#333333',
 	),
 	'priority'	=> 10,
-	'transport'	=> 'postMessage',
+	'transport'	=> 'auto',
 	'js_vars'   => array(
 		array(
 			'element'  => 'body',
@@ -39,8 +62,12 @@ Haste_Store_Kirki::add_field( 'haste-store', array(
 			'element' => 'body',
 		),
 	),
-) );
 
+	'choices' => array(
+		'variant' => $body_variants,
+	),
+
+) );
 
 Haste_Store_Kirki::add_field( 'haste-store', array(
 	'type'        => 'typography',
@@ -56,12 +83,13 @@ Haste_Store_Kirki::add_field( 'haste-store', array(
 		'color'          => '#333333',
 		'text-transform' => 'none',
 	),
-	'priority'	=> 20,
+	'priority'	=> 30,
 	'transport'	=> 'postMessage',
 	'js_vars'   => array(
 		array(
 			'element'  => 'h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .product-name a, .mini_cart_item a, .product-title',
 			'function' => 'style',
+			'property' => 'font',
 		),
 	),
 	'output'	=> array(

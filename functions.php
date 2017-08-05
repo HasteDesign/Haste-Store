@@ -439,33 +439,6 @@ function button_class_add_to_cart_link( $classes, $product ) {
 	return $button;
 }
 
-
-/**
- * Kirki
- */
-
- require_once get_template_directory() . '/inc/kirki/include-kirki.php';
- require_once get_template_directory() . '/inc/kirki/haste-store-kirki.php';
- require_once get_template_directory() . '/inc/kirki/kirki-config.php';
-
- function enqueue_body_font_variants( $fonts ) {
-	 $body_type = get_theme_mod( 'body_type', 'Roboto' );
-
-	 if( ! empty( $body_type['font-family'] ) ) {
-
-	   $fonts[ $body_type['font-family'] ] = array(
-	     'regular',
-	     'italic',
-	     '700',
-	     '700italic',
-	   );
-	 }
-
-	 return $fonts;
- }
- add_filter( 'kirki/enqueue_google_fonts', 'enqueue_body_font_variants' );
-
-
 // Get user name
 
 function haste_get_user_name() {
@@ -477,3 +450,14 @@ function haste_get_user_name() {
 
 	return $username;
 }
+
+
+/**
+ * Kirki
+ */
+
+ require_once get_template_directory() . '/inc/kirki/include-kirki.php';
+ require_once get_template_directory() . '/inc/kirki/haste-store-kirki.php';
+ require_once get_template_directory() . '/inc/kirki/kirki-config.php';
+
+ 
