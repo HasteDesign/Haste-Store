@@ -26,10 +26,11 @@
 			if ( !is_single() ) :
 		?>
 			<a class="entry-link" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-		<?php endif; ?>
 
-		<?php if ( has_post_thumbnail() ) : ?>
-				<?php the_post_thumbnail(); ?>
+			<?php if ( has_post_thumbnail() ) : ?>
+					<?php the_post_thumbnail(); ?>
+			<?php endif; ?>
+
 		<?php endif; ?>
 
 		<?php
@@ -51,6 +52,13 @@
 				<?php odin_posted_on(); ?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
+
+		<?php if ( is_single() ) : ?>
+			<?php if ( has_post_thumbnail() ) : ?>
+				<?php the_post_thumbnail(); ?>
+			<?php endif; ?>
+		<?php endif; ?>
+
 	</header><!-- .entry-header -->
 
 	<?php if ( true == get_theme_mod( 'display_post_content', true ) ) : ?>
