@@ -36,7 +36,7 @@
 			if ( is_single() ) :
 				the_title( '<h1 class="entry-title">', '</h1>' );
 			else :
-				the_title( '<h2 class="h1 entry-title">', '</h2>' );
+				the_title( '<h2 class="entry-title">', '</h2>' );
 			endif;
 		?>
 
