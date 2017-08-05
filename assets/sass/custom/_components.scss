@@ -115,6 +115,21 @@ input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type=
 	@extend .form-group;
 }
 
+
+// Select2 compatibility
+
+select + .select2-container--default {
+	@extend .form-control;
+}
+
+.select2-container--default .select2-selection--single {
+	border: 0;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+	padding: 0;
+}
+
 /**
  * List groups
  */
