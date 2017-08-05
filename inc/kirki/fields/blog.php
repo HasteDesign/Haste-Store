@@ -14,6 +14,24 @@
 ) );
 
 Haste_Store_Kirki::add_field( 'haste-store', array(
+	'type'     => 'text',
+	'settings' => 'blog_title',
+	'label'    => __( 'Override the Blog title', 'haste-store' ),
+	'section'  => 'blog',
+	'priority' => 03,
+	'description' => 'Leave empty to use "Blog" instead.',
+) );
+
+Haste_Store_Kirki::add_field( 'haste-store', array(
+	'type'     => 'text',
+	'settings' => 'blog_description',
+	'label'    => __( 'Blog description', 'haste-store' ),
+	'section'  => 'blog',
+	'priority' => 05,
+	'description' => 'Optional',
+) );
+
+Haste_Store_Kirki::add_field( 'haste-store', array(
 	'type'        => 'switch',
 	'settings'    => 'display_blog_sidebar',
 	'label'       => __( 'Display sidebar on blog and archives', 'haste-store' ),

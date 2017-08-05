@@ -17,10 +17,26 @@ get_header(); ?>
 
 	<main id="content" class="<?php echo get_theme_mod( 'display_blog_sidebar', true )? odin_classes_page_sidebar() : odin_classes_page_full(); ?>" tabindex="-1" role="main">
 
+		<?php if ( have_posts() ) : ?>
+
+			<header class="page-header">
+
+				<h1 class="page-title">
+					<?php if ( true == get_theme_mod( 'blog_title', __('Blog', 'haste-store') ) ) :
+						echo get_theme_mod( 'blog_title', __('Blog', 'haste-store') );
+					else : ?>
+						<?php _e('Blog', 'haste-store')?>
+					<?php endif ;?>
+				</h1>
+				<?php if ( true == get_theme_mod( 'blog_description', false ) ) :?>
+					<p><?php echo get_theme_mod( 'blog_description', false ); ?></p>
+				<?php endif ;?>
+
+			</header><!-- .page-header -->
+
 			<?php
-				if ( have_posts() ) :
-					// Start the Loop.
-					while ( have_posts() ) : the_post();
+				// Start the Loop.
+				while ( have_posts() ) : the_post();
 
 						/*
 						 * Include the post format-specific template for the content. If you want to
