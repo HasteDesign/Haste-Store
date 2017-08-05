@@ -64,7 +64,7 @@ if ( ! function_exists( 'odin_posted_on' ) ) {
 			echo '<span class="featured-post">' . __( 'Sticky', 'haste-store' ) . ' </span>';
 		}
 
-		if ( true == get_theme_mod( 'display_post_dated', true ) ) :
+		if ( true == get_theme_mod( 'display_post_date', true ) ) :
 			// Set up and print post meta information.
 			echo '<span class="entry-date meta">';
 			echo '<span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> <time class="entry-date meta" datetime="'. esc_attr( get_the_date( 'c' ) ) .'">' . esc_html( get_the_date() ) . '</time>';
@@ -86,11 +86,13 @@ if ( ! function_exists( 'odin_posted_on' ) ) {
 			endif;
 		endif;
 
-		if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) :
-			echo '<span class="comments-link meta">';
-			echo '<span class="glyphicon glyphicon-comment" aria-hidden="true"></span> ';
-			echo comments_popup_link( __( 'Leave a comment', 'haste-store' ), __( '1 Comment', 'haste-store' ), __( '% Comments', 'haste-store' ) );
-			echo '</span>';
+		if ( true == get_theme_mod( 'display_post_comments_link', true ) ) :
+			if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) :
+				echo '<span class="comments-link meta">';
+				echo '<span class="glyphicon glyphicon-comment" aria-hidden="true"></span> ';
+				echo comments_popup_link( __( 'Leave a comment', 'haste-store' ), __( '1 Comment', 'haste-store' ), __( '% Comments', 'haste-store' ) );
+				echo '</span>';
+			endif;
 		endif;
 
 	}
