@@ -129,9 +129,11 @@
 
 									<?php endif; // users_can_register ?>
 
+									<?php $items = WC()->cart->get_cart_contents_count(); ?>
+
 									<button type="button" class="btn btn-primary navbar-btn dropdown-toggle btn-cart" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 										<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
-										<span class="badge"><?php echo WC()->cart->get_cart_contents_count(); ?></span>
+										<span class="badge items-<?php echo $items; ?>"><?php echo $items; ?></span>
 										<span class="sr-only"><?php _e('Cart', 'haste-store')?></span>
 										<span class="caret"></span>
 									</button>
