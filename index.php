@@ -19,20 +19,22 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : ?>
 
-			<header class="page-header">
+			<?php if ( true == get_theme_mod( 'display_blog_title', true ) ) : ?>
+				<header class="page-header">
 
-				<h1 class="page-title">
-					<?php if ( true == get_theme_mod( 'blog_title', __('Blog', 'haste-store') ) ) :
-						echo get_theme_mod( 'blog_title', __('Blog', 'haste-store') );
-					else : ?>
-						<?php _e('Blog', 'haste-store')?>
+					<h1 class="page-title">
+						<?php if ( true == get_theme_mod( 'blog_title', __('Blog', 'haste-store') ) ) :
+							echo get_theme_mod( 'blog_title', __('Blog', 'haste-store') );
+						else : ?>
+							<?php _e('Blog', 'haste-store')?>
+						<?php endif ;?>
+					</h1>
+					<?php if ( true == get_theme_mod( 'blog_description', false ) ) :?>
+						<p><?php echo get_theme_mod( 'blog_description', false ); ?></p>
 					<?php endif ;?>
-				</h1>
-				<?php if ( true == get_theme_mod( 'blog_description', false ) ) :?>
-					<p><?php echo get_theme_mod( 'blog_description', false ); ?></p>
-				<?php endif ;?>
 
-			</header><!-- .page-header -->
+				</header><!-- .page-header -->
+			<?php endif ;?>
 
 			<?php
 				// Start the Loop.

@@ -14,12 +14,28 @@
 ) );
 
 Haste_Store_Kirki::add_field( 'haste-store', array(
+	 'type'        => 'toggle',
+	 'settings'    => 'display_blog_title',
+	 'label'       => __( 'Display the blog title', 'haste-store' ),
+	 'section'     => 'blog',
+	 'default'     => '1',
+	 'priority'    => 1,
+ ) );
+
+Haste_Store_Kirki::add_field( 'haste-store', array(
 	'type'     => 'text',
 	'settings' => 'blog_title',
 	'label'    => __( 'Override the Blog title', 'haste-store' ),
 	'section'  => 'blog',
-	'priority' => 03,
+	'priority' => 3,
 	'description' => 'Leave empty to use "Blog" instead.',
+	'active_callback'  => array(
+		   array(
+			   'setting'  => 'display_blog_title',
+			   'operator' => '==',
+			   'value'    => 1,
+		   ),
+	   ),
 ) );
 
 Haste_Store_Kirki::add_field( 'haste-store', array(
@@ -27,8 +43,15 @@ Haste_Store_Kirki::add_field( 'haste-store', array(
 	'settings' => 'blog_description',
 	'label'    => __( 'Blog description', 'haste-store' ),
 	'section'  => 'blog',
-	'priority' => 05,
+	'priority' => 5,
 	'description' => 'Optional',
+	'active_callback'  => array(
+		   array(
+			   'setting'  => 'display_blog_title',
+			   'operator' => '==',
+			   'value'    => 1,
+		   ),
+	   ),
 ) );
 
 Haste_Store_Kirki::add_field( 'haste-store', array(
