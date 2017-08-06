@@ -19,7 +19,7 @@ Haste_Store_Kirki::add_field( 'haste-store', array(
 	'type'        => 'checkbox',
 	'settings'    => 'body_type_extra_variants',
 	'label'       => __( 'Load extra variants for the body font', 'haste-store' ),
-	'description' => __( 'Includes also the Regular, italic, bold and bold italic variants', 'haste-store' ),
+	'description' => __( 'Includes the regular, italic, bold and bold italic variants.', 'haste-store' ),
 	'section'     => 'typography',
 	'default'     => '1',
 	'priority'    => 20,
