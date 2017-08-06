@@ -115,6 +115,20 @@ input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type=
 	@extend .form-group;
 }
 
+// WPCF7 Compatibility
+
+.input-group .wpcf7-submit {
+	width: 100%;
+}
+
+.wpcf7 .input-group {
+	vertical-align: top;
+}
+
+.wpcf7  label {
+	width: 100%;
+}
+
 
 // Select2 compatibility
 
