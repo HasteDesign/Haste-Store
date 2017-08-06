@@ -79,7 +79,7 @@ Haste_Store_Kirki::add_field( 'haste-store', array(
 		'variant'        => 'regular',
 		'letter-spacing' => '0',
 		'subsets'        => array( 'latin-ext' ),
-		'line-height'    => '1',
+		'line-height'    => '1.2',
 		'color'          => '#333333',
 		'text-transform' => 'none',
 	),
