@@ -12,6 +12,17 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Fixed
 ### Security
 
+## [1.1.4]
+### Added
+- New options for customizing the blog
+- Style compatibility with some WooCommerce plugins
+- New strings translated
+### Changed
+- Several typography and style improvements
+### Fixed
+- Fixed Google Fonts variants loading process
+- Fixed some style inconsistencies
+
 ## [1.1.3]
 ### Changed
 - Style adjustments of the lists and titles within the content
