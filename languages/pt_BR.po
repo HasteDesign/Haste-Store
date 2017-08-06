@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Haste Store 0.0.4\n"
+"Project-Id-Version: Haste Store 1.1.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-28 21:27-0300\n"
-"PO-Revision-Date: 2017-03-28 21:38-0300\n"
+"POT-Creation-Date: 2017-08-05 21:49-0300\n"
+"PO-Revision-Date: 2017-08-05 21:57-0300\n"
 "Last-Translator: Anyssa Ferreira <anyssacristina@yahoo.com.br>\n"
 "Language-Team: Haste Design\n"
 "Language: pt_BR\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Poedit 1.8.11\n"
+"X-Generator: Poedit 2.0.3\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
 "_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;"
@@ -63,12 +63,12 @@ msgid "0 Comments"
 msgstr "0 Comentários"
 
 # @ odin
-#: comments.php:22 inc/template-tags.php:88
+#: comments.php:22 inc/template-tags.php:93
 msgid "1 Comment"
 msgstr "1 Comentário"
 
 # @ odin
-#: comments.php:22 inc/template-tags.php:88
+#: comments.php:22 inc/template-tags.php:93
 msgid "% Comments"
 msgstr "% Comentários"
 
@@ -113,14 +113,14 @@ msgid "Website"
 msgstr "Website"
 
 # @ odin
-#: content-banner-home.php:27 content.php:63 page-banner.php:43
-#: page-landing.php:44
+#: content-banner-home.php:27 content.php:73 page-banner-full.php:40
+#: page-banner.php:43 page-landing.php:44
 msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
 msgstr "Continue lendo <span class=\"meta-nav\">&rarr;</span>"
 
 # @ odin
-#: content-banner-home.php:29 content-page.php:17 content.php:65
-#: page-banner.php:45 page-landing.php:46
+#: content-banner-home.php:29 content-page.php:17 content.php:75
+#: page-banner-full.php:42 page-banner.php:45 page-landing.php:46
 msgid "Pages:"
 msgstr "Páginas:"
 
@@ -166,7 +166,7 @@ msgstr ""
 "pesquisa pode ajudar."
 
 # @ odin
-#: content.php:78
+#: content.php:89
 msgid "Tagged as:"
 msgstr "Marcado como:"
 
@@ -624,7 +624,7 @@ msgstr "Login"
 msgid "Register"
 msgstr "Registrar"
 
-#: header.php:135
+#: header.php:137
 msgid "Cart"
 msgstr "Carrinho"
 
@@ -693,26 +693,58 @@ msgid "Blog and post options"
 msgstr "Opções do blog e dos posts"
 
 #: inc/kirki/fields/blog.php:19
+msgid "Display the blog title"
+msgstr "Exibir título do blog"
+
+#: inc/kirki/fields/blog.php:28
+msgid "Override the Blog title"
+msgstr "Sobrescrever título da página do blog"
+
+#: inc/kirki/fields/blog.php:44
+msgid "Blog description"
+msgstr "Descrição do blog"
+
+#: inc/kirki/fields/blog.php:60
 msgid "Display sidebar on blog and archives"
 msgstr "Exibir sidebar nos blogs e arquivos"
 
-#: inc/kirki/fields/blog.php:24 inc/kirki/fields/blog.php:38
-#: inc/kirki/fields/blog.php:52
+#: inc/kirki/fields/blog.php:65 inc/kirki/fields/blog.php:79
+#: inc/kirki/fields/blog.php:93 inc/kirki/fields/blog.php:106
+#: inc/kirki/fields/blog.php:119 inc/kirki/fields/blog.php:132
+#: inc/kirki/fields/blog.php:146
 msgid "Enable"
 msgstr "Ativar"
 
-#: inc/kirki/fields/blog.php:25 inc/kirki/fields/blog.php:39
-#: inc/kirki/fields/blog.php:53
+#: inc/kirki/fields/blog.php:66 inc/kirki/fields/blog.php:80
+#: inc/kirki/fields/blog.php:94 inc/kirki/fields/blog.php:107
+#: inc/kirki/fields/blog.php:120 inc/kirki/fields/blog.php:133
+#: inc/kirki/fields/blog.php:147
 msgid "Disable"
 msgstr "Desativar"
 
-#: inc/kirki/fields/blog.php:33
+#: inc/kirki/fields/blog.php:74
 msgid "Display sidebar on single posts"
 msgstr "Exibir sidebar em posts"
 
-#: inc/kirki/fields/blog.php:47
+#: inc/kirki/fields/blog.php:88
+msgid "Display post date"
+msgstr "Exibir data do post"
+
+#: inc/kirki/fields/blog.php:101
 msgid "Display post author"
 msgstr "Exibir autor dos posts"
+
+#: inc/kirki/fields/blog.php:114
+msgid "Display post category"
+msgstr "Exibir categoria dos posts"
+
+#: inc/kirki/fields/blog.php:127
+msgid "Display post comments link"
+msgstr "Exibir link para os comentários do post"
+
+#: inc/kirki/fields/blog.php:141
+msgid "Display post content on blog and archives"
+msgstr "Exibir conteúdo do post no blog e arquivos"
 
 #: inc/kirki/fields/button.php:8 inc/odin-shortcodes-editor-i18n.php:12
 msgid "Buttons"
@@ -738,15 +770,15 @@ msgstr "Cor primária"
 msgid "Action color"
 msgstr "Cor de ação"
 
-#: inc/kirki/fields/color.php:324
+#: inc/kirki/fields/color.php:326
 msgid "Info color"
 msgstr "Cor de informação"
 
-#: inc/kirki/fields/color.php:439
+#: inc/kirki/fields/color.php:441
 msgid "Warning color"
 msgstr "Cor de aviso"
 
-#: inc/kirki/fields/color.php:544
+#: inc/kirki/fields/color.php:546
 msgid "Danger / Error color"
 msgstr "Cor de erro"
 
@@ -882,11 +914,20 @@ msgstr "Tipografia"
 msgid "Font options"
 msgstr "Opções de fonte"
 
-#: inc/kirki/fields/type.php:20
+#: inc/kirki/fields/type.php:21
+msgid "Load extra variants for the body font"
+msgstr "Carregar variações extra para a fonte de corpo"
+
+#: inc/kirki/fields/type.php:22
+msgid "Includes the regular, italic, bold and bold italic variants."
+msgstr ""
+"Inclui também as variações regular, itálico, negrito e negrito itálico."
+
+#: inc/kirki/fields/type.php:43
 msgid "Body typography"
 msgstr "Tipografia do corpo de texto"
 
-#: inc/kirki/fields/type.php:48
+#: inc/kirki/fields/type.php:75
 msgid "Headers typography"
 msgstr "Tipografia dos títulos"
 
@@ -1245,23 +1286,23 @@ msgid "Sticky"
 msgstr "Destacado"
 
 # @ odin
-#: inc/template-tags.php:74
+#: inc/template-tags.php:76
 msgid "by"
 msgstr "por"
 
 # @ odin
-#: inc/template-tags.php:82
+#: inc/template-tags.php:85
 msgid "Posted in:"
 msgstr "Publicado em:"
 
 # @ odin
-#: inc/template-tags.php:82
+#: inc/template-tags.php:85
 msgctxt "Used between list items, there is a space after the comma."
 msgid ", "
 msgstr ", "
 
 # @ odin
-#: inc/template-tags.php:88
+#: inc/template-tags.php:93
 msgid "Leave a comment"
 msgstr "Deixe um comentário"
 
@@ -1284,6 +1325,10 @@ msgstr "Você está em"
 msgid "Out of stock"
 msgstr "Esgotado"
 
+#: index.php:26 index.php:27 index.php:29
+msgid "Blog"
+msgstr "Blog"
+
 # @ odin
 #: search.php:16
 #, php-format
@@ -1293,7 +1338,7 @@ msgstr "Resultado de Busca por: %s"
 # @ odin
 #: searchform.php:12 searchform.php:14
 msgid "Search"
-msgstr "Pesquisa"
+msgstr "Buscar"
 
 #~ msgid "Odin shortcodes"
 #~ msgstr "Shortcodes do Odin"
