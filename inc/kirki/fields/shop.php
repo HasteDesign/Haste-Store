@@ -39,3 +39,16 @@ Haste_Store_Kirki::add_field( 'haste-store', array(
 		'step' => '1',
 	),
 ) );
+
+
+Haste_Store_Kirki::add_field( 'haste-store', array(
+	'type'        => 'switch',
+	'settings'    => 'display_shop_sidebar',
+	'label'       => __( 'Display sidebar on shop and product archives', 'haste-store' ),
+	'section'     => 'shop',
+	'default'     => '1',
+	'choices'     => array(
+		'on'  => esc_attr__( 'Enable', 'haste-store' ),
+		'off' => esc_attr__( 'Disable', 'haste-store' ),
+	),
+) );

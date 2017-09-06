@@ -40,6 +40,16 @@ add_action( 'woocommerce_after_main_content', 'odin_after_content', 10 );
 }
 add_action( 'get_header', 'remove_sidebar_on_singles' );
 
+
+// remove sidebar for woocommerce pages
+add_action( 'get_header', 'remove_shop_sidebar' );
+function remove_shop_sidebar() {
+    if ( is_shop() && get_theme_mod( 'display_shop_sidebar', true ) == false ) {
+      remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10 );
+    }
+}
+
+
 /**
  * Breadcrumb
  *
