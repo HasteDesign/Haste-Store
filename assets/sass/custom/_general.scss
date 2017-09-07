@@ -49,6 +49,12 @@ p {
 	}
 }
 
+body.error404 {
+	.page-content {
+		text-align: center;
+	}
+}
+
 .page-section {
 	@include make-row();
 }
