@@ -8,7 +8,7 @@
  * @since 2.2.0
  */
 
-$post_class;
+$post_class = '';
 
 	if ( !is_single() ) {
 		//$post_class = get_theme_mod( 'display_blog_sidebar', true ) ? 'post-side': 'post-full';
