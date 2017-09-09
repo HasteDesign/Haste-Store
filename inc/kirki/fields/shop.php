@@ -88,3 +88,33 @@ Haste_Store_Kirki::add_field( 'haste-store', array(
 		'off' => esc_attr__( 'Disable', 'haste-store' ),
 	),
 ) );
+
+/**
+ * Products title font size
+ */
+
+
+  Haste_Store_Kirki::add_field( 'haste-store', array(
+  	'type'        => 'slider',
+  	'settings'    => 'product_title_font-size',
+  	'label'       => __( 'Product Title Font Size on shop and product archives', 'haste-store' ),
+  	'section'     => 'shop',
+  	'default'     => 1,
+  	'choices'     => array(
+  		'min'  => '0',
+  		'max'  => '10',
+  		'step' => '0.1',
+  	),
+  	'transport'	=> 'auto',
+  	'output'	=> array(
+  		array(
+  			'element' => array(
+  							'.woocommerce ul.products li.product .woocommerce-loop-category__title',
+                            '.woocommerce ul.products li.product .woocommerce-loop-product__title',
+                            '.woocommerce ul.products li.product h3',
+  						),
+  			'property' => 'font-size',
+  			'units'    => 'em',
+  		),
+  	),
+  ) );

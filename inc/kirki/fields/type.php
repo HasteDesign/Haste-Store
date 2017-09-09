@@ -91,3 +91,80 @@ Haste_Store_Kirki::add_field( 'haste-store', array(
 		),
 	),
 ) );
+
+/**
+ * Headings font size
+ */
+
+ Haste_Store_Kirki::add_field( 'haste-store', array(
+ 	'type'        => 'slider',
+ 	'settings'    => 'h1_font-size',
+ 	'label'       => __( 'H1 Font Size', 'haste-store' ),
+ 	'section'     => 'typography',
+ 	'default'     => 3.5,
+ 	'choices'     => array(
+ 		'min'  => '0',
+ 		'max'  => '10',
+ 		'step' => '0.1',
+ 	),
+ 	'priority'	=> 40,
+ 	'transport'	=> 'auto',
+ 	'output'	=> array(
+ 		array(
+ 			'element' => array(
+ 							'h1',
+ 						),
+ 			'property' => 'font-size',
+ 			'units'    => 'em',
+ 		),
+ 	),
+ ) );
+
+  Haste_Store_Kirki::add_field( 'haste-store', array(
+  	'type'        => 'slider',
+  	'settings'    => 'h2_font-size',
+  	'label'       => __( 'H2 Font Size', 'haste-store' ),
+  	'section'     => 'typography',
+  	'default'     => 2.2,
+  	'choices'     => array(
+  		'min'  => '0',
+  		'max'  => '10',
+  		'step' => '0.1',
+  	),
+  	'priority'	=> 40,
+  	'transport'	=> 'auto',
+  	'output'	=> array(
+  		array(
+  			'element' => array(
+  							'h2',
+  						),
+  			'property' => 'font-size',
+  			'units'    => 'em',
+  		),
+  	),
+  ) );
+
+
+   Haste_Store_Kirki::add_field( 'haste-store', array(
+   	'type'        => 'slider',
+   	'settings'    => 'h3_font-size',
+   	'label'       => __( 'H3 Font Size', 'haste-store' ),
+   	'section'     => 'typography',
+   	'default'     => 1.35,
+   	'choices'     => array(
+   		'min'  => '0',
+   		'max'  => '10',
+   		'step' => '0.1',
+   	),
+   	'priority'	=> 40,
+   	'transport'	=> 'auto',
+   	'output'	=> array(
+   		array(
+   			'element' => array(
+   							'h3',
+   						),
+   			'property' => 'font-size',
+   			'units'    => 'em',
+   		),
+   	),
+   ) );
