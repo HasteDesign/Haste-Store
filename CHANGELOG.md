@@ -10,7 +10,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Deprecated
 ### Removed
 ### Fixed
+- Fixed: correct enqueue of stylesheet to work with child themes
 ### Security
+
+## [1.1.6]
+### Fixed
+- Fixed: correct enqueue of stylesheet to work with child themes
 
 ## [1.1.5]
 ### Added
@@ -76,7 +81,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Fixed the visibility of navbar toggle button.
 - Corrected list styles that were affecting "My Account" nav list.
 
-[Unreleased]: https://bitbucket.org/hastedesign/haste-store/compare/v1.1.1..HEAD
+[Unreleased]: https://bitbucket.org/hastedesign/haste-store/compare/v1.1.6..HEAD
+[1.1.6]: https://bitbucket.org/hastedesign/haste-store/compare/v1.1.6..1.1.5
+[1.1.6]: https://bitbucket.org/hastedesign/haste-store/compare/v1.1.5..1.1.4
 [1.1.1]: https://bitbucket.org/hastedesign/haste-store/compare/v1.1.1..1.1.0
 [1.1.0]: https://bitbucket.org/hastedesign/haste-store/compare/v1.1.0..1.0.2
 [1.0.2]: https://bitbucket.org/hastedesign/haste-store/compare/v1.0.2..v1.0.1

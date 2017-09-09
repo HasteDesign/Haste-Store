@@ -290,7 +290,7 @@ function odin_enqueue_scripts() {
 	$template_url = get_template_directory_uri();
 
 	// Loads Odin main stylesheet.
-	wp_enqueue_style( 'odin-style', get_stylesheet_uri(), array(), null, 'all' );
+	wp_enqueue_style( 'odin-style', get_stylesheet_directory_uri() . '/assets/css/style.css', array(), null, 'all' );
 
 	// jQuery.
 	wp_enqueue_script( 'jquery' );
@@ -347,22 +347,6 @@ function haste_store_widgets_modules_assets() {
 }
 add_action( 'customizer_enqueue_scripts', 'haste_store_widgets_modules_assets' );
 add_action( 'admin_print_scripts-widgets.php', 'haste_store_widgets_modules_assets' );
-
-/**
- * Odin custom stylesheet URI.
- *
- * @since  2.2.0
- *
- * @param  string $uri Default URI.
- * @param  string $dir Stylesheet directory URI.
- *
- * @return string      New URI.
- */
-function odin_stylesheet_uri( $uri, $dir ) {
-	return $dir . '/assets/css/style.css';
-}
-
-add_filter( 'stylesheet_uri', 'odin_stylesheet_uri', 10, 2 );
 
 /**
  * Query WooCommerce activation
@@ -459,5 +443,3 @@ function haste_get_user_name() {
  require_once get_template_directory() . '/inc/kirki/include-kirki.php';
  require_once get_template_directory() . '/inc/kirki/haste-store-kirki.php';
  require_once get_template_directory() . '/inc/kirki/kirki-config.php';
-
- 
