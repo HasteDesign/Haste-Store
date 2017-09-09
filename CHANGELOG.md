@@ -12,6 +12,16 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Fixed
 ### Security
 
+## [1.1.5]
+### Added
+- New option: display or hide the WooCommerce Sidebar on shop page.
+- New options: display or hide the "buy" button, product price and reviews on shop and archive pages.
+- New options: headings font size.
+### Changed
+- CSS style improvements for 404 error page, responsive header and more.
+### Fixed
+- Customizer Live preview working again.
+
 ## [1.1.4]
 ### Added
 - New options for customizing the blog
