@@ -25,14 +25,7 @@ Haste_Store_Kirki::add_field( 'haste-store', array(
 	'choices'     => array(
 		'alpha' => true,
 	),
-	'transport'	=> 'postMessage',
-	'js_vars'   => array(
-		array(
-			'element'  => '#footer',
-			'function' => 'style',
-			'property' => 'background-color',
-		),
-	),
+	'transport'	=> 'auto',
 	'output'	=> array(
 		array(
 			'element' => '#footer',
@@ -51,14 +44,7 @@ Haste_Store_Kirki::add_field( 'haste-store', array(
 	'choices'     => array(
 		'alpha' => true,
 	),
-	'transport'	=> 'postMessage',
-	'js_vars'   => array(
-		array(
-			'element'  => '#footer',
-			'function' => 'style',
-			'property' => 'color',
-		),
-	),
+	'transport'	=> 'auto',
 	'output'	=> array(
 		array(
 			'element' => '#footer',

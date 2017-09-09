@@ -53,14 +53,7 @@ Haste_Store_Kirki::add_field( 'haste-store', array(
   	'choices'     => array(
   		'alpha' => true,
   	),
-  	'transport'	=> 'postMessage',
-  	'js_vars'   => array(
-  		array(
-  			'element'  => '.banner .section-wrapper',
-  			'function' => 'style',
-  			'property' => 'background-color',
-  		),
-  	),
+  	'transport'	=> 'auto',
   	'output'	=> array(
   		array(
   			'element' => '.banner .section-wrapper',

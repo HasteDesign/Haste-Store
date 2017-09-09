@@ -29,22 +29,7 @@ Haste_Store_Kirki::add_field( 'haste-store', array(
 		'text-transform' => 'none',
 	),
 	'priority'	=> 10,
-	'transport'	=> 'postMessage',
-	'js_vars'   => array(
-		array(
-			'element'  => 	'button,
-							.button,
-							.btn,
-							input[type="submit"],
-							input[type="button"],
-							input[type="reset"],
-							.woocommerce a.button,
-							.woocommerce button.button,
-							.woocommerce input.button,
-							.woocommerce #respond input#submit',
-			'function' => 'style',
-		),
-	),
+	'transport'	=> 'auto',
 	'output'	=> array(
 		array(
 			'element' => array(
@@ -77,25 +62,7 @@ Haste_Store_Kirki::add_field( 'haste-store', array(
 		'step' => '1',
 	),
 	'priority'	=> 20,
-	'transport'	=> 'postMessage',
-	'js_vars'   => array(
-		array(
-			'element'  => 	'button,
-							.button,
-							.btn,
-							input[type="submit"],
-							input[type="button"],
-							input[type="reset"],
-							.woocommerce a.button,
-							.woocommerce button.button,
-							.woocommerce input.button,
-							.woocommerce #respond input#submit,
-							.woocommerce #place_order',
-			'function' => 'style',
-			'property' => 'border-radius',
-			'units'    => 'px',
-		),
-	),
+	'transport'	=> 'auto',
 	'output'	=> array(
 		array(
 			'element' => array(
