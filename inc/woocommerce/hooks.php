@@ -95,7 +95,13 @@ add_filter( 'woocommerce_cross_sells_total', 'change_cross_sells_product_number'
   * Move single star rating on loop
   */
   remove_action( 'woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_rating', 5);
-  add_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_rating', 5 );
+  add_action( 'woocommerce_before_shop_loop_item_title', 'customizer_display_star_rating', 5 );
+
+  function customizer_display_star_rating() {
+      if( true == get_theme_mod( 'display_product_rating', true ) ) {
+          add_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_rating', 5 );
+      }
+  }
 
   /**
    * Out of stock badge
@@ -111,3 +117,25 @@ add_filter( 'woocommerce_cross_sells_total', 'change_cross_sells_product_number'
    * Out of Stock products order
    */
   add_action( 'pre_get_posts', 'move_out_of_stock_products_to_end' );
+
+/**
+ * Option to display or hide buy buttons
+ */
+ add_action( 'woocommerce_after_shop_loop_item', 'customizer_display_add_to_cart_buttons', 1 );
+
+ function customizer_display_add_to_cart_buttons() {
+     if( false == get_theme_mod( 'display_buy_button', true ) ) {
+         remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart' );
+     }
+ }
+
+ /**
+  * Option to display or hide the product price
+  */
+  add_action( 'woocommerce_after_shop_loop_item_title', 'customizer_display_price', 1 );
+
+  function customizer_display_price() {
+      if( false == get_theme_mod( 'display_price', true ) ) {
+          remove_action( 'woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_price' );
+      }
+  }

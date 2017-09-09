@@ -52,3 +52,39 @@ Haste_Store_Kirki::add_field( 'haste-store', array(
 		'off' => esc_attr__( 'Disable', 'haste-store' ),
 	),
 ) );
+
+Haste_Store_Kirki::add_field( 'haste-store', array(
+	'type'        => 'switch',
+	'settings'    => 'display_buy_button',
+	'label'       => __( 'Display the buy button on shop and product archives', 'haste-store' ),
+	'section'     => 'shop',
+	'default'     => '1',
+	'choices'     => array(
+		'on'  => esc_attr__( 'Enable', 'haste-store' ),
+		'off' => esc_attr__( 'Disable', 'haste-store' ),
+	),
+) );
+
+Haste_Store_Kirki::add_field( 'haste-store', array(
+	'type'        => 'switch',
+	'settings'    => 'display_product_rating',
+	'label'       => __( 'Display the product star rating on shop and product archives', 'haste-store' ),
+	'section'     => 'shop',
+	'default'     => '1',
+	'choices'     => array(
+		'on'  => esc_attr__( 'Enable', 'haste-store' ),
+		'off' => esc_attr__( 'Disable', 'haste-store' ),
+	),
+) );
+
+Haste_Store_Kirki::add_field( 'haste-store', array(
+	'type'        => 'switch',
+	'settings'    => 'display_price',
+	'label'       => __( 'Display the product price on shop and product archives', 'haste-store' ),
+	'section'     => 'shop',
+	'default'     => '1',
+	'choices'     => array(
+		'on'  => esc_attr__( 'Enable', 'haste-store' ),
+		'off' => esc_attr__( 'Disable', 'haste-store' ),
+	),
+) );
