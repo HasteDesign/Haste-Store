@@ -167,6 +167,13 @@ if ( ! function_exists( 'odin_setup_features' ) ) {
 		) );
 
 		add_theme_support( 'customize-selective-refresh-widgets' );
+		 
+		/*
+		 * WooCommerce
+		 */
+		add_theme_support( 'wc-product-gallery-zoom' );
+		add_theme_support( 'wc-product-gallery-lightbox' );
+		add_theme_support( 'wc-product-gallery-slider' );
 	}
 }
 
