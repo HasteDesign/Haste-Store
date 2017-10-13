@@ -80,7 +80,7 @@ Haste_Store_Kirki::add_field( 'haste-store', array(
 							'.woocommerce #place_order',
 						),
 			'property' => 'border-radius',
-			'units'    => 'px',
+			'units'    => 'px !important',
 		),
 	),
 ) );
