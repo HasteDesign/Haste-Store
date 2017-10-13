@@ -211,5 +211,15 @@ blockquote {
 @media (min-width: $screen-sm-min) {
 	body.elementor-page {
 		padding-top: 60px;
+
+		&.page-template-page-banner .breadcrumb-wrapper,
+		&.page-template-page-banner-full .breadcrumb-wrapper {
+			margin-top: 30px;
+		}
+
+		.content-section {
+		    padding-top: 0;
+		    padding-bottom: 0;
+		}
 	}
 }

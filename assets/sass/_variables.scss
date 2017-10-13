@@ -245,18 +245,18 @@ $cursor-disabled:                not-allowed;
 //## Dropdown menu container and contents.
 
 //** Background for the dropdown menu.
-$dropdown-bg:                    #fff;
+$dropdown-bg:                    inherit;
 //** Dropdown menu `border-color`.
 $dropdown-border:                transparent;
 //** Dropdown menu `border-color` **for IE8**.
 $dropdown-fallback-border:       transparent;
 //** Divider color for between dropdown items.
-$dropdown-divider-bg:            $gray-light;
+$dropdown-divider-bg:            rgba($gray, .2);
 
 //** Dropdown link text color.
-$dropdown-link-color:            $gray-dark;
+$dropdown-link-color:            currentColor;
 //** Hover color for dropdown links.
-$dropdown-link-hover-color:      darken($gray-dark, 5%);
+$dropdown-link-hover-color:      currentColor;
 //** Hover background for dropdown links.
 $dropdown-link-hover-bg:         transparent;
 
