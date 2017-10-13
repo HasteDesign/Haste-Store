@@ -203,3 +203,13 @@ blockquote {
 #comments {
 	margin-top: 60px;
 }
+
+/**
+ * Elementor Page Builder Support
+ */
+
+@media (min-width: $screen-sm-min) {
+	body.elementor-page {
+		padding-top: 60px;
+	}
+}
