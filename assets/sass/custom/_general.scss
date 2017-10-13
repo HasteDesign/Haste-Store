@@ -221,5 +221,10 @@ blockquote {
 		    padding-top: 0;
 		    padding-bottom: 0;
 		}
+
+		&:not(.home) #footer,
+		#footer {
+			margin-top: 0;
+		}
 	}
 }
