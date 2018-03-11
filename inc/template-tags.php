@@ -22,6 +22,7 @@ if ( ! function_exists( 'haste_store_classes_page_full' ) ) {
         	return 'col-md-10 col-md-offset-1';
         }
 	}
+}
 
 if ( ! function_exists( 'haste_store_classes_page_sidebar' ) ) {
 

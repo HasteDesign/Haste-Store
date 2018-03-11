@@ -1,6 +1,6 @@
 <?php
 /**
- * Haste Store_Widget_Like_Box class.
+ * Haste_Store_Widget_Like_Box class.
  *
  * Facebook like widget.
  *
@@ -9,7 +9,7 @@
  * @author   WPBrasil
  * @version  2.2.0
  */
-class Haste Store_Widget_Like_Box extends WP_Widget {
+class Haste_Store_Widget_Like_Box extends WP_Widget {
 
 	/**
 	 * Register widget with WordPress.
@@ -160,7 +160,7 @@ class Haste Store_Widget_Like_Box extends WP_Widget {
  * Register the Like Box Widget.
  */
 function haste_store_like_box_widget() {
-	register_widget( 'Haste Store_Widget_Like_Box' );
+	register_widget( 'Haste_Store_Widget_Like_Box' );
 }
 
 add_action( 'widgets_init', 'haste_store_like_box_widget' );

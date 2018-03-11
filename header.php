@@ -66,8 +66,8 @@
 									'depth'          => 2,
 									'container'      => false,
 									'menu_class'     => 'nav navbar-nav',
-									'fallback_cb'    => 'Haste Store_Bootstrap_Nav_Walker::fallback',
-									'walker'         => new Haste Store_Bootstrap_Nav_Walker()
+									'fallback_cb'    => 'Haste_Store_Bootstrap_Nav_Walker::fallback',
+									'walker'         => new Haste_Store_Bootstrap_Nav_Walker()
 									)
 								);
 								?>
