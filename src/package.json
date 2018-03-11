@@ -2,7 +2,7 @@
   "name": "odin",
   "description": "Tema base para desenvolvimento em WordPress",
   "version": "2.2.10",
-  "title": "Odin Framework",
+  "title": "Haste Store Framework",
   "homepage": "http://wpod.in/",
   "main": "Gruntfile.js",
   "devDependencies": {

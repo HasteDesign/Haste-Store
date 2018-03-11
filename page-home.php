@@ -4,7 +4,7 @@
  *
  * The template for displaying the homepage.
  *
- * @package Odin
+ * @package Haste Store
  * @since 2.2.0
  */
 

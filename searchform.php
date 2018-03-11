@@ -2,7 +2,7 @@
 /**
  * The template for displaying Search Form.
  *
- * @package Odin
+ * @package Haste Store
  * @since 2.2.0
  */
 ?>

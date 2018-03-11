@@ -4,12 +4,12 @@
  *
  * If no active widgets in this sidebar, it will shows Recent Posts, Archives and Tag Cloud widgets.
  *
- * @package Odin
+ * @package Haste Store
  * @since 2.2.0
  */
 ?>
 
-<aside id="sidebar" class="sidebar <?php echo odin_classes_page_sidebar_aside(); ?>" role="complementary">
+<aside id="sidebar" class="sidebar <?php echo haste_store_classes_page_sidebar_aside(); ?>" role="complementary">
 	<?php
 		if ( is_woocommerce_activated() && is_woocommerce() ) {
 

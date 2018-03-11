@@ -4,7 +4,7 @@
  *
  * If no active widgets in this sidebar, it will shows Recent Posts, Archives and Tag Cloud widgets.
  *
- * @package Odin
+ * @package Haste Store
  * @since 2.2.0
  */
 ?>

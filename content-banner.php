@@ -4,7 +4,7 @@
  *
  * Used for both single and index/archive/author/catagory/search/tag.
  *
- * @package Odin
+ * @package Haste Store
  * @since 2.2.0
  */
 ?>

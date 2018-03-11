@@ -4,7 +4,7 @@
  *
  * The area of the page that contains comments and the comment form.
  *
- * @package Odin
+ * @package Haste Store
  * @since 1.9.0
  */
 ?>
@@ -32,7 +32,7 @@
 			</nav>
 		<?php endif; ?>
 		<ul class="media-list">
-			<?php wp_list_comments( array( 'callback' => 'odin_comments_loop' ) ); ?>
+			<?php wp_list_comments( array( 'callback' => 'haste_store_comments_loop' ) ); ?>
 		</ul>
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : ?>
 			<nav id="comment-nav-above">

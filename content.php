@@ -4,7 +4,7 @@
  *
  * Used for both single and index/archive/author/category/search/tag.
  *
- * @package Odin
+ * @package Haste Store
  * @since 2.2.0
  */
 
@@ -50,7 +50,7 @@ $post_class = '';
 
 		<?php if ( 'post' == get_post_type() ) : ?>
 			<div class="entry-meta">
-				<?php odin_posted_on(); ?>
+				<?php haste_store_posted_on(); ?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
 

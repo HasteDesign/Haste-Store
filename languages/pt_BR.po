@@ -1,56 +1,38 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Haste Store 1.1.4\n"
+"Project-Id-Version: Haste Store v2.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-08-05 21:49-0300\n"
-"PO-Revision-Date: 2017-08-05 21:57-0300\n"
-"Last-Translator: Anyssa Ferreira <anyssacristina@yahoo.com.br>\n"
-"Language-Team: Haste Design\n"
+"POT-Creation-Date: 2017-10-19 14:58-0200\n"
+"PO-Revision-Date: 2017-10-19 19:09-0200\n"
+"Last-Translator: Rafael Funchal <rafaelfunchal@gmail.com>\n"
+"Language-Team: WordPress Brasil Group\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Poedit 2.0.3\n"
+"X-Generator: Poedit 2.0.4\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
-"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;"
-"esc_html__;esc_attr__;esc_html_e;esc_attr_e\n"
-"X-Poedit-Basepath: ..\n"
+"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
+"X-Poedit-Basepath: .\n"
 "X-Textdomain-Support: yes\n"
-"X-Poedit-SearchPath-0: .\n"
-"X-Poedit-SearchPathExcluded-0: src\n"
+"X-Poedit-SearchPath-0: ..\n"
 
 # @ odin
-#: 404.php:14
+#: ../404.php:15
 msgid "Not Found"
-msgstr "Nada Encontrado"
+msgstr "Nada encontrado"
 
 # @ odin
-#: 404.php:18
+#: ../404.php:19
 msgid "It looks like nothing was found at this location. Maybe try a search?"
 msgstr ""
-"Parece que nada foi encontrado neste local. Talvez tentar uma pesquisa?"
+"Parece que nada foi encontrado por aqui. Que tal tentar um dos links abaixo "
+"ou uma pesquisa?"
 
 # @ odin
-#: audio.php:23 video.php:23
-msgid "URL:"
-msgstr "URL:"
-
-# @ odin
-#: audio.php:29 image.php:39 video.php:29
-#, php-format
-msgid "Back to %s"
-msgstr "Voltar para %s"
-
-# @ odin
-#: audio.php:29 image.php:39 video.php:29
-#, php-format
-msgid "<span class=\"meta-nav\">&larr;</span> %s"
-msgstr "<span class=\"meta-nav\">&larr;</span> %s"
-
-# @ odin
-#: comments.php:13
+#: ../comments.php:16
 msgid ""
 "This post is password protected. Enter the password to view all comments."
 msgstr ""
@@ -58,88 +40,1001 @@ msgstr ""
 "comentários."
 
 # @ odin
-#: comments.php:22
+#: ../comments.php:23
 msgid "0 Comments"
 msgstr "0 Comentários"
 
 # @ odin
-#: comments.php:22 inc/template-tags.php:93
+#: ../comments.php:23 ../template-parts/content.php:56
 msgid "1 Comment"
 msgstr "1 Comentário"
 
 # @ odin
-#: comments.php:22 inc/template-tags.php:93
+#: ../comments.php:23 ../template-parts/content.php:56
 msgid "% Comments"
 msgstr "% Comentários"
 
 # @ odin
-#: comments.php:23
+#: ../comments.php:24
 msgid "to"
 msgstr "para"
 
 # @ odin
-#: comments.php:29 comments.php:40
+#: ../comments.php:30 ../comments.php:41
 msgid "&larr; Old Comments"
 msgstr "&larr; Comentários Antigos"
 
 # @ odin
-#: comments.php:30 comments.php:41
+#: ../comments.php:31 ../comments.php:42
 msgid "New Comments &rarr;"
 msgstr "Novos Comentários &rarr;"
 
 # @ odin
-#: comments.php:47
+#: ../comments.php:48
 msgid "Comments closed."
 msgstr "Comentários não são permitidos."
 
 # @ odin
-#: comments.php:56
+#: ../comments.php:56
 msgid "Comment"
 msgstr "Comentário"
 
 # @ odin
-#: comments.php:59
+#: ../comments.php:59
 msgid "Name"
 msgstr "Nome"
 
 # @ odin
-#: comments.php:61
+#: ../comments.php:61
 msgid "E-mail"
 msgstr "E-mail"
 
 # @ odin
-#: comments.php:63
+#: ../comments.php:63
 msgid "Website"
 msgstr "Website"
 
 # @ odin
-#: content-banner-home.php:27 content.php:73 page-banner-full.php:40
-#: page-banner.php:43 page-landing.php:44
-msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
-msgstr "Continue lendo <span class=\"meta-nav\">&rarr;</span>"
+#: ../footer.php:19
+msgid "All rights reserved"
+msgstr "Todos os direitos reservados"
 
 # @ odin
-#: content-banner-home.php:29 content-page.php:17 content.php:75
-#: page-banner-full.php:42 page-banner.php:45 page-landing.php:46
-msgid "Pages:"
-msgstr "Páginas:"
+#: ../footer.php:19
+#, php-format
+msgid ""
+"Powered by the <a href=\"%s\" rel=\"nofollow\" target=\"_blank\">Haste Store</a> "
+"forces and <a href=\"%s\" rel=\"nofollow\" target=\"_blank\">WordPress</a>."
+msgstr ""
+"Powered by the <a href=\"%s\" rel=\"nofollow\" target=\"_blank\">Haste "
+"Starter</a> forces and <a href=\"%s\" rel=\"nofollow\" target=\"_blank"
+"\">WordPress</a>."
 
 # @ odin
-#: content-banner-home.php:42 inc/kirki/fields/front-page.php:128
-msgid "View"
-msgstr "Visualizar"
-
-#: content-banner-home.php:48 inc/kirki/fields/front-page.php:209
-msgid "Tell me more"
-msgstr "Saiba mais"
+#: ../header.php:25
+msgid "Skip to content"
+msgstr "Pular para o conteúdo"
 
 # @ odin
-#: content-none.php:11
+#: ../image.php:22
+#, php-format
+msgid "Image total size: %s pixels"
+msgstr "Tamanho total da imagem: %s pixels"
+
+# @ odin
+#: ../image.php:22
+msgid "Full image link"
+msgstr "Link da imagem completa"
+
+# @ odin
+#: ../image.php:43
+msgid "&larr; Previous image"
+msgstr "&larr; Imagem anterior"
+
+# @ odin
+#: ../image.php:44
+msgid "Next image &rarr;"
+msgstr "Próxima imagem &rarr;"
+
+# @ odin
+#: ../image.php:50
+#, php-format
+msgid "Back to %s"
+msgstr "Voltar para %s"
+
+# @ odin
+#: ../image.php:51
+#, php-format
+msgid "<span class=\"meta-nav\">&larr;</span> %s"
+msgstr "<span class=\"meta-nav\">&larr;</span> %s"
+
+# @ odin
+#: ../inc/breadcrumbs.php:14
+msgid "Home"
+msgstr "Início"
+
+# @ odin
+#: ../inc/breadcrumbs.php:141
+#, php-format
+msgid "%sCategory: %s%s"
+msgstr "%sCategoria: %s%s"
+
+# @ odin
+#: ../inc/breadcrumbs.php:145
+#, php-format
+msgid "%sTag: %s%s"
+msgstr "%sTag: %s%s"
+
+# @ odin
+#: ../inc/breadcrumbs.php:160
+#, php-format
+msgid "%sSearch result for: &quot;%s&quot;%s"
+msgstr "%sResultado da busca para: &quot;%s&quot;%s"
+
+# @ odin
+#: ../inc/breadcrumbs.php:166
+msgid "Posted by"
+msgstr "Publicado por"
+
+# @ odin
+#: ../inc/breadcrumbs.php:216
+msgid "404 Error"
+msgstr "Erro 404"
+
+# @ odin
+#: ../inc/breadcrumbs.php:221
+#, php-format
+msgid "Page %s"
+msgstr "Página %s"
+
+# @ odin
+#: ../inc/classes/class-bootstrap-nav.php:208
+msgid "Add a menu"
+msgstr "Adicionar um menu"
+
+# @ odin
+#: ../inc/comments-loop.php:21
+msgid "Pingback:"
+msgstr "Pingback:"
+
+# @ odin
+#: ../inc/comments-loop.php:21 ../inc/comments-loop.php:44
+msgid "Edit"
+msgstr "Editar"
+
+# @ odin
+#: ../inc/comments-loop.php:37
+msgid "in"
+msgstr "em"
+
+# @ odin
+#: ../inc/comments-loop.php:40
+msgid "at"
+msgstr "as"
+
+# @ odin
+#: ../inc/comments-loop.php:41
+msgid "said:"
+msgstr "disse:"
+
+# @ odin
+#: ../inc/comments-loop.php:47
+msgid "Your comment is awaiting moderation."
+msgstr "Seu comentário está aguardando moderação."
+
+# @ odin
+#: ../inc/comments-loop.php:56
+msgid "Respond"
+msgstr "Responder"
+
+# @ odin
+#: ../inc/menu.php:9
+msgid "Main Menu"
+msgstr "Menu Principal"
+
+# @ odin
+#: ../inc/pagination.php:44
+msgid "&laquo; Previous"
+msgstr "&laquo; Anterior"
+
+# @ odin
+#: ../inc/pagination.php:45
+msgid "Next &raquo;"
+msgstr "Próximo &raquo;"
+
+# @ odin
+#: ../inc/post.php:144
+msgid "Related Posts"
+msgstr "Artigos Relacionados"
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:9
+msgid "Haste Store shortcodes"
+msgstr "Shortcodes do Haste Store"
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:10
+msgid "Id"
+msgstr "ID"
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:11
+msgid "default"
+msgstr "padrão"
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:12
+msgid "Buttons"
+msgstr "Botões"
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:13
+msgid "Button"
+msgstr "Botão"
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:14
+msgid "Title"
+msgstr "Título"
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:15
+msgid "Text"
+msgstr "Texto"
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:16
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2642
+msgid "Type"
+msgstr "Tipo"
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:17
+msgid "Size"
+msgstr "Tamanho"
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:18
+msgid "lg (large)"
+msgstr "lg (grande)"
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:19
+msgid "sm (small)"
+msgstr "sm (pequeno)"
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:20
+msgid "xs (extra small)"
+msgstr "xs (extra pequeno)"
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:21
+msgid "Link"
+msgstr "Link"
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:22
+msgid "Class"
+msgstr "Classe"
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:23
+msgid "Tooltip"
+msgstr "Tooltip"
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:24
+msgid "Direction"
+msgstr "Direção"
+
+# @ odin
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:25
+#| msgid "to"
+msgid "top"
+msgstr "topo"
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:26
+msgid "left"
+msgstr "esquerda"
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:27
+msgid "right"
+msgstr "direita"
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:28
+msgid "bottom"
+msgstr "abaixo"
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:29
+msgid "success"
+msgstr "sucesso"
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:30
+msgid "danger"
+msgstr "perigo"
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:31
+msgid "warning"
+msgstr "atenção"
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:32
+msgid "info"
+msgstr "informação"
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:33
+msgid "Group button"
+msgstr "Grupo de botão"
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:34
+msgid "List"
+msgstr "Lista"
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:35
+msgid "Alert"
+msgstr "Alerta"
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:36
+msgid "vertical"
+msgstr "vertical"
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:37
+msgid "group"
+msgstr "grupo"
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:38
+msgid "Justified"
+msgstr "Justificado"
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:39
+msgid "Content"
+msgstr "Conteúdo"
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:40
+msgid "Close"
+msgstr "Fechar"
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:41
+msgid "Label"
+msgstr "Label"
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:42
+msgid "Badge"
+msgstr "Badge"
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:43
+msgid "Well"
+msgstr "Well"
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:44
+msgid "Table"
+msgstr "Tabela"
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:45
+msgid "striped"
+msgstr "listrada"
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:46
+msgid "hover"
+msgstr "hover"
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:47
+msgid "condensed"
+msgstr "condensada"
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:48
+msgid "responsive"
+msgstr "responsiva"
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:49
+msgid "Border"
+msgstr "Borda"
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:50
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:93
+msgid "Columns"
+msgstr "Colunas"
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:51
+msgid "Rows"
+msgstr "Linhas"
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:52
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:53
+msgid "Progress bar"
+msgstr "Barra de progresso"
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:54
+msgid "progress-striped"
+msgstr "progress-striped"
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:55
+msgid "active"
+msgstr "ativo"
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:56
+msgid "Value (%)"
+msgstr "Valor (%)"
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:57
+msgid "Max value"
+msgstr "Valor máximo"
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:58
+msgid "Min value"
+msgstr "Valor mínimo"
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:59
+msgid "Panel"
+msgstr "Painel"
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:60
+msgid "primary"
+msgstr "primário"
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:61
+msgid "Data"
+msgstr "Dados"
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:62
+msgid "QRcode"
+msgstr "QRcode"
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:63
+msgid "Clear"
+msgstr "Clear"
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:64
+msgid "Latitude"
+msgstr "Latitude"
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:65
+msgid "Longitude"
+msgstr "Longitude"
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:66
+msgid "Zoom"
+msgstr "Zoom"
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:67
+msgid "Width"
+msgstr "Largura"
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:68
+msgid "Height"
+msgstr "Altura"
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:69
+msgid "Map type"
+msgstr "Tipo de mapa"
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:70
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:73
+msgid "ROADMAP"
+msgstr "Estradas"
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:71
+msgid "SATELLITE"
+msgstr "Satélite"
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:72
+msgid "HYBRID"
+msgstr "Híbrido"
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:74
+msgid "TERRAIN"
+msgstr "Terremo"
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:75
+msgid "Address"
+msgstr "Endereço"
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:76
+msgid "Kml"
+msgstr ""
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:77
+msgid "Kml autofit"
+msgstr ""
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:78
+msgid "Marker"
+msgstr ""
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:79
+msgid "Marker image"
+msgstr ""
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:80
+msgid "Traffic"
+msgstr ""
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:81
+msgid "Bike"
+msgstr ""
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:82
+msgid "Fusion"
+msgstr ""
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:83
+msgid "Info window"
+msgstr ""
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:84
+msgid "Info window default"
+msgstr ""
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:85
+msgid "Hide controls"
+msgstr ""
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:86
+msgid "Scale"
+msgstr ""
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:87
+msgid "Scrollwheel"
+msgstr ""
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:88
+msgid "Map"
+msgstr ""
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:89
+msgid "Accordion"
+msgstr ""
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:90
+msgid "Accordion id"
+msgstr ""
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:91
+msgid "Childs"
+msgstr ""
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:92
+msgid "Grid"
+msgstr ""
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:94
+msgid "Tabs"
+msgstr ""
+
+#: ../inc/shortcodes/shortcodes-editor-i18n.php:95
+msgid "Icon"
+msgstr ""
+
+# @ odin
+#: ../inc/sidebar.php:10
+msgid "Main Sidebar"
+msgstr "Sidebar Principal"
+
+# @ odin
+#: ../inc/sidebar.php:12
+msgid "Site Main Sidebar"
+msgstr "Sidebar principal do site"
+
+# @ odin
+#: ../inc/template-tags.php:60
+msgid "Sticky"
+msgstr "Destacado"
+
+# @ odin
+#: ../inc/template-tags.php:65
+msgid "Posted in"
+msgstr "Publicado em"
+
+# @ odin
+#: ../inc/template-tags.php:68
+msgid "by"
+msgstr "por"
+
+#: ../inc/widgets/class-widget-like-box.php:20
+msgid "Facebook Like Box"
+msgstr "Caixa de Curtir do Facebook"
+
+#: ../inc/widgets/class-widget-like-box.php:21
+msgid "This widget includes a facebook like box on your blog"
+msgstr "Esse widget inclui a caixa de curtir do Facebook em seu site"
+
+#: ../inc/widgets/class-widget-like-box.php:48
+msgid "Title:"
+msgstr "Título:"
+
+#: ../inc/widgets/class-widget-like-box.php:54
+msgid "Facebook Page URL:"
+msgstr "URL da página do Facebook:"
+
+#: ../inc/widgets/class-widget-like-box.php:60
+msgid "Width:"
+msgstr "Largura:"
+
+#: ../inc/widgets/class-widget-like-box.php:66
+msgid "Height:"
+msgstr "Altura:"
+
+#: ../inc/widgets/class-widget-like-box.php:72
+msgid "Color Scheme:"
+msgstr "Esquema de cores:"
+
+#: ../inc/widgets/class-widget-like-box.php:74
+msgid "Dark"
+msgstr "Escuro"
+
+#: ../inc/widgets/class-widget-like-box.php:75
+msgid "Light"
+msgstr "Claro"
+
+#: ../inc/widgets/class-widget-like-box.php:81
+msgid "Show Friends Faces"
+msgstr "Exibir rostos dos amigos"
+
+#: ../inc/widgets/class-widget-like-box.php:86
+msgid "Show Posts"
+msgstr "Exibir atualizações"
+
+#: ../inc/widgets/class-widget-like-box.php:91
+msgid "Show Header"
+msgstr "Exibir cabeçalho"
+
+#: ../inc/widgets/class-widget-like-box.php:96
+msgid "Show Border"
+msgstr "Exibir borda"
+
+#: ../inc/woocommerce/template-tags.php:28
+msgid "View your shopping cart"
+msgstr ""
+
+#: ../inc/woocommerce/template-tags.php:29
+#, php-format
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] ""
+msgstr[1] ""
+
+# @ odin
+#: ../node_modules/ajv/dist/regenerator.min.js:25
+#: ../node_modules/ajv/dist/regenerator.min.js:26
+#: ../node_modules/eslint/node_modules/ajv/dist/regenerator.min.js:2
+#: ../node_modules/table/node_modules/ajv/dist/regenerator.min.js:2
+msgid " "
+msgstr " "
+
+#: ../node_modules/ajv/dist/regenerator.min.js:25
+#: ../node_modules/ajv/dist/regenerator.min.js:26
+#: ../node_modules/eslint/node_modules/ajv/dist/regenerator.min.js:2
+#: ../node_modules/table/node_modules/ajv/dist/regenerator.min.js:2
+msgid "."
+msgstr ""
+
+#: ../node_modules/ajv/dist/regenerator.min.js:26
+#: ../node_modules/eslint/node_modules/ajv/dist/regenerator.min.js:2
+#: ../node_modules/table/node_modules/ajv/dist/regenerator.min.js:2
+msgid "*"
+msgstr ""
+
+#: ../node_modules/ajv/dist/regenerator.min.js:26
+#: ../node_modules/eslint/node_modules/ajv/dist/regenerator.min.js:2
+#: ../node_modules/table/node_modules/ajv/dist/regenerator.min.js:2
+msgid "import"
+msgstr ""
+
+#: ../node_modules/ajv/dist/regenerator.min.js:26
+#: ../node_modules/eslint/node_modules/ajv/dist/regenerator.min.js:2
+#: ../node_modules/table/node_modules/ajv/dist/regenerator.min.js:2
+msgid "{}"
+msgstr ""
+
+# @ odin
+#: ../node_modules/ajv/dist/regenerator.min.js:26
+#: ../node_modules/eslint/node_modules/ajv/dist/regenerator.min.js:2
+#: ../node_modules/table/node_modules/ajv/dist/regenerator.min.js:2
+#, fuzzy
+#| msgctxt "Used between list items, there is a space after the comma."
+#| msgid ", "
+msgid ", "
+msgstr ", "
+
+#: ../node_modules/ajv/dist/regenerator.min.js:26
+#: ../node_modules/eslint/node_modules/ajv/dist/regenerator.min.js:2
+#: ../node_modules/table/node_modules/ajv/dist/regenerator.min.js:2
+msgid "this"
+msgstr ""
+
+#: ../node_modules/ajv/dist/regenerator.min.js:26
+#: ../node_modules/eslint/node_modules/ajv/dist/regenerator.min.js:2
+#: ../node_modules/table/node_modules/ajv/dist/regenerator.min.js:2
+msgid "super"
+msgstr ""
+
+#: ../node_modules/ajv/dist/regenerator.min.js:26
+#: ../node_modules/eslint/node_modules/ajv/dist/regenerator.min.js:2
+#: ../node_modules/table/node_modules/ajv/dist/regenerator.min.js:2
+msgid "null"
+msgstr ""
+
+#: ../node_modules/ajv/dist/regenerator.min.js:26
+#: ../node_modules/eslint/node_modules/ajv/dist/regenerator.min.js:2
+#: ../node_modules/table/node_modules/ajv/dist/regenerator.min.js:2
+msgid ",\n"
+msgstr ""
+
+#: ../node_modules/ajv/dist/regenerator.min.js:26
+#: ../node_modules/eslint/node_modules/ajv/dist/regenerator.min.js:2
+#: ../node_modules/table/node_modules/ajv/dist/regenerator.min.js:2
+msgid " = "
+msgstr ""
+
+#: ../node_modules/ajv/dist/regenerator.min.js:26
+#: ../node_modules/eslint/node_modules/ajv/dist/regenerator.min.js:2
+#: ../node_modules/table/node_modules/ajv/dist/regenerator.min.js:2
+msgid "\n"
+msgstr ""
+
+#: ../node_modules/ajv/dist/regenerator.min.js:26
+#: ../node_modules/eslint/node_modules/ajv/dist/regenerator.min.js:2
+#: ../node_modules/table/node_modules/ajv/dist/regenerator.min.js:2
+msgid "debugger;"
+msgstr ""
+
+#: ../node_modules/ajv/dist/regenerator.min.js:26
+#: ../node_modules/eslint/node_modules/ajv/dist/regenerator.min.js:2
+#: ../node_modules/table/node_modules/ajv/dist/regenerator.min.js:2
+msgid ":"
+msgstr ""
+
+#: ../node_modules/ajv/dist/regenerator.min.js:26
+#: ../node_modules/eslint/node_modules/ajv/dist/regenerator.min.js:2
+#: ../node_modules/table/node_modules/ajv/dist/regenerator.min.js:2
+msgid "empty"
+msgstr ""
+
+#: ../node_modules/ajv/dist/regenerator.min.js:26
+#: ../node_modules/eslint/node_modules/ajv/dist/regenerator.min.js:2
+#: ../node_modules/table/node_modules/ajv/dist/regenerator.min.js:2
+msgid "any"
+msgstr ""
+
+#: ../node_modules/ajv/dist/regenerator.min.js:26
+#: ../node_modules/eslint/node_modules/ajv/dist/regenerator.min.js:2
+#: ../node_modules/table/node_modules/ajv/dist/regenerator.min.js:2
+msgid "mixed"
+msgstr ""
+
+#: ../node_modules/ajv/dist/regenerator.min.js:26
+#: ../node_modules/eslint/node_modules/ajv/dist/regenerator.min.js:2
+#: ../node_modules/localtunnel/node_modules/yargs/lib/usage.js:174
+#: ../node_modules/postcss-cli/node_modules/yargs/lib/usage.js:241
+#: ../node_modules/sass-graph/node_modules/yargs/lib/usage.js:241
+#: ../node_modules/table/node_modules/ajv/dist/regenerator.min.js:2
+#: ../node_modules/yargs/lib/usage.js:225
+msgid "boolean"
+msgstr ""
+
+#: ../node_modules/ajv/dist/regenerator.min.js:26
+#: ../node_modules/eslint/node_modules/ajv/dist/regenerator.min.js:2
+#: ../node_modules/table/node_modules/ajv/dist/regenerator.min.js:2
+msgid "interface "
+msgstr ""
+
+#: ../node_modules/ajv/dist/regenerator.min.js:26
+#: ../node_modules/eslint/node_modules/ajv/dist/regenerator.min.js:2
+#: ../node_modules/table/node_modules/ajv/dist/regenerator.min.js:2
+msgid " & "
+msgstr ""
+
+#: ../node_modules/ajv/dist/regenerator.min.js:26
+#: ../node_modules/eslint/node_modules/ajv/dist/regenerator.min.js:2
+#: ../node_modules/postcss-cli/node_modules/yargs/lib/usage.js:246
+#: ../node_modules/sass-graph/node_modules/yargs/lib/usage.js:246
+#: ../node_modules/table/node_modules/ajv/dist/regenerator.min.js:2
+#: ../node_modules/yargs/lib/usage.js:230
+msgid "number"
+msgstr ""
+
+#: ../node_modules/ajv/dist/regenerator.min.js:26
+#: ../node_modules/eslint/node_modules/ajv/dist/regenerator.min.js:2
+#: ../node_modules/localtunnel/node_modules/yargs/lib/usage.js:176
+#: ../node_modules/localtunnel/node_modules/yargs/lib/usage.js:177
+#: ../node_modules/postcss-cli/node_modules/yargs/lib/usage.js:243
+#: ../node_modules/postcss-cli/node_modules/yargs/lib/usage.js:244
+#: ../node_modules/sass-graph/node_modules/yargs/lib/usage.js:243
+#: ../node_modules/sass-graph/node_modules/yargs/lib/usage.js:244
+#: ../node_modules/table/node_modules/ajv/dist/regenerator.min.js:2
+#: ../node_modules/yargs/lib/usage.js:227
+#: ../node_modules/yargs/lib/usage.js:228
+msgid "string"
+msgstr ""
+
+#: ../node_modules/ajv/dist/regenerator.min.js:26
+#: ../node_modules/eslint/node_modules/ajv/dist/regenerator.min.js:2
+#: ../node_modules/table/node_modules/ajv/dist/regenerator.min.js:2
+msgid "typeof "
+msgstr ""
+
+#: ../node_modules/ajv/dist/regenerator.min.js:26
+#: ../node_modules/eslint/node_modules/ajv/dist/regenerator.min.js:2
+#: ../node_modules/table/node_modules/ajv/dist/regenerator.min.js:2
+msgid " | "
+msgstr ""
+
+#: ../node_modules/ajv/dist/regenerator.min.js:26
+#: ../node_modules/eslint/node_modules/ajv/dist/regenerator.min.js:2
+#: ../node_modules/table/node_modules/ajv/dist/regenerator.min.js:2
+msgid "void"
+msgstr ""
+
+#: ../node_modules/localtunnel/node_modules/yargs/lib/parser.js:239
+#: ../node_modules/postcss-cli/node_modules/yargs-parser/index.js:306
+#: ../node_modules/sass-graph/node_modules/yargs-parser/index.js:301
+#: ../node_modules/yargs-parser/index.js:301
+#, javascript-format
+msgid "Not enough arguments following: %s"
+msgstr ""
+
+#: ../node_modules/localtunnel/node_modules/yargs/lib/parser.js:348
+#: ../node_modules/postcss-cli/node_modules/yargs-parser/index.js:454
+#: ../node_modules/sass-graph/node_modules/yargs-parser/index.js:449
+#: ../node_modules/yargs-parser/index.js:449
+#, javascript-format
+msgid "Invalid JSON config file: %s"
+msgstr ""
+
+# @ odin
+#: ../node_modules/localtunnel/node_modules/yargs/lib/usage.js:132
+#: ../node_modules/postcss-cli/node_modules/yargs/lib/usage.js:169
+#: ../node_modules/sass-graph/node_modules/yargs/lib/usage.js:169
+#: ../node_modules/yargs/lib/usage.js:158
+msgid "Commands:"
+msgstr "Comandos:"
+
+#: ../node_modules/localtunnel/node_modules/yargs/lib/usage.js:165
+msgid "Options:"
+msgstr ""
+
+#: ../node_modules/localtunnel/node_modules/yargs/lib/usage.js:175
+#: ../node_modules/postcss-cli/node_modules/yargs/lib/usage.js:242
+#: ../node_modules/sass-graph/node_modules/yargs/lib/usage.js:242
+#: ../node_modules/yargs/lib/usage.js:226
+msgid "count"
+msgstr ""
+
+#: ../node_modules/localtunnel/node_modules/yargs/lib/usage.js:178
+#: ../node_modules/postcss-cli/node_modules/yargs/lib/usage.js:245
+#: ../node_modules/sass-graph/node_modules/yargs/lib/usage.js:245
+#: ../node_modules/yargs/lib/usage.js:229
+msgid "array"
+msgstr ""
+
+# @ odin
+#: ../node_modules/localtunnel/node_modules/yargs/lib/usage.js:182
+#: ../node_modules/postcss-cli/node_modules/yargs/lib/usage.js:250
+#: ../node_modules/sass-graph/node_modules/yargs/lib/usage.js:250
+#: ../node_modules/yargs/lib/usage.js:234
+msgid "required"
+msgstr "obrigatório"
+
+#: ../node_modules/localtunnel/node_modules/yargs/lib/usage.js:183
+#: ../node_modules/postcss-cli/node_modules/yargs/lib/usage.js:251
+#: ../node_modules/sass-graph/node_modules/yargs/lib/usage.js:251
+#: ../node_modules/yargs/lib/usage.js:235
+msgid "choices:"
+msgstr ""
+
+#: ../node_modules/localtunnel/node_modules/yargs/lib/usage.js:202
+#: ../node_modules/postcss-cli/node_modules/yargs/lib/usage.js:270
+#: ../node_modules/sass-graph/node_modules/yargs/lib/usage.js:270
+#: ../node_modules/yargs/lib/usage.js:254
+msgid "Examples:"
+msgstr ""
+
+#: ../node_modules/localtunnel/node_modules/yargs/lib/usage.js:280
+#: ../node_modules/postcss-cli/node_modules/yargs/lib/usage.js:385
+#: ../node_modules/sass-graph/node_modules/yargs/lib/usage.js:385
+#: ../node_modules/yargs/lib/usage.js:354
+msgid "generated-value"
+msgstr ""
+
+#: ../node_modules/localtunnel/node_modules/yargs/lib/usage.js:302
+#: ../node_modules/postcss-cli/node_modules/yargs/lib/usage.js:177
+#: ../node_modules/postcss-cli/node_modules/yargs/lib/usage.js:407
+#: ../node_modules/sass-graph/node_modules/yargs/lib/usage.js:177
+#: ../node_modules/sass-graph/node_modules/yargs/lib/usage.js:407
+#: ../node_modules/yargs/lib/usage.js:376
+msgid "default:"
+msgstr ""
+
+#: ../node_modules/localtunnel/node_modules/yargs/lib/validation.js:19
+#: ../node_modules/postcss-cli/node_modules/yargs/lib/validation.js:27
+#: ../node_modules/postcss-cli/node_modules/yargs/lib/validation.js:50
+#: ../node_modules/sass-graph/node_modules/yargs/lib/validation.js:26
+#: ../node_modules/sass-graph/node_modules/yargs/lib/validation.js:49
+#: ../node_modules/yargs/lib/validation.js:22
+#: ../node_modules/yargs/lib/validation.js:37
+#, javascript-format
+msgid "Not enough non-option arguments: got %s, need at least %s"
+msgstr ""
+
+#: ../node_modules/localtunnel/node_modules/yargs/lib/validation.js:23
+#: ../node_modules/postcss-cli/node_modules/yargs/lib/validation.js:38
+#: ../node_modules/sass-graph/node_modules/yargs/lib/validation.js:37
+#: ../node_modules/yargs/lib/validation.js:26
+#, javascript-format
+msgid "Too many non-option arguments: got %s, maximum of %s"
+msgstr ""
+
+#: ../node_modules/localtunnel/node_modules/yargs/lib/validation.js:148
+#: ../node_modules/postcss-cli/node_modules/yargs/lib/validation.js:186
+#: ../node_modules/sass-graph/node_modules/yargs/lib/validation.js:185
+#: ../node_modules/yargs/lib/validation.js:171
+msgid "Invalid values:"
+msgstr ""
+
+#: ../node_modules/localtunnel/node_modules/yargs/lib/validation.js:151
+#: ../node_modules/postcss-cli/node_modules/yargs/lib/validation.js:189
+#: ../node_modules/sass-graph/node_modules/yargs/lib/validation.js:188
+#: ../node_modules/yargs/lib/validation.js:174
+#, javascript-format
+msgid "Argument: %s, Given: %s, Choices: %s"
+msgstr ""
+
+#: ../node_modules/localtunnel/node_modules/yargs/lib/validation.js:171
+#: ../node_modules/postcss-cli/node_modules/yargs/lib/validation.js:219
+#: ../node_modules/sass-graph/node_modules/yargs/lib/validation.js:218
+#: ../node_modules/yargs/lib/validation.js:200
+#, javascript-format
+msgid "Argument check failed: %s"
+msgstr ""
+
+#: ../node_modules/localtunnel/node_modules/yargs/lib/validation.js:238
+#: ../node_modules/postcss-cli/node_modules/yargs/lib/validation.js:284
+#: ../node_modules/sass-graph/node_modules/yargs/lib/validation.js:283
+#: ../node_modules/yargs/lib/validation.js:270
+msgid "Implications failed:"
+msgstr ""
+
+#: ../node_modules/postcss-cli/node_modules/yargs/lib/usage.js:179
+#: ../node_modules/sass-graph/node_modules/yargs/lib/usage.js:179
+#: ../node_modules/yargs/lib/usage.js:166
+msgid "aliases:"
+msgstr ""
+
+#: ../node_modules/postcss-cli/node_modules/yargs/lib/validation.js:314
+#: ../node_modules/sass-graph/node_modules/yargs/lib/validation.js:313
+#, javascript-format
+msgid "Arguments %s and %s are mutually exclusive"
+msgstr ""
+
+#: ../node_modules/postcss-cli/node_modules/yargs/lib/validation.js:333
+#: ../node_modules/sass-graph/node_modules/yargs/lib/validation.js:332
+#: ../node_modules/yargs/lib/validation.js:294
+#, javascript-format
+msgid "Did you mean %s?"
+msgstr ""
+
+#: ../node_modules/rijs/dist/ripple.min.js:3
+#: ../node_modules/rijs/node_modules/rijs.serve/dist/ripple.min.js:3
+msgid "creating"
+msgstr ""
+
+#: ../node_modules/rijs/dist/ripple.min.js:3
+#: ../node_modules/rijs/node_modules/rijs.serve/dist/ripple.min.js:3
+msgid "cached"
+msgstr ""
+
+#: ../node_modules/rijs/dist/ripple.pure.min.js:1
+#: ../node_modules/rijs/node_modules/rijs.serve/dist/ripple.pure.min.js:1
+msgid "to failed"
+msgstr ""
+
+# @ odin
+#: ../node_modules/rijs/dist/ripple.pure.min.js:1
+#: ../node_modules/rijs/node_modules/rijs.serve/dist/ripple.pure.min.js:1
+msgid "not found"
+msgstr "nada encontrado"
+
+#: ../node_modules/rijs/node_modules/utilise/utilise.min.js:1
+msgid "name"
+msgstr ""
+
+# @ odin
+#: ../search.php:18
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Resultado de Busca por: %s"
+
+# @ odin
+#: ../template-parts/content-none.php:14
 msgid "Nothing Found"
 msgstr "Nada Encontrado"
 
 # @ odin
-#: content-none.php:17
+#: ../template-parts/content-none.php:20
 #, php-format
 msgid ""
 "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
@@ -148,7 +1043,7 @@ msgstr ""
 "aqui</a>."
 
 # @ odin
-#: content-none.php:21
+#: ../template-parts/content-none.php:24
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
@@ -157,7 +1052,7 @@ msgstr ""
 "tente novamente com algumas palavras-chave diferentes."
 
 # @ odin
-#: content-none.php:26
+#: ../template-parts/content-none.php:29
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
@@ -166,1218 +1061,396 @@ msgstr ""
 "pesquisa pode ajudar."
 
 # @ odin
-#: content.php:89
-msgid "Tagged as:"
-msgstr "Marcado como:"
+#: ../template-parts/content-page.php:22 ../template-parts/content.php:36
+msgid "Pages:"
+msgstr "Páginas:"
 
 # @ odin
-#: core/classes/class-bootstrap-nav.php:203
-msgid "Add a menu"
-msgstr "Adicionar um menu"
-
-#: core/classes/widgets/class-haste-content-image-module.php:20
-msgid "Haste Content and Image Module"
-msgstr "Haste Módulo de Conteúdo e Imagem"
-
-#: core/classes/widgets/class-haste-content-image-module.php:21
-msgid ""
-"Displays title, content (shotcodes included), a button and image as "
-"background, with few options."
-msgstr ""
-"Exibe um título, conteúdo (inclusive shortcodes), um botão e imagem como "
-"background, com algumas opções."
-
-#: core/classes/widgets/class-haste-content-image-module.php:35
-#: core/classes/widgets/class-haste-content-image-module.php:245
-#: core/classes/widgets/class-haste-posts-module.php:33
-#: core/classes/widgets/class-haste-posts-module.php:187
-msgid "My module title"
-msgstr "Título do meu módulo"
-
-#: core/classes/widgets/class-haste-content-image-module.php:54
-msgid "Content options"
-msgstr "Opções de conteúdo"
-
-#: core/classes/widgets/class-haste-content-image-module.php:57
-#: core/classes/widgets/class-haste-posts-module.php:49
-#: core/classes/widgets/class-widget-like-box.php:48
-msgid "Title:"
-msgstr "Título:"
-
-#: core/classes/widgets/class-haste-content-image-module.php:63
-#: core/classes/widgets/class-haste-posts-module.php:55
-msgid "Subtitle"
-msgstr "Subtítulo"
-
-#: core/classes/widgets/class-haste-content-image-module.php:69
-#: inc/odin-shortcodes-editor-i18n.php:39
-msgid "Content"
-msgstr "Conteúdo"
-
-#: core/classes/widgets/class-haste-content-image-module.php:75
-msgid "Text Color"
-msgstr "Cor do texto"
-
-#: core/classes/widgets/class-haste-content-image-module.php:81
-msgid "Button text"
-msgstr "Texto do botão"
-
-#: core/classes/widgets/class-haste-content-image-module.php:86
-msgid "Button link:"
-msgstr "Link do botão:"
-
-#: core/classes/widgets/class-haste-content-image-module.php:92
-msgid "Button CSS classes"
-msgstr "Classes CSS do botão"
-
-#: core/classes/widgets/class-haste-content-image-module.php:99
-msgid "Content alignment"
-msgstr "Alinhamento do conteúdo"
-
-#: core/classes/widgets/class-haste-content-image-module.php:106
-msgid "Content centered"
-msgstr "Conteúdo centralizado"
-
-#: core/classes/widgets/class-haste-content-image-module.php:111
-msgid "Content on left"
-msgstr "Conteúdo à esquerda"
-
-#: core/classes/widgets/class-haste-content-image-module.php:116
-msgid "Content on right"
-msgstr "Conteúdo à direita"
-
-#: core/classes/widgets/class-haste-content-image-module.php:123
-msgid "Area padding (%)"
-msgstr "Padding da área (%)"
-
-#: core/classes/widgets/class-haste-content-image-module.php:128
-msgid "Background options"
-msgstr "Opções de background"
-
-#: core/classes/widgets/class-haste-content-image-module.php:133
-msgid "Image:"
-msgstr "Imagem:"
+#: ../template-parts/content.php:34
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Continue lendo <span class=\"meta-nav\">&rarr;</span>"
 
 # @ odin
-#: core/classes/widgets/class-haste-content-image-module.php:135
-msgid "Set image "
-msgstr "Definir imagem"
-
-# @ odin
-#: core/classes/widgets/class-haste-content-image-module.php:136
-msgid "Remove"
-msgstr "Remover"
-
-#: core/classes/widgets/class-haste-content-image-module.php:140
-msgid "Image vertical position (%)"
-msgstr "Posição vertical da imagem (%)"
-
-#: core/classes/widgets/class-haste-content-image-module.php:146
-msgid "Image horizontal position (%)"
-msgstr "Posição horizontal da imagem (%)"
-
-#: core/classes/widgets/class-haste-content-image-module.php:152
-msgid "Image size (%)"
-msgstr "Tamanho da imagem (%)"
-
-#: core/classes/widgets/class-haste-content-image-module.php:156
-msgid "Expand image to cover the entire module area"
-msgstr "Expandir a imagem para cobrir toda a área do módulo"
-
-#: core/classes/widgets/class-haste-content-image-module.php:161
-msgid "Fix the background image"
-msgstr "Fixar imagem de background"
-
-#: core/classes/widgets/class-haste-content-image-module.php:167
-msgid "Background image repeat"
-msgstr "Repetição da imagem do background"
-
-#: core/classes/widgets/class-haste-content-image-module.php:174
-msgid "No repeat"
-msgstr "Não repetir"
-
-#: core/classes/widgets/class-haste-content-image-module.php:179
-msgid "Vertical and horizontal repeat"
-msgstr "Repetir na vertical e horizontal"
-
-#: core/classes/widgets/class-haste-content-image-module.php:184
-msgid "Horizontal repeat"
-msgstr "Repetir na horizontal"
-
-#: core/classes/widgets/class-haste-content-image-module.php:189
-msgid "Vertical repeat"
-msgstr "Repetir na vertical"
-
-#: core/classes/widgets/class-haste-content-image-module.php:196
-msgid "Background Color"
-msgstr "Cor de fundo"
-
-#: core/classes/widgets/class-haste-posts-module.php:18
-msgid "Haste Posts Module"
-msgstr "Haste Módulo de Posts"
-
-#: core/classes/widgets/class-haste-posts-module.php:19
-msgid "Display blog posts."
-msgstr "Exibir posts do blog"
-
-#: core/classes/widgets/class-haste-posts-module.php:61
-msgid "Number of posts to display (use -1 to show all posts)"
-msgstr "Número de posts a serem exibidos (use -1 para exibir todos os posts)"
-
-#: core/classes/widgets/class-haste-posts-module.php:65
-msgid "Post selection criteria"
-msgstr "Critérios de seleção de posts"
-
-#: core/classes/widgets/class-haste-posts-module.php:68
-msgid "From a category (category slug)"
-msgstr "De uma categoria (slug da categoria)"
-
-#: core/classes/widgets/class-haste-posts-module.php:74
-msgid "From keyword"
-msgstr "De palavra chave"
-
-# @ odin
-#: core/classes/widgets/class-haste-posts-module.php:81
-msgid "Order posts by"
-msgstr "Ordenar posts por"
-
-#: core/classes/widgets/class-haste-posts-module.php:88
-msgid "Date"
-msgstr "Data"
-
-#: core/classes/widgets/class-haste-posts-module.php:93
-#: inc/odin-shortcodes-editor-i18n.php:14
-msgid "Title"
-msgstr "Título"
-
-#: core/classes/widgets/class-haste-posts-module.php:98
-msgid "Random"
-msgstr "Aleatório"
-
-#: core/classes/widgets/class-haste-posts-module.php:106
-msgid "Order"
-msgstr "Ordem"
-
-#: core/classes/widgets/class-haste-posts-module.php:113
-msgid "Descending"
-msgstr "Descendente"
-
-#: core/classes/widgets/class-haste-posts-module.php:118
-msgid "Ascending"
-msgstr "Ascendente"
-
-#: core/classes/widgets/class-haste-posts-module.php:125
-msgid "CSS posts classes"
-msgstr "Classes CSS dos posts"
-
-#: core/classes/widgets/class-haste-posts-module.php:129
-msgid "Post display options"
-msgstr "Opções de exibição de posts"
-
-#: core/classes/widgets/class-haste-posts-module.php:132
-msgid "Display post thumbnails"
-msgstr "Exibir imagem dos posts"
-
-#: core/classes/widgets/class-haste-posts-module.php:137
-msgid "Display post excerpts"
-msgstr "Exibir resumo do post"
-
-#: core/classes/widgets/class-haste-posts-module.php:142
-msgid "Display post dates"
-msgstr "Exibir data dos posts"
-
-#: core/classes/widgets/class-haste-posts-module.php:287
-msgid "Sorry, no posts matched your criteria."
-msgstr "Desculpe, nenhum post atendeu aos seus critérios."
-
-#: core/classes/widgets/class-widget-like-box.php:20
-msgid "Facebook Like Box"
-msgstr "Caixa de Curtir do Facebook"
-
-#: core/classes/widgets/class-widget-like-box.php:21
-msgid "This widget includes a facebook like box on your blog"
-msgstr "Esse widget inclui a caixa de curtir do Facebook em seu site"
-
-#: core/classes/widgets/class-widget-like-box.php:54
-msgid "Facebook Page URL:"
-msgstr "URL da página do Facebook:"
-
-#: core/classes/widgets/class-widget-like-box.php:60
-msgid "Width:"
-msgstr "Largura:"
-
-#: core/classes/widgets/class-widget-like-box.php:66
-msgid "Height:"
-msgstr "Altura:"
-
-#: core/classes/widgets/class-widget-like-box.php:72
-msgid "Color Scheme:"
-msgstr "Esquema de cores:"
-
-#: core/classes/widgets/class-widget-like-box.php:74
-msgid "Dark"
-msgstr "Escuro"
-
-#: core/classes/widgets/class-widget-like-box.php:75
-msgid "Light"
-msgstr "Claro"
-
-#: core/classes/widgets/class-widget-like-box.php:81
-msgid "Show Friends Faces"
-msgstr "Exibir rostos dos amigos"
-
-#: core/classes/widgets/class-widget-like-box.php:86
-msgid "Show Posts"
-msgstr "Exibir atualizações"
-
-#: core/classes/widgets/class-widget-like-box.php:91
-msgid "Show Header"
-msgstr "Exibir cabeçalho"
-
-#: core/classes/widgets/class-widget-like-box.php:96
-msgid "Show Border"
-msgstr "Exibir borda"
-
-# @ odin
-#: core/helpers.php:53
-msgid "&laquo; Previous"
-msgstr "&laquo; Anterior"
-
-# @ odin
-#: core/helpers.php:54
-msgid "Next &raquo;"
-msgstr "Próximo &raquo;"
-
-# @ odin
-#: core/helpers.php:96
-msgid "Related Posts"
-msgstr "Artigos Relacionados"
-
-# @ odin
-#: core/helpers.php:232
-msgid "Home"
-msgstr "Home"
-
-# @ odin
-#: core/helpers.php:359
-#, php-format
-msgid "%sCategory: %s%s"
-msgstr "%sCategoria: %s%s"
-
-# @ odin
-#: core/helpers.php:363
-#, php-format
-msgid "%sTag: %s%s"
-msgstr "%sTag: %s%s"
-
-# @ odin
-#: core/helpers.php:378
-#, php-format
-msgid "%sSearch result for: &quot;%s&quot;%s"
-msgstr "%sResultado da busca para: &quot;%s&quot;%s"
-
-# @ odin
-#: core/helpers.php:384
-msgid "Posted by"
-msgstr "Publicado por"
-
-# @ odin
-#: core/helpers.php:434
-msgid "404 Error"
-msgstr "Erro 404"
-
-# @ odin
-#: core/helpers.php:439
-#, php-format
-msgid "Page %s"
-msgstr "Página %s"
-
-# @ odin
-#: footer.php:66
-msgid "All rights reserved"
-msgstr "Todos os direitos reservados"
-
-#: footer.php:70 inc/kirki/fields/footer.php:77
-msgid "Proudly powered by Haste Store and WordPress"
-msgstr "Orgulhosamente desenvolvido com Haste Store e WordPress"
-
-# @ odin
-#: functions.php:57
-msgid "Main Menu"
-msgstr "Menu Principal"
-
-#: functions.php:183
-msgid "Home main content"
-msgstr "Conteúdo principal da home"
-
-#: functions.php:185
-msgid "Home page template main content area"
-msgstr "Area de conteúdo principal do template da home"
-
-# @ odin
-#: functions.php:194
-msgid "Main Sidebar"
-msgstr "Sidebar Principal"
-
-#: functions.php:196
-msgid "Site Main Sidebar, displayed on pages and posts"
-msgstr "Sidebar principal do site, exibida em páginas e posts"
-
-#: functions.php:205
-msgid "WooCommerce Sidebar"
-msgstr "Sidebar do WooCommerce"
-
-#: functions.php:207
-msgid "Displays widgets on WooCommerce pages"
-msgstr "Exibe widgets nas páginas do WooCommerce"
-
-#: functions.php:216 functions.php:227
-msgid "Footer area 1"
-msgstr "Área do rodapé 1"
-
-#: functions.php:218 functions.php:229
-msgid "First footer column "
-msgstr "Primeira coluna do rodapé"
-
-#: functions.php:238
-msgid "Footer area 2"
-msgstr "Área do rodapé 2"
-
-#: functions.php:240
-msgid "Second footer column "
-msgstr "Segunda coluna do rodapé"
-
-#: functions.php:249
-msgid "Footer area 3"
-msgstr "Área do rodapé 3"
-
-#: functions.php:251
-msgid "Third footer column "
-msgstr "Terceira coluna do rodapé"
-
-#: functions.php:260
-msgid "Footer area 4"
-msgstr "Área do rodapé 4"
-
-#: functions.php:262
-msgid "Fourth footer column "
-msgstr "Quarta coluna do rodapé"
-
-#: functions.php:339 inc/odin-shortcodes-editor-i18n.php:63
-msgid "Clear"
-msgstr "Limpar"
-
-#: functions.php:340
-msgid "Default"
-msgstr "Padrão"
-
-# @ odin
-#: functions.php:341
-msgid "Select Color"
-msgstr "Selecionar cor"
-
-#: functions.php:342
-msgid "Current Color"
-msgstr "Cor atual"
-
-# @ odin
-#: functions.php:410
-msgid "Read more &rarr;"
-msgstr "Ler mais &rarr;"
-
-# @ odin
-#: header.php:29
-msgid "Skip to content"
-msgstr "Pular para o conteúdo"
-
-# @ odin
-#: header.php:48
-msgid "Toggle navigation"
-msgstr "Alternar navegação"
-
-#: header.php:89
-#, php-format
-msgid "Hello, %s!"
-msgstr "Olá, %s!"
-
-#: header.php:98
-msgid "My orders"
-msgstr "Meus pedidos"
-
-#: header.php:104
-msgid "My account"
-msgstr "Minha conta"
-
-#: header.php:109
-msgid "Logout"
-msgstr "Sair"
-
-#: header.php:117
-msgid "Hello, guest user!"
-msgstr "Olá, visitante!"
-
-#: header.php:122
-msgid "Login"
-msgstr "Login"
-
-#: header.php:124
-msgid "Register"
-msgstr "Registrar"
-
-#: header.php:137
-msgid "Cart"
-msgstr "Carrinho"
-
-# @ odin
-#: image.php:22
-#, php-format
-msgid "Image total size: %s pixels"
-msgstr "Tamanho total da imagem: %s pixels"
-
-# @ odin
-#: image.php:22
-msgid "Full image link"
-msgstr "Link da imagem completa"
-
-# @ odin
-#: image.php:33
-msgid "&larr; Previous image"
-msgstr "&larr; Imagem anterior"
-
-# @ odin
-#: image.php:34
-msgid "Next image &rarr;"
-msgstr "Próxima imagem &rarr;"
-
-# @ odin
-#: inc/comments-loop.php:21
-msgid "Pingback:"
-msgstr "Pingback:"
-
-# @ odin
-#: inc/comments-loop.php:21 inc/comments-loop.php:44
-msgid "Edit"
-msgstr "Editar"
-
-# @ odin
-#: inc/comments-loop.php:37
-msgid "in"
-msgstr "em"
-
-# @ odin
-#: inc/comments-loop.php:40
-msgid "at"
-msgstr "as"
-
-# @ odin
-#: inc/comments-loop.php:41
-msgid "said:"
-msgstr "disse:"
-
-# @ odin
-#: inc/comments-loop.php:47
-msgid "Your comment is awaiting moderation."
-msgstr "Seu comentário está aguardando moderação."
-
-# @ odin
-#: inc/comments-loop.php:56
-msgid "Respond"
-msgstr "Responder"
-
-#: inc/kirki/fields/blog.php:8
-msgid "Blog options"
-msgstr "Opções do blog"
-
-#: inc/kirki/fields/blog.php:9
-msgid "Blog and post options"
-msgstr "Opções do blog e dos posts"
-
-#: inc/kirki/fields/blog.php:19
-msgid "Display the blog title"
-msgstr "Exibir título do blog"
-
-#: inc/kirki/fields/blog.php:28
-msgid "Override the Blog title"
-msgstr "Sobrescrever título da página do blog"
-
-#: inc/kirki/fields/blog.php:44
-msgid "Blog description"
-msgstr "Descrição do blog"
-
-#: inc/kirki/fields/blog.php:60
-msgid "Display sidebar on blog and archives"
-msgstr "Exibir sidebar nos blogs e arquivos"
-
-#: inc/kirki/fields/blog.php:65 inc/kirki/fields/blog.php:79
-#: inc/kirki/fields/blog.php:93 inc/kirki/fields/blog.php:106
-#: inc/kirki/fields/blog.php:119 inc/kirki/fields/blog.php:132
-#: inc/kirki/fields/blog.php:146
-msgid "Enable"
-msgstr "Ativar"
-
-#: inc/kirki/fields/blog.php:66 inc/kirki/fields/blog.php:80
-#: inc/kirki/fields/blog.php:94 inc/kirki/fields/blog.php:107
-#: inc/kirki/fields/blog.php:120 inc/kirki/fields/blog.php:133
-#: inc/kirki/fields/blog.php:147
-msgid "Disable"
-msgstr "Desativar"
-
-#: inc/kirki/fields/blog.php:74
-msgid "Display sidebar on single posts"
-msgstr "Exibir sidebar em posts"
-
-#: inc/kirki/fields/blog.php:88
-msgid "Display post date"
-msgstr "Exibir data do post"
-
-#: inc/kirki/fields/blog.php:101
-msgid "Display post author"
-msgstr "Exibir autor dos posts"
-
-#: inc/kirki/fields/blog.php:114
-msgid "Display post category"
-msgstr "Exibir categoria dos posts"
-
-#: inc/kirki/fields/blog.php:127
-msgid "Display post comments link"
-msgstr "Exibir link para os comentários do post"
-
-#: inc/kirki/fields/blog.php:141
-msgid "Display post content on blog and archives"
-msgstr "Exibir conteúdo do post no blog e arquivos"
-
-#: inc/kirki/fields/button.php:8 inc/odin-shortcodes-editor-i18n.php:12
-msgid "Buttons"
-msgstr "Botões"
-
-#: inc/kirki/fields/button.php:9
-msgid "Buttons options"
-msgstr "Opções dos botões"
-
-#: inc/kirki/fields/button.php:20
-msgid "Button typography"
-msgstr "Tipografia dos botões"
-
-#: inc/kirki/fields/button.php:71
-msgid "Button border radius"
-msgstr "Canto arredondado do botão"
-
-#: inc/kirki/fields/color.php:13
-msgid "Primary color"
-msgstr "Cor primária"
-
-#: inc/kirki/fields/color.php:200
-msgid "Action color"
-msgstr "Cor de ação"
-
-#: inc/kirki/fields/color.php:326
-msgid "Info color"
-msgstr "Cor de informação"
-
-#: inc/kirki/fields/color.php:441
-msgid "Warning color"
-msgstr "Cor de aviso"
-
-#: inc/kirki/fields/color.php:546
-msgid "Danger / Error color"
-msgstr "Cor de erro"
-
-#: inc/kirki/fields/footer.php:10
-msgid "Footer"
-msgstr "Rodapé"
-
-#: inc/kirki/fields/footer.php:11
-msgid "Footer options"
-msgstr "Opções do rodapé"
-
-#: inc/kirki/fields/footer.php:21
-msgid "Footer background color"
-msgstr "Cor de fundo do rodapé"
-
-#: inc/kirki/fields/footer.php:47
-msgid "Footer text color"
-msgstr "Cor de texto do rodapé"
-
-#: inc/kirki/fields/footer.php:74
-msgid "Site credit text"
-msgstr "Texto do crédito do site"
-
-#: inc/kirki/fields/footer.php:84
-msgid "Site credit link"
-msgstr "Link do crédito do site"
-
-#: inc/kirki/fields/front-page.php:13
-msgid "Haste Store Custom Settings"
-msgstr "Configurações do Haste Store"
-
-#: inc/kirki/fields/front-page.php:13
-msgid "This options applies to the Home page template."
-msgstr "Estas opções se aplicam ao template de página Home Shop."
-
-#: inc/kirki/fields/front-page.php:20
-msgid "Display a section with the page content and featured image"
-msgstr "Exibir uma seção com o conteúdo da página e a imagem destacada"
-
-#: inc/kirki/fields/front-page.php:29
-msgid "Home section height"
-msgstr "Altura da seção da home"
-
-#: inc/kirki/fields/front-page.php:34
-msgid "Full height"
-msgstr "Altura completa"
-
-#: inc/kirki/fields/front-page.php:35
-msgid "Auto height"
-msgstr "Altura automática"
-
-#: inc/kirki/fields/front-page.php:49
-msgid "Banner overlay color"
-msgstr "Cor de sobreposição do banner"
-
-#: inc/kirki/fields/front-page.php:75
-msgid "Override home page title"
-msgstr "Sobrescrever título da página home"
-
-#: inc/kirki/fields/front-page.php:110
-msgid "Display first button"
-msgstr "Exibir primeiro botão"
-
-#: inc/kirki/fields/front-page.php:126
-msgid "Home first button text"
-msgstr "Texto do primeiro botão da home"
-
-#: inc/kirki/fields/front-page.php:142
-msgid "Home first button link"
-msgstr "Link do primeiro botão da home"
-
-#: inc/kirki/fields/front-page.php:158
-msgid "Home first button CSS classes"
-msgstr "Classes do primeiro botão da home"
-
-#: inc/kirki/fields/front-page.php:191
-msgid "Display second button"
-msgstr "Exibir o primeiro botão da home"
-
-#: inc/kirki/fields/front-page.php:207
-msgid "Home second button text"
-msgstr "Texto do segundo botão da home"
-
-#: inc/kirki/fields/front-page.php:223
-msgid "Home second button link"
-msgstr "Link do segundo botão da home"
-
-#: inc/kirki/fields/front-page.php:239
-msgid "Home second button CSS classes"
-msgstr "Classes do segundo botão da home"
-
-#: inc/kirki/fields/header.php:10
-msgid "Header"
-msgstr "Cabeçalho"
-
-#: inc/kirki/fields/header.php:11
-msgid "Header options"
-msgstr "Opções do cabeçalho"
-
-#: inc/kirki/fields/header.php:21
-msgid "Header background color"
-msgstr "Cor de fundo do cabeçalho"
-
-#: inc/kirki/fields/header.php:47
-msgid "Header text color"
-msgstr "Cor do texto do cabeçalho"
-
-#: inc/kirki/fields/shop.php:8
-msgid "Shop options"
-msgstr "Opções da loja"
-
-#: inc/kirki/fields/shop.php:9
-msgid "WooCommerce shop options"
-msgstr "Opções da loja do WooCommerce"
-
-#: inc/kirki/fields/shop.php:19
-msgid "Shop products columns"
-msgstr "Colunas de produtos da loja"
-
-#: inc/kirki/fields/shop.php:20
-msgid "Also affects the related products"
-msgstr "Também afeta os produtos relacionados"
-
-#: inc/kirki/fields/shop.php:33
-msgid "Products per page"
-msgstr "Produtos por página"
-
-#: inc/kirki/fields/type.php:8
-msgid "Typography"
-msgstr "Tipografia"
-
-#: inc/kirki/fields/type.php:9
-msgid "Font options"
-msgstr "Opções de fonte"
-
-#: inc/kirki/fields/type.php:21
-msgid "Load extra variants for the body font"
-msgstr "Carregar variações extra para a fonte de corpo"
-
-#: inc/kirki/fields/type.php:22
-msgid "Includes the regular, italic, bold and bold italic variants."
-msgstr ""
-"Inclui também as variações regular, itálico, negrito e negrito itálico."
-
-#: inc/kirki/fields/type.php:43
-msgid "Body typography"
-msgstr "Tipografia do corpo de texto"
-
-#: inc/kirki/fields/type.php:75
-msgid "Headers typography"
-msgstr "Tipografia dos títulos"
-
-#: inc/kirki/include-kirki.php:54
-msgid ""
-"A plugin is required to take full advantage of all Haste Store theme's "
-"features in the customizer. Don't worry! It's free and fast to install."
-msgstr ""
-"Um plugin é necessário para tirar o máximo proveito de todos os recursos do "
-"tema Haste Store no personalizador. Não se preocupe! É grátis e rápido de "
-"instalar."
-
-#: inc/kirki/include-kirki.php:56
-msgid "Install Now"
-msgstr "Instalar agora"
-
-#: inc/kirki/include-kirki.php:59
-msgid ""
-"You have installed Kirki. Activate it to take advantage of Haste Store "
-"theme's features in the customizer."
-msgstr ""
-"Você instalou o Kirki. Ative-o para tirar proveito dos recursos do tema "
-"Haste Store no personalizador."
-
-#: inc/kirki/include-kirki.php:61
-msgid "Activate Now"
-msgstr "Ativar agora"
-
-#: inc/odin-shortcodes-editor-i18n.php:9
-msgid "Haste Store Shortcodes"
-msgstr "Haste Store Shortcodes"
-
-#: inc/odin-shortcodes-editor-i18n.php:10
-msgid "Id"
-msgstr "ID"
-
-#: inc/odin-shortcodes-editor-i18n.php:11
-msgid "default"
-msgstr "padrão"
-
-#: inc/odin-shortcodes-editor-i18n.php:13
-msgid "Button"
-msgstr "Botão"
-
-#: inc/odin-shortcodes-editor-i18n.php:15
-msgid "Text"
-msgstr "Texto"
-
-#: inc/odin-shortcodes-editor-i18n.php:16
-msgid "Type"
-msgstr "Tipografia"
-
-#: inc/odin-shortcodes-editor-i18n.php:17
-msgid "Size"
-msgstr "Tamanho"
-
-#: inc/odin-shortcodes-editor-i18n.php:18
-msgid "lg (large)"
-msgstr "lg (grande)"
-
-#: inc/odin-shortcodes-editor-i18n.php:19
-msgid "sm (small)"
-msgstr "sm (pequeno"
-
-#: inc/odin-shortcodes-editor-i18n.php:20
-msgid "xs (extra small)"
-msgstr "xs (extra pequeno)"
-
-#: inc/odin-shortcodes-editor-i18n.php:21
-msgid "Link"
-msgstr "Link"
-
-#: inc/odin-shortcodes-editor-i18n.php:22
-msgid "Class"
-msgstr "Classe"
-
-#: inc/odin-shortcodes-editor-i18n.php:23
-msgid "Tooltip"
-msgstr "Tooltip"
-
-#: inc/odin-shortcodes-editor-i18n.php:24
-msgid "Direction"
-msgstr "Direção"
-
-# @ odin
-#: inc/odin-shortcodes-editor-i18n.php:25
-msgid "top"
-msgstr "topo"
-
-#: inc/odin-shortcodes-editor-i18n.php:26
-msgid "left"
-msgstr "esquerda"
-
-#: inc/odin-shortcodes-editor-i18n.php:27
-msgid "right"
-msgstr "direita"
-
-#: inc/odin-shortcodes-editor-i18n.php:28
-msgid "bottom"
-msgstr "abaixo"
-
-#: inc/odin-shortcodes-editor-i18n.php:29
-msgid "success"
-msgstr "sucesso"
-
-#: inc/odin-shortcodes-editor-i18n.php:30
-msgid "danger"
-msgstr "perigo"
-
-#: inc/odin-shortcodes-editor-i18n.php:31
-msgid "warning"
-msgstr "aviso"
-
-#: inc/odin-shortcodes-editor-i18n.php:32
-msgid "info"
-msgstr "info"
-
-#: inc/odin-shortcodes-editor-i18n.php:33
-msgid "Group button"
-msgstr "Grupo de botões"
-
-#: inc/odin-shortcodes-editor-i18n.php:34
-msgid "List"
-msgstr "Lista"
-
-#: inc/odin-shortcodes-editor-i18n.php:35
-msgid "Alert"
-msgstr "Alerta"
-
-#: inc/odin-shortcodes-editor-i18n.php:36
-msgid "vertical"
-msgstr "vertical"
-
-#: inc/odin-shortcodes-editor-i18n.php:37
-msgid "group"
-msgstr "grupo"
-
-#: inc/odin-shortcodes-editor-i18n.php:38
-msgid "Justified"
-msgstr "Justificado"
-
-#: inc/odin-shortcodes-editor-i18n.php:40
-msgid "Close"
-msgstr "Fechar"
-
-#: inc/odin-shortcodes-editor-i18n.php:41
-msgid "Label"
-msgstr "Etiqueta"
-
-#: inc/odin-shortcodes-editor-i18n.php:42
-msgid "Badge"
-msgstr "Badge"
-
-#: inc/odin-shortcodes-editor-i18n.php:43
-msgid "Well"
-msgstr "Well"
-
-#: inc/odin-shortcodes-editor-i18n.php:44
-msgid "Table"
-msgstr "Tabela"
-
-#: inc/odin-shortcodes-editor-i18n.php:45
-msgid "striped"
-msgstr "listrada"
-
-#: inc/odin-shortcodes-editor-i18n.php:46
-msgid "hover"
-msgstr "hover"
-
-#: inc/odin-shortcodes-editor-i18n.php:47
-msgid "condensed"
-msgstr "condensada"
-
-#: inc/odin-shortcodes-editor-i18n.php:48
-msgid "responsive"
-msgstr "responsiva"
-
-#: inc/odin-shortcodes-editor-i18n.php:49
-msgid "Border"
-msgstr "Borda"
-
-#: inc/odin-shortcodes-editor-i18n.php:50
-#: inc/odin-shortcodes-editor-i18n.php:93
-msgid "Columns"
-msgstr "COlunas"
-
-#: inc/odin-shortcodes-editor-i18n.php:51
-msgid "Rows"
-msgstr "Linhas"
-
-#: inc/odin-shortcodes-editor-i18n.php:52
-#: inc/odin-shortcodes-editor-i18n.php:53
-msgid "Progress bar"
-msgstr "Barra de progresso"
-
-#: inc/odin-shortcodes-editor-i18n.php:54
-msgid "progress-striped"
-msgstr "progresso-listrada"
-
-#: inc/odin-shortcodes-editor-i18n.php:55
-msgid "active"
-msgstr "ativa"
-
-#: inc/odin-shortcodes-editor-i18n.php:56
-msgid "Value (%)"
-msgstr "Valor (%)"
-
-#: inc/odin-shortcodes-editor-i18n.php:57
-msgid "Max value"
-msgstr "Valor máximo"
-
-#: inc/odin-shortcodes-editor-i18n.php:58
-msgid "Min value"
-msgstr "Valor mínimo"
-
-#: inc/odin-shortcodes-editor-i18n.php:59
-msgid "Panel"
-msgstr "Painel"
-
-#: inc/odin-shortcodes-editor-i18n.php:60
-msgid "primary"
-msgstr "primárioa"
-
-#: inc/odin-shortcodes-editor-i18n.php:61
-msgid "Data"
-msgstr "Dado"
-
-#: inc/odin-shortcodes-editor-i18n.php:62
-msgid "QRcode"
-msgstr "QRcode"
-
-#: inc/odin-shortcodes-editor-i18n.php:64
-msgid "Latitude"
-msgstr "Latitude"
-
-#: inc/odin-shortcodes-editor-i18n.php:65
-msgid "Longitude"
-msgstr "Longitude"
-
-#: inc/odin-shortcodes-editor-i18n.php:66
-msgid "Zoom"
-msgstr "Zoom"
-
-#: inc/odin-shortcodes-editor-i18n.php:67
-msgid "Width"
-msgstr "Largura"
-
-#: inc/odin-shortcodes-editor-i18n.php:68
-msgid "Height"
-msgstr "Altura"
-
-#: inc/odin-shortcodes-editor-i18n.php:69
-msgid "Map type"
-msgstr "Tipo de mapa"
-
-#: inc/odin-shortcodes-editor-i18n.php:70
-#: inc/odin-shortcodes-editor-i18n.php:73
-msgid "ROADMAP"
-msgstr "ESTRADA"
-
-#: inc/odin-shortcodes-editor-i18n.php:71
-msgid "SATELLITE"
-msgstr "SATÉLITE"
-
-#: inc/odin-shortcodes-editor-i18n.php:72
-msgid "HYBRID"
-msgstr "HÍBRIDO"
-
-#: inc/odin-shortcodes-editor-i18n.php:74
-msgid "TERRAIN"
-msgstr "TERRENO"
-
-#: inc/odin-shortcodes-editor-i18n.php:75
-msgid "Address"
-msgstr "Endereço"
-
-#: inc/odin-shortcodes-editor-i18n.php:76
-msgid "Kml"
-msgstr "Kml"
-
-#: inc/odin-shortcodes-editor-i18n.php:77
-msgid "Kml autofit"
-msgstr "Kml autofit"
-
-#: inc/odin-shortcodes-editor-i18n.php:78
-msgid "Marker"
-msgstr "Marcador"
-
-#: inc/odin-shortcodes-editor-i18n.php:79
-msgid "Marker image"
-msgstr "Imagem do marcador"
-
-#: inc/odin-shortcodes-editor-i18n.php:80
-msgid "Traffic"
-msgstr "Tráfego"
-
-#: inc/odin-shortcodes-editor-i18n.php:81
-msgid "Bike"
-msgstr "Bicicleta"
-
-#: inc/odin-shortcodes-editor-i18n.php:82
-msgid "Fusion"
-msgstr "Fusão"
-
-#: inc/odin-shortcodes-editor-i18n.php:83
-msgid "Info window"
-msgstr "Janela de informação"
-
-#: inc/odin-shortcodes-editor-i18n.php:84
-msgid "Info window default"
-msgstr "Janela de informação padrão"
-
-#: inc/odin-shortcodes-editor-i18n.php:85
-msgid "Hide controls"
-msgstr "Esconder controles"
-
-#: inc/odin-shortcodes-editor-i18n.php:86
-msgid "Scale"
-msgstr "Escala"
-
-#: inc/odin-shortcodes-editor-i18n.php:87
-msgid "Scrollwheel"
-msgstr "Barra de rolagem"
-
-#: inc/odin-shortcodes-editor-i18n.php:88
-msgid "Map"
-msgstr "Mapa"
-
-#: inc/odin-shortcodes-editor-i18n.php:89
-msgid "Accordion"
-msgstr "Accordion"
-
-#: inc/odin-shortcodes-editor-i18n.php:90
-msgid "Accordion id"
-msgstr "ID do Accordion"
-
-#: inc/odin-shortcodes-editor-i18n.php:91
-msgid "Childs"
-msgstr "Filhos"
-
-#: inc/odin-shortcodes-editor-i18n.php:92
-msgid "Grid"
-msgstr "Grid"
-
-#: inc/odin-shortcodes-editor-i18n.php:94
-msgid "Tabs"
-msgstr "Tabs"
-
-#: inc/odin-shortcodes-editor-i18n.php:95
-msgid "Icon"
-msgstr "Ícone"
-
-# @ odin
-#: inc/template-tags.php:64
-msgid "Sticky"
-msgstr "Destacado"
-
-# @ odin
-#: inc/template-tags.php:76
-msgid "by"
-msgstr "por"
-
-# @ odin
-#: inc/template-tags.php:85
+#: ../template-parts/content.php:48
 msgid "Posted in:"
 msgstr "Publicado em:"
 
 # @ odin
-#: inc/template-tags.php:85
+#: ../template-parts/content.php:48
 msgctxt "Used between list items, there is a space after the comma."
 msgid ", "
 msgstr ", "
 
 # @ odin
-#: inc/template-tags.php:93
+#: ../template-parts/content.php:52
+msgid "Tagged as:"
+msgstr "Marcado como:"
+
+# @ odin
+#: ../template-parts/content.php:56
 msgid "Leave a comment"
 msgstr "Deixe um comentário"
 
-#: inc/woocommerce/template-tags.php:28
-msgid "View your shopping cart"
-msgstr "Ver seu carrinho de compras"
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:334
+msgid "Install Required Plugins"
+msgstr "Instalar plugins necessários"
 
-#: inc/woocommerce/template-tags.php:29
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:335
+msgid "Install Plugins"
+msgstr "Instalar plugins"
+
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:337
 #, php-format
-msgid "%d item"
-msgid_plural "%d items"
-msgstr[0] "%d item"
-msgstr[1] "%d itens"
+msgid "Installing Plugin: %s"
+msgstr "Instalando plugin: %s"
 
-#: inc/woocommerce/template-tags.php:70
-msgid "You are at"
-msgstr "Você está em"
-
-#: inc/woocommerce/template-tags.php:90
-msgid "Out of stock"
-msgstr "Esgotado"
-
-#: index.php:26 index.php:27 index.php:29
-msgid "Blog"
-msgstr "Blog"
-
-# @ odin
-#: search.php:16
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:339
 #, php-format
-msgid "Search Results for: %s"
-msgstr "Resultado de Busca por: %s"
+msgid "Updating Plugin: %s"
+msgstr "Atualizando plugin: %s"
+
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:340
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:343
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:349
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:355
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:361
+#, php-format
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:367
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:373
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:378
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] "Iniciar instalação do plugin"
+msgstr[1] "Iniciar instalação dos plugins"
+
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:383
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] "Iniciar atualização do plugin"
+msgstr[1] "Iniciar atualização dos plugins"
+
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:388
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] "Iniciar ativação do plugin"
+msgstr[1] "Iniciar ativação dos plugins"
+
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:392
+msgid "Return to Required Plugins Installer"
+msgstr "Voltar para a instalação dos plugins necessários"
+
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:393
+msgid "Return to the Dashboard"
+msgstr "Voltar para o painel"
 
 # @ odin
-#: searchform.php:12 searchform.php:14
-msgid "Search"
-msgstr "Buscar"
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:394
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:3252
+msgid "Plugin activated successfully."
+msgstr "Plugin ativado com sucesso."
 
-#~ msgid "Odin shortcodes"
-#~ msgstr "Shortcodes do Odin"
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:395
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:3045
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] "O plugin seguinte foi ativado com sucesso:"
+msgstr[1] "Os seguintes plugins foram ativados com sucesso:"
+
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:397
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr "Nenhuma ação executada. O plugin %1$s já estava ativo."
+
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:399
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+"Plugin não ativado. Uma versão mais recente do %s é necessária para este "
+"tema. Por favor, atualize o plugin."
+
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:401
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr "Todos os plugins foram instalados e ativados com sucesso. %1$s"
+
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:402
+msgid "Dismiss this notice"
+msgstr "Dispensar este aviso"
+
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:403
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+"Existem um ou mais plugins necessários ou recomendados para serem "
+"instalados, atualizados ou ativados."
+
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:404
+msgid "Please contact the administrator of this site for help."
+msgstr "Por favor, entre em contato com o administrados deste site para ajuda."
+
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2075
+#, php-format
+msgid "TGMPA v%s"
+msgstr "TGMPA v%s"
 
 # @ odin
-#, fuzzy
-#~ msgid ""
-#~ "Powered by <a href=\"%s\" rel=\"nofollow\" target=\"_blank\">Haste Store</"
-#~ "a> and <a href=\"%s\" rel=\"nofollow\" target=\"_blank\">WordPress</a>."
-#~ msgstr ""
-#~ "Powered by the <a href=\"%s\" rel=\"nofollow\" target=\"_blank\">Odin</a> "
-#~ "forces and <a href=\"%s\" rel=\"nofollow\" target=\"_blank\">WordPress</"
-#~ "a>."
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2366
+msgid "Required"
+msgstr "Obrigatório"
+
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2369
+msgid "Recommended"
+msgstr "Recomendados"
+
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2385
+msgid "WordPress Repository"
+msgstr "Repositório do WordPress"
+
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2388
+msgid "External Source"
+msgstr "Fonte externa"
+
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2391
+msgid "Pre-Packaged"
+msgstr "Pré-inseridos"
+
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2408
+msgid "Not Installed"
+msgstr "Não instalados"
+
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2412
+msgid "Installed But Not Activated"
+msgstr "Instalados mas não ativados"
+
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2414
+msgid "Active"
+msgstr "Ativos"
+
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2420
+msgid "Required Update not Available"
+msgstr "Atualização necessária não disponível"
+
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2423
+msgid "Requires Update"
+msgstr "Requer atualização"
+
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2426
+msgid "Update recommended"
+msgstr "Atualização recomendada"
+
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2435
+#, php-format
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr "%1$s, %2$s"
 
 # @ odin
-#~ msgid "Site Main Sidebar"
-#~ msgstr "Sidebar principal do site"
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2481
+#, php-format
+#| msgid "<span class=\"meta-nav\">&larr;</span> %s"
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] "<span class=\"count\">(%s)</span>"
+msgstr[1] "Todos <span class=\"count\">(%s)</span>"
+
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2485
+#, php-format
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] "Para instalar <span class=\"count\">(%s)</span>"
+msgstr[1] "Para instalar <span class=\"count\">(%s)</span>"
+
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2489
+#, php-format
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] "Atualização disponível <span class=\"count\">(%s)</span>"
+msgstr[1] "Atualização disponível <span class=\"count\">(%s)</span>"
+
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2493
+#, php-format
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] "Para ativar <span class=\"count\">(%s)</span>"
+msgstr[1] "Para ativar <span class=\"count\">(%s)</span>"
+
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2575
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr "desconhecida"
+
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2583
+msgid "Installed version:"
+msgstr "Versão instalada:"
+
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2591
+msgid "Minimum required version:"
+msgstr "Versão mínima necessária:"
+
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2603
+msgid "Available version:"
+msgstr "Versão disponível:"
+
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2640
+msgid "Plugin"
+msgstr "Plugin"
+
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2641
+msgid "Source"
+msgstr "Origem"
+
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2646
+msgid "Version"
+msgstr "Versão"
+
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2647
+msgid "Status"
+msgstr "Status"
+
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2696
+#, php-format
+msgid "Install %2$s"
+msgstr "Instalar %2$s"
 
 # @ odin
-#, fuzzy
-#~ msgid " "
-#~ msgstr ", "
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2701
+#, php-format
+msgid "Update %2$s"
+msgstr "Atualizar %2$s"
+
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2707
+#, php-format
+msgid "Activate %2$s"
+msgstr "Ativar %2$s"
+
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2810
+msgid "Install"
+msgstr "Instalar"
 
 # @ odin
-#, fuzzy
-#~ msgid "a"
-#~ msgstr "as"
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2816
+msgid "Update"
+msgstr "Atualizar"
 
-#, fuzzy
-#~ msgid "this Is A Test"
-#~ msgstr "Enviar email de teste"
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2819
+msgid "Activate"
+msgstr "Ativar"
 
-#, fuzzy
-#~ msgid "Hello"
-#~ msgstr "Olá"
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2850
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
 
-#, fuzzy
-#~ msgid "1"
-#~ msgstr "%1$s-%2$s"
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2852
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2893
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2895
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:3251
+msgid "Plugin activation failed."
+msgstr ""
+
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:3591
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:3594
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:3596
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:3600
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:3602
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:3603
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:3605
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:3608
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:3611
+msgid "All installations have been completed."
+msgstr ""
+
+#: ../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:3613
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
 
 # @ odin
 #~ msgid "Daily Archives: %s"
@@ -1406,12 +1479,28 @@ msgstr "Buscar"
 #~ msgstr "Arquivos"
 
 # @ odin
+#~ msgid "URL:"
+#~ msgstr "URL:"
+
+# @ odin
+#~ msgid "All posts by %s"
+#~ msgstr "Todas as publicações por %s"
+
+# @ odin
 #~ msgid "Category Archives: %s"
 #~ msgstr "Arquivo da Categoria: %s"
 
 # @ odin
+#~ msgid "Toggle navigation"
+#~ msgstr "Alternar navegação"
+
+# @ odin
 #~ msgid "Search:"
 #~ msgstr "Pesquisar:"
+
+# @ odin
+#~ msgid "Search"
+#~ msgstr "Pesquisa"
 
 # @ odin
 #~ msgid "Tag Archives: %s"
@@ -1430,12 +1519,24 @@ msgstr "Buscar"
 #~ msgstr "Adicionar na galeria"
 
 # @ odin
+#~ msgid "Remove image"
+#~ msgstr "Remover imagem"
+
+# @ odin
 #~ msgid "Choose a file"
 #~ msgstr "Selecione um arquivo"
 
 # @ odin
 #~ msgid "Add file"
 #~ msgstr "Adicionar arquivo"
+
+# @ odin
+#~ msgid "Select file"
+#~ msgstr "Selecionar arquivo"
+
+# @ odin
+#~ msgid "Select image"
+#~ msgstr "Selecionar imagem"
 
 # @ odin
 #~ msgid "%ss"
@@ -1446,16 +1547,16 @@ msgstr "Buscar"
 #~ msgstr "%s"
 
 # @ odin
+#~ msgid "View %s"
+#~ msgstr "Ver %s"
+
+# @ odin
 #~ msgid "Edit %s"
 #~ msgstr "Editar %s"
 
 # @ odin
 #~ msgid "Search %s"
 #~ msgstr "Pesquisar %s"
-
-# @ odin
-#~ msgid "Update %s"
-#~ msgstr "Atualizar  %s"
 
 # @ odin
 #~ msgid "Parent %s:"
@@ -1502,17 +1603,5 @@ msgstr "Buscar"
 #~ msgstr "Enviar"
 
 # @ odin
-#~ msgid "Form submitted successfully!"
-#~ msgstr "Formulário enviado com sucesso!"
-
-# @ odin
-#~ msgid "%s is required."
-#~ msgstr "%s é um campo obrigatório."
-
-# @ odin
 #~ msgid "%s must be an email address valid."
 #~ msgstr "%s precisa ser um endereço de email válido"
-
-# @ odin
-#~ msgid "Posted in"
-#~ msgstr "Publicado em"

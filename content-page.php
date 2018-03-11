@@ -2,7 +2,7 @@
 /**
  * The template used for displaying page content.
  *
- * @package Odin
+ * @package Haste Store
  * @since 2.2.0
  */
 ?>

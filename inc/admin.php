@@ -1,60 +1,60 @@
 <?php
 /**
- * Odin admin functions.
+ * Haste Starter admin functions.
  */
 
 /**
  * Custom admin scripts.
  */
-function odin_admin_scripts() {
-	wp_enqueue_style( 'odin-inc-admin', get_template_directory_uri() . '/inc/assets/css/custom-admin.css' );
+function haste_store_admin_scripts() {
+	wp_enqueue_style( 'haste-store-admin', get_template_directory_uri() . '/assets/css/admin-style.css' );
 }
 
-add_action( 'admin_enqueue_scripts', 'odin_admin_scripts' );
-add_action( 'login_enqueue_scripts', 'odin_admin_scripts' );
+add_action( 'admin_enqueue_scripts', 'haste_store_admin_scripts' );
+add_action( 'login_enqueue_scripts', 'haste_store_admin_scripts' );
 
 /**
  * Remove logo from admin bar.
  */
-function odin_admin_adminbar_remove_logo() {
+function haste_store_admin_adminbar_remove_logo() {
 	global $wp_admin_bar;
 
 	$wp_admin_bar->remove_menu( 'wp-logo' );
 }
 
-add_action( 'wp_before_admin_bar_render', 'odin_admin_adminbar_remove_logo' );
+add_action( 'wp_before_admin_bar_render', 'haste_store_admin_adminbar_remove_logo' );
 
 /**
  * Custom Footer.
  */
-function odin_admin_footer() {
+function haste_store_admin_footer() {
 	echo date( 'Y' ) . ' - ' . get_bloginfo( 'name' );
 }
 
-add_filter( 'admin_footer_text', 'odin_admin_footer' );
+add_filter( 'admin_footer_text', 'haste_store_admin_footer' );
 
 /**
  * Custom logo URL.
  */
-function odin_admin_logo_url() {
+function haste_store_admin_logo_url() {
 	return home_url();
 }
 
-add_filter( 'login_headerurl', 'odin_admin_logo_url' );
+add_filter( 'login_headerurl', 'haste_store_admin_logo_url' );
 
 /**
  * Custom logo title.
  */
-function odin_admin_logo_title() {
+function haste_store_admin_logo_title() {
 	return get_bloginfo( 'name' );
 }
 
-add_filter( 'login_headertitle', 'odin_admin_logo_title' );
+add_filter( 'login_headertitle', 'haste_store_admin_logo_title' );
 
 /**
  * Remove widgets dashboard.
  */
-function odin_admin_remove_dashboard_widgets() {
+function haste_store_admin_remove_dashboard_widgets() {
 	// remove_meta_box( 'dashboard_right_now', 'dashboard', 'normal' );
 	// remove_meta_box( 'dashboard_recent_comments', 'dashboard', 'normal' );
 	remove_meta_box( 'dashboard_quick_press', 'dashboard', 'side' );
@@ -68,7 +68,7 @@ function odin_admin_remove_dashboard_widgets() {
 	remove_meta_box( 'yoast_db_widget', 'dashboard', 'normal' );
 }
 
-add_action( 'wp_dashboard_setup', 'odin_admin_remove_dashboard_widgets' );
+add_action( 'wp_dashboard_setup', 'haste_store_admin_remove_dashboard_widgets' );
 
 /**
  * Remove Welcome Panel.

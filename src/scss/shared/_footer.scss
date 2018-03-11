@@ -1,0 +1,74 @@
+// ==========================================================================
+// Footer
+// ==========================================================================
+
+#footer {
+    position: relative;
+	box-shadow: 0 0 40px rgba(0,0,0,0.1);
+	background: #fff;
+
+	body:not(.home) & {
+		margin-top: 60px;
+	}
+
+	.footer-widgets {
+
+		.footer-widget-area {
+			@media( min-width: $screen-md-min ) {
+				padding-top: 60px;
+				padding-bottom: 60px;
+			}
+		}
+
+		> .container > .row {
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		@media( max-width: $screen-sm-max ) {
+			padding: 20px 0;
+
+			.footer-widget-area {
+				padding-top: 0;
+				padding-bottom: 0;
+			}
+
+			.widget {
+				padding: 20px 0;
+				margin: 0;
+			}
+		}
+
+		.widget-title {
+			color: currentColor;
+		}
+	}
+
+	.footer-colophon {
+		background: rgba(128,128,128,0.15);
+		font-size: $font-size-small;
+		padding: 10px 0;
+		opacity: .6;
+
+		a {
+			color: currentColor;
+		}
+
+		.copy,
+		.credits {
+			text-align: center;
+		}
+
+		.copy {
+			@media ( min-width: $screen-md-min) {
+				text-align: left;
+			}
+		}
+
+		.credits {
+			@media ( min-width: $screen-md-min) {
+				text-align: right;
+			}
+		}
+	}
+}

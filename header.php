@@ -4,7 +4,7 @@
 *
 * Displays all of the <head> section and everything up till #main div
 *
-* @package Odin
+* @package Haste Store
 * @since 2.2.0
 */
 ?><!DOCTYPE html>
@@ -52,7 +52,7 @@
 					</button>
 					<div class="navbar-brand">
 						<?php echo is_home() ? '<h1 class="site-title">' : '<span class="h1 site-title">' ; ?>
-							<?php odin_the_custom_logo(); ?>
+							<?php haste_store_the_custom_logo(); ?>
 							<?php echo is_home() ? '</h1>' : '</span>' ; ?>
 						</div>
 					</div>
@@ -66,8 +66,8 @@
 									'depth'          => 2,
 									'container'      => false,
 									'menu_class'     => 'nav navbar-nav',
-									'fallback_cb'    => 'Odin_Bootstrap_Nav_Walker::fallback',
-									'walker'         => new Odin_Bootstrap_Nav_Walker()
+									'fallback_cb'    => 'Haste Store_Bootstrap_Nav_Walker::fallback',
+									'walker'         => new Haste Store_Bootstrap_Nav_Walker()
 									)
 								);
 								?>
@@ -137,7 +137,7 @@
 										<span class="sr-only"><?php _e('Cart', 'haste-store')?></span>
 										<span class="caret"></span>
 									</button>
-									<?php odin_header_cart() ?>
+									<?php haste_store_header_cart() ?>
 
 								</nav><!-- .navbar-right -->
 
@@ -157,7 +157,7 @@
 					<?php if( !is_front_page() && !is_page_template( 'page-home.php' ) && !is_page_template( 'page-landing.php' ) ) : ?>
 						<div class="breadcrumb-wrapper">
 
-						<?php do_action( 'odin_content_top' ); ?>
+						<?php do_action( 'haste_store_content_top' ); ?>
 
 						</div>
 					<?php endif; ?>

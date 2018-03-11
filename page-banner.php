@@ -4,7 +4,7 @@
  *
  * The template for displaying the homepage.
  *
- * @package Odin
+ * @package Haste Store
  * @since 2.2.0
  */
 
@@ -38,7 +38,7 @@ get_header();
 
 
 		<section class="content-section entry-content container">
-			<div class="<?php echo odin_classes_page_full(); ?>">
+			<div class="<?php echo haste_store_classes_page_full(); ?>">
 				<?php
 					the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'haste-store' ) );
 					wp_link_pages( array(

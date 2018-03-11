@@ -2,13 +2,13 @@
 /**
  * The Template for displaying all single posts.
  *
- * @package Odin
+ * @package Haste Store
  * @since 2.2.0
  */
 
 get_header(); ?>
 
-		<main id="content" class="<?php echo get_theme_mod( 'display_posts_sidebar', true )? odin_classes_page_sidebar() : odin_classes_page_full(); ?>" tabindex="-1" role="main">
+		<main id="content" class="<?php echo get_theme_mod( 'display_posts_sidebar', true )? haste_store_classes_page_sidebar() : haste_store_classes_page_full(); ?>" tabindex="-1" role="main">
 			<?php
 				// Start the Loop.
 				while ( have_posts() ) : the_post();

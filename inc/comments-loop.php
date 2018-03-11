@@ -1,5 +1,5 @@
 <?php
-if ( ! function_exists( 'odin_comment_loop' ) ) {
+if ( ! function_exists( 'haste_store_comment_loop' ) ) {
 
 	/**
 	 * Custom comments loop.
@@ -10,7 +10,7 @@ if ( ! function_exists( 'odin_comment_loop' ) ) {
 	 * @param  array  $args    Comment arguments.
 	 * @param  int    $depth   Comment depth.
 	 */
-	function odin_comments_loop( $comment, $args, $depth ) {
+	function haste_store_comments_loop( $comment, $args, $depth ) {
 		$GLOBALS['comment'] = $comment;
 
 		switch ( $comment->comment_type ) {

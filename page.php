@@ -6,13 +6,13 @@
  * Please note that this is the WordPress construct of pages and that other
  * 'pages' on your WordPress site will use a different template.
  *
- * @package Odin
+ * @package Haste Store
  * @since 2.2.0
  */
 
 get_header(); ?>
 
-	<main id="content" class="<?php echo odin_classes_page_full(); ?>" tabindex="-1" role="main">
+	<main id="content" class="<?php echo haste_store_classes_page_full(); ?>" tabindex="-1" role="main">
 
 			<?php
 				// Start the Loop.

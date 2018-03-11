@@ -6,13 +6,13 @@
  *
  * @link http://codex.wordpress.org/Template_Hierarchy
  *
- * @package Odin
+ * @package Haste Store
  * @since 2.2.0
  */
 
 get_header(); ?>
 
-		<main id="content" class="<?php echo get_theme_mod( 'display_blog_sidebar', true )? odin_classes_page_sidebar() : odin_classes_page_full(); ?>" tabindex="-1" role="main">
+		<main id="content" class="<?php echo get_theme_mod( 'display_blog_sidebar', true )? haste_store_classes_page_sidebar() : haste_store_classes_page_full(); ?>" tabindex="-1" role="main">
 
 			<?php if ( have_posts() ) : ?>
 
@@ -37,7 +37,7 @@ get_header(); ?>
 						endwhile;
 
 						// Page navigation.
-						odin_paging_nav();
+						haste_store_paging_nav();
 
 					else :
 						// If no content, include the "No posts found" template.

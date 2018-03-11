@@ -4,14 +4,14 @@
  *
  * The template for displaying pages with sidebar.
  *
- * @package Odin
+ * @package Haste Store
  * @since 2.2.0
  */
 
 get_header();
 ?>
 
-	<main id="content" class="<?php echo odin_classes_page_sidebar(); ?>" tabindex="-1" role="main">
+	<main id="content" class="<?php echo haste_store_classes_page_sidebar(); ?>" tabindex="-1" role="main">
 
 			<?php
 				// Start the Loop.

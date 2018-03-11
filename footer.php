@@ -5,7 +5,7 @@
  * Contains footer content and the closing of the
  * #main div element.
  *
- * @package Odin
+ * @package Haste Store
  * @since 2.2.0
  */
 ?>
