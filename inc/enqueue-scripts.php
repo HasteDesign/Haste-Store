@@ -92,7 +92,7 @@ function haste_store_widgets_modules_assets() {
 	);
 	wp_localize_script( 'wp-color-picker', 'wpColorPickerL10n', $colorpicker_l10n );
 
-	wp_enqueue_script( 'haste-widgets', get_template_directory_uri() . '/core/assets/js/haste-widgets.js', array( 'jquery', 'wp-color-picker', 'media-upload', 'thickbox' ) ) ;
+	wp_enqueue_script( 'haste-widgets', get_template_directory_uri() . '/assets/js/admin/haste-widgets.js', array( 'jquery', 'wp-color-picker', 'media-upload', 'thickbox' ) ) ;
 }
 add_action( 'customizer_enqueue_scripts', 'haste_store_widgets_modules_assets' );
 add_action( 'admin_print_scripts-widgets.php', 'haste_store_widgets_modules_assets' );
