@@ -1,23 +1,18 @@
 <?php
 /**
- * Template part for displaying page content in page.php.
+ * The template used for displaying page content.
  *
- * @link https://codex.wordpress.org/Template_Hierarchy
- *
- * @package HasteStore
+ * @package Haste Store
+ * @since 2.2.0
  */
-
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-	</header>
+	<?php the_title( '<header class="entry-header"><h1 class="entry-title">', '</h1></header><!-- .entry-header -->' ); ?>
 
 	<div class="entry-content">
 		<?php
 			the_content();
-
 			wp_link_pages( array(
 				'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'haste-store' ) . '</span>',
 				'after'       => '</div>',
@@ -25,5 +20,5 @@
 				'link_after'  => '</span>',
 			) );
 		?>
-	</div>
+	</div><!-- .entry-content -->
 </article><!-- #post-## -->

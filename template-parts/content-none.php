@@ -1,34 +1,30 @@
 <?php
 /**
- * Template part for displaying a message that posts cannot be found.
+ * The template for displaying a "No posts found" message.
  *
- * @link https://codex.wordpress.org/Template_Hierarchy
- *
- * @package HasteStore
+ * @package Haste Store
+ * @since 2.2.0
  */
-
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="page-header">
-		<h1 class="page-title"><?php _e( 'Nothing Found', 'haste-store' ); ?></h1>
-	</header>
+<header class="page-header">
+	<h1 class="page-title"><?php _e( 'Nothing Found', 'haste-store' ); ?></h1>
+</header>
 
-	<div class="page-content">
-		<?php if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
+<div class="page-content">
+	<?php if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
 
-			<p><?php printf( __( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'haste-store' ), admin_url( 'post-new.php' ) ); ?></p>
+		<p><?php printf( __( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'haste-store' ), admin_url( 'post-new.php' ) ); ?></p>
 
-		<?php elseif ( is_search() ) : ?>
+	<?php elseif ( is_search() ) : ?>
 
-			<p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'haste-store' ); ?></p>
-			<?php get_search_form(); ?>
+		<p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'haste-store' ); ?></p>
+		<?php get_search_form(); ?>
 
-		<?php else : ?>
+	<?php else : ?>
 
-			<p><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'haste-store' ); ?></p>
-			<?php get_search_form(); ?>
+		<p><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'haste-store' ); ?></p>
+		<?php get_search_form(); ?>
 
-		<?php endif; ?>
-	</div>
-</article>
+	<?php endif; ?>
+</div><!-- .page-content -->
