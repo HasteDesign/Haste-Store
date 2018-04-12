@@ -20,20 +20,15 @@ function haste_store_register_required_plugins() {
 	$plugins = array(
 		// If your plugin is in the official repository
 		array(
-			'name'   => 'Jetpack',
-			'slug'   => 'jetpack'
-		),
-		// If your plugin is delivered within the theme
-		array(
-			'name'   => 'Haste Toolkit',
-			'slug'   => 'haste-toolkit'
+			'name'   => 'Kirki',
+			'slug'   => 'kirki'
 		),
 		// If your plugin is hosted anywhere
-		array(
-			'name'   => 'Haste Starter',
-			'slug'   => 'haste-toolkit',
-			'source' => 'https://github.com/HasteDesign/Haste-Toolkit/archive/master.zip'
-		),
+		// array(
+		// 	'name'   => 'Haste Starter',
+		// 	'slug'   => 'haste-toolkit',
+		// 	'source' => 'https://github.com/HasteDesign/Haste-Toolkit/archive/master.zip'
+		// ),
 	);
 
 	/*
