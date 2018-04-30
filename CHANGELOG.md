@@ -10,7 +10,15 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Deprecated
 ### Removed
 ### Fixed
-- Fixed: correct enqueue of stylesheet to work with child themes
+### Security
+
+## [1.1.7]
+### Added
+- New WooCommerce Gallery support
+### Changed
+- Better Elementor Page Builder support
+### Fixed
+- Fixed some WooCommerce styles
 ### Security
 
 ## [1.1.6]
