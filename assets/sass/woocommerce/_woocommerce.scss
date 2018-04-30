@@ -496,9 +496,9 @@ p.demo_store {
 		left: 0;
 		left: auto;
 		margin: 0 15px;
-		padding: 0 15px;
-		line-height: 3;
-		min-height: 3em;
+		padding: 5px 15px;
+		line-height: 1.5;
+	    min-height: auto;
 		border-radius: 0 1.5em 1.5em 1.5em;
 		z-index: 10;
 		color: #fff;
@@ -538,9 +538,9 @@ p.demo_store {
 				right: 0;
 				left: auto;
 				margin: 0 15px;
-				padding: 0px 10px;
-				line-height: 3;
-				min-height: 3em;
+				padding: 5px 15px;
+				line-height: 1.5;
+			    min-height: auto;
 				border-radius: 1.5em 0 1.5em 1.5em;
 			}
 
