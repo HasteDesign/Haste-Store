@@ -33,27 +33,3 @@ node_modules
 sftp-config.json
 .ftppass
 *.zip
-
-# Node/Grunt Directories
-src/node_modules/
-src/.sass-cache/
-
-# Files starting with . or ~ except .gitignore
-.*
-~*
-!.gitignore
-!.gitattributes
-
-# Packaged Files
-*.7z
-*.dmg
-*.gz
-*.iso
-*.jar
-*.rar
-*.tar
-*.zip
-
-# Operational System Files
-ehthumbs.db
-Thumbs.db

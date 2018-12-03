@@ -1,0 +1,29 @@
+{
+    "env": {
+        "browser": true,
+        "jquery": true,
+        "es6": true
+    },
+    "extends": "eslint:recommended",
+    "rules": {
+        "no-undef":[
+          "warn"
+        ],
+        "indent": [
+            "warn",
+            "tab"
+        ],
+        "linebreak-style": 0,
+        "quotes": [
+            "warn",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "always",
+            {
+              "omitLastInOneLineBlock": true
+            }
+        ]
+    }
+}
