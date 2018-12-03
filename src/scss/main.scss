@@ -23,97 +23,24 @@
 // --------------------------------------------------------------
 @import "shared/base";
 @import "shared/wordpress";
-// @import "shared/forms";
-// @import "shared/pagination";
+@import "shared/forms";
+@import "shared/pagination";
 
 // --------------------------------------------------------------
 // Layout
 // --------------------------------------------------------------
-@import 'shared/general';
-@import 'shared/header';
-@import 'shared/components';
-@import 'shared/sections';
-// @import "shared/navigation-skiplink";
-// @import "shared/header-branding";
-// @import "shared/header-image";
-// @import "shared/navigation-top";
-// @import "shared/wrapper";
-// @import "shared/content";
+@import "shared/navigation-skiplink";
+@import "shared/header-branding";
+@import "shared/header-image";
+@import "shared/navigation-top";
+@import "shared/wrapper";
+@import "shared/content";
 @import "shared/sidebar";
 @import "shared/footer";
-// @import "shared/animation";
+@import "shared/animation";
 
 // --------------------------------------------------------------
 // Helpers
 // --------------------------------------------------------------
 @import "shared/queries";
 @import "shared/helpers";
-
-@import "woocommerce";
-
-// ==========================================================================
-// Wrapper
-// ==========================================================================
-#wrapper {}
-
-// ==========================================================================
-// Content
-// ==========================================================================
-#content {}
-
-//
-// Home
-//
-.home {
-    #content {
-        .post {
-            margin-bottom: 40px;
-            &.sticky {
-                padding: 0 20px 20px;
-                border: 1px dashed $brand-info;
-            }
-        }
-    }
-}
-
-// ==========================================================================
-// Sidebar
-// ==========================================================================
-#sidebar {}
-
-// ==========================================================================
-// Components
-// ==========================================================================
-
-//
-// Fancy skip link
-//
-// Make it look a bit less "bare bones"
-// Also includes focus suppression for the Chrome tabindex="-1" workaround
-//
-#skippy {
-    display: block;
-    padding: 1em;
-    background-color: #f5f5f5;
-    outline: 0;
-}
-
-#skippy .skiplink-text {
-    padding: .5em;
-    outline: 1px dotted;
-}
-
-#content:focus {
-    outline: none;
-}
-
-//
-// Pagination
-//
-.pagination-wrap {
-    text-align: center;
-    margin-top: 15px;
-    .infinite-scroll & {
-        display: none;
-    }
-}
