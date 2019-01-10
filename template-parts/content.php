@@ -29,7 +29,7 @@ $post_class = '';
 			<a class="entry-link" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
 
 			<?php if ( has_post_thumbnail() ) : ?>
-					<?php the_post_thumbnail(); ?>
+				<?php the_post_thumbnail(); ?>
 			<?php endif; ?>
 
 		<?php endif; ?>

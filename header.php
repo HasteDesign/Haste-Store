@@ -23,6 +23,8 @@
 	<?php wp_head(); ?>
 </head>
 
+<style>@import url('https://fonts.googleapis.com/css?family=Rubik');</style>
+
 <body <?php body_class(); ?>>
 	<a id="skippy" class="sr-only sr-only-focusable" href="#content">
 		<div class="container">
@@ -57,7 +59,7 @@
 						</div>
 					</div>
 
-					<?php if ( ! is_page_template( 'page-landing.php' ) ) : ?>
+					<?php if ( is_page_template( 'page-landing.php' ) ) : ?>
 						<nav class="collapse navbar-collapse navbar-main-navigation <?php echo is_woocommerce_activated() ? 'navbar-left' : 'navbar-right'; ?>" role="navigation">
 							<?php
 							wp_nav_menu(
@@ -151,8 +153,8 @@
 
 			</header><!-- #header -->
 
-			<div id="wrapper">
-				<div class="wrapper-row">
+			<div id="wrapper" class="container-fluid">
+				<div class="row">
 
 					<?php if( !is_front_page() && !is_page_template( 'page-home.php' ) && !is_page_template( 'page-landing.php' ) ) : ?>
 						<div class="breadcrumb-wrapper">

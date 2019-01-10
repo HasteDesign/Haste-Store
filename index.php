@@ -15,9 +15,9 @@
 
 get_header(); ?>
 
-	<main id="content" class="<?php echo get_theme_mod( 'display_blog_sidebar', true )? haste_store_classes_page_sidebar() : haste_store_classes_page_full(); ?>" tabindex="-1" role="main">
+	<main id="content" tabindex="-1" role="main">
 
-		<?php if ( have_posts() ) : ?>
+
 
 			<?php if ( true == get_theme_mod( 'display_blog_title', true ) ) : ?>
 				<header class="page-header">
@@ -36,45 +36,55 @@ get_header(); ?>
 				</header><!-- .page-header -->
 			<?php endif ;?>
 
-			<?php
-				// Start the Loop.
-				while ( have_posts() ) : the_post();
+			<?php if ( have_posts() ) : ?>
 
-						/*
-						 * Include the post format-specific template for the content. If you want to
-						 * use this in a child theme, then include a file called called content-___.php
-						 * (where ___ is the post format) and that will be used instead.
-						 */
-						 if ( is_single() ) :
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8">
+							<?php
+								// Start the Loop.
+								while ( have_posts() ) : the_post();
 
-							 get_template_part( 'template-parts/content', 'section' );
+										/*
+										* Include the post format-specific template for the content. If you want to
+										* use this in a child theme, then include a file called called content-___.php
+										* (where ___ is the post format) and that will be used instead.
+										*/
+										if ( is_single() ) :
 
-						 else :
+											get_template_part( 'template-parts/content', 'section' );
 
-							 get_template_part ( 'content', get_post_format() );
+										else :
 
-						 endif;
+											get_template_part ( 'template-parts/content', get_post_format() );
 
-					endwhile;
+										endif;
 
-					// Post navigation.
-					haste_store_paging_nav();
+								endwhile;
 
-				else :
-					// If no content, include the "No posts found" template.
-					get_template_part( 'template-parts/content', 'none' );
+								// Post navigation.
+								haste_store_paging_nav();
 
-				endif;
-			?>
+								else :
+									// If no content, include the "No posts found" template.
+									get_template_part( 'template-parts/content', 'none' );
+
+								endif;
+							?>
+						</div>
+
+							<?php
+								if ( true == get_theme_mod( 'display_blog_sidebar', true ) ) :
+									get_sidebar();
+								endif;
+							?>
+					</div>
+				</div>
 
 	</main><!-- #content -->
 
 <?php
 
-if ( true == get_theme_mod( 'display_blog_sidebar', true ) ) :
 
-	get_sidebar();
-
-endif;
 
 get_footer();

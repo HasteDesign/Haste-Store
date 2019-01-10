@@ -6,6 +6,7 @@
  */
 register_nav_menus(
 	array(
-		'main-menu' => __( 'Main Menu', 'haste-store' )
+		'main-menu' => __( 'Menu Principal', 'haste-store' ),
+		'top-menu' => __( 'Top Menu', 'haste-store' ),
 	)
 );

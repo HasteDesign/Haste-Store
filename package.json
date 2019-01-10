@@ -46,6 +46,7 @@
     "eslint": "^4.8.0",
     "imagemin-cli": "^3.0.0",
     "jquery": "^3.2.1",
+    "node-modules": "^1.0.1",
     "node-sass": "^4.11.0",
     "npm": "^6.4.1",
     "onchange": "^3.2.1",
