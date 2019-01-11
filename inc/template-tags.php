@@ -48,7 +48,7 @@ if ( ! function_exists( 'haste_store_classes_page_sidebar_aside' ) ) {
 	 * @return string Classes name.
 	 */
 	function haste_store_classes_page_sidebar_aside() {
-		return 'col-md-3 col-md-offset-1 hidden-xs hidden-print widget-area';
+		return 'col-md-3 offset-md-1 hidden-xs hidden-print widget-area';
 	}
 }
 

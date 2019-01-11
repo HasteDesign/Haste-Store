@@ -18,7 +18,7 @@
 
 get_header(); ?>
 
-<main id="content" class="<?php echo get_theme_mod( 'display_blog_sidebar', true )? haste_store_classes_page_sidebar() : haste_store_classes_page_full(); ?>" tabindex="-1" role="main">
+<main id="content" tabindex="-1" role="main">
 
 			<?php if ( have_posts() ) : ?>
 

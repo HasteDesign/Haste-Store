@@ -121,7 +121,7 @@ add_filter( 'woocommerce_cross_sells_total', 'change_cross_sells_product_number'
 /**
  * Option to display or hide buy buttons
  */
- add_action( 'woocommerce_after_shop_loop_item', 'customizer_display_add_to_cart_buttons', 1 );
+ //add_action( 'woocommerce_after_shop_loop_item', 'customizer_display_add_to_cart_buttons', 1 );
 
  function customizer_display_add_to_cart_buttons() {
      if( false == get_theme_mod( 'display_buy_button', true ) ) {

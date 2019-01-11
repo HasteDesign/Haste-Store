@@ -59,8 +59,8 @@
 						</div>
 					</div>
 
-					<?php if ( is_page_template( 'page-landing.php' ) ) : ?>
-						<nav class="collapse navbar-collapse navbar-main-navigation <?php echo is_woocommerce_activated() ? 'navbar-left' : 'navbar-right'; ?>" role="navigation">
+
+						<nav class="navbar navbar-expand-md navbar-light <?php echo is_woocommerce_activated() ? 'navbar-left' : 'navbar-right'; ?>" role="navigation">
 							<?php
 							wp_nav_menu(
 								array(
@@ -145,7 +145,7 @@
 
 							<?php endif; // is_woocommerce_activated ?>
 
-						<?php endif; // is_landing ?>
+
 
 					</div><!-- .container-->
 
@@ -153,11 +153,11 @@
 
 			</header><!-- #header -->
 
-			<div id="wrapper" class="container-fluid">
+			<div id="wrapper" class="container">
 				<div class="row">
 
 					<?php if( !is_front_page() && !is_page_template( 'page-home.php' ) && !is_page_template( 'page-landing.php' ) ) : ?>
-						<div class="breadcrumb-wrapper">
+						<div class="breadcrumb-wrapper col-md-12">
 
 						<?php do_action( 'haste_store_content_top' ); ?>
 
