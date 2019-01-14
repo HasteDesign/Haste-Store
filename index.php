@@ -53,7 +53,7 @@ get_header(); ?>
 
 										else :
 
-											get_template_part ( 'template-parts/content', get_post_format() );
+											get_template_part( 'template-parts/content', 'post' );
 
 										endif;
 
