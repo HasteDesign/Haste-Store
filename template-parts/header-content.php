@@ -1,65 +1,36 @@
 <div id="header-content">
 	<div class="container">
-		<div class="row header-content-wrapper">
-			<div class="header-main-menu">
-				<nav id="navigation-top" class="navbar navbar-expand-md navbar-light" role="navigation">
+		<div class="row">
+			<div class="header-branding col-md-6 d-flex flex-row nav-link">
+				<?php haste_store_the_custom_logo(); ?>
 
-						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
-							<span class="navbar-toggler-icon"></span>
-							<span class="navbar-toggler-label"><?php _e( 'Menu', 'haste-store' ); ?></span>
-						</button>
-
-						<div class="collapse navbar-collapse" id="main-menu">
-							<?php
-								wp_nav_menu( array(
-										'theme_location' => 'main-menu',
-										'depth'          => 2,
-										'container'      => false,
-										'menu_class'     => 'navbar-nav w-100 nav-fill menu',
-										'fallback_cb'    => 'Haste_Store_Bootstrap_Nav_Walker::fallback',
-										'walker'         => new Haste_Store_Bootstrap_Nav_Walker(),
-								) );
-							?>
-						</div><!-- .navbar-collapse -->
-
-				</nav>
+				<?php if ( get_bloginfo( 'description' ) || is_customize_preview() ) : ?>
+					<p class="site-description mx-3"><?php bloginfo( 'description' ); ?></p>
+				<?php endif ?>
 			</div>
 
-			<div class="header-actions col-md-5">
+			<div class="d-flex justify-content-end col-md-6">
+				<div class="top-nav">
+					<?php
+					wp_nav_menu( array(
+						'theme_location' => 'top-menu',
+						'depth'          => 1,
+						'container'      => false,
+						'menu_class'     => 'nav justify-content-end',
+						'fallback_cb'    => 'Haste_Store_Bootstrap_Nav_Walker::fallback',
+						'walker'         => new Haste_Store_Bootstrap_Nav_Walker(),
+					) );
+					?>
+				</div>
+				<?php if ( is_user_logged_in() ) { ?>
+					<div class="top-info">
+						<span class="navbar-text">
 
-				<?php if ( ! wp_is_mobile() ) { ?>
-					<?php if ( is_user_logged_in() ) { ?>
+						</span>
 
-						<div class="header-action">
-							<a class="btn btn-link" href="<?php echo wc_get_page_permalink( 'myaccount' ); ?>" title="<?php _e( 'Minha conta', 'hastestore' ); ?>">
-
-							</a>
-						</div>
-
-					<?php } else { ?>
-
-						<div class="header-action">
-							<a class="btn btn-link btn-2-lines" href="<?php echo wc_get_page_permalink( 'myaccount' ); ?>" title="<?php _e( 'Entrar ou cadastrar', 'hastestore' ); ?>">
-
-								<span><?php _e( 'Entrar ou cadastrar-se', 'hastestore' ); ?></span>
-							</a>
-						</div>
-
-					<?php } ?>
-
-					<div class="header-action">
-						<a class="btn btn-link" href="<?php echo esc_url( wc_get_account_endpoint_url( 'orders' ) ); ?>" title="<?php _e( 'Meus pedidos', 'hastestore' ); ?>">
-
-							<?php _e( 'Meus pedidos', 'hastestore' ); ?>
-						</a>
 					</div>
 				<?php } ?>
-
-				<div class="header-action">
-
-				</div>
 			</div>
 		</div>
-
 	</div>
 </div>

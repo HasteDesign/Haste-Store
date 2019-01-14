@@ -125,14 +125,28 @@ if ( ! function_exists( 'haste_store_the_custom_logo' ) ) {
 	 */
 	function haste_store_the_custom_logo() {
 		$custom_logo = get_theme_mod( 'custom_logo' );
+		$logo_or_blog_name;
 
 		if ( function_exists( 'the_custom_logo' ) && !empty( $custom_logo ) ) {
-			the_custom_logo();
+			$logo_or_blog_name = the_custom_logo();
 		}
 		else {
-			echo '<a href="' . esc_url( home_url( '/' ) ) . '" title="' . esc_attr( get_bloginfo( 'name', 'display' ) ) . '" rel="home">';
-			bloginfo( 'name' );
-			echo '</a>';
+			$logo_or_blog_name = bloginfo( 'name' );
 		}
+
+		if ( is_front_page() && is_home() ) : ?>
+			<h1 class="site-title">
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+					<?php echo $logo_or_blog_name; ?>
+				</a>
+			</h1>
+		<?php else : ?>
+			<div class="site-title h1">
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+					<?php echo $logo_or_blog_name; ?>
+				</a>
+			</div>
+		<?php
+		endif;
 	}
 }

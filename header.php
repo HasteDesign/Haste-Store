@@ -27,11 +27,6 @@
 
 	<header id="header" role="banner">
 
-		<?php if ( ! wp_is_mobile() ) { ?>
-			<?php get_template_part( 'template-parts/header', 'top-bar' ); ?>
-		<?php } ?>
-
-
 		<?php get_template_part( 'template-parts/header', 'content' ); ?>
 
 		<?php get_template_part( 'template-parts/header', 'navigation' ); ?>

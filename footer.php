@@ -38,7 +38,7 @@
 						<?php endif; ?>
 
 						<?php if ( is_active_sidebar( 'footer-widget-area-3' ) ) : ?>
-							<div class="footer-widget-area footer-widget-area-3 col-md-3 col-sm-6 col-xs-12">
+							<div class="footer-widget-area footer-widget-area-3 col-md-3 col-sm-6 col-xs-12 text-right">
 								<?php
 									if ( ! dynamic_sidebar( 'footer-widget-area-3' ) ) {
 									}
@@ -47,7 +47,7 @@
 						<?php endif; ?>
 
 						<?php if ( is_active_sidebar( 'footer-widget-area-4' ) ) : ?>
-							<div class="footer-widget-area footer-widget-area-4 col-md-3 col-sm-6 col-xs-12">
+							<div class="footer-widget-area footer-widget-area-4 col-md-3 col-sm-6 col-xs-12 text-right">
 								<?php
 									if ( ! dynamic_sidebar( 'footer-widget-area-4' ) ) {
 									}
@@ -62,14 +62,16 @@
 
 		<section class="footer-colophon">
 			<div class="container">
-				<div class="col-md-6 copy">
-					&copy; <?php echo date( 'Y' ); ?> <a href="<?php echo home_url(); ?>"><?php bloginfo( 'name' ); ?></a> - <?php _e( 'All rights reserved', 'haste-store' ); ?>
-				</div>
-				<div class="col-md-6 credits">
-					<a href="<?php echo esc_url( get_theme_mod( 'site-credits-link', 'http://www.hastedesign.com.br' ) ); ?>">
-						<?php echo esc_attr( get_theme_mod( 'site-credits-text', __( 'Proudly powered by Haste Store and WordPress', 'haste-store' ) ) ); ?>
-					</a>
-				</div>
+				<div class="row">
+					<div class="col-md-6 copy">
+						&copy; <?php echo date( 'Y' ); ?> <a href="<?php echo home_url(); ?>"><?php bloginfo( 'name' ); ?></a> - <?php _e( 'All rights reserved', 'haste-store' ); ?>
+					</div>
+					<div class="col-md-6 credits text-right">
+						<a href="<?php echo esc_url( get_theme_mod( 'site-credits-link', 'http://www.hastedesign.com.br' ) ); ?>">
+							<?php echo esc_attr( get_theme_mod( 'site-credits-text', __( 'Proudly powered by Haste Store and WordPress', 'haste-store' ) ) ); ?>
+						</a>
+					</div>
+				</div><!-- .row -->
 			</div><!-- .container -->
 		</section>
 	</footer><!-- #footer -->
