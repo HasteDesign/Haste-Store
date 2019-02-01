@@ -17,7 +17,7 @@
 		<?php if ( ! is_page_template( 'page-landing.php' ) ) : ?>
 			<section class="footer-widgets sidebar">
 				<div class="container">
-					<div class="row">
+					<div class="footer-content row">
 
 						<?php if ( is_active_sidebar( 'footer-widget-area-1' ) ) : ?>
 							<div class="footer-widget-area footer-widget-area-1 col-md-3 col-sm-6 col-xs-12">

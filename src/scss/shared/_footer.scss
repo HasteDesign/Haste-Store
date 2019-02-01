@@ -4,6 +4,11 @@
 // Sticky footer styles
 //
 
-#footer .footer-widget-area {
-    padding: 30px 15px;
+.footer-content {
+	align-items: flex-end;
+	padding: 30px 0;
+}
+
+.footer-colophon {
+	margin: 20px 0;
 }
